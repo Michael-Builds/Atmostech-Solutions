@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css?family=Exo:500,600,700|Roboto&display=swap");
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.header-top-bar {
+  background-color: #03a30b;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  font-family: "Exo", sans-serif;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.header-top-bar .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-top-bar .top-bar-info {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.header-top-bar .top-bar-info ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.header-top-bar .top-bar-info li {
+  margin-right: 2rem;
+}
+
+.header-top-bar .top-bar-info a {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.header-top-bar .top-bar-info a span {
+  vertical-align: middle;
+  font-size: 10px;
+  margin-left: 0.5rem;
+}
+
+.header-top-bar .top-bar-info .icofont-support-faq,
+.header-top-bar .top-bar-info .icofont-location-pin,
+.header-top-bar .top-bar-info .icofont-support-faqs {
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  color: white;
+  vertical-align: middle;
+}
+
+.navbar {
+  font-family: "Exo", sans-serif;
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  border-bottom: 1px solid #f5f5f5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  position: relative;
+  top: 45px;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  border: none;
+}
+
+.navbar .container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .nav-menu {
+  display: flex;
+  list-style: none;
+}
+
+.nav-menu li {
+  margin-right: 5rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #333;
+  position: relative;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+.nav-menu a .arrow-down{
+  margin-left: 8px;
+  font-size: 18px;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-menu a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #03a30b;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.4s ease;
+}
+
+.nav-menu a:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.active-link {
+  outline: none;
+  position: relative;
+}
+
+.logo-img {
+  height: 40px;
+  width: auto;
+  margin-left: 45px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.hamburger {
+  display: none;
+}
+
+.navbar .icon {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 940px) {
+  .navbar .nav-menu {
+    background: #03a30b;
+    padding: 0.7em 3%;
+    border-radius: 2px;
+    height: 90vh;
+    margin-top: 2px;
+  }
+
+  .nav-menu a {
+    position: relative;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: auto;
+  }
+
+  .header-top-bar {
+    display: none;
+  }
+
+  .container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .navbar {
+    top: 0;
+  }
+
+  .logo-img {
+    align-items: center;
+    margin-left: 25px;
+  }
+  .nav-menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 60px;
+    right: -100%;
+    height: 100%;
+    width: 90%;
+    background: rgba(255, 255, 255, 0.98);
+    transition: 0.4s ease-in-out;
+    z-index: 10;
+    padding: 1rem;
+  }
+
+  .nav-menu.active {
+    right: 0;
+  }
+
+  .nav-menu li {
+    margin: 0.55rem;
+  }
+
+  .nav-menu a {
+    display: inline-block;
+    margin: 0 0.5rem;
+  }
+
+  .nav-menu a:hover {
+    text-decoration: none;
+  }
+
+  .hamburger {
+    display: block;
+    align-items: center;
+    margin-right: 1rem;
+    transition: transform 0.3s ease;
+  }
+
+  .hamburger.active {
+    transform: rotate(-90deg);
+  }
+}
