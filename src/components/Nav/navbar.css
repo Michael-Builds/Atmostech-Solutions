@@ -99,7 +99,7 @@
 }
 
 .nav-menu li {
-  margin-right: 5rem;
+  margin-right: 4rem;
   position: relative;
   display: flex;
   align-items: center;
@@ -159,13 +159,75 @@
   font-size: 1.5rem;
 }
 
+.language-selector .dropdown {
+  position: relative;
+  display: inline-block;
+  border-radius: 12px;
+}
+
+.language-selector .language-select {
+  padding: 6px 20px;
+  font-size: 12px;
+  border: none;
+  background-color: #03a30b;
+  color: #fff;
+  cursor: pointer;
+}
+
+.language-selector .language-icon {
+  position: absolute;
+  top: 50%;
+  left: 3px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.language-selector .language-select option {
+  background-color: #03a30b;
+}
+
+.language-selector .language-select option:hover {
+  background-color: #fff;
+  color: #00ff00;
+}
+
+.language-selector .language-select:focus {
+  outline: none;
+}
+
+.language-selector .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  min-width: 150px;
+  background-color: #2f2f2f;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.language-selector .dropdown-item {
+  padding: 8px 16px;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.language-selector .dropdown-item:hover {
+  background-color: #444444;
+}
+
 @media screen and (max-width: 940px) {
+ 
   .navbar .nav-menu {
     background: #03a30b;
     padding: 0.7em 3%;
     border-radius: 2px;
     height: 90vh;
     margin-top: 2px;
+    overflow: hidden;
   }
 
   .nav-menu a {

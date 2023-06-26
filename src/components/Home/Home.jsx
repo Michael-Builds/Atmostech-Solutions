@@ -3,6 +3,7 @@ import Navbar from "../Nav/Navbar";
 import "./home.css";
 import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowUp } from "react-icons/io";
+import { FaCog, FaLaptop } from "react-icons/fa";
 
 const Home = () => {
   const [showScrollToTop, setShowScrollToTop] = useState(false);
@@ -22,6 +23,7 @@ const Home = () => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+  
 
   return (
     <>
@@ -56,79 +58,75 @@ const Home = () => {
         </div>
       </section>
 
-      {/*  Intro  */}
-      <section id="intro" className="wrapper style1">
-        <div className="title">The Introduction</div>
+      <section id="services-products" className="wrapper style2">
+        <div className="title">Our Services and Products</div>
         <div className="container">
-          <p className="style1">
-            So in case you were wondering what this is all about ...
-          </p>
-          <p className="style2">
-            Escape Velocity is a free responsive
-            <br className="mobile-hide" />
-            site template by{" "}
-            <a href="http://html5up.net" className="nobr">
-              HTML5 UP
+          <div className="service-card">
+            <div className="icon">
+              <FaCog />
+            </div>
+            <h3 className="service-title">Service 1</h3>
+            <p className="service-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+              dapibus libero vitae fermentum consequat.
+            </p>
+            <a href="www.htu.com" className="button">
+              Learn More
+              <IoIosArrowForward className="icon-send"/>
             </a>
-          </p>
-          <p className="style3">
-            It's <strong>responsive</strong>, built on <strong>HTML5</strong>{" "}
-            and <strong>CSS3</strong>, and released for free under the{" "}
-            <a href="http://html5up.net/license">
-              Creative Commons Attribution 3.0 license
+          </div>
+
+          <div className="service-card">
+            <div className="icon">
+              <FaLaptop />
+            </div>
+            <h3 className="service-title">Service 2</h3>
+            <p className="service-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+              dapibus libero vitae fermentum consequat.
+            </p>
+            <a href="www.htu.com" className="button">
+              Learn More
+              <IoIosArrowForward className="icon-send" />
             </a>
-            , so use it for any of your personal or commercial projects &ndash;
-            just be sure to credit us!
-          </p>
-          <ul className="actions">
-            <li>
-              <a
-                href="http://html5up.net/license"
-                className="button style3 large"
-              >
-                Proceed
-              </a>
-            </li>
-          </ul>
+          </div>
+
+          <div className="product-card">
+            <div className="image">
+            <FaCog />
+
+              {/* <img src="product1.jpg" alt="Product 1" /> */}
+            </div>
+            <h3 className="product-title">Product 1</h3>
+            <p className="product-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+              dapibus libero vitae fermentum consequat.
+            </p>
+            <a href="www.htu.com" className="button">
+              Learn More
+              <IoIosArrowForward className="icon-send"/>
+            </a>
+          </div>
+
+          <div className="product-card">
+            <div className="image">
+            <FaCog />
+
+              {/* <img src="product2.jpg" alt="Product 2" /> */}
+            </div>
+            <h3 className="product-title">Product 2</h3>
+            <p className="product-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+              dapibus libero vitae fermentum consequat.
+            </p>
+            <a href="www.htoc.com" className="button">
+              Learn More
+              <IoIosArrowForward className="icon-send"/>
+            </a>
+          </div>
         </div>
       </section>
 
-      {/* Features */}
-      <section id="features" className="wrapper style1">
-        <div className="title1">The Introduction</div>
-        <div className="container">
-          <p className="style1">
-            So in case you were wondering what this is all about ...
-          </p>
-          <p className="style2">
-            Escape Velocity is a free responsive
-            <br className="mobile-hide" />
-            site template by{" "}
-            <a href="http://html5up.net" className="nobr">
-              HTML5 UP
-            </a>
-          </p>
-          <p className="style3">
-            It's <strong>responsive</strong>, built on <strong>HTML5</strong>{" "}
-            and <strong>CSS3</strong>, and released for free under the{" "}
-            <a href="http://html5up.net/license">
-              Creative Commons Attribution 3.0 license
-            </a>
-            , so use it for any of your personal or commercial projects &ndash;
-            just be sure to credit us!
-          </p>
-          <ul className="actions">
-            <li>
-              <a
-                href="http://html5up.net/license"
-                className="button style3 large"
-              >
-                Proceed
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
       {showScrollToTop && (
         <div className="scroll-to-top" onClick={scrollToTop}>
           <IoIosArrowUp />

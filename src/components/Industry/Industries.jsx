@@ -1,13 +1,13 @@
 import React from "react";
 import Navbar from "../Nav/Navbar";
 
-const Contact = () => {
+const Industry = () => {
   return (
     <>
       <Navbar />
-      <div>Contact</div>
+      <div>industries</div>
     </>
   );
 };
 
-export default Contact;
+export default Industry
