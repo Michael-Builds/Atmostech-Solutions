@@ -192,45 +192,45 @@ h6,
 
 @media screen and (max-width: 940px) {
   .banner {
-    height: 90vh;
+    height: 70vh;
     background-position: center;
   }
 
   .block {
-    margin-top: -10px;
-    margin-left: 15px;
+    margin-bottom: -30px;
+    margin-left: 30px;
   }
 
   .block .text-uppercase {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .block h1 {
-    font-size: 22px;
-    margin: 8px 0;
+    font-size: 24px;
+    margin: 16px 0;
   }
   .block p {
-    font-size: 10px;
+    font-size: 12px;
     margin-top: 16px;
     margin-bottom: 16px;
-    padding-right: 70px;
+    padding-right: 10px;
   }
 
   .block .btn-container {
-    margin-top: 20px;
+    margin-top: 25px;
     display: flex;
     align-items: center;
   }
 
   .icofont-simple-right {
-    margin-left: 0.3rem;
+    margin-left: 0.4rem;
   }
 
   .block .btn {
-    border-radius: 10px;
+    border-radius: 8px;
     display: inline-block;
-    padding: 10px 15px;
-    font-size: 10px;
+    padding: 12px 15px;
+    font-size: 12px;
     transition: background-color 0.3s ease;
   }
 
