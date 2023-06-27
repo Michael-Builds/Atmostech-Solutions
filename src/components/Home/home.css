@@ -208,11 +208,11 @@ h6,
   background-color: #fff;
 }
 
-/* .container {
+.container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-} */
+}
 
 .value-proposition-container {
   display: flex;
