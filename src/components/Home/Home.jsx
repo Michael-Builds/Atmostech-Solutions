@@ -263,9 +263,9 @@ const Home = () => {
           <h2>Our Team</h2>
           <p>
             Our team consists of highly skilled and dedicated professionals who
-            are passionate about delivering exceptional results.<br></br> We work
-            together, leveraging our diverse expertise and shared vision, to
-            achieve excellence in everything we do.
+            are passionate about delivering exceptional results.<br></br> We
+            work together, leveraging our diverse expertise and shared vision,
+            to achieve excellence in everything we do.
           </p>
         </div>
         <div className="team-down">
@@ -275,6 +275,45 @@ const Home = () => {
             <div className="team-member"></div>
             <div className="team-member"></div>
             <div className="team-member"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="blog-section">
+        <h2>Latest Blog Posts</h2>
+        <div class="blog-posts">
+          <div class="blog-post">
+            <img src="blog1.jpg" alt="Blog Post 1" />
+            <h3>Blog Post 1</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac
+              consectetur ex.
+            </p>
+            <a href="blog1.html" class="read-more">
+              Read More
+            </a>
+          </div>
+          <div class="blog-post">
+            <img src="blog2.jpg" alt="Blog Post 2" />
+            <h3>Blog Post 2</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac
+              consectetur ex.
+            </p>
+            <a href="blog2.html" class="read-more">
+              Read More
+            </a>
+          </div>
+          <div class="blog-post">
+            <img src="blog3.jpg" alt="Blog Post 3" />
+            <h3>Blog Post 3</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac
+              consectetur ex.
+            </p>
+            <a href="blog3.html" class="read-more">
+              Read More
+            </a>
           </div>
         </div>
       </section>
