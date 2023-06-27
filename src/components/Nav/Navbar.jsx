@@ -9,7 +9,6 @@ import { MdPhoneInTalk } from "react-icons/md";
 import { IoIosGlobe } from "react-icons/io";
 
 const Navbar = () => {
-
   const [click, setClick] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState("en");
 
@@ -91,11 +90,7 @@ const Navbar = () => {
                 </a>
               </li>
               <li>
-                <a
-                  href={locationUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href={locationUrl} target="_blank" rel="noopener noreferrer">
                   <IoLocationOutline className="icofont-location-pin mr-2" />
                   VH-0004-1348, ECG Volta CU, Agric Ave, Ho Mun., Volta, Ghana.
                 </a>
@@ -188,7 +183,7 @@ const Navbar = () => {
             onClick={handleClick}
           >
             {click ? (
-              <FaRegTimesCircle className="icon" />
+              <FaRegTimesCircle className="icon " />
             ) : (
               <AiOutlineMenu className="icon" />
             )}

@@ -113,7 +113,7 @@
   display: flex;
   align-items: center;
 }
-.nav-menu a .arrow-down{
+.nav-menu a .arrow-down {
   margin-left: 8px;
   font-size: 18px;
   align-items: center;
@@ -156,6 +156,7 @@
 }
 
 .navbar .icon {
+  color: #03a30b;
   font-size: 1.5rem;
 }
 
@@ -220,7 +221,6 @@
 }
 
 @media screen and (max-width: 940px) {
- 
   .navbar .nav-menu {
     background: #03a30b;
     padding: 0.7em 3%;

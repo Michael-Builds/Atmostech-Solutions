@@ -24,7 +24,6 @@ const Home = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-
   return (
     <>
       <Navbar />
@@ -72,7 +71,7 @@ const Home = () => {
             </p>
             <a href="www.htu.com" className="button">
               Learn More
-              <IoIosArrowForward className="icon-send"/>
+              <IoIosArrowForward className="icon-send" />
             </a>
           </div>
 
@@ -93,7 +92,7 @@ const Home = () => {
 
           <div className="product-card">
             <div className="image">
-            <FaCog />
+              <FaCog />
 
               {/* <img src="product1.jpg" alt="Product 1" /> */}
             </div>
@@ -104,13 +103,13 @@ const Home = () => {
             </p>
             <a href="www.htu.com" className="button">
               Learn More
-              <IoIosArrowForward className="icon-send"/>
+              <IoIosArrowForward className="icon-send" />
             </a>
           </div>
 
           <div className="product-card">
             <div className="image">
-            <FaCog />
+              <FaCog />
 
               {/* <img src="product2.jpg" alt="Product 2" /> */}
             </div>
@@ -121,11 +120,76 @@ const Home = () => {
             </p>
             <a href="www.htoc.com" className="button">
               Learn More
-              <IoIosArrowForward className="icon-send"/>
+              <IoIosArrowForward className="icon-send" />
             </a>
           </div>
         </div>
       </section>
+
+      {/* Value proposition */}
+      <section className="value-proposition">
+        <div className="container">
+          <div className="value-proposition-container">
+            <div className="value-proposition-left">
+              <h2>
+                Unlock the Power of Technology with Our Cutting-Edge Solutions
+              </h2>
+              <p>
+                At Atmos Technology, we understand the transformative potential
+                of technology in today's digital landscape. Our cutting-edge
+                solutions are designed to empower businesses and individuals
+                with the tools and capabilities they need to thrive in the
+                modern world.
+              </p>
+              <p>
+                Our differentiating factor lies in our dedication to innovation
+                and quality. Through leveraging cutting-edge advancements in
+                technology, we provide tailored, state-of-the-art solutions to
+                meet your specific needs.
+              </p>
+
+              <p>
+                Embrace the digital revolution and unlock new opportunities with
+                our comprehensive range of tech solutions. Join the countless
+                businesses and individuals who have experienced the power of our
+                cutting-edge technology in driving growth and success.
+              </p>
+            </div>
+
+            <div className="value-proposition-right">
+              <h2>Why Choose Our Tech Solutions?</h2>
+              <ul>
+                <li>Seamless integration with your existing systems</li>
+                <li>Scalable solutions that grow with your business</li>
+                <li>Advanced security measures to protect your data</li>
+                <li>Intuitive user interfaces for easy adoption</li>
+                <li>24/7 technical support and assistance</li>
+                <li>Proven track record of successful implementations</li>
+              </ul>
+            </div>
+            <div className="last-line">
+              {/* <h2> Come Over</h2>
+              <p className="last-line-text">
+                Elevate your business to new heights with Atmos Tech Solutions'
+                cutting-edge technology offerings. Uncover the transformative
+                impact our solutions can have on revolutionizing your operations
+                and fueling sustainable growth.
+              </p> */}
+              {/* <div className="btn-container">
+                <a
+                  href="appoinment.html"
+                  target="_blank"
+                  className="btn btn-main"
+                >
+                  Get in touch <IoIosArrowForward className="btn-icon" />
+                </a>
+              </div> */}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
 
       {showScrollToTop && (
         <div className="scroll-to-top" onClick={scrollToTop}>
