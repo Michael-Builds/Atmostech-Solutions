@@ -55,6 +55,7 @@ const Home = () => {
       <CountUp start={counterStart} end={end} duration={2.0} separator="," />
     );
   };
+
   // Array of images for the banner which will change after every 3 seconds
   // const banner = [
   //   "image1.jpg",
@@ -130,28 +131,31 @@ const Home = () => {
 
       {/* Hero or Banner Section */}
       <section className="banner">
-        {/* Slider Start */}
         <div className="container">
-          <div className="row">
-            <div className="col-lg-6 col-md-12 col-xl-7">
-              <div className="block">
-                <span className="text-uppercase text-sm letter-spacing ">
-                  Tech Solutions for Your Business
-                </span>
-                <h1 class="mb-3 mt-3">Your Reliable Tech Partner</h1>
-                <p class="mb-4 pr-5">
-                  We offer cutting-edge tech solutions tailored to your business
-                  needs, driving growth and success.
-                </p>
-                <div class="btn-container ">
-                  <a
-                    href="appoinment.html"
-                    target="_blank"
-                    class="btn btn-main-2 btn-icon btn-round-full"
-                  >
-                    Book a Demo{" "}
-                    <IoIosArrowForward className="icofont-simple-right ml-2" />
-                  </a>
+          <div className="slider">
+            <div className="slide">
+              <div className="row">
+                <div className="col-lg-6 col-md-12 col-xl-7">
+                  <div className="block">
+                    <span className="text-uppercase text-sm letter-spacing ">
+                      Tech Solutions for Your Business
+                    </span>
+                    <h1 className="mb-3 mt-3">Your Reliable Tech Partner</h1>
+                    <p className="mb-4 pr-5">
+                      We offer cutting-edge tech solutions tailored to your
+                      business needs, driving growth and success.
+                    </p>
+                    <div className="btn-container">
+                      <a
+                        href="appoinment.html"
+                        target="_blank"
+                        className="btn btn-main-2 btn-icon btn-round-full"
+                      >
+                        Book a Demo{" "}
+                        <IoIosArrowForward className="icofont-simple-right ml-2" />
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -207,7 +211,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
 
       {/* Service and Product Section */}
       <section id="services-products" className="wrapper style2">
@@ -490,7 +493,9 @@ const Home = () => {
                 required
               ></textarea>
             </div>
-            <button type="submit" className="send">Submit</button>
+            <button type="submit" className="send">
+              Submit
+            </button>
           </form>
         </div>
       </section>
@@ -507,35 +512,35 @@ const Home = () => {
           <h3 className="second-h">Our Achievements in Making an Impact</h3>
           <p className="second-p">
             As a company, we are committed to making a lasting impact in our
-            community and beyond. By undertaking <br></br> innovative projects and
-            providing cutting-edge solutions, we actively work towards
-            addressing pressing  challenges <br></br> and driving positive change. Through
-            our collaborative efforts, we aim to create a better future for
-            individuals and <br></br> society as a whole.
+            community and beyond. By undertaking <br></br> innovative projects
+            and providing cutting-edge solutions, we actively work towards
+            addressing pressing challenges <br></br> and driving positive
+            change. Through our collaborative efforts, we aim to create a better
+            future for individuals and <br></br> society as a whole.
           </p>
         </div>
         <div class="counter-right">
           <div class="counter-item">
             <span class="counter-number">
-              <CounterInline start={0} end={10} />
+              <CounterInline start={0} end={20} />
             </span>
             <span class="counter-text">Projects Completed</span>
           </div>
           <div class="counter-item">
             <span class="counter-number">
-              <CounterInline start={0} end={50} />
+              <CounterInline start={0} end={10} />+
             </span>
             <span class="counter-text">Satisfied Clients</span>
           </div>
           <div class="counter-item">
             <span class="counter-number">
-              <CounterInline start={0} end={5} />
+              <CounterInline start={0} end={8} />
             </span>
             <span class="counter-text">Employees</span>
           </div>
           <div class="counter-item">
             <span class="counter-number">
-              <CounterInline start={0} end={20} />
+              <CounterInline start={0} end={15} />+
             </span>
             <span class="counter-text">Partnerships</span>
           </div>
