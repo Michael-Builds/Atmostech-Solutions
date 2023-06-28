@@ -69,18 +69,21 @@ h6,
   font-size: 16px;
   margin-bottom: 14px;
   color: #555;
+  font-family: "Exo", sans-serif;
 }
 .btn-container {
   display: flex;
   align-items: center;
   margin-top: 25px;
+  font-family: "Exo", sans-serif;
 }
 
 .btn {
   display: inline-block;
-  padding: 12px 24px;
+  padding: 15px 24px;
   font-size: 16px;
   font-weight: 600;
+  margin-top: 20px;
   text-decoration: none;
   color: #fff;
   background-color: #03a30b;
@@ -165,6 +168,7 @@ h6,
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  font-family: "Exo", sans-serif;
   text-overflow: ellipsis;
 }
 
@@ -176,12 +180,13 @@ h6,
   border: none;
   background-color: #03a30b;
   color: #fff;
-  font-size: 0.8em;
+  font-family: "Exo", sans-serif;
+  font-size: 0.9em;
   text-decoration: none;
   transition: background-color 0.3s ease;
 }
 .icon-send {
-  font-size: 1em;
+  font-size: 1.2em;
   vertical-align: -2px;
   margin-left: 0.4rem;
 }
@@ -239,9 +244,12 @@ h6,
 
 .value-proposition-left p {
   margin-top: 25px;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   line-height: 1.6;
   display: flex;
+  font-size: 17px;
+  color: #555;
+  font-family: "Exo", sans-serif;
   align-items: center;
   list-style-type: none;
 }
@@ -255,7 +263,7 @@ h6,
   background-position: top left;
   background-size: contain;
   margin-right: 10px;
-  transform: translateY(-15%);
+  transform: translateY(-30%);
 }
 
 .value-proposition-right {
@@ -271,19 +279,12 @@ h6,
   font-weight: 700;
   margin-bottom: 10px;
 }
-
-.value-proposition-left p {
-  font-size: 17px;
-  margin-bottom: 15px;
-  color: #555;
-  line-height: 1.5;
-}
-
 .value-proposition-right {
   margin-top: -10px;
 }
 .value-proposition-right ul {
   margin-bottom: 10px;
+  font-family: "Exo", sans-serif;
   padding-left: 20px;
 }
 .value-proposition-right h2 {
@@ -340,15 +341,26 @@ h6,
 }
 .partners-left p {
   padding-right: 12px;
+  font-family: "Exo", sans-serif;
+  color: #555;
   font-size: 17px;
   line-height: 1.6;
+  margin-top: -10px;
+}
+.partners-left .second-o{
+  font-size: 22px;
+  margin-top: 60px;
+}
+
+.partners-left .second-op{
+  font-size: 17px;
 }
 
 .partners-right {
   display: flex;
   justify-content: flex-end;
   margin-left: 900px;
-  margin-top: -90px;
+  margin-top: -350px;
 }
 
 .partner-images {
@@ -377,8 +389,10 @@ h6,
   font-weight: 700;
 }
 .team-up p {
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.6;
+  font-family: "Exo", sans-serif;
+  color: #555;
 }
 .team-down {
   display: flex;
@@ -476,20 +490,25 @@ h6,
 .blog-post p {
   font-size: 17px;
   margin-bottom: 15px;
+  font-family: "Exo", sans-serif;
+  color: #555;
+  line-height: 1.6;
 }
 
 .blog-post .read-more {
   display: inline-block;
-  background-color: #337ab7;
+  background-color: #03a30b;
   color: #fff;
-  padding: 8px 15px;
+  font-family: "Exo", sans-serif;
+  padding: 10px 15px;
+  margin-top: 5px;
   border-radius: 5px;
   text-decoration: none;
   transition: background-color 0.3s ease;
 }
 
 .blog-post .read-more:hover {
-  background-color: #23527c;
+  background-color: #555;
 }
 
 /* Get in touch */
@@ -504,21 +523,25 @@ h6,
 
 .get-in-touch-left {
   flex: 1;
-  margin-top: -30px;
+  margin-top: -60px;
 }
 
 .get-in-touch-left p {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   line-height: 1.6;
+  font-size: 17px;
+  color: #555;
+  font-family: "Exo", sans-serif;
 }
 .get-in-touch-right {
   flex: 1;
-  margin-top: 60px;
-  margin-left: 60px;
+  margin-top: -10px;
+  margin-left: 90px;
 }
 .get-in-touch-right h3 {
-  margin-bottom: 10px;
+  margin-bottom: 25px;
   font-size: 22px;
+  margin-left: 200px;
 }
 
 .get-in-touch-left h2 {
@@ -534,13 +557,14 @@ h6,
 .get-in-touch-left ul li {
   margin-bottom: 8px;
   font-size: 16px;
+  font-family: "Exo", sans-serif;
   color: #555;
 }
 
 .get-in-touch-left ul li strong {
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 700;
-  color: #333;
+  color: #333; 
   margin-right: 8px;
 }
 
@@ -565,6 +589,7 @@ textarea,
 select {
   width: 85%;
   padding: 10px;
+  font-family: "Exo", sans-serif;
   border-radius: 5px;
   border: 1px solid #ccc;
   background-color: #f5f5f5;
@@ -583,17 +608,22 @@ select:focus {
 }
 
 .get-in-touch-right button[type="submit"] {
-  margin-top: 20px;
+  margin-top: 10px;
+  width: 120px;
+  height: 40px;
   padding: 10px 20px;
-  background-color: #0066cc;
+  background-color: #03a30b;
   color: #fff;
+  font-size: 16px;
   border: none;
+  font-family: "Exo", sans-serif;
   border-radius: 5px;
   cursor: pointer;
+  margin-left: 250px;
 }
 
 .get-in-touch-right button[type="submit"]:hover {
-  background-color: #0052a3;
+  background-color: #555;
 }
 
 .counter {
@@ -614,6 +644,9 @@ select:focus {
   margin-top: -8px;
   margin-bottom: 20px;
   line-height: 1.6;
+  font-size: 16px;
+  font-family: "Exo", sans-serif;
+  color: #333;
 }
 
 .counter-left h2 {
@@ -636,6 +669,9 @@ select:focus {
 }
 .second-p{
   margin-top: -8px;
+  font-size: 16px;
+  line-height: 1.6;
+
 }
 .counter-item {
   width: 200px;

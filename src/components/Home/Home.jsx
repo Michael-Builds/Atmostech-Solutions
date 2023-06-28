@@ -208,7 +208,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Impacts Section */}
 
       {/* Service and Product Section */}
       <section id="services-products" className="wrapper style2">
@@ -287,6 +286,14 @@ const Home = () => {
           <p>
             We are proud to collaborate with industry-leading partners who share
             our <br></br> vision and commitment to excellence.
+          </p>
+          <h2 className="second-o">Explore Our Collaborations</h2>
+          <p className="second-op">
+            We are proud to collaborate with industry-leading partners who share
+            our vision <br></br> and commitment to excellence in delivering
+            exceptional solutions.Together, we <br></br>strive to drive
+            innovation, foster growth, and make a positive impact on our clients
+            and communities.
           </p>
         </div>
         <div class="partners-right">
@@ -483,7 +490,7 @@ const Home = () => {
                 required
               ></textarea>
             </div>
-            <button type="submit">Submit</button>
+            <button type="submit" className="send">Submit</button>
           </form>
         </div>
       </section>
@@ -496,12 +503,15 @@ const Home = () => {
             beyond. Through our innovative projects and solutions, <br></br> we
             strive to address pressing challenges and create positive change.
           </p>
-          
-          <h3 className="second-h">Our Impacts</h3>
+
+          <h3 className="second-h">Our Achievements in Making an Impact</h3>
           <p className="second-p">
-            We are dedicated to making a lasting impact in our community and
-            beyond. Through our innovative projects and solutions, <br></br> we
-            strive to address pressing challenges and create positive change.
+            As a company, we are committed to making a lasting impact in our
+            community and beyond. By undertaking <br></br> innovative projects and
+            providing cutting-edge solutions, we actively work towards
+            addressing pressing  challenges <br></br> and driving positive change. Through
+            our collaborative efforts, we aim to create a better future for
+            individuals and <br></br> society as a whole.
           </p>
         </div>
         <div class="counter-right">
