@@ -30,6 +30,11 @@ import team1 from "../../assets/team1.png";
 import vision from "../../assets/vision.png";
 import mission from "../../assets/mission.png";
 
+// Value proposition-images
+import cutting from '../../assets/cutting-edge.png';
+import choose1 from '../../assets/choose-us1.png';
+// import choose2 from '../../assets/choose-us2.png';
+
 const Home = () => {
   const [showScrollToTop, setShowScrollToTop] = useState(false);
   const [counterStart, setCounterStart] = useState(0);
@@ -134,10 +139,11 @@ const Home = () => {
 
       {/* Value proposition */}
       <section className="value-proposition">
-        <div className="container">
-          <div className="value-proposition-container">
-            <div className="value-proposition-left">
-              <h2>
+        <h1>Value Proposition</h1>
+        <div className="value-proposition-container">
+          <div className="section-value">
+            <div className="section-words">
+              <h2 className="section-tit">
                 Unlock the Power of Technology with Our Cutting-Edge Solutions
               </h2>
               <p>
@@ -160,22 +166,27 @@ const Home = () => {
                 businesses and individuals who have experienced the power of our
                 cutting-edge technology in driving growth and success.
               </p>
-              {/* Image div for the value proposition-left */}
-              <div className="image-right"></div>
             </div>
+            <div className="section-pic">
+              <img src={cutting} alt="ATMOS-PIC" />
+            </div>
+          </div>
+        </div>
 
-            <div className="value-proposition-right">
-              <h2>Why Choose Our Tech Solutions?</h2>
-              <ul>
+        <div className="value-proposition-container">
+          <div className="section-value">
+            <div className="section-img">
+              <img src={choose1} alt="ATMOS-PIC" />
+            </div>
+            <div className="section-words">
+              <h2 className="section-tit">Why Choose Our Tech Solutions?</h2>
+              <ul className="section-ul">
                 <li>Seamless integration with your existing systems</li>
                 <li>Scalable solutions that grow with your business</li>
                 <li>Advanced security measures to protect your data</li>
                 <li>Intuitive user interfaces for easy adoption</li>
                 <li>Proven track record of successful implementations</li>
               </ul>
-
-              {/* Image div for the value proposition-right */}
-              <div className="image-left"></div>
             </div>
           </div>
         </div>

@@ -28,7 +28,6 @@ h6,
   background: url("../../assets/rainbow.jpg") no-repeat;
   background-size: cover;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.4);
-
 }
 
 .banner::before {
@@ -140,101 +139,121 @@ h6,
 /* Value-proposition section */
 .value-proposition {
   padding: 60px 0;
-  height: 100vh;
+  height: auto;
   background-color: #fff;
+}
+.value-proposition h1{
+  margin-top: -15px;
+  font-size: 34px;
+  margin-bottom: -60px;
+  text-align: center;
 }
 
 .value-proposition .container {
-  max-width: 1250px;
-  margin: 0 auto;
-  padding: 0 15px;
-  justify-content: space-between;
-}
-
-.value-proposition-left {
-  width: 50%;
-  padding-right: 40px;
-  margin-left: -20px;
-}
-
-.value-proposition-left p {
-  margin-top: 25px;
-  margin-bottom: 10px;
-  line-height: 1.6;
   display: flex;
-  font-size: 17px;
-  color: #555;
-  font-family: "Exo", sans-serif;
+  justify-content: center;
   align-items: center;
-  list-style-type: none;
+  padding: 70px 0;
+  margin-bottom: -10px;
 }
 
-.value-proposition-left p:before {
-  content: "";
-  width: 60px;
-  height: 60px;
-  background-image: url("../../assets/right-arrow.png");
-  background-repeat: no-repeat;
-  background-position: top left;
-  background-size: contain;
-  margin-right: 10px;
-  transform: translateY(-30%);
+.section-value {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 20px;
 }
 
-.value-proposition-right {
-  width: 40%;
-  margin-top: 60px;
-  float: right;
-  margin-left: 600px;
+.section-words {
+  margin-left: -250px;
+  width: 55%;
+  transform: translateX(100px) scale(0.8);
+  transition: opacity 0.9s ease-in-out;
 }
 
-.value-proposition-left h2 {
-  font-size: 28px;
-  margin-top: -5px;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-.value-proposition-right {
-  margin-top: -10px;
-}
-.value-proposition-right ul {
-  margin-bottom: 10px;
-  font-family: "Exo", sans-serif;
-  padding-left: 20px;
-}
-.value-proposition-right h2 {
-  font-size: 24px;
-  margin-top: -5px;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-.value-proposition-right ul li {
+.section-words p {
+  margin-top: 20px;
+  line-height: 1.8;
+  font-size: 19px;
   position: relative;
-  padding-left: 30px;
-  margin-bottom: 15px;
-  list-style-type: none;
-  font-size: 17px;
-  line-height: 1.5;
-  margin-top: 25px;
-  text-decoration: none;
+  padding-left: 40px;
+  font-family: "Exo", sans-serif;
   color: #555;
 }
-
-.value-proposition-right ul li:before {
+.section-words p::before {
   content: "";
   position: absolute;
-  top: 4px;
+  top: 15%;
   left: 0;
-  width: 18px;
-  height: 18px;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
   background-image: url("../../assets/right-arrow.png");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  background-size: cover;
+}
+.section-tit {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.section-ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.section-ul li {
+  font-family: "Exo", sans-serif;
+  color: #555;
+  font-size: 20px;
+  margin-bottom: 10px;
+  line-height: 2.2;
+  position: relative;
+  padding-left: 28px;
+}
+
+.section-ul li::before {
+  content: "";
+  position: absolute;
+  top: 45%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  background-image: url("../../assets/right-arrow.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.section-pic img,
+.section-img img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.section-pic {
+  margin-top: -40px;
+  margin-right: -20px;
+  width: 45%;
+  text-align: center;
+}
+
+.section-img {
+  margin-top: 25px;
+  width: 40%;
+  text-align: center;
+  margin-left: -10px;
 }
 
 /* Mision and Vision */
 .mission-vision {
+  height: 110vh;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.4);
 }
 
@@ -265,7 +284,7 @@ h6,
 .section-title {
   font-size: 28px;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: -10px;
 }
 
 .section-description {
@@ -303,7 +322,6 @@ h6,
 .fade-in-right[style*="--fade-delay"] {
   transition-delay: var(--fade-delay);
 }
-
 
 /* Services and Products Section */
 #services-products {
@@ -527,7 +545,6 @@ h6,
   color: #555;
 }
 
-
 /* Our team section */
 .team-section {
   height: 80vh;
@@ -609,7 +626,6 @@ h6,
   align-items: center;
   padding: 12px 0;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.4);
-
 }
 
 .partners-left {
@@ -921,9 +937,3 @@ select:focus {
   font-size: 14px;
   color: #777;
 }
-
-
-
-
-
-
