@@ -5,6 +5,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowUp } from "react-icons/io";
 import CountUp from "react-countup";
 import { FaCog, FaLaptop } from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 
 // Patners images or logo's
 import partner1 from "../../assets/Institute of Engineering.png";
@@ -24,6 +25,10 @@ import badge from "../../assets/check.png";
 
 // Team Members
 import team1 from "../../assets/team1.png";
+
+// Vision and Mission
+import vision from "../../assets/vision.png";
+import mission from "../../assets/mission.png";
 
 const Home = () => {
   const [showScrollToTop, setShowScrollToTop] = useState(false);
@@ -56,56 +61,6 @@ const Home = () => {
     );
   };
 
-  // Array of images for the banner which will change after every 3 seconds
-  // const banner = [
-  //   "image1.jpg",
-  //   "image2.jpg",
-  //   "image3.jpg",
-  //   "image4.jpg",
-  //   "image5.jpg",
-  //   "image6.jpg",
-  //   "image7.jpg",
-  //   "image8.jpg",
-  // ];
-
-  // Array of images for the value proposition which will change after every 3 seconds
-  // const value-left = [
-  //   "image1.jpg",
-  //   "image2.jpg",
-  //   "image3.jpg",
-  //   "image4.jpg",
-  //   "image5.jpg",
-  //   "image6.jpg",
-  //   "image7.jpg",
-  //   "image8.jpg",
-  //   "image9.jpg",
-  //   "image10.jpg",
-  //   "image11.jpg",
-  //   "image12.jpg",
-  //   "image13.jpg",
-  //   "image14.jpg",
-  //   "image15.jpg"
-  // ];
-
-  // Array of images for the value proposition which will change after every 3 seconds
-  // const value-right = [
-  //   "image1.jpg",
-  //   "image2.jpg",
-  //   "image3.jpg",
-  //   "image4.jpg",
-  //   "image5.jpg",
-  //   "image6.jpg",
-  //   "image7.jpg",
-  //   "image8.jpg",
-  //   "image9.jpg",
-  //   "image10.jpg",
-  //   "image11.jpg",
-  //   "image12.jpg",
-  //   "image13.jpg",
-  //   "image14.jpg",
-  //   "image15.jpg"
-  // ];
-
   // Array of industries
   const industryOptions = [
     "Technology",
@@ -129,7 +84,7 @@ const Home = () => {
     <>
       <Navbar />
 
-      {/* Hero or Banner Section */}
+      {/*Banner Section */}
       <section className="banner">
         <div className="container">
           <div className="slider">
@@ -226,11 +181,57 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Mission and Vision */}
+      <section className="mission-vision">
+        <div className="ms-section">
+          <div className="section-content">
+            <div
+              className="section-text fade-in-left "
+              style={{ "--fade-delay": "1s" }}
+            >
+              <h2 className="section-title">Mission</h2>
+              <p className="section-description">
+                Our mission is to provide reliable and tailored tech solutions
+                that meet our clients' unique needs, delivering exceptional
+                results and fostering long-term partnerships.
+              </p>
+            </div>
+            <div
+              className="section-image fade-in-left"
+              style={{ "--fade-delay": "2.5s" }}
+            >
+              <img src={mission} alt="Vision and Mission" />
+            </div>
+          </div>
+        </div>
+
+        <div className="ms-section">
+          <div className="section-content">
+            <div
+              className="section-text fade-in-left "
+              style={{ "--fade-delay": "2.5s" }}
+            >
+              <h2 className="section-title">Vision</h2>
+              <p className="section-description">
+                Our vision is to empower businesses with innovative technology
+                solutions, revolutionizing the industry and driving growth.
+              </p>
+            </div>
+            <div
+              className="section-image fade-in-left"
+              style={{ "--fade-delay": "1s" }}
+            >
+              <img src={vision} alt="Vision and Mission" />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Service and Product Section */}
-      <section id="services-products" className="wrapper style2">
+      <section id="services-products" className="wrapper style2 ">
         <div className="title">Our Services and Products</div>
         <div className="container">
-          <div className="service-card">
+          <div className="service-card zoom-in-fast">
             <div className="icon">
               <FaCog />
             </div>
@@ -245,7 +246,7 @@ const Home = () => {
             </a>
           </div>
 
-          <div className="service-card">
+          <div className="service-card zoom-in-medium">
             <div className="icon">
               <FaLaptop />
             </div>
@@ -260,7 +261,7 @@ const Home = () => {
             </a>
           </div>
 
-          <div className="product-card">
+          <div className="product-card zoom-in-slow">
             <div className="image">
               <FaCog />
 
@@ -277,7 +278,7 @@ const Home = () => {
             </a>
           </div>
 
-          <div className="product-card">
+          <div className="product-card zoom-in-slower">
             <div className="image">
               <FaCog />
 
@@ -292,6 +293,111 @@ const Home = () => {
               Learn More
               <IoIosArrowForward className="icon-send" />
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Counter, our Impacts */}
+      <section class="counter">
+        <div className="counter-left">
+          <h2>Our Impacts</h2>
+          <p>
+            We are dedicated to making a lasting impact in our community and
+            beyond. Through our innovative projects and solutions, <br></br> we
+            strive to address pressing challenges and create positive change.
+          </p>
+
+          <h3 className="second-h">Our Achievements in Making an Impact</h3>
+          <p className="second-p">
+            As a company, we are committed to making a lasting impact in our
+            community and beyond. By undertaking <br></br> innovative projects
+            and providing cutting-edge solutions, we actively work towards
+            addressing pressing challenges <br></br> and driving positive
+            change. Through our collaborative efforts, we aim to create a better
+            future for individuals and <br></br> society as a whole.
+          </p>
+        </div>
+        <div class="counter-right">
+          <div class="counter-item">
+            <span class="counter-number">
+              <CounterInline start={0} end={20} />
+            </span>
+            <span class="counter-text">Projects Completed</span>
+          </div>
+          <div class="counter-item">
+            <span class="counter-number">
+              <CounterInline start={0} end={10} />+
+            </span>
+            <span class="counter-text">Satisfied Clients</span>
+          </div>
+          <div class="counter-item">
+            <span class="counter-number">
+              <CounterInline start={0} end={8} />
+            </span>
+            <span class="counter-text">Employees</span>
+          </div>
+          <div class="counter-item">
+            <span class="counter-number">
+              <CounterInline start={0} end={15} />+
+            </span>
+            <span class="counter-text">Partnerships</span>
+          </div>
+        </div>
+      </section>
+
+      {/* Our team section */}
+      <section className="team-section">
+        <div className="team-up">
+          <h2>Our Team</h2>
+          <p>
+            Our team consists of highly skilled and dedicated professionals who
+            are passionate about delivering exceptional results.<br></br> We
+            work together, leveraging our diverse expertise and shared vision,
+            to achieve excellence in everything we do.
+          </p>
+        </div>
+        <div className="team-down">
+          <div className="team-container">
+            <div className="team-member zoom-in-fast">
+              <img src={team1} alt="Team1" className="member-image" />
+              <h3 className="member-name">Bernard Tay</h3>
+              <div className="member-details">
+                <img src={badge} alt="Badge" className="member-badge" />
+                <h4 className="member-role">Full Stack Developer</h4>
+              </div>
+            </div>
+            <div className="team-member zoom-in-fast">
+              <img src={team1} alt="Team1" className="member-image" />
+              <h3 className="member-name">Michael Kabanda</h3>
+              <div className="member-details">
+                <img src={badge} alt="Badge" className="member-badge" />
+                <h4 className="member-role">Full Stack Developer</h4>
+              </div>
+            </div>
+            <div className="team-member zoom-in-fast">
+              <img src={team1} alt="Team1" className="member-image" />
+              <h3 className="member-name">Eugene Elorm</h3>
+              <div className="member-details">
+                <img src={badge} alt="Badge" className="member-badge" />
+                <h4 className="member-role">Backend Developer</h4>
+              </div>
+            </div>
+            <div className="team-member zoom-in-medium">
+              <img src={team1} alt="Team1" className="member-image" />
+              <h3 className="member-name">Mr. Chris</h3>
+              <div className="member-details">
+                <img src={badge} alt="Badge" className="member-badge" />
+                <h4 className="member-role">CEO & Co-Founder</h4>
+              </div>
+            </div>
+            <div className="team-member zoom-in-slow">
+              <img src={team1} alt="Team1" className="member-image" />
+              <h3 className="member-name">Mr. Eli</h3>
+              <div className="member-details">
+                <img src={badge} alt="Badge" className="member-badge" />
+                <h4 className="member-role">Software Engineer</h4>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -322,63 +428,6 @@ const Home = () => {
               <img src={partner4} alt="Partner 4" />
               <img src={partner5} alt="Partner 5" />
               <img src={partner6} alt="Partner 6" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Our team section */}
-      <section className="team-section">
-        <div className="team-up">
-          <h2>Our Team</h2>
-          <p>
-            Our team consists of highly skilled and dedicated professionals who
-            are passionate about delivering exceptional results.<br></br> We
-            work together, leveraging our diverse expertise and shared vision,
-            to achieve excellence in everything we do.
-          </p>
-        </div>
-        <div className="team-down">
-          <div className="team-container">
-            <div className="team-member">
-              <img src={team1} alt="Team1" className="member-image" />
-              <h3 className="member-name">Bernard Tay</h3>
-              <div className="member-details">
-                <img src={badge} alt="Badge" className="member-badge" />
-                <h4 className="member-role">Full Stack Developer</h4>
-              </div>
-            </div>
-            <div className="team-member">
-              <img src={team1} alt="Team1" className="member-image" />
-              <h3 className="member-name">Michael Kabanda</h3>
-              <div className="member-details">
-                <img src={badge} alt="Badge" className="member-badge" />
-                <h4 className="member-role">Full Stack Developer</h4>
-              </div>
-            </div>
-            <div className="team-member">
-              <img src={team1} alt="Team1" className="member-image" />
-              <h3 className="member-name">Eugene Elorm</h3>
-              <div className="member-details">
-                <img src={badge} alt="Badge" className="member-badge" />
-                <h4 className="member-role">Backend Developer</h4>
-              </div>
-            </div>
-            <div className="team-member">
-              <img src={team1} alt="Team1" className="member-image" />
-              <h3 className="member-name">Mr. Chris</h3>
-              <div className="member-details">
-                <img src={badge} alt="Badge" className="member-badge" />
-                <h4 className="member-role">CEO & Co-Founder</h4>
-              </div>
-            </div>
-            <div className="team-member">
-              <img src={team1} alt="Team1" className="member-image" />
-              <h3 className="member-name">Mr. Eli</h3>
-              <div className="member-details">
-                <img src={badge} alt="Badge" className="member-badge" />
-                <h4 className="member-role">Software Engineer</h4>
-              </div>
             </div>
           </div>
         </div>
@@ -514,52 +563,55 @@ const Home = () => {
         </div>
       </section>
 
-      <section class="counter">
-        <div className="counter-left">
-          <h2>Our Impacts</h2>
+      {/* Footer section */}
+      <footer className="footer">
+        <div className="footer-content">
+          <div className="footer-column">
+            <h3>About Us</h3>
+            <p>
+              Our tech company is dedicated to pushing the boundaries of
+              innovation, delivering cutting-edge solutions, and empowering
+              businesses with advanced technologies.
+            </p>
+          </div>
+          <div className="footer-column">
+            <h3>Contact</h3>
+            <p>Email: info@atmostechsolution.com</p>
+            <p>Phone: +233 (0) 24055 6434</p>
+          </div>
+          <div className="footer-column">
+            <h3>Follow Us</h3>
+            <ul className="social-links">
+              <li>
+                <a href="www.facebook.com" className="fb">
+                  Facebook
+                  <FaFacebookF className="social-icon-fb" />
+                </a>
+              </li>
+              <li>
+                <a href="www.twitter.com" className="tw">
+                  {" "}
+                  Twitter
+                  <FaTwitter className="social-icon-tw" />
+                </a>
+              </li>
+              <li>
+                <a href="www.instagram.com" className="in">
+                  {" "}
+                  Instagram
+                  <FaInstagram className="social-icon-in" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className="footer-bottom">
           <p>
-            We are dedicated to making a lasting impact in our community and
-            beyond. Through our innovative projects and solutions, <br></br> we
-            strive to address pressing challenges and create positive change.
-          </p>
-
-          <h3 className="second-h">Our Achievements in Making an Impact</h3>
-          <p className="second-p">
-            As a company, we are committed to making a lasting impact in our
-            community and beyond. By undertaking <br></br> innovative projects
-            and providing cutting-edge solutions, we actively work towards
-            addressing pressing challenges <br></br> and driving positive
-            change. Through our collaborative efforts, we aim to create a better
-            future for individuals and <br></br> society as a whole.
+            &copy; {new Date().getFullYear()} Atmos Technology. All rights
+            reserved.
           </p>
         </div>
-        <div class="counter-right">
-          <div class="counter-item">
-            <span class="counter-number">
-              <CounterInline start={0} end={20} />
-            </span>
-            <span class="counter-text">Projects Completed</span>
-          </div>
-          <div class="counter-item">
-            <span class="counter-number">
-              <CounterInline start={0} end={10} />+
-            </span>
-            <span class="counter-text">Satisfied Clients</span>
-          </div>
-          <div class="counter-item">
-            <span class="counter-number">
-              <CounterInline start={0} end={8} />
-            </span>
-            <span class="counter-text">Employees</span>
-          </div>
-          <div class="counter-item">
-            <span class="counter-number">
-              <CounterInline start={0} end={15} />+
-            </span>
-            <span class="counter-text">Partnerships</span>
-          </div>
-        </div>
-      </section>
+      </footer>
 
       {/* Scroll to top */}
       {showScrollToTop && (
