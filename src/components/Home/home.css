@@ -20,8 +20,8 @@ h6,
 .banner {
   display: flex;
   height: 100vh;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
   position: relative;
   overflow: hidden;
@@ -46,15 +46,15 @@ h6,
   position: absolute;
   top: 10px;
   left: 0;
-  width: 100%;
-  height: 70%;
+  width: 70%;
+  height: 100%;
   z-index: -1;
 }
 
 .block {
-  margin-top: 75px;
+  margin-top: 60px;
   z-index: 1;
-  margin-left: -600px;
+  margin-left: 60px;
 }
 
 .block span {
@@ -63,21 +63,21 @@ h6,
 }
 
 .block .text-uppercase {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   letter-spacing: 1.5px;
   color: #333;
 }
 
 .block h1 {
-  font-size: 44px;
+  font-size: 38px;
   font-weight: 700;
   margin: 20px 0;
   color: #333;
 }
 
 .block p {
-  font-size: 16px;
+  font-size: 15px;
   margin-bottom: 14px;
   color: #555;
   font-family: "Exo", sans-serif;
@@ -91,20 +91,20 @@ h6,
 
 .btn {
   display: inline-block;
-  padding: 15px 24px;
+  padding: 11px 18px;
   font-size: 16px;
   font-weight: 600;
-  margin-top: 20px;
+  margin-top: 10px;
   text-decoration: none;
   color: #fff;
   background-color: #03a30b;
-  border-radius: 50px;
   transition: background-color 0.3s ease;
 }
 
 .btn:hover {
   background-color: #048f0a;
 }
+
 .btn-icon {
   display: flex;
   align-items: center;
@@ -142,12 +142,6 @@ h6,
   height: auto;
   background-color: #fff;
 }
-.value-proposition h1{
-  margin-top: -15px;
-  font-size: 34px;
-  margin-bottom: -60px;
-  text-align: center;
-}
 
 .value-proposition .container {
   display: flex;
@@ -164,20 +158,20 @@ h6,
   justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: -40px;
 }
 
 .section-words {
-  margin-left: -250px;
+  margin-left: -180px;
   width: 55%;
   transform: translateX(100px) scale(0.8);
   transition: opacity 0.9s ease-in-out;
 }
 
 .section-words p {
-  margin-top: 20px;
+  margin-top: 25px;
   line-height: 1.8;
-  font-size: 19px;
+  font-size: 18px;
   position: relative;
   padding-left: 40px;
   font-family: "Exo", sans-serif;
@@ -186,7 +180,7 @@ h6,
 .section-words p::before {
   content: "";
   position: absolute;
-  top: 15%;
+  top: 12%;
   left: 0;
   transform: translateY(-50%);
   width: 25px;
@@ -198,7 +192,7 @@ h6,
 .section-tit {
   font-size: 32px;
   font-weight: bold;
-  margin-bottom: 5px;
+  margin-bottom: 30px;
 }
 
 .section-ul {
@@ -209,8 +203,8 @@ h6,
 .section-ul li {
   font-family: "Exo", sans-serif;
   color: #555;
-  font-size: 20px;
-  margin-bottom: 10px;
+  font-size: 19px;
+  margin-bottom: 15px;
   line-height: 2.2;
   position: relative;
   padding-left: 28px;
@@ -219,7 +213,7 @@ h6,
 .section-ul li::before {
   content: "";
   position: absolute;
-  top: 45%;
+  top: 50%;
   left: 0;
   transform: translateY(-50%);
   width: 15px;
@@ -228,7 +222,6 @@ h6,
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 
 .section-pic img,
 .section-img img {
@@ -245,7 +238,7 @@ h6,
 }
 
 .section-img {
-  margin-top: 25px;
+  margin-top: 30px;
   width: 40%;
   text-align: center;
   margin-left: -10px;
@@ -253,7 +246,7 @@ h6,
 
 /* Mision and Vision */
 .mission-vision {
-  height: 110vh;
+  height: 120vh;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.4);
 }
 
@@ -282,13 +275,13 @@ h6,
 }
 
 .section-title {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: bold;
-  margin-bottom: -10px;
+  margin-bottom: 10px;
 }
 
 .section-description {
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.5;
 }
 
@@ -333,39 +326,42 @@ h6,
 }
 
 #services-products .title {
-  font-size: 32px;
+  font-size: 28px;
   font-family: "Exo", sans-serif;
   margin-bottom: 40px;
   font-weight: 700;
-  color: #333;
-  margin-top: -20px;
+  color: green;
+  margin-top: 5px;
 }
 
 #services-products .container {
-  margin-top: 3.5rem;
-  display: flex;
-  flex-wrap: wrap;
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 15px;
+  justify-items: center;
+  align-items: center;
   justify-content: center;
-  align-items: stretch;
-  gap: 2.5rem;
 }
 
 #services-products .service-card,
 #services-products .product-card {
   flex-basis: calc(50% - 1rem);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  max-width: 400px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  max-width: 450px;
+  height: 400px;
   margin-bottom: 2em;
 }
 
 .service-card,
 .product-card {
   width: 100%;
-  border-radius: 15px;
+  border-radius: 20px;
   max-width: 200px;
   background-color: #fff;
   padding: 2rem;
-  margin: 0 0.5rem;
+  margin: 0.25rem; 
   text-align: center;
 }
 
@@ -373,25 +369,36 @@ h6,
 #services-products .product-card .image {
   font-size: 4em;
   margin-bottom: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#services-products .service-card h3,
+#services-products .product-card h3{
+  font-size: 20px;
 }
 
 #services-products .service-card .service-description,
 #services-products .product-card .product-description {
   font-size: 1em;
   margin-bottom: 1em;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
+  margin-top: 36px;
   overflow: hidden;
   font-family: "Exo", sans-serif;
   text-overflow: ellipsis;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 #services-products .button {
   border-radius: 8px;
-  display: inline-block;
-  margin-top: 5px;
-  padding: 0.75em 1.5em;
+  display: inline-flex;
+  align-items: center; /* Center the content vertically */
+  justify-content: center; /* Center the content horizontally */
+  margin-top: 25px;
+  padding: 0.6em 0.9em;
   border: none;
   background-color: #03a30b;
   color: #fff;
@@ -400,11 +407,12 @@ h6,
   text-decoration: none;
   transition: background-color 0.3s ease;
 }
-.icon-send {
+
+#services-products .button .icon-send {
   font-size: 1.2em;
-  vertical-align: -2px;
   margin-left: 0.4rem;
 }
+
 
 #services-products .button:hover {
   background-color: #555;
@@ -556,6 +564,7 @@ h6,
   font-size: 32px;
   margin-top: 40px;
   font-weight: 700;
+  color: green;
 }
 .team-up p {
   font-size: 17px;
@@ -692,6 +701,7 @@ h6,
   font-weight: 700;
   text-align: center;
   margin-bottom: 20px;
+  color: green;
 }
 
 .blog-posts {
@@ -936,4 +946,37 @@ select:focus {
   text-align: center;
   font-size: 14px;
   color: #777;
+}
+
+/* Media Queries */
+
+/* Extra small devices (phones) */
+@media (max-width: 575.98px) {
+  .value-proposition h1 {
+    font-size: 24px;
+  }
+
+  .section-words p {
+    font-size: 16px;
+  }
+
+  .section-tit {
+    font-size: 28px;
+  }
+
+  .section-ul li {
+    font-size: 18px;
+  }
+
+  .section-pic {
+    width: 100%;
+    margin-top: -20px;
+    margin-right: 0;
+  }
+
+  .section-img {
+    width: 100%;
+    margin-top: 15px;
+    margin-left: 0;
+  }
 }

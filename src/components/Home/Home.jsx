@@ -31,8 +31,8 @@ import vision from "../../assets/vision.png";
 import mission from "../../assets/mission.png";
 
 // Value proposition-images
-import cutting from '../../assets/cutting-edge.png';
-import choose1 from '../../assets/choose-us1.png';
+import cutting from "../../assets/cutting-edge.png";
+import choose1 from "../../assets/choose-us1.png";
 // import choose2 from '../../assets/choose-us2.png';
 
 const Home = () => {
@@ -88,7 +88,6 @@ const Home = () => {
   return (
     <>
       <Navbar />
-
       {/*Banner Section */}
       <section className="banner">
         <div className="container">
@@ -139,7 +138,6 @@ const Home = () => {
 
       {/* Value proposition */}
       <section className="value-proposition">
-        <h1>Value Proposition</h1>
         <div className="value-proposition-container">
           <div className="section-value">
             <div className="section-words">
@@ -275,8 +273,6 @@ const Home = () => {
           <div className="product-card zoom-in-slow">
             <div className="image">
               <FaCog />
-
-              {/* <img src="product1.jpg" alt="Product 1" /> */}
             </div>
             <h3 className="product-title">Product 1</h3>
             <p className="product-description">
