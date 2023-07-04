@@ -8,11 +8,18 @@ import { MdPhoneInTalk } from "react-icons/md";
 import { IoIosGlobe, IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
 import "./navbar.css";
+import logo from "./logo.png";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState("en");
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [dropdownActive, setDropdownActive] = useState(false);
+
+  // Toggle the dropdown visibility on click
+  const handleDropdownClick = () => {
+    setDropdownActive(!dropdownActive);
+  };
 
   const handleLanguageSelect = (event) => {
     const selectedLanguage = event.target.value;
@@ -98,7 +105,7 @@ const Navbar = () => {
       {/* Actual Navbar with links */}
       <div className="navbar">
         <div className="container">
-          <img src="./logo.png" alt="Atmos-tech" className="logo-img" />
+          <img src={logo} alt="Atmos-tech" className="logo-img" />
 
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li>
@@ -123,8 +130,9 @@ const Navbar = () => {
             <li
               onMouseEnter={handleMouseEnterServices}
               onMouseLeave={handleMouseLeaveServices}
+              className={`dropdown-container ${dropdownActive ? "active" : ""}`}
             >
-              <div className="dropdown-link">
+              <div className="dropdown-link" onClick={handleDropdownClick}>
                 <NavLink
                   to="/service"
                   activeClassName="active-link"
