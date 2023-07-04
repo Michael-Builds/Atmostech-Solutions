@@ -500,7 +500,7 @@
   }
 }
 
-@media screen and (max-width: 576px) {
+/* @media screen and (max-width: 576px) {
   .navbar {
     position: static !important;
     width: auto;
@@ -522,46 +522,46 @@
   }
 
   .header-top-bar {
-    /* Update the styles for the header top bar */
+
   }
 
   .container {
-    /* Update the styles for the container */
+
   }
 
   .navbar {
-    /* Update the styles for the navbar */
+
   }
 
   .logo-img {
-    /* Update the styles for the logo image */
+
   }
 
   .nav-menu {
-    /* Update the styles for the navbar menu */
+
   }
 
   .nav-menu.active {
-    /* Update the styles for the active navbar menu */
+
   }
 
   .nav-menu li {
-    /* Update the styles for the navbar menu items */
+
   }
 
   .nav-menu a {
-    /* Update the styles for the navbar menu links */
+
   }
 
   .nav-menu a:hover {
-    /* Update the styles for the navbar menu links on hover */
+
   }
 
   .hamburger {
-    /* Update the styles for the hamburger icon */
+
   }
 
   .hamburger.active {
-    /* Update the styles for the active hamburger icon */
+
   }
-}
+} */
