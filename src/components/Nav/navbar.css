@@ -162,7 +162,6 @@
   height: 2px;
   bottom: -2px;
   left: 0;
-  background-color: #03a30b;
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.4s ease;
@@ -219,14 +218,15 @@
 }
 
 .dropdown-menu li {
-  margin-bottom: 10px;
-  margin-top: 15px;
+  margin-top: 10px;
+  padding: 5px 20px;
+  border-bottom: 1px solid #eee;
+  background: transparent;
+  font-weight: 400;
+  color: #555;
+  width: 100%;
 }
-.dropdown-menu li:last-child {
-  margin-bottom: 0;
-}
-
-.dropdown-menu a {
+.dropdown-menu li a {
   display: block;
   padding: 5px;
   font-size: 16px;

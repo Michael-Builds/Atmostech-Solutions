@@ -1,4 +1,3 @@
-import "./navbar.css";
 import React, { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { VscChromeClose } from "react-icons/vsc";
@@ -7,6 +6,8 @@ import { IoLocationOutline } from "react-icons/io5";
 import { HiOutlineMail } from "react-icons/hi";
 import { MdPhoneInTalk } from "react-icons/md";
 import { IoIosGlobe, IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
+
+import "./navbar.css";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -119,16 +120,19 @@ const Navbar = () => {
                 {translations[selectedLanguage].about}
               </NavLink>
             </li>
-            <li>
-              <NavLink
-                to="/service"
-                activeClassName="active-link"
-                onClick={handleLinkClick}
-                onMouseEnter={handleMouseEnterServices}
-                onMouseLeave={handleMouseLeaveServices}
-              >
-                {translations[selectedLanguage].services} {arrowIcon}
-              </NavLink>
+            <li
+              onMouseEnter={handleMouseEnterServices}
+              onMouseLeave={handleMouseLeaveServices}
+            >
+              <div className="dropdown-link">
+                <NavLink
+                  to="/service"
+                  activeClassName="active-link"
+                  onClick={handleLinkClick}
+                >
+                  {translations[selectedLanguage].services} {arrowIcon}
+                </NavLink>
+              </div>
               {isDropdownOpen && (
                 <ul className="dropdown-menu">
                   <li>
