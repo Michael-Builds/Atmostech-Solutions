@@ -1,218 +1,271 @@
-import React, { useState } from "react";
-import { AiOutlineMenu } from "react-icons/ai";
-import { VscChromeClose } from "react-icons/vsc";
-import { NavLink } from "react-router-dom";
-import { IoLocationOutline } from "react-icons/io5";
-import { HiOutlineMail } from "react-icons/hi";
-import { MdPhoneInTalk } from "react-icons/md";
-import { IoIosGlobe, IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
+import React from "react";
+import { Link } from "react-router-dom";
 
-import "./navbar.css";
-import logo from "./logo.png";
+import "../../index.css";
+import "../../main.css"
+import {
+  Navbar,
+  Collapse,
+  Typography,
+  IconButton,
+  List,
+  ListItem,
+  Menu,
+  MenuHandler,
+  MenuList,
+  MenuItem,
+  Chip,
+} from "@material-tailwind/react";
 
-const Navbar = () => {
-  const [click, setClick] = useState(false);
-  const [selectedLanguage, setSelectedLanguage] = useState("en");
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [dropdownActive, setDropdownActive] = useState(false);
+import {
+  ChevronDownIcon,
+  Bars3Icon,
+  XMarkIcon,
+} from "@heroicons/react/24/outline";
+import { CiGlobe } from 'react-icons/ci';
+import { GrSystem } from 'react-icons/gr';
+import { TbDeviceMobileStar } from 'react-icons/tb';
+import { AiOutlineApi } from 'react-icons/ai';
+import { AiOutlineCloudSync } from 'react-icons/ai';
 
-  // Toggle the dropdown visibility on click
-  const handleDropdownClick = () => {
-    setDropdownActive(!dropdownActive);
-  };
+const colors = {
+  blue: "bg-blue-50 text-blue-500",
+  orange: "bg-orange-50 text-orange-500",
+  green: "bg-green-50 text-green-500",
+  "blue-gray": "bg-blue-gray-50 text-blue-gray-500",
+  purple: "bg-purple-50 text-purple-500",
+  teal: "bg-teal-50 text-teal-500",
+  cyan: "bg-cyan-50 text-cyan-500",
+  pink: "bg-pink-50 text-pink-500",
+};
 
-  const handleLanguageSelect = (event) => {
-    const selectedLanguage = event.target.value;
-    setSelectedLanguage(selectedLanguage);
-  };
+const navListMenuItems = [
+  {
+    color: "green",
+    icon: GrSystem,
+    title: (
+      <div className="flex items-center gap-1">
+        Software Development{" "}
+        <Chip
+          id="software-development"
+          size="sm"
+          color="green"
+          variant="ghost"
+          value="Robust System!"
+          className="capitalize"
+        />
+      </div>
+    ),
+    description: "Custom software solutions tailored for your business.",
+  },
+  {
+    id: "web-development",
+    color: "teal",
+    icon: CiGlobe,
+    title: "Web Development",
+    description: "Transforming Your Online Presence with Stunning Web Development Solutions",
+  },
+  {
+    id: "mobile-app-development",
+    color: "teal",
+    icon: TbDeviceMobileStar,
+    title: "Mobile App Development",
+    description: "Empower your business with cutting-edge mobile apps for growth.",
+  },
+  {
+    id: "api-integration",
+    color: "cyan",
+    icon: AiOutlineApi,
+    title: "API Integration",
+    description: "Unlock possibilities with expert API integration.",
+  },
+  {
+    color: "green",
+    icon: AiOutlineCloudSync,
+    title: (
+      <div className="flex items-center gap-1">
+        EDI{" "}
+        <Chip
+          id="Edi-section"
+          size="sm"
+          color="green"
+          variant="ghost"
+          value="Robust System!"
+          className="capitalize"
+        />
+      </div>
+    ),
+    description: "Enhance collaboration with tailored EDI solutions.",
+  },
+];
 
-  const handleClick = () => {
-    setClick(!click);
-  };
+function NavListMenu() {
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
 
-  const handleLinkClick = () => {
-    setClick(false);
-    setIsDropdownOpen(false);
-  };
-
-  const handleMouseEnterServices = () => {
-    setIsDropdownOpen(true);
-  };
-
-  const handleMouseLeaveServices = () => {
-    setIsDropdownOpen(false);
-  };
-
-  const locationUrl =
-    "https://www.google.com.gh/maps/place/VOLTA+ECG+CREDIT+UNION/@6.6112634,0.4602675,17z/data=!3m1!4b1!4m6!3m5!1s0x10272524c3e196fd:0x427847d77aecbb69!8m2!3d6.6112581!4d0.4628424!16s%2Fg%2F11f_j2vxhb?entry=ttu";
-
-  const languageOptions = [
-    { value: "en", label: "English" },
-    { value: "fr", label: "French" },
-  ];
-
-  const translations = {
-    en: {
-      home: "Home",
-      about: "About",
-      services: "Services",
-      contact: "Contact",
-    },
-    fr: {
-      home: "Accueil",
-      about: "À propos",
-      services: "Services",
-      contact: "Contactez-nous",
-    },
-  };
-
-  const arrowIcon = isDropdownOpen ? (
-    <IoIosArrowUp className="arrow-icon" />
-  ) : (
-    <IoIosArrowDown className="arrow-icon" />
+  const renderItems = navListMenuItems.map(
+    ({ icon, title, description, color, id }, key) => (
+      <a href={id} key={key}>
+        <MenuItem className="flex items-center gap-3 rounded-lg ">
+          <div className={`rounded-lg p-5 ${colors[color]} `}>
+            {React.createElement(icon, {
+              strokeWidth: 1,
+              className: "h-6 w-6",
+            })}
+          </div>
+          <div>
+            <Typography
+              variant="h6"
+              color="blue-gray"
+              className="flex items-center text-sm"
+            >
+              {title}
+            </Typography>
+            <Typography variant="small" color="gray" className="font-normal">
+              {description}
+            </Typography>
+          </div>
+        </MenuItem>
+      </a>
+    )
   );
 
   return (
-    <header className="header">
-      {/* Details for Reaching */}
-      <div className="header-top-bar">
-        <div className="container">
-          <div className="top-bar-info">
-            <ul className="top-bar-item">
-              <li>
-                <a href="mailto:info@atmostechsolution.com">
-                  <HiOutlineMail className="icofont-support-faq mr-2" />
-                  info@atmostechsolution.com
-                </a>
-              </li>
-              <li>
-                <a href={locationUrl} target="_blank" rel="noopener noreferrer">
-                  <IoLocationOutline className="icofont-location-pin mr-2" />
-                  VH-0004-1348, ECG Volta CU, Agric Ave, Ho Mun., Volta, Ghana.
-                </a>
-              </li>
-              <li>
-                <a href="tel:+2330544541587">
-                  <MdPhoneInTalk className="icofont-support-faqs mr-2" />
-                  +233 (0) 24055 6434
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      {/* Actual Navbar with links */}
-      <div className="navbar">
-        <div className="container">
-          <img src={logo} alt="Atmos-tech" className="logo-img" />
-
-          <ul className={click ? "nav-menu active" : "nav-menu"}>
-            <li>
-              <NavLink
-                to="/"
-                exact
-                activeClassName="active-link"
-                onClick={handleLinkClick}
-              >
-                {translations[selectedLanguage].home}
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/about"
-                activeClassName="active-link"
-                onClick={handleLinkClick}
-              >
-                {translations[selectedLanguage].about}
-              </NavLink>
-            </li>
-            <li
-              onMouseEnter={handleMouseEnterServices}
-              onMouseLeave={handleMouseLeaveServices}
-              className={`dropdown-container ${dropdownActive ? "active" : ""}`}
+    <React.Fragment>
+      <Menu
+        open={isMenuOpen}
+        handler={setIsMenuOpen}
+        offset={{ mainAxis: 20 }}
+        placement="bottom"
+        allowHover={true}
+      >
+        <MenuHandler>
+          <Typography as="div" variant="small" className="p-1 font-normal font-exo">
+            <ListItem
+              className="flex items-center gap-2 py-2 pr-4"
+              style={{ fontSize: "17px" }}
+              selected={isMenuOpen || isMobileMenuOpen}
+              onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
-              <div className="dropdown-link" onClick={handleDropdownClick}>
-                <NavLink
-                  to="/service"
-                  activeClassName="active-link"
-                  onClick={handleLinkClick}
-                >
-                  {translations[selectedLanguage].services} {arrowIcon}
-                </NavLink>
-              </div>
-              {isDropdownOpen && (
-                <ul className="dropdown-menu">
-                  <li>
-                    <NavLink
-                      to="/departments"
-                      activeClassName="active-link"
-                      onClick={handleLinkClick}
-                    >
-                      Web Development
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink
-                      to="/department-single"
-                      activeClassName="active-link"
-                      onClick={handleLinkClick}
-                    >
-                      Mobile Development
-                    </NavLink>
-                  </li>
-                </ul>
-              )}
-            </li>
-            <li>
-              <NavLink
-                to="/industry"
-                activeClassName="active-link"
-                onClick={handleLinkClick}
-              >
-                Industries
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/contact"
-                activeClassName="active-link"
-                onClick={handleLinkClick}
-              >
-                {translations[selectedLanguage].contact}
-              </NavLink>
-            </li>
-            <li className="language-selector">
-              <div className="dropdown">
-                <select
-                  className="language-select"
-                  value={selectedLanguage}
-                  onChange={handleLanguageSelect}
-                >
-                  {languageOptions.map((option) => (
-                    <option key={option.value} value={option.value}>
-                      {option.label}
-                    </option>
-                  ))}
-                </select>
-                <IoIosGlobe className="language-icon" />
-              </div>
-            </li>
-          </ul>
-          <div
-            className={`hamburger ${click ? "active" : ""}`}
-            onClick={handleClick}
-          >
-            {click ? (
-              <VscChromeClose className="icon " />
-            ) : (
-              <AiOutlineMenu className="icon" />
-            )}
-          </div>
-        </div>
+              Services
+              <ChevronDownIcon
+                strokeWidth={2.5}
+                className={`hidden h-3 w-3 transition-transform lg:block ${isMenuOpen ? "rotate-180" : ""
+                  }`}
+              />
+              <ChevronDownIcon
+                strokeWidth={2.5}
+                className={`block h-3 w-3 transition-transform lg:hidden ${isMobileMenuOpen ? "rotate-180" : ""
+                  }`}
+              />
+            </ListItem>
+          </Typography>
+        </MenuHandler>
+        <MenuList className="hidden max-w-screen-xl rounded-xl lg:block">
+          <ul className="grid grid-cols-4 gap-y-2">{renderItems}</ul>
+        </MenuList>
+      </Menu>
+      <div className="block lg:hidden">
+        <Collapse open={isMobileMenuOpen}>{renderItems}</Collapse>
       </div>
-    </header>
+    </React.Fragment>
   );
-};
+}
 
-export default Navbar;
+function NavList() {
+  return (
+    <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1" style={{ marginRight: '80px' }}>
+      <Typography
+        as={Link}
+        to="/"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-normal font-exo"
+      >
+        <ListItem className="flex items-center gap-2 py-2 pr-4" style={{ fontSize: "17px" }}>
+          Home
+        </ListItem>
+      </Typography>
+      <Typography
+        as={Link}
+        to="/about"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-normal font-exo"
+      >
+        <ListItem className="flex items-center gap-2 py-2 pr-4" style={{ fontSize: "17px" }}>
+          About us
+        </ListItem>
+      </Typography>
+      <NavListMenu />
+      <Typography
+        as={Link}
+        to="/industry"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-normal font-exo"
+      >
+        <ListItem className="flex items-center gap-2 py-2 pr-4" style={{ fontSize: "17px" }}>
+          Industries
+        </ListItem>
+      </Typography>
+
+      <Typography
+        as={Link}
+        variant="small"
+        to="/contact"
+        color="blue-gray"
+        className="p-1 font-normal font-exo"
+      >
+        <ListItem className="flex items-center gap-2 py-2 pr-4" style={{ fontSize: "17px" }}>
+          Contact
+        </ListItem>
+      </Typography>
+    </List>
+  );
+}
+
+export default function Example() {
+  const [openNav, setOpenNav] = React.useState(false);
+
+  React.useEffect(() => {
+    window.addEventListener(
+      "resize",
+      () => window.innerWidth >= 960 && setOpenNav(false)
+    );
+  }, []);
+
+  return (
+    <Navbar className="fixed top-0 left-0 w-full z-50 mx-auto max-w-full px-6 py-3 rounded-none main-menu">
+      <div className="flex items-center justify-between text-blue-gray-900">
+        <img
+          src="./logo.png"
+          alt="Material Tailwind Logo"
+          className="mr-4 cursor-pointer py-1.5 lg:ml-2"
+          style={{ height: '50px', width: '75px' }}
+        />
+
+        <div className="hidden lg:block">
+          <NavList />
+        </div>
+        <IconButton
+          variant="text"
+          color="blue-gray"
+          className="lg:hidden"
+          onClick={() => setOpenNav(!openNav)}
+        >
+          {openNav ? (
+            <XMarkIcon className="h-6 w-6" strokeWidth={2} />
+          ) : (
+            <Bars3Icon className="h-6 w-6" strokeWidth={2} />
+          )}
+        </IconButton>
+      </div>
+      <Collapse open={openNav}>
+        <NavList />
+      </Collapse>
+    </Navbar>
+
+
+  );
+}
