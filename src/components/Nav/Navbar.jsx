@@ -137,7 +137,7 @@ function NavListMenu() {
         <MenuHandler>
           <Typography as="div" variant="small" className="p-1 font-normal font-exo">
             <ListItem
-              className="flex items-center gap-2 py-2 pr-4"
+              className="flex items-center gap-2 py-2 pr-4 hover:bg-green-600 hover:text-white"
               style={{ fontSize: "17px" }}
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
@@ -177,7 +177,7 @@ function NavList() {
         color="blue-gray"
         className="p-1 font-normal font-exo"
       >
-        <ListItem className="flex items-center gap-2 py-2 pr-4" style={{ fontSize: "17px" }}>
+        <ListItem className="flex items-center gap-2 py-2 pr-4 hover:bg-green-600 hover:text-white" style={{ fontSize: "17px" }}>
           Home
         </ListItem>
       </Typography>
@@ -189,7 +189,7 @@ function NavList() {
         color="blue-gray"
         className="p-1 font-normal font-exo"
       >
-        <ListItem className="flex items-center gap-2 py-2 pr-4" style={{ fontSize: "17px" }}>
+        <ListItem className="flex items-center gap-2 py-2 pr-4 hover:bg-green-600 hover:text-white" style={{ fontSize: "17px" }}>
           About us
         </ListItem>
       </Typography>
@@ -201,7 +201,7 @@ function NavList() {
         color="blue-gray"
         className="p-1 font-normal font-exo"
       >
-        <ListItem className="flex items-center gap-2 py-2 pr-4" style={{ fontSize: "17px" }}>
+        <ListItem className="flex items-center gap-2 py-2 pr-4 hover:bg-green-600 hover:text-white" style={{ fontSize: "17px" }}>
           Industries
         </ListItem>
       </Typography>
@@ -210,10 +210,10 @@ function NavList() {
         as={Link}
         variant="small"
         to="/contact"
-        color="blue-gray"
+        color="white"
         className="p-1 font-normal font-exo"
-      >
-        <ListItem className="flex items-center gap-2 py-2 pr-4" style={{ fontSize: "17px" }}>
+      > 
+        <ListItem className="flex items-center gap-2 py-2 pr-4 bg-green-600 hover:bg-gray-800 hover:text-white" style={{ fontSize: "17px" }}>
           Contact
         </ListItem>
       </Typography>
