@@ -45,6 +45,7 @@ const Counter = () => {
 
   return (
     <section className="counter relative">
+      <div className="mx-auto overflow-hidden">
       <video className="absolute inset-0 w-full h-full object-cover z-0" src={impact} autoPlay loop muted />
       <div className="container mx-auto py-8 relative z-10">
         <div className="flex flex-col md:flex-row justify-center items-center">
@@ -111,6 +112,7 @@ const Counter = () => {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </section>
   );

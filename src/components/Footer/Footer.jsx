@@ -2,7 +2,7 @@ import { Typography } from "@material-tailwind/react";
 
 const SITEMAP = [
     {
-        title: "Company",
+        title: "Quick Links",
         links: ["About Us", "Services", "Industries", "Projects"],
     },
     {

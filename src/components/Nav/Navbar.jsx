@@ -47,7 +47,6 @@ const navListMenuItems = [
       <div className="flex items-center gap-1">
         Software Development{" "}
         <Chip
-          id="software-development"
           size="sm"
           color="green"
           variant="ghost"
@@ -59,21 +58,18 @@ const navListMenuItems = [
     description: "Custom software solutions tailored for your business.",
   },
   {
-    id: "web-development",
     color: "teal",
     icon: CiGlobe,
     title: "Web Development",
     description: "Transforming Your Online Presence with Stunning Web Development Solutions",
   },
   {
-    id: "mobile-app-development",
     color: "teal",
     icon: TbDeviceMobileStar,
     title: "Mobile App Development",
     description: "Empower your business with cutting-edge mobile apps for growth.",
   },
   {
-    id: "api-integration",
     color: "cyan",
     icon: AiOutlineApi,
     title: "API Integration",
@@ -86,7 +82,6 @@ const navListMenuItems = [
       <div className="flex items-center gap-1">
         EDI{" "}
         <Chip
-          id="Edi-section"
           size="sm"
           color="green"
           variant="ghost"
@@ -105,7 +100,7 @@ function NavListMenu() {
 
   const renderItems = navListMenuItems.map(
     ({ icon, title, description, color, id }, key) => (
-      <a href={id} key={key}>
+      <Link to="/service" key={key}>
         <MenuItem className="flex items-center gap-3 rounded-lg ">
           <div className={`rounded-lg p-5 ${colors[color]} `}>
             {React.createElement(icon, {
@@ -126,7 +121,7 @@ function NavListMenu() {
             </Typography>
           </div>
         </MenuItem>
-      </a>
+      </Link>
     )
   );
 
@@ -186,6 +181,7 @@ function NavList() {
           Home
         </ListItem>
       </Typography>
+
       <Typography
         as={Link}
         to="/about"
@@ -221,6 +217,8 @@ function NavList() {
           Contact
         </ListItem>
       </Typography>
+
+
     </List>
   );
 }

@@ -29,6 +29,7 @@
     "rerousel": "^0.1.9",
     "swiper": "^10.0.4",
     "tailwindcss": "^3.3.2",
+    "typed.js": "^2.0.16",
     "web-vitals": "^3.3.2"
   },
   "scripts": {

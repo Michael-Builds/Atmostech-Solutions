@@ -14,7 +14,6 @@ import "../../main.css";
 import 'animate.css';
 import { XMarkIcon } from "@heroicons/react/24/solid";
 import video from '../../assets/Dash.mp4';
-
  
 export default function Hero() {
 
@@ -25,10 +24,8 @@ export default function Hero() {
     // handle open dialog logic
   };
 
-
-
   return (
-    <div className="flex items-center justify-center h-screen">
+    <section className="flex items-center justify-center h-screen">
       <Carousel className="rounded-none">
       <div className="relative h-full w-full">
       <video
@@ -218,6 +215,6 @@ export default function Hero() {
           </div>
         </div>
       </Carousel>
-    </div>
+    </section>
   );
 }

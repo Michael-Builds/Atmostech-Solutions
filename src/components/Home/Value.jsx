@@ -15,8 +15,8 @@ const ValueProposition = () => {
     });
 
     return (
-        <section className="value-proposition relative w-full">
-            <div className="container mx-auto">
+        <section className="value-proposition mb-0 relative w-full h-full">
+            <div className="mx-auto overflow-hidden">
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
                     <div className="flex flex-col justify-center">
                         <h2 className="text-3xl mb-4 first-headings">
@@ -53,9 +53,18 @@ const ValueProposition = () => {
                     </div>
                 </div>
             </div>
-
-            <div className="container mx-auto overflow-hidden">
+            
+            <div className="mx-auto overflow-hidden">
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+                <div className="flex justify-center">
+                        <img
+                            src={choose1}
+                            alt="ATMOS-PIC"
+                            className={`w-full md:w-64 images zoom-in-animation ${inView2 ? "zoom-in-animation-active" : ""
+                                }`}
+                            ref={ref2}
+                        />
+                    </div>
                     <div className="flex flex-col justify-center">
                         <h2 className="text-4xl font-bold mb-3 second-heading">
                             Why Choose Our Tech Solutions?
@@ -68,15 +77,7 @@ const ValueProposition = () => {
                             <li>Proven track record of successful implementations</li>
                         </ul>
                     </div>
-                    <div className="flex justify-center">
-                        <img
-                            src={choose1}
-                            alt="ATMOS-PIC"
-                            className={`w-full md:w-64 images zoom-in-animation ${inView2 ? "zoom-in-animation-active" : ""
-                                }`}
-                            ref={ref2}
-                        />
-                    </div>
+
                 </div>
             </div>
         </section>
