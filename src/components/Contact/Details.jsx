@@ -1,87 +1,85 @@
 import {
-    Card,
-    CardHeader,
-    CardBody,
-    Typography,
-  } from "@material-tailwind/react";
-  import {IoLocationSharp} from 'react-icons/io5';
-  import {AiOutlineMail} from 'react-icons/ai';
-  import {FiPhoneCall} from 'react-icons/fi';
+  Card,
+  CardHeader,
+  CardBody,
+  Typography,
+} from "@material-tailwind/react";
+import contact from '../../assets/get.png';
+import { MdAttachEmail } from 'react-icons/md';
+import { IoLocationSharp } from 'react-icons/io5';
+import { BiSolidPhoneCall } from 'react-icons/bi';
 
-  export default function Example() {
-    return (
- <section className="flex justify-center m-2 gap-5 mb-5 mt-10">
- <Card color="transparent" shadow={false} className="w-full max-w-[24rem] contact-card">
-        <CardHeader
-          color="transparent"
-          floated={false}
-          shadow={false}
-          className="mx-0 flex items-center gap-2 pt-0 pb-8 ml-12 details-header"
-        >
-       <IoLocationSharp className="w-8 h-8" color="green"/>
-          <div className="flex w-full flex-col g">
-            <div className="flex items-center">
-              <Typography className="locate">
-               Locate Us
-              </Typography>
-            </div>
-          </div>
-        </CardHeader>
-        <CardBody className="mb-6 p-0 text-center align-center">
-          <Typography>
-          VH-0004-1348, ECG Volta CU, Agric Avenue,
-          Ho Municipal, Volta, Ghana.
-          </Typography>
-        </CardBody>
-      </Card>
 
-      <Card color="transparent" shadow={false} className="w-full max-w-[24rem] contact-card">
+export default function Details() {
+  return (
+    <section className="flex justify-center m-2 gap-5 mb-5 mt-10 ">
+      <Card className="flex-row w-full max-w-[60rem]  mt-8 mb-5 detail-card"
+
+      >
         <CardHeader
-          color="transparent"
-          floated={false}
           shadow={false}
-          className="mx-0 flex items-center gap-2 pt-0 pb-8 ml-12 details-header"
-        >
-       <AiOutlineMail className="w-8 h-8" color="green"/>
-          <div className="flex w-full flex-col ">
-            <div className="flex items-center">
-              <Typography className="locate">
-              Email Us
-              </Typography>
-            </div>
-          </div>
-        </CardHeader>
-        <CardBody className="mb-6 p-0 text-center align-center">
-          <Typography>
-          info@atmostechsolution.com
-          </Typography>
-        </CardBody>
-      </Card>
-      <Card color="transparent" shadow={false} className="w-full max-w-[24rem] contact-card">
-        <CardHeader
-          color="transparent"
           floated={false}
-          shadow={false}
-          className="mx-0 flex items-center gap-2 pt-0 pb-8 ml-12 details-header"
+          className="w-2/5 justify-center items-center shrink-0 m-0 rounded-r-none"
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            flexDirection: 'column',
+            position: 'relative',
+            paddingRight: '1rem',
+          }}
         >
-       <FiPhoneCall className="w-8 h-8" color="green"/>
-          <div className="flex w-full flex-col ">
-            <div className="flex items-center">
-              <Typography className="locate">
-               Call Us
-              </Typography>
-            </div>
-          </div>
-        </CardHeader>
-        <CardBody className="mb-6 p-0 text-center align-center">
-          <Typography>
-          +233 (0) 24055 6434
+          <img src={contact} alt="tut" className="  detail-icon" />
+          <Typography className="  detail-main">
+            Contact Us
           </Typography>
-            <Typography>
-          +233 (0) 24055 6434
+          <Typography className=" detail-second">
+            Get in touch with us today!
+          </Typography>
+          <Typography className="detail-third">
+            Office Hours:
+          </Typography>
+          <Typography className="detail-fourth">
+            8:00am-5:00pm Mon-Fri
+          </Typography>
+          <div
+            style={{
+              position: 'absolute',
+              top: 0,
+              right: 0,
+              height: '100%',
+              borderRight: '2px dashed gray',
+            }}
+          />
+        </CardHeader>
+
+        <CardBody
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            marginLeft: '40px',
+          }}
+        >
+          <Typography color="white" className="mb-4 flex" style={{ display: 'flex', alignItems: 'center' }}>
+            <IoLocationSharp />
+            <span style={{ marginLeft: '10px' }}>Location</span>
+          </Typography>
+          <Typography color="white" className="mb-4 flex" style={{ display: 'flex', alignItems: 'center' }}>
+            <MdAttachEmail />
+            <span style={{ marginLeft: '10px' }}>Email</span>
+          </Typography>
+          <Typography color="white" className="mb-4 flex" style={{ display: 'flex', alignItems: 'center' }}>
+            <BiSolidPhoneCall />
+            <span style={{ marginLeft: '10px' }}>Call Us</span>
+          </Typography>
+          <Typography color="white" className="mb-4 flex" style={{ display: 'flex', alignItems: 'center' }}>
+            <BiSolidPhoneCall />
+            <span style={{ marginLeft: '10px' }}>Call Us</span>
           </Typography>
         </CardBody>
       </Card>
     </section>
-    );
-  }
+  );
+}

@@ -1,39 +1,67 @@
 import React, { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
+import productbg from '../../assets/me.jpg';
+import { useInView } from 'react-intersection-observer';
 
 const Header = () => {
-  
-    const typingRef = useRef(null);
+  const typingRef = useRef(null);
 
-    useEffect(() => {
-      const typed = new Typed(typingRef.current, {
-        strings: [
-          'Websites',
-          'Mobile Apps',
-          'API Integration',
-          'EDIs',
-          'Customized Softwares',
-        ],
-        typeSpeed: 200,
-        backSpeed: 60,
-        loop: true,
-      });
-  
-      return () => {
-        typed.destroy();
-      };
-    }, []);
+  const [ref1, inView1] = useInView({
+    triggerOnce: true, 
+  });
 
-    return (
-        <section id="services-products" className="wrapper py-8 text-center justify-center bg-gray-100"
-        >
-           <h1 className=" text-2xl mb-12 underline-green ">Products and Services</h1>
-           <h3 className="text-3xl mb-4 type-head">
-          We provide you with the best <span className="typing" ref={typingRef}></span>
-          </h3>
+  useEffect(() => {
+    const typed = new Typed(typingRef.current, {
+      strings: [
+        'Websites',
+        'Mobile Apps',
+        'API Integration',
+        'EDIs',
+        'Customized Softwares',
+      ],
+      typeSpeed: 200,
+      backSpeed: 60,
+      loop: true,
+    });
 
-        </section>
-    );
+    return () => {
+      typed.destroy();
+    };
+  }, []);
+
+  return (
+    <section
+      id="services-products"
+      className="wrapper py-8"
+      style={{
+        backgroundImage: `url(${productbg})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        flexDirection: 'column',
+        textAlign: 'center',
+      }}
+    >
+      <h1
+        className={`text-2xl mb-12 underline-green ${
+          inView1 ? 'fade-in-bottom fade-in-bottom-active' : ''
+        }`}
+        ref={ref1}
+      >
+        Products and Services
+      </h1>
+      <h3
+        className={`text-3xl mb-4 type-head ${
+          inView1 ? 'fade-in-bottom fade-in-bottom-active' : ''
+        }`}
+      >
+        We provide you with the best{' '}
+        <span className="typing" ref={typingRef}></span>
+      </h3>
+    </section>
+  );
 };
-
 export default Header;
