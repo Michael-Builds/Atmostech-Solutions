@@ -577,12 +577,12 @@
 }
 
 .detail-icon {
-  width: 90px;
-  height: 90px;
-  margin-top: 5px;
+  width: 80px;
+  height: 80px;
+  margin-top: 10px;
 }
 .detail-main {
-  font-size: 28px;
+  font-size: 26px;
   font-family: "Exo", sans-serif;
   font-weight: 700;
   margin-top: 15px;
@@ -611,6 +611,10 @@
   text-decoration: underline;
   color: green;
   text-transform: uppercase;
+}
+
+.row{
+  margin-top:-90px;
 }
 
 @keyframes fade-in-bottom {

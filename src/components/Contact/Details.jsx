@@ -6,14 +6,13 @@ import {
 } from "@material-tailwind/react";
 import contact from '../../assets/get.png';
 import { MdAttachEmail } from 'react-icons/md';
-import { IoLocationSharp } from 'react-icons/io5';
 import { BiSolidPhoneCall } from 'react-icons/bi';
 
 
 export default function Details() {
   return (
     <section className="flex justify-center m-2 gap-5 mb-5 mt-10 ">
-      <Card className="flex-row w-full max-w-[60rem]  mt-8 mb-5 detail-card"
+      <Card className="flex-row w-full max-w-[55rem]  mt-8 mb-5 detail-card"
 
       >
         <CardHeader
@@ -29,7 +28,7 @@ export default function Details() {
             paddingRight: '1rem',
           }}
         >
-          <img src={contact} alt="tut" className="  detail-icon" />
+          <img src={contact} alt="tut" className="detail-icon" />
           <Typography className="  detail-main">
             Contact Us
           </Typography>
@@ -63,19 +62,19 @@ export default function Details() {
           }}
         >
           <Typography color="white" className="mb-4 flex" style={{ display: 'flex', alignItems: 'center' }}>
-            <IoLocationSharp />
-            <span style={{ marginLeft: '10px' }}>Location</span>
-          </Typography>
-          <Typography color="white" className="mb-4 flex" style={{ display: 'flex', alignItems: 'center' }}>
-            <MdAttachEmail />
-            <span style={{ marginLeft: '10px' }}>Email</span>
-          </Typography>
-          <Typography color="white" className="mb-4 flex" style={{ display: 'flex', alignItems: 'center' }}>
-            <BiSolidPhoneCall />
+            <BiSolidPhoneCall className="w-6 h-6" />
             <span style={{ marginLeft: '10px' }}>Call Us</span>
           </Typography>
           <Typography color="white" className="mb-4 flex" style={{ display: 'flex', alignItems: 'center' }}>
-            <BiSolidPhoneCall />
+            <MdAttachEmail className="w-6 h-6" />
+            <span style={{ marginLeft: '10px' }}>Email</span>
+          </Typography>
+          <Typography color="white" className="mb-4 flex" style={{ display: 'flex', alignItems: 'center' }}>
+            <BiSolidPhoneCall className="w-6 h-6" />
+            <span style={{ marginLeft: '10px' }}>Call Us</span>
+          </Typography>
+          <Typography color="white" className="mb-4 flex" style={{ display: 'flex', alignItems: 'center' }}>
+            <BiSolidPhoneCall className="w-6 h-6" />
             <span style={{ marginLeft: '10px' }}>Call Us</span>
           </Typography>
         </CardBody>
