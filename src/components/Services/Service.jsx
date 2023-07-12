@@ -11,7 +11,7 @@ const Service = () => {
     <section className="service section flex justify-center items-center">
       <div className="container mx-auto">
         <div className="row">
-            <div className="section-title fade-in-left">
+          <div className="section-title fade-in-left">
             <h2 className="service-head text-left ml-10">Services</h2>
           </div>
         </div>

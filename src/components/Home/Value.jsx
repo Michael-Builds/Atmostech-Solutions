@@ -53,10 +53,10 @@ const ValueProposition = () => {
                     </div>
                 </div>
             </div>
-            
+
             <div className="mx-auto overflow-hidden">
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-                <div className="flex justify-center">
+                    <div className="flex justify-center">
                         <img
                             src={choose1}
                             alt="ATMOS-PIC"

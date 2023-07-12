@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-
+import { NavLink, Link } from 'react-router-dom';
 import "../../index.css";
 import "../../main.css"
 import {
@@ -135,11 +134,15 @@ function NavListMenu() {
         allowHover={true}
       >
         <MenuHandler>
-          <Typography as="div" variant="small" className="p-1 font-normal font-exo">
+          <Typography
+            as={NavLink}
+            to="/service"
+            variant="small" className="p-1 font-normal font-exo">
             <ListItem
-              className="flex items-center gap-2 py-2 pr-4 one"
+              className="flex items-center gap-2 py-2 pr-4 link"
               style={{ fontSize: "17px" }}
               selected={isMenuOpen || isMobileMenuOpen}
+
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
               Services
@@ -171,9 +174,10 @@ function NavList() {
   return (
     <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1" style={{ marginRight: '80px' }}>
       <Typography
-        as={Link}
+        as={NavLink}
         to="/"
         variant="small"
+        activeClassName="active"
         color="blue-gray"
         className="p-1 font-normal font-exo"
       >
@@ -183,10 +187,11 @@ function NavList() {
       </Typography>
 
       <Typography
-        as={Link}
+        as={NavLink}
         to="/about"
         variant="small"
         color="blue-gray"
+        activeClassName="active"
         className="p-1 font-normal font-exo"
       >
         <ListItem className="flex items-center gap-2 py-2 pr-4 link" style={{ fontSize: "17px" }}>
@@ -195,9 +200,10 @@ function NavList() {
       </Typography>
       <NavListMenu />
       <Typography
-        as={Link}
+        as={NavLink}
         to="/industry"
         variant="small"
+        activeClassName="active"
         color="blue-gray"
         className="p-1 font-normal font-exo"
       >
@@ -207,9 +213,10 @@ function NavList() {
       </Typography>
 
       <Typography
-        as={Link}
+        as={NavLink}
         variant="small"
         to="/contact"
+        activeClassName="active"
         color="white"
         className="p-1 font-normal font-exo"
       >

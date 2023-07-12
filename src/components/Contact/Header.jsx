@@ -4,7 +4,6 @@ import productbg from '../../assets/me.jpg';
 
 const Header = () => {
   
-
     const [ref1, inView1] = useInView({
         triggerOnce: true, 
       });

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FormControl, MenuItem, Select } from '@material-ui/core';
+import { FormControl, MenuItem, InputLabel, Select } from '@material-ui/core';
 import "../../index.css";
 import "../../main.css";
 import {
@@ -28,13 +28,12 @@ const Email = () => {
     setIndustry(event.target.value);
   };
 
-
   return (
     <section className="mb-0 relative w-full h-full">
       <div className="mx-auto overflow-hidden">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
           <div className="flex flex-col justify-center">
-            <div className="row ">
+            <div className="row contact-me">
               <div className="section-title">
                 <h2 className="service-head text-left ml-10">Get in Touch</h2>
               </div>
@@ -58,12 +57,12 @@ const Email = () => {
                     <Input label="Phone Number" containerProps={{ className: "min-w-[72px]" }} />
                   </div>
                   <FormControl variant="outlined">
+                    <InputLabel id="service-label">{industry ? '' : 'Select a service'}</InputLabel>
                     <Select
                       labelId="service-label"
                       value={industry}
                       onChange={handleIndustryChange}
                       style={{ minWidth: '72px' }}
-                      className="border rounded "
                     >
                       {industryOptions.map((option) => (
                         <MenuItem key={option} value={option}>
