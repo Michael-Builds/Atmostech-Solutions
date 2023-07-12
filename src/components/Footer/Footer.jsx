@@ -1,22 +1,43 @@
 import { Typography } from "@material-tailwind/react";
+import { NavLink } from 'react-router-dom';
 
 const SITEMAP = [
     {
         title: "Quick Links",
-        links: ["About Us", "Services", "Industries", "Projects"],
+        links: [
+            { title: "Home", path: "/" },
+            { title: "About Us", path: "/about" },
+            { title: "Services", path: "/service" },
+            { title: "Contact", path: "/contact" }
+        ]
     },
     {
         title: "Help Center",
-        links: ["Facebook", "Twitter", "GitHub", "Instagram"],
+        links: [
+            { title: "Facebook", path: "https://www.facebook.com" },
+            { title: "Twitter", path: "https://www.twitter.com" },
+            { title: "GitHub", path: "https://www.github.com" },
+            { title: "Instagram", path: "https://www.instagram.com" }
+        ]
     },
     {
         title: "Resources",
-        links: ["Blog", "Newsletter", "Patnerships", "Affiliate Program"],
+        links: [
+            { title: "Blog", path: "/blog" },
+            { title: "Newsletter", path: "/newsletter" },
+            { title: "Partnerships", path: "/partnerships" },
+            { title: "Affiliate Program", path: "/affiliate" }
+        ]
     },
     {
         title: "Products",
-        links: ["CRM Systems", "Mobile Apps", "Websites", "EDI's"],
-    },
+        links: [
+            { title: "CRM Systems", path: "/crm" },
+            { title: "Mobile Apps", path: "/apps" },
+            { title: "Websites", path: "/websites" },
+            { title: "EDI's", path: "/edis" }
+        ]
+    }
 ];
 
 const currentYear = new Date().getFullYear();
@@ -30,20 +51,20 @@ export default function Example() {
                         <div key={key} className="w-full ">
                             <Typography
                                 variant="small"
-                                // color="blue-gray"
                                 className="mb-4 font-bold uppercase opacity-100"
                             >
                                 {title}
                             </Typography>
                             <ul className="space-y-1">
-                                {links.map((link, key) => (
+                                {links.map(({ title, path }, key) => (
                                     <Typography key={key} as="li" color="blue-gray" className="font-normal">
-                                        <a
-                                            href="www.html.com"
-                                            className="inline-block py-1 pr-2 transition-transform hover:scale-115 hover:text-green-500"
+                                        <NavLink
+                                            to={path}
+                                            activeClassName="text-green-500"
+                                            className="inline-block py-1 pr-2 transition-transform hover:scale-115"
                                         >
-                                            {link}
-                                        </a>
+                                            {title}
+                                        </NavLink>
                                     </Typography>
                                 ))}
                             </ul>

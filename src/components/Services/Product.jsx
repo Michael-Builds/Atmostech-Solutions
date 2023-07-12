@@ -7,17 +7,14 @@ import { useInView } from "react-intersection-observer";
 const Product = () => {
   const [ref1, inView1] = useInView({
     triggerOnce: true, // Only trigger the animation once
-    threshold: 0.1, // Customize the threshold as per your requirement
   });
 
   const [ref2, inView2] = useInView({
     triggerOnce: true, // Only trigger the animation once
-    threshold: 0.1, // Customize the threshold as per your requirement
   });
 
   const [ref3, inView3] = useInView({
     triggerOnce: true, // Only trigger the animation once
-    threshold: 0.1, // Customize the threshold as per your requirement
   });
 
   return (
@@ -30,7 +27,7 @@ const Product = () => {
         </div>
 
         <div
-          className={`mx-auto overflow-hidden fade-in-bottom ${inView1 ? "fade-in-bottom-active" : ""}`}
+          className={`mx-auto overflow-hidden ${inView1 ? 'fade-in-bottom fade-in-bottom-active' : ''}`}
           ref={ref1}
         >
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
@@ -51,7 +48,7 @@ const Product = () => {
         </div>
 
         <div
-          className={`mx-auto overflow-hidden mt-5 fade-in-bottom ${inView2 ? "fade-in-bottom-active" : ""}`}
+          className={`mx-auto overflow-hidden mt-5  ${inView2 ? 'fade-in-bottom fade-in-bottom-active' : ''}`}
           ref={ref2}
         >
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
@@ -72,7 +69,7 @@ const Product = () => {
         </div>
 
         <div
-          className={`mx-auto overflow-hidden mb-5 fade-in-bottom ${inView3 ? "fade-in-bottom-active" : ""}`}
+          className={`mx-auto overflow-hidden mb-5  ${inView3 ? 'fade-in-bottom fade-in-bottom-active' : ''}`}
           ref={ref3}
         >
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
