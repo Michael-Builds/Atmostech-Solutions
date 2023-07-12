@@ -777,3 +777,26 @@
   color: #555;
   line-height: 1.6;
 }
+
+
+
+@media only screen and (max-width: 480px){
+
+  /* Targets devices with a maximum screen width of 480 pixels, such as smartphones in portrait orientation. */
+} 
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  /* Targets devices with a screen width between 481 and 768 pixels, such as smartphones in landscape orientation and small tablets. */
+} 
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  /* - Targets devices with a screen width between 769 and 1024 pixels, such as larger tablets and small laptops. */
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+  /* - Targets devices with a screen width between 1025 and 1280 pixels, such as larger laptops and desktops with smaller screens. */
+}
+
+@media only screen and (min-width: 1281px) {
+  /* - Targets devices with a screen width of 1281 pixels or more, such as larger desktops and high-resolution displays. */
+}
