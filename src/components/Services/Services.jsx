@@ -12,11 +12,11 @@ const Services = () => {
       <Navbar />
       <div style={{ marginTop: '80px' }}>
         <Header />
-        <Service/>
-        <Product/>
-      </div> 
-      <Scroll />
+        <Service />
+        <Product />
+      </div>
       <Footer />
+      <Scroll />
     </>
   );
 };

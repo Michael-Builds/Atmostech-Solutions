@@ -135,14 +135,14 @@ function NavListMenu() {
       >
         <MenuHandler>
           <Typography
-            as={NavLink}
-            to="/service"
+            as='div'
             variant="small" className="p-1 font-normal font-exo">
             <ListItem
               className="flex items-center gap-2 py-2 pr-4 link"
-              style={{ fontSize: "17px" }}
+              style={{ fontSize: "17px", border: 'none' }}
               selected={isMenuOpen || isMobileMenuOpen}
-
+              component={NavLink}
+              to="/service"
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
               Services
@@ -159,8 +159,13 @@ function NavListMenu() {
             </ListItem>
           </Typography>
         </MenuHandler>
-        <MenuList className="hidden max-w-screen-xl rounded-xl lg:block">
-          <ul className="grid grid-cols-4 gap-y-2">{renderItems}</ul>
+        {/* Dropdown menu list for the Services NavLink */}
+        <MenuList
+          className="hidden max-w-screen-xl rounded-xl lg:block">
+          <ul style={{ border: 'none' }}
+            className="grid max-w-screen-xl px-4 py-4 mx-auto sm:grid-cols-3 md:px-6">
+            {renderItems}
+          </ul>
         </MenuList>
       </Menu>
       <div className="block lg:hidden">
@@ -216,7 +221,6 @@ function NavList() {
         as={NavLink}
         variant="small"
         to="/contact"
-        activeClassName="active"
         color="white"
         className="p-1 font-normal font-exo"
       >

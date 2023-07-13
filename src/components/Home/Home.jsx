@@ -17,13 +17,12 @@ const Home = () => {
       <Navbar />
       <Hero />
       <Value />
-      {/* <Mission /> */}
       <Products />
       <Impacts />
       <Partners />
       {/* <Combine/> */}
-      <Scroll />
       <Footer />
+      <Scroll />
     </>
   );
 };

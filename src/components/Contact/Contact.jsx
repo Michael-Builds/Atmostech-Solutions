@@ -17,10 +17,9 @@ const Contact = () => {
         <Location />
         <Email />
       </div>
-      <Scroll />
       <Footer />
+      <Scroll />
     </>
   );
 };
-
 export default Contact;
