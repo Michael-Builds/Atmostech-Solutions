@@ -18,7 +18,6 @@ export default function Blog() {
     const [ref1, inView1] = useInView({
         triggerOnce: true,
     });
-
     return (
         <section className="bg-gray-200 " >
             <div className="mx-auto overflow-hidden">

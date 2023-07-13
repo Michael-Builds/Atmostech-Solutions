@@ -4,7 +4,7 @@ import Footer from '../Footer/Footer';
 import Scroll from '../ScrollToTop/ScrolltoTop';
 import Header from './Header';
 import Details from './Details';
-// import Location from './Location';
+import Location from './Location';
 import Email from './Email';
 
 const Contact = () => {
@@ -14,7 +14,7 @@ const Contact = () => {
       <div style={{ marginTop: '80px' }}>
         <Header />
         <Details />
-        {/* <Location /> */}
+        <Location />
         <Email />
       </div>
       <Scroll />
