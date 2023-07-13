@@ -778,7 +778,33 @@
   line-height: 1.6;
 }
 
+.blog-title{
+  font-family: "Exo", sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  color: #555;
+}
+.blog-sub{
+  font-family: "Exo", sans-serif;
+  font-size: 22px;
+   font-weight: 600;
+   color: #555;
+}
+.blog-card{
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
 
+.blog-date{
+background-color: #0ced17;
+border-radius: 5px;
+margin-top: -5px;
+}
+.blog-text{
+  text-align: center;
+  font-size: 19px;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
 
 @media only screen and (max-width: 480px){
 

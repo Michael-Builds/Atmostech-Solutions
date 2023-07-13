@@ -5,6 +5,7 @@ import Footer from '../Footer/Footer';
 import Main from './Main';
 import Mission from './Mission';
 import Jobs from './Jobs';
+import Blog from './Blog';
 import Scroll from '../ScrollToTop/ScrolltoTop';
 
 const About = () => {
@@ -15,7 +16,8 @@ const About = () => {
         <Header />
         <Main />
         <Mission />
-        <Jobs/>
+        <Jobs />
+        <Blog />
       </section>
       <Footer />
       <Scroll />

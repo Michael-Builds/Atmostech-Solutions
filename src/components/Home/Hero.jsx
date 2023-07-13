@@ -45,11 +45,11 @@ export default function Hero() {
                 className="mb-12 opacity-80 slider-sentence fade-in-left"
                 style={{ "--fade-delay": "1.5s" }}
               >
-                We provide highly customized cutting-edge tech solutions that cater to your business needs, driving exceptional growth and success. Our team of experts works closely with you to deliver innovative and future-proof solutions, ensuring that your organization thrives in the digital era.
+                We provide highly customized cutting-edge tech solutions that cater to your business needs, driving exceptional growth and success.
               </Typography>
               <div className="flex justify-center gap-2">
                 <div
-                  className="fade-in-left"
+                  className="fade-in-left mt-6"
                   style={{ "--fade-delay": "2.5s" }}
 
                 >
