@@ -3,8 +3,11 @@ import {
   Card,
   CardBody,
   Typography,
+  Button,
+  CardFooter,
 } from "@material-tailwind/react";
 import { RocketLaunchIcon } from "@heroicons/react/24/solid";
+import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
 
 const Service = () => {
   return (
@@ -25,6 +28,14 @@ const Service = () => {
               <Typography className="text-center">
                 Because it's about motivating the doers. Because I'm here to follow my dreams and inspire others.
               </Typography>
+              <CardFooter className="pt-0">
+                <a href="www.blog.html" className="inline-block">
+                  <Button size="sm" variant="text" className="flex items-center gap-2">
+                    Learn More
+                    <ArrowLongRightIcon strokeWidth={2} className="w-4 h-4" />
+                  </Button>
+                </a>
+              </CardFooter>
             </CardBody>
           </Card>
 
@@ -38,6 +49,14 @@ const Service = () => {
                 Because it's about motivating the doers. Because I'm here to follow my dreams and inspire others.
               </Typography>
             </CardBody>
+            <CardFooter className="pt-0">
+              <a href="www.blog.html" className="inline-block">
+                <Button size="sm" variant="text" className="flex items-center gap-2">
+                  Learn More
+                  <ArrowLongRightIcon strokeWidth={2} className="w-4 h-4" />
+                </Button>
+              </a>
+            </CardFooter>
           </Card>
 
           <Card className="mt-6 w-96 card zoom-in-3">
@@ -50,6 +69,14 @@ const Service = () => {
                 Because it's about motivating the doers. Because I'm here to follow my dreams and inspire others.
               </Typography>
             </CardBody>
+            <CardFooter className="pt-0">
+              <a href="www.blog.html" className="inline-block">
+                <Button size="sm" variant="text" className="flex items-center gap-2">
+                  Learn More
+                  <ArrowLongRightIcon strokeWidth={2} className="w-4 h-4" />
+                </Button>
+              </a>
+            </CardFooter>
           </Card>
           <Card className="mt-6 w-96 card zoom-in-4">
             <CardBody>
@@ -61,6 +88,14 @@ const Service = () => {
                 Because it's about motivating the doers. Because I'm here to follow my dreams and inspire others.
               </Typography>
             </CardBody>
+            <CardFooter className="pt-0">
+              <a href="www.blog.html" className="inline-block">
+                <Button size="sm" variant="text" className="flex items-center gap-2">
+                  Learn More
+                  <ArrowLongRightIcon strokeWidth={2} className="w-4 h-4" />
+                </Button>
+              </a>
+            </CardFooter>
           </Card>
 
           <Card className="mt-6 w-96 card zoom-in-5">
@@ -73,6 +108,14 @@ const Service = () => {
                 Because it's about motivating the doers. Because I'm here to follow my dreams and inspire others.
               </Typography>
             </CardBody>
+            <CardFooter className="pt-0">
+              <a href="www.blog.html" className="inline-block">
+                <Button size="sm" variant="text" className="flex items-center gap-2">
+                  Learn More
+                  <ArrowLongRightIcon strokeWidth={2} className="w-4 h-4" />
+                </Button>
+              </a>
+            </CardFooter>
           </Card>
           <Card className="mt-6 w-96 card zoom-in-6">
             <CardBody>
@@ -84,6 +127,14 @@ const Service = () => {
                 Because it's about motivating the doers. Because I'm here to follow my dreams and inspire others.
               </Typography>
             </CardBody>
+            <CardFooter className="pt-0">
+              <a href="www.blog.html" className="inline-block">
+                <Button size="sm" variant="text" className="flex items-center gap-2">
+                  Learn More
+                  <ArrowLongRightIcon strokeWidth={2} className="w-4 h-4" />
+                </Button>
+              </a>
+            </CardFooter>
           </Card>
         </div>
       </div>

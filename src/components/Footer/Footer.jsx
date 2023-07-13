@@ -14,8 +14,8 @@ const SITEMAP = [
     {
         title: "Help Center",
         links: [
-            { title: "Facebook", path: "https://www.facebook.com" },
-            { title: "Twitter", path: "https://www.twitter.com" },
+            { title: "Facebook", path: "https://web.facebook.com/search/top?q=atmos%20technology%20ltd" },
+            { title: "Twitter", path: "https://twitter.com/AtmosTech" },
             { title: "GitHub", path: "https://www.github.com" },
             { title: "Instagram", path: "https://www.instagram.com" }
         ]

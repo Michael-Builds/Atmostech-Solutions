@@ -1,84 +1,101 @@
 import {
-  Card,
-  CardHeader,
-  CardBody,
+  Timeline,
+  TimelineItem,
+  TimelineConnector,
+  TimelineIcon,
   Typography,
+  TimelineHeader,
 } from "@material-tailwind/react";
-import contact from '../../assets/get.png';
 import { MdAttachEmail } from 'react-icons/md';
-import { BiSolidPhoneCall } from 'react-icons/bi';
+import { FiPhoneCall } from 'react-icons/fi';
+import { IoLocationOutline } from 'react-icons/io5';
 
+import { useInView } from "react-intersection-observer";
 
 export default function Details() {
+  const [ref1, inView1] = useInView({
+    triggerOnce: true,
+  });
+
   return (
-    <section className="flex justify-center m-2 gap-5 mb-5 mt-10 ">
-      <Card className="flex-row w-full max-w-[55rem]  mt-8 mb-5 detail-card"
-
-      >
-        <CardHeader
-          shadow={false}
-          floated={false}
-          className="w-2/5 justify-center items-center shrink-0 m-0 rounded-r-none"
-          style={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            flexDirection: 'column',
-            position: 'relative',
-            paddingRight: '1rem',
-          }}
+    <section className=" flex justify-center details">
+      <div className="mx-auto overflow-hidden">
+        <div
+          className={`justify-center align-center text-center mision-head ${inView1 ? "fade-in-left fade-in-left-active" : ""
+            }`}
+          ref={ref1}
         >
-          <img src={contact} alt="tut" className="detail-icon" />
-          <Typography className="  detail-main">
-            Contact Us
-          </Typography>
-          <Typography className=" detail-second">
-            Get in touch with us today!
-          </Typography>
-          <Typography className="detail-third">
-            Office Hours:
-          </Typography>
-          <Typography className="detail-fourth">
-            8:00am-5:00pm Mon-Fri
-          </Typography>
-          <div
-            style={{
-              position: 'absolute',
-              top: 0,
-              right: 0,
-              height: '100%',
-              borderRight: '2px dashed gray',
-            }}
-          />
-        </CardHeader>
+          <h1 className="blog-title">For More Info</h1>
 
-        <CardBody
-          style={{
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-            marginLeft: '40px',
-          }}
-        >
-          <Typography color="white" className="mb-4 flex" style={{ display: 'flex', alignItems: 'center' }}>
-            <BiSolidPhoneCall className="w-6 h-6" />
-            <span style={{ marginLeft: '10px' }}>Call Us</span>
-          </Typography>
-          <Typography color="white" className="mb-4 flex" style={{ display: 'flex', alignItems: 'center' }}>
-            <MdAttachEmail className="w-6 h-6" />
-            <span style={{ marginLeft: '10px' }}>Email</span>
-          </Typography>
-          <Typography color="white" className="mb-4 flex" style={{ display: 'flex', alignItems: 'center' }}>
-            <BiSolidPhoneCall className="w-6 h-6" />
-            <span style={{ marginLeft: '10px' }}>Call Us</span>
-          </Typography>
-          <Typography color="white" className="mb-4 flex" style={{ display: 'flex', alignItems: 'center' }}>
-            <BiSolidPhoneCall className="w-6 h-6" />
-            <span style={{ marginLeft: '10px' }}>Call Us</span>
-          </Typography>
-        </CardBody>
-      </Card>
+          <h3 className="blog-sub">Get in touch with us</h3>
+        </div>
+        <div className="w-[25rem] mt-10 mb-8">
+          <Timeline >
+            <TimelineItem className="h-28 ">
+              <TimelineConnector className="!w-[78px]" />
+              <TimelineHeader className="relative rounded-xl border border-blue-gray-50 bg-white py-3 pl-4 pr-8 shadow-lg shadow-blue-gray-900/5">
+                <TimelineIcon className="p-3" variant="ghost">
+                  <MdAttachEmail className="h-5 w-5" />
+                </TimelineIcon>
+                <div className="flex flex-col gap-1">
+                  <Typography variant="h6" color="blue-gray">
+                    $2400, Design changes
+                  </Typography>
+                  <Typography
+                    variant="small"
+                    color="gray"
+                    className="font-normal"
+                  >
+                    22 DEC 7:20 PM
+                  </Typography>
+                </div>
+              </TimelineHeader>
+            </TimelineItem>
+
+            <TimelineItem className="h-28">
+              <TimelineConnector className="!w-[78px]" />
+              <TimelineHeader className="relative rounded-xl border border-blue-gray-50 bg-white py-3 pl-4 pr-8 shadow-lg shadow-blue-gray-900/5">
+                <TimelineIcon className="p-3" variant="ghost" color="red">
+                  <FiPhoneCall className="h-5 w-5" />
+                </TimelineIcon>
+                <div className="flex flex-col gap-1">
+                  <Typography variant="h6" color="blue-gray">
+                    New order #1832412
+                  </Typography>
+                  <Typography
+                    variant="small"
+                    color="gray"
+                    className="font-normal"
+                  >
+                    21 DEC 11 PM
+                  </Typography>
+                </div>
+              </TimelineHeader>
+            </TimelineItem>
+
+            <TimelineItem className="h-28 ">
+              <TimelineHeader className="relative rounded-xl border border-blue-gray-50 bg-white py-3 pl-4 pr-8 shadow-lg shadow-blue-gray-900/5 ">
+                <TimelineIcon className="p-3" variant="ghost" color="green">
+                  <IoLocationOutline className="h-5 w-5" />
+                </TimelineIcon>
+                <div className="flex flex-col gap-1  ">
+                  <Typography variant="h6" color="blue-gray">
+                    Payment completed for order #4395133
+                  </Typography>
+                  <Typography
+                    variant="small"
+                    color="gray"
+                    className="font-normal"
+                  >
+                    20 DEC 2:20 AM
+                  </Typography>
+                </div>
+              </TimelineHeader>
+            </TimelineItem>
+
+          </Timeline>
+        </div>
+      </div>
     </section>
   );
 }

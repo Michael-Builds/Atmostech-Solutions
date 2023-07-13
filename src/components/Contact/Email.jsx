@@ -1,5 +1,4 @@
-import { useState } from 'react';
-import { FormControl, MenuItem, InputLabel, Select } from '@material-ui/core';
+import React from 'react';
 import "../../index.css";
 import "../../main.css";
 import {
@@ -9,24 +8,9 @@ import {
   Typography,
   Textarea,
 } from "@material-tailwind/react";
-
-const industryOptions = [
-  "Web Development",
-  "Mobile App Developement",
-  "Software Development",
-  "API Integration",
-  "EDI",
-  "Digital Marketing",
-];
-
+import { Select, Option } from "@material-tailwind/react";
 
 const Email = () => {
-
-  const [industry, setIndustry] = useState('');
-
-  const handleIndustryChange = (event) => {
-    setIndustry(event.target.value);
-  };
 
   return (
     <section className="mb-0 relative w-full h-full">
@@ -56,21 +40,15 @@ const Email = () => {
                     <Input label="Name" containerProps={{ className: "min-w-[72px]" }} />
                     <Input label="Phone Number" containerProps={{ className: "min-w-[72px]" }} />
                   </div>
-                  <FormControl variant="outlined">
-                    <InputLabel id="service-label">{industry ? '' : 'Select a service'}</InputLabel>
-                    <Select
-                      labelId="service-label"
-                      value={industry}
-                      onChange={handleIndustryChange}
-                      style={{ minWidth: '72px' }}
-                    >
-                      {industryOptions.map((option) => (
-                        <MenuItem key={option} value={option}>
-                          {option}
-                        </MenuItem>
-                      ))}
+                  <div containerProps={{ className: "min-w-[72px]" }}>
+                    <Select label="Service">
+                      <Option>Web Development</Option>
+                      <Option>Mobile App Development</Option>
+                      <Option>API Integration</Option>
+                      <Option>Electronic Data Exchange</Option>
+                      <Option>Software Development</Option>
                     </Select>
-                  </FormControl>
+                  </div>
                   <Textarea label="Message" containerProps={{ className: "min-w-[72px]" }} />
                 </div>
                 <Button className="mt-6" fullWidth>

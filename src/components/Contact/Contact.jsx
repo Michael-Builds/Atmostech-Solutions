@@ -4,6 +4,7 @@ import Footer from '../Footer/Footer';
 import Scroll from '../ScrollToTop/ScrolltoTop';
 import Header from './Header';
 import Details from './Details';
+// import Location from './Location';
 import Email from './Email';
 
 const Contact = () => {
@@ -11,12 +12,13 @@ const Contact = () => {
     <>
       <Navbar />
       <div style={{ marginTop: '80px' }}>
-        <Header/>
-        <Details/>
-        <Email/>
-        </div>
-      <Scroll/>
-      <Footer/>
+        <Header />
+        <Details />
+        {/* <Location /> */}
+        <Email />
+      </div>
+      <Scroll />
+      <Footer />
     </>
   );
 };

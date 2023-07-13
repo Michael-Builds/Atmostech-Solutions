@@ -619,6 +619,15 @@
   text-transform: uppercase;
 }
 
+.details {
+  background-color: #f5f5f5;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.details-card {
+  margin-left: 120px;
+}
+
 .contact-me {
   margin-top: -90px;
 }
@@ -778,42 +787,41 @@
   line-height: 1.6;
 }
 
-.blog-title{
+.blog-title {
   font-family: "Exo", sans-serif;
   font-size: 38px;
   font-weight: 700;
   color: #555;
 }
-.blog-sub{
+.blog-sub {
   font-family: "Exo", sans-serif;
   font-size: 22px;
-   font-weight: 600;
-   color: #555;
+  font-weight: 600;
+  color: #555;
 }
-.blog-card{
+.blog-card {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
 }
 
-.blog-date{
-background-color: #0ced17;
-border-radius: 5px;
-margin-top: -5px;
+.blog-date {
+  background-color: #0ced17;
+  border-radius: 5px;
+  margin-top: -5px;
 }
-.blog-text{
+.blog-text {
   text-align: center;
   font-size: 19px;
   font-family: "Roboto", sans-serif;
   color: #fff;
 }
 
-@media only screen and (max-width: 480px){
-
+@media only screen and (max-width: 480px) {
   /* Targets devices with a maximum screen width of 480 pixels, such as smartphones in portrait orientation. */
-} 
+}
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   /* Targets devices with a screen width between 481 and 768 pixels, such as smartphones in landscape orientation and small tablets. */
-} 
+}
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   /* - Targets devices with a screen width between 769 and 1024 pixels, such as larger tablets and small laptops. */
