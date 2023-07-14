@@ -13,13 +13,12 @@ import {
   MenuHandler,
   MenuList,
   MenuItem,
-  Chip,
 } from "@material-tailwind/react";
-
 import {
   ChevronDownIcon,
   Bars3Icon,
   XMarkIcon,
+
 } from "@heroicons/react/24/outline";
 import { CiGlobe } from 'react-icons/ci';
 import { GrSystem } from 'react-icons/gr';
@@ -42,55 +41,30 @@ const navListMenuItems = [
   {
     color: "green",
     icon: GrSystem,
-    title: (
-      <div className="flex items-center gap-1">
-        Software Development{" "}
-        <Chip
-          size="sm"
-          color="green"
-          variant="ghost"
-          value="Robust System!"
-          className="capitalize"
-        />
-      </div>
-    ),
-    description: "Custom software solutions tailored for your business.",
+    title: "Software Development",
   },
+
   {
     color: "teal",
     icon: CiGlobe,
     title: "Web Development",
-    description: "Transforming Your Online Presence with Stunning Web Development Solutions",
   },
   {
     color: "teal",
     icon: TbDeviceMobileStar,
     title: "Mobile App Development",
-    description: "Empower your business with cutting-edge mobile apps for growth.",
   },
   {
     color: "cyan",
     icon: AiOutlineApi,
     title: "API Integration",
-    description: "Unlock possibilities with expert API integration.",
   },
   {
     color: "green",
     icon: AiOutlineCloudSync,
-    title: (
-      <div className="flex items-center gap-1">
-        EDI{" "}
-        <Chip
-          size="sm"
-          color="green"
-          variant="ghost"
-          value="Robust System!"
-          className="capitalize"
-        />
-      </div>
-    ),
-    description: "Enhance collaboration with tailored EDI solutions.",
+    title: "API Integration",
   },
+
 ];
 
 function NavListMenu() {
@@ -98,7 +72,7 @@ function NavListMenu() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
 
   const renderItems = navListMenuItems.map(
-    ({ icon, title, description, color, id }, key) => (
+    ({ icon, title, color }, key) => (
       <Link to="/service" key={key}>
         <MenuItem className="flex items-center gap-2 rounded-lg">
           <div className={`rounded-lg p-5 ${colors[color]} `}>
@@ -114,9 +88,6 @@ function NavListMenu() {
               className="flex items-center text-sm"
             >
               {title}
-            </Typography>
-            <Typography variant="small" color="gray" className="font-normal">
-              {description}
             </Typography>
           </div>
         </MenuItem>
@@ -136,13 +107,11 @@ function NavListMenu() {
         <MenuHandler>
           <Typography
             as='div'
-            variant="small" className="p-1 font-normal font-exo">
+            variant="small" className="p-1 font-normal font-exo hover:none">
             <ListItem
               className="flex items-center gap-2 py-2 pr-4 link"
               style={{ fontSize: "17px", border: 'none' }}
               selected={isMenuOpen || isMobileMenuOpen}
-              component={NavLink}
-              to="/service"
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
               Services
@@ -159,13 +128,10 @@ function NavListMenu() {
             </ListItem>
           </Typography>
         </MenuHandler>
+
         {/* Dropdown menu list for the Services NavLink */}
-        <MenuList
-          className="hidden max-w-screen-xl rounded-xl lg:block">
-          <ul style={{ border: 'none' }}
-            className="grid max-w-screen-xl px-4 py-4 mx-auto sm:grid-cols-3 md:px-6">
-            {renderItems}
-          </ul>
+        <MenuList className="hidden max-w-screen-xl rounded-xl lg:block">
+          <ul className="grid grid-cols-3 gap-y-2">{renderItems}</ul>
         </MenuList>
       </Menu>
       <div className="block lg:hidden">
@@ -221,10 +187,11 @@ function NavList() {
         as={NavLink}
         variant="small"
         to="/contact"
-        color="white"
+        color="blue-gray"
+        activeClassName="active"
         className="p-1 font-normal font-exo"
       >
-        <ListItem className="flex items-center gap-2 py-2 pr-4 linked" style={{ fontSize: "17px" }}>
+        <ListItem className="flex items-center gap-2 py-2 pr-4 link" style={{ fontSize: "17px" }}>
           Contact
         </ListItem>
       </Typography>
@@ -245,13 +212,18 @@ export default function Example() {
   return (
     <Navbar className="fixed top-0 left-0 w-full z-50 mx-auto max-w-full px-6 py-3 rounded-none main-menu">
       <div className="flex items-center justify-between text-blue-gray-900">
-        <img
-          src="./logo.png"
-          alt="Material Tailwind Logo"
-          className="mr-4 cursor-pointer py-1.5 lg:ml-2"
-          style={{ height: '50px', width: '75px' }}
-        />
-
+        <Typography
+          as={NavLink}
+          to='/'
+          className=" mr-4 ml-3 cursor-pointer"
+        >
+          <img
+            src="./logo.png"
+            alt="Material Tailwind Logo"
+            className="mr-4 cursor-pointer py-1.5 lg:ml-2"
+            style={{ height: '50px', width: '75px' }}
+          />
+        </Typography>
         <div className="hidden lg:block">
           <NavList />
         </div>
@@ -272,7 +244,6 @@ export default function Example() {
         <NavList />
       </Collapse>
     </Navbar>
-
 
   );
 }

@@ -1,17 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Exo:500,600,700|Roboto&display=swap");
 
-.linked {
-  background-color: #04db0e;
-  color: #fff;
-  border-radius: 15px;
-}
-
-.linked:hover {
-  color: #fff;
-  box-sizing: border-box;
-  background-color: #7a7a7a;
-}
-
 .link:hover {
   background-color: transparent;
   color: #04db0e;
