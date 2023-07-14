@@ -214,7 +214,7 @@ export default function Example() {
       <div className="flex items-center justify-between text-blue-gray-900">
         <Typography
           as={NavLink}
-          to='/'
+          to='/web'
           className=" mr-4 ml-3 cursor-pointer"
         >
           <img

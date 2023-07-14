@@ -1,6 +1,6 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
-import productbg from '../../assets/me.jpg';
+import details from '../../assets/details.jpg';
 
 const Header = () => {
 
@@ -11,7 +11,7 @@ const Header = () => {
     return (
         <section id="contact-section" className="wrapper relative py-8 text-center justify-center contact-section"
             style={{
-                backgroundImage: `url(${productbg})`,
+                backgroundImage: `url(${details})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',

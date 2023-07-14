@@ -542,9 +542,6 @@
   width: 400px;
 }
 
-.contact-section {
-  background-color: #9af59a;
-}
 .contact-header {
   color: #fff;
   font-family: "Exo", sans-serif;
@@ -564,6 +561,7 @@
 .contact-card {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
 }
+
 
 .details-header {
   justify-content: center;
@@ -609,7 +607,7 @@
 }
 
 .details {
-  background-color: #fff;
+  background-color:#f5f5f5;
   box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.4);
 }
 
@@ -780,13 +778,13 @@
   font-family: "Exo", sans-serif;
   font-size: 38px;
   font-weight: 700;
-  color: #555;
+  color: #666;
 }
 .blog-sub {
   font-family: "Exo", sans-serif;
   font-size: 22px;
   font-weight: 600;
-  color: #555;
+  color: #666;
 }
 .blog-card {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);

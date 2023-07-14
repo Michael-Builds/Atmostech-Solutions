@@ -7,7 +7,7 @@ const Header = () => {
   const typingRef = useRef(null);
 
   const [ref1, inView1] = useInView({
-    triggerOnce: true, 
+    triggerOnce: true,
   });
 
   useEffect(() => {
@@ -32,7 +32,7 @@ const Header = () => {
   return (
     <section
       id="services-products"
-      className="wrapper py-8"
+      className="wrapper py-8 relative"
       style={{
         backgroundImage: `url(${productbg})`,
         backgroundSize: 'cover',
@@ -45,18 +45,19 @@ const Header = () => {
         textAlign: 'center',
       }}
     >
+      <div
+        className="absolute inset-0 bg-black opacity-70 z-10"
+      ></div>
       <h1
-        className={`text-2xl mb-12 underline-green ${
-          inView1 ? 'fade-in-bottom fade-in-bottom-active' : ''
-        }`}
+        className={`text-2xl mb-12 underline-green z-10 ${inView1 ? 'fade-in-bottom fade-in-bottom-active' : ''
+          }`}
         ref={ref1}
       >
         Products and Services
       </h1>
       <h3
-        className={`text-3xl mb-4 type-head ${
-          inView1 ? 'fade-in-bottom fade-in-bottom-active' : ''
-        }`}
+        className={`text-3xl mb-4 type-head z-10 ${inView1 ? 'fade-in-bottom fade-in-bottom-active' : ''
+          }`}
       >
         We provide you with the best{' '}
         <span className="typing" ref={typingRef}></span>

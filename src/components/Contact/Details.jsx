@@ -18,10 +18,11 @@ export default function Details() {
   });
 
   return (
-    <section className=" flex justify-center details">
+    <section className=" flex justify-center details"
+    >
       <div className="mx-auto overflow-hidden">
         <div
-          className={`justify-center align-center text-center mision-head ${inView1 ? "fade-in-left fade-in-left-active" : ""
+          className={`justify-center align-center relative z-10 text-center mision-head ${inView1 ? "fade-in-left fade-in-left-active" : ""
             }`}
           ref={ref1}
         >
