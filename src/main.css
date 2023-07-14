@@ -72,13 +72,13 @@
   color: #fff;
 }
 
-.footer-lil{
-  color:#fff;
-  font-weight:200;
-  line-height:1.5;
+.footer-lil {
+  color: #fff;
+  font-weight: 200;
+  line-height: 1.5;
 }
 
-.footer-icon{
+.footer-icon {
   color: #fff;
 }
 
@@ -89,7 +89,7 @@
 .footer-text {
   font-family: "Exo", sans-serif;
   font-size: 14px;
-  line-height:1.5;
+  line-height: 1.5;
   color: #fff;
 }
 
@@ -645,6 +645,13 @@
 .contact-me {
   margin-top: -90px;
 }
+.email-btn {
+  font-family: "Exo", sans-serif;
+  background-color: #0ced17;
+  color: #333;
+  text-transform: capitalize;
+  font-size: 17px;
+}
 
 @keyframes fade-in-bottom {
   0% {
@@ -831,9 +838,10 @@
 }
 .blog-text {
   text-align: center;
-  font-size: 20px;
+  font-size: 19px;
+  font-weight: 600;
   font-family: "Exo", sans-serif;
-  color: black;
+  color: #333333;
 }
 
 .Carousel {

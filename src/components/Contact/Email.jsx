@@ -50,10 +50,12 @@ const Email = () => {
                     </Select>
                   </div>
                   <Textarea label="Message" containerProps={{ className: "min-w-[72px]" }} />
+                </div >
+                <div className="">
+                <Button className="mt-6 email-btn" fullWidth>
+                    Submit
+                  </Button>
                 </div>
-                <Button className="mt-6" fullWidth>
-                  Submit
-                </Button>
               </form>
             </Card>
           </div>

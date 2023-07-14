@@ -45,7 +45,7 @@ export default function Blog() {
                         <CardBody>
                             <div className="mb-3 flex items-center justify-center blog-date ">
                                 <Typography className="blog-text text-4xl">
-                                    Fri, July 2023
+                                    Blockchain Demystified
                                 </Typography>
                             </div>
                             <Typography color="gray">
@@ -74,12 +74,11 @@ export default function Blog() {
                         <CardBody>
                             <div className="mb-3 flex items-center justify-center blog-date">
                                 <Typography className="blog-text text-4xl">
-                                    Fri, July 2023
+                                    Deep Learning
                                 </Typography>
                             </div>
                             <Typography color="gray">
-                                Enter a freshly updated and thoughtfully furnished peaceful home
-                                surrounded by ancient trees, stone walls, and open meadows.
+                                This blog post could explore the growing importance of AI ethics, which refers to the ethical and social implications of artificial intelligence and machine learning technologies....
                             </Typography>
                         </CardBody>
                         <CardFooter className="pt-0">
@@ -103,12 +102,11 @@ export default function Blog() {
                         <CardBody>
                             <div className="mb-3 flex items-center justify-center blog-date">
                                 <Typography className="blog-text text-4xl">
-                                    Fri, July 2023
+                                    Cyberwarfare
                                 </Typography>
                             </div>
                             <Typography color="gray">
-                                Enter a freshly updated and thoughtfully furnished peaceful home
-                                surrounded by ancient trees, stone walls, and open meadows.
+                                This topic focuses on the emerging threat of cyberwarfare, which refers to the use of digital attacks and espionage by nation-states or other actors to achieve political or military objectives...
                             </Typography>
 
                         </CardBody>
