@@ -42,27 +42,32 @@ const navListMenuItems = [
     color: "green",
     icon: GrSystem,
     title: "Software Development",
+    path: "/software"
   },
 
   {
     color: "teal",
     icon: CiGlobe,
     title: "Web Development",
+    path: "/web"
   },
   {
     color: "teal",
     icon: TbDeviceMobileStar,
     title: "Mobile App Development",
+    path: "/mobile"
   },
   {
     color: "cyan",
     icon: AiOutlineApi,
     title: "API Integration",
+    path: "/api"
   },
   {
     color: "green",
     icon: AiOutlineCloudSync,
-    title: "API Integration",
+    title: "EDI",
+    path: "/edi"
   },
 
 ];
@@ -72,8 +77,8 @@ function NavListMenu() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
 
   const renderItems = navListMenuItems.map(
-    ({ icon, title, color }, key) => (
-      <Link to="/service" key={key}>
+    ({ icon, title, color, path }, key) => (
+      <Link to={path} key={key}>
         <MenuItem className="flex items-center gap-2 rounded-lg">
           <div className={`rounded-lg p-5 ${colors[color]} `}>
             {React.createElement(icon, {
@@ -214,7 +219,7 @@ export default function Example() {
       <div className="flex items-center justify-between text-blue-gray-900">
         <Typography
           as={NavLink}
-          to='/web'
+          to='/'
           className=" mr-4 ml-3 cursor-pointer"
         >
           <img
