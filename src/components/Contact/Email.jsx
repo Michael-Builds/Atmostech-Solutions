@@ -8,6 +8,7 @@ import {
   Typography,
   Textarea,
 } from "@material-tailwind/react";
+
 import { Select, Option } from "@material-tailwind/react";
 
 const Email = () => {
@@ -35,10 +36,20 @@ const Email = () => {
               </Typography>
               <form className="mt-8 mb-1 w-80 max-w-screen-lg sm:w-96">
                 <div className="mb-4 flex flex-col gap-6">
-                  <Input label="Email" containerProps={{ className: "min-w-[72px]" }} />
+                  <Input
+                    label="Email"
+                    containerProps={{ className: "min-w-[72px]" }}
+                    type="email"
+                  />
+
                   <div className="my-2 flex items-center gap-3">
                     <Input label="Name" containerProps={{ className: "min-w-[72px]" }} />
-                    <Input label="Phone Number" containerProps={{ className: "min-w-[72px]" }} />
+                    <Input
+                      label="Phone Number"
+                      type="tel"
+                      containerProps={{ className: "min-w-[72px]" }}
+                    />
+
                   </div>
                   <div containerProps={{ className: "min-w-[72px]" }}>
                     <Select label="Service">
@@ -52,7 +63,7 @@ const Email = () => {
                   <Textarea label="Message" containerProps={{ className: "min-w-[72px]" }} />
                 </div >
                 <div className="">
-                <Button className="mt-6 email-btn" fullWidth>
+                  <Button className="mt-6 email-btn" fullWidth>
                     Submit
                   </Button>
                 </div>
