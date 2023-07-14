@@ -13,7 +13,7 @@ const Software = () => {
       <section style={{ marginTop: "80px" }}>
         <Header />
         <Main />
-        <Email/>
+        <Email />
       </section>
       <Footer />
       <Scroll />

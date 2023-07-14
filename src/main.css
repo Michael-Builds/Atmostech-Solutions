@@ -163,7 +163,7 @@
   margin-bottom: 15px;
   font-weight: 600;
   font-size: 32px;
-  color: #fff;
+  color: #666;
 }
 
 .first-headings {
@@ -274,21 +274,34 @@
 .trusted-head {
   font-family: "Exo", sans-serif;
   margin-top: 40px;
-  font-size: 26px;
+  font-size: 32px;
   color: #333;
 }
 .trusted-sub {
   font-family: "Exo", sans-serif;
-  margin-top: 40px;
-  font-size: 20px;
+  margin-top: 15px;
   color: #333;
+  font-size: 18px;
 }
+
+.pagination-item {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: #959393;
+}
+
+.pagination-item-active {
+  background-color: #03a30b;
+}
+
 .text-whites {
   margin-bottom: 20px;
 }
 
 .partners-section {
-  background-color: #fff;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.4);
 }
 
 .paragraph {
@@ -561,7 +574,6 @@
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
 }
 
-
 .details-header {
   justify-content: center;
   align-items: center;
@@ -606,7 +618,7 @@
 }
 
 .details {
-  background-color:#f5f5f5;
+  background-color: #f5f5f5;
   box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.4);
 }
 
@@ -806,6 +818,13 @@
   font-size: 19px;
   font-family: "Roboto", sans-serif;
   color: #fff;
+}
+
+.Carousel {
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 480px) {

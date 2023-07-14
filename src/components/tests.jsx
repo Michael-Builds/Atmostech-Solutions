@@ -7,14 +7,15 @@ import partner6 from '../../assets/Tamani.png';
 
 const PartnersSection = () => {
   return (
-    <section className="partners-section">
+    <section className="relative">
       <div className="flex flex-col justify-center items-center lg:flex-row lg:justify-between">
-        <div className="partners-left text-center md:w-1/2 md:mr-10">
-          <h2 className="text-3xl font-bold mb-4 trusted-head">Our Trusted Partners</h2>
+       
+        <div className="partners-left text-center md:w-1/2 md:mr-10 relative">
+          <h2 className="text-3xl font-bold mb-4 "></h2>
           <p className="text-whites">
             We are proud to collaborate with industry-leading partners who share our vision and commitment to excellence.
           </p>
-          <h2 className="text-2xl font-bold mb-4 trusted-sub">Explore Our Collaborations</h2>
+          <h2 className="text-2xl font-bold mb-4 ">Explore Our Collaborations</h2>
           <p className="text-whites">
             We are proud to collaborate with industry-leading partners who share our vision and commitment to excellence in delivering exceptional solutions.
           </p>
