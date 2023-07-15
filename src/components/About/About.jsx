@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import Navbar from '../Nav/Navbar'
 import Header from './Header';
 import Footer from '../Footer/Footer';
@@ -9,6 +10,12 @@ import Blog from './Blog';
 import Scroll from '../ScrollToTop/ScrolltoTop';
 
 const About = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
   return (
     <>
       <Navbar />
