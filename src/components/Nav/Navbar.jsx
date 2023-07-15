@@ -111,7 +111,8 @@ function NavListMenu() {
       >
         <MenuHandler>
           <Typography
-            as='div'
+            as={NavLink}
+            to='/service'
             variant="small" className="p-1 font-normal font-exo hover:none">
             <ListItem
               className="flex items-center gap-2 py-2 pr-4 link"

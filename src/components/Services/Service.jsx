@@ -21,7 +21,7 @@ const Service = () => {
         <div className="grid grid-cols-3 justify-center mb-10 ml-11">
           <Card className="mt-6 w-96 card zoom-in-1">
             <CardBody>
-              <RocketLaunchIcon className="text-green-500 w-12 h-12 mb-4 mx-auto" />
+              <RocketLaunchIcon className="text-green-500 w-12 h-12 mb-4 mx-auto ike" />
               <Typography variant="h5" color="blue-gray" className="mb-2 text-center">
                 UI/UX Review Check
               </Typography>
