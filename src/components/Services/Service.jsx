@@ -8,7 +8,7 @@ import {
 } from "@material-tailwind/react";
 import { RocketLaunchIcon } from "@heroicons/react/24/solid";
 import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
-
+import { Link } from 'react-router-dom';
 import { CiGlobe } from 'react-icons/ci';
 import { VscVmConnect } from 'react-icons/vsc';
 import { TbDeviceMobileStar } from 'react-icons/tb';
@@ -27,102 +27,104 @@ const Service = () => {
         <div className="grid grid-cols-3 justify-center mb-10 ml-11">
           <Card className="mt-6 w-96 card zoom-in-1">
             <CardBody>
-              <CiGlobe className="text-green-500 w-12 h-12 mb-4 mx-auto ike" />
+              <VscVmConnect className="text-green-500 w-12 h-12 mb-4 mx-auto ike" />
               <Typography variant="h5" color="blue-gray" className="mb-2 text-center">
-               Web Development
+                Software Development
               </Typography>
               <Typography className="text-center">
-                Because it's about motivating the doers. Because I'm here to follow my dreams and inspire others.
+                Our software development service is a catalyst for dreams, inspiring both personal growth and the pursuit of greatness.
+              </Typography>
+            </CardBody>
+            <CardFooter className="pt-0">
+              <Link to='/software' className="inline-block service-btn">
+                <Button size="sm" variant="text" className="flex items-center gap-2">
+                  Learn More
+                  <ArrowLongRightIcon strokeWidth={2} className="w-4 h-4" />
+                </Button>
+              </Link>
+            </CardFooter>
+          </Card>
+
+          <Card className="mt-6 w-96 card zoom-in-2">
+            <CardBody>
+              <CiGlobe className="text-green-500 w-12 h-12 mb-4 mx-auto ike" />
+              <Typography variant="h5" color="blue-gray" className="mb-2 text-center">
+                Web Development
+              </Typography>
+              <Typography className="text-center">
+                Unleash creativity with our web development service, turning aspirations into captivating online experiences that inspire and captivate audiences.
               </Typography>
               <CardFooter className="pt-0">
-                <a href="www.blog.html" className="inline-block">
+                <Link to='/web' className="inline-block service-btn">
                   <Button size="sm" variant="text" className="flex items-center gap-2">
                     Learn More
                     <ArrowLongRightIcon strokeWidth={2} className="w-4 h-4" />
                   </Button>
-                </a>
+                </Link>
               </CardFooter>
             </CardBody>
           </Card>
 
-          <Card className="mt-6 w-96 card zoom-in-2">
+          <Card className="mt-6 w-96 card zoom-in-3">
             <CardBody>
               <TbDeviceMobileStar className="text-green-500 w-12 h-12 mb-4 mx-auto ike" />
               <Typography variant="h5" color="blue-gray" className="mb-2 text-center">
                 Mobile App Development
               </Typography>
               <Typography className="text-center">
-                Because it's about motivating the doers. Because I'm here to follow my dreams and inspire others.
+                Empower innovation with our mobile app development service, creating seamless user-centric experiences that amplify engagement and forge meaningful connections on-the-go.
               </Typography>
             </CardBody>
             <CardFooter className="pt-0">
-              <a href="www.blog.html" className="inline-block">
+              <Link to='/mobile' className="inline-block service-btn">
                 <Button size="sm" variant="text" className="flex items-center gap-2">
                   Learn More
                   <ArrowLongRightIcon strokeWidth={2} className="w-4 h-4" />
                 </Button>
-              </a>
+              </Link>
             </CardFooter>
           </Card>
 
-          <Card className="mt-6 w-96 card zoom-in-3">
+          <Card className="mt-6 w-96 card zoom-in-4">
             <CardBody>
               <AiOutlineApi className="text-green-500  w-12 h-12 mb-4 mx-auto ike" />
               <Typography variant="h5" color="blue-gray" className="mb-2 text-center">
-               API Integration
+                API Integration
               </Typography>
               <Typography className="text-center">
-                Because it's about motivating the doers. Because I'm here to follow my dreams and inspire others.
+                Unleash the power of interconnected technologies with our API integration service, streamlining operations and fostering collaboration through seamless data integration.
               </Typography>
             </CardBody>
             <CardFooter className="pt-0">
-              <a href="www.blog.html" className="inline-block">
+              <Link to='/api' className="inline-block service-btn">
                 <Button size="sm" variant="text" className="flex items-center gap-2">
                   Learn More
                   <ArrowLongRightIcon strokeWidth={2} className="w-4 h-4" />
                 </Button>
-              </a>
+              </Link>
             </CardFooter>
           </Card>
-          <Card className="mt-6 w-96 card zoom-in-4">
+          <Card className="mt-6 w-96 card zoom-in-5">
             <CardBody>
               <AiOutlineCloudSync className="text-green-500 w-12 h-12 mb-4 mx-auto ike" />
               <Typography variant="h5" color="blue-gray" className="mb-2 text-center">
                 Electronic Data Interchange
               </Typography>
               <Typography className="text-center">
-                Because it's about motivating the doers. Because I'm here to follow my dreams and inspire others.
+
+                Transform business communication with our EDI service, streamlining data exchange between trading partners for optimized supply chain efficiency and collaboration.
               </Typography>
             </CardBody>
             <CardFooter className="pt-0">
-              <a href="www.blog.html" className="inline-block">
+              <Link to='/edi' className="inline-block service-btn">
                 <Button size="sm" variant="text" className="flex items-center gap-2">
                   Learn More
                   <ArrowLongRightIcon strokeWidth={2} className="w-4 h-4" />
                 </Button>
-              </a>
+              </Link>
             </CardFooter>
           </Card>
 
-          <Card className="mt-6 w-96 card zoom-in-5">
-            <CardBody>
-              <VscVmConnect className="text-green-500 w-12 h-12 mb-4 mx-auto ike" />
-              <Typography variant="h5" color="blue-gray" className="mb-2 text-center">
-                Software Development
-              </Typography>
-              <Typography className="text-center">
-                Because it's about motivating the doers. Because I'm here to follow my dreams and inspire others.
-              </Typography>
-            </CardBody>
-            <CardFooter className="pt-0">
-              <a href="www.blog.html" className="inline-block">
-                <Button size="sm" variant="text" className="flex items-center gap-2">
-                  Learn More
-                  <ArrowLongRightIcon strokeWidth={2} className="w-4 h-4" />
-                </Button>
-              </a>
-            </CardFooter>
-          </Card>
           <Card className="mt-6 w-96 card zoom-in-6">
             <CardBody>
               <RocketLaunchIcon className="text-green-500 w-12 h-12 mb-4 mx-auto ike" />
@@ -134,7 +136,7 @@ const Service = () => {
               </Typography>
             </CardBody>
             <CardFooter className="pt-0">
-              <a href="www.blog.html" className="inline-block">
+              <a href="www.blog.html" className="inline-block service-btn">
                 <Button size="sm" variant="text" className="flex items-center gap-2">
                   Learn More
                   <ArrowLongRightIcon strokeWidth={2} className="w-4 h-4" />
