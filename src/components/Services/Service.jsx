@@ -9,6 +9,12 @@ import {
 import { RocketLaunchIcon } from "@heroicons/react/24/solid";
 import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
 
+import { CiGlobe } from 'react-icons/ci';
+import { VscVmConnect } from 'react-icons/vsc';
+import { TbDeviceMobileStar } from 'react-icons/tb';
+import { AiOutlineApi } from 'react-icons/ai';
+import { AiOutlineCloudSync } from 'react-icons/ai';
+
 const Service = () => {
   return (
     <section className="service section flex justify-center items-center">
@@ -21,9 +27,9 @@ const Service = () => {
         <div className="grid grid-cols-3 justify-center mb-10 ml-11">
           <Card className="mt-6 w-96 card zoom-in-1">
             <CardBody>
-              <RocketLaunchIcon className="text-green-500 w-12 h-12 mb-4 mx-auto ike" />
+              <CiGlobe className="text-green-500 w-12 h-12 mb-4 mx-auto ike" />
               <Typography variant="h5" color="blue-gray" className="mb-2 text-center">
-                UI/UX Review Check
+               Web Development
               </Typography>
               <Typography className="text-center">
                 Because it's about motivating the doers. Because I'm here to follow my dreams and inspire others.
@@ -41,9 +47,9 @@ const Service = () => {
 
           <Card className="mt-6 w-96 card zoom-in-2">
             <CardBody>
-              <RocketLaunchIcon className="text-green-500 w-12 h-12 mb-4 mx-auto ike" />
+              <TbDeviceMobileStar className="text-green-500 w-12 h-12 mb-4 mx-auto ike" />
               <Typography variant="h5" color="blue-gray" className="mb-2 text-center">
-                UI/UX Review Check
+                Mobile App Development
               </Typography>
               <Typography className="text-center">
                 Because it's about motivating the doers. Because I'm here to follow my dreams and inspire others.
@@ -61,9 +67,9 @@ const Service = () => {
 
           <Card className="mt-6 w-96 card zoom-in-3">
             <CardBody>
-              <RocketLaunchIcon className="text-green-500  w-12 h-12 mb-4 mx-auto ike" />
+              <AiOutlineApi className="text-green-500  w-12 h-12 mb-4 mx-auto ike" />
               <Typography variant="h5" color="blue-gray" className="mb-2 text-center">
-                UI/UX Review Check
+               API Integration
               </Typography>
               <Typography className="text-center">
                 Because it's about motivating the doers. Because I'm here to follow my dreams and inspire others.
@@ -80,9 +86,9 @@ const Service = () => {
           </Card>
           <Card className="mt-6 w-96 card zoom-in-4">
             <CardBody>
-              <RocketLaunchIcon className="text-green-500 w-12 h-12 mb-4 mx-auto ike" />
+              <AiOutlineCloudSync className="text-green-500 w-12 h-12 mb-4 mx-auto ike" />
               <Typography variant="h5" color="blue-gray" className="mb-2 text-center">
-                UI/UX Review Check
+                Electronic Data Interchange
               </Typography>
               <Typography className="text-center">
                 Because it's about motivating the doers. Because I'm here to follow my dreams and inspire others.
@@ -100,9 +106,9 @@ const Service = () => {
 
           <Card className="mt-6 w-96 card zoom-in-5">
             <CardBody>
-              <RocketLaunchIcon className="text-green-500 w-12 h-12 mb-4 mx-auto ike" />
+              <VscVmConnect className="text-green-500 w-12 h-12 mb-4 mx-auto ike" />
               <Typography variant="h5" color="blue-gray" className="mb-2 text-center">
-                UI/UX Review Check
+                Software Development
               </Typography>
               <Typography className="text-center">
                 Because it's about motivating the doers. Because I'm here to follow my dreams and inspire others.

@@ -21,7 +21,7 @@ import {
 
 } from "@heroicons/react/24/outline";
 import { CiGlobe } from 'react-icons/ci';
-import { GrSystem } from 'react-icons/gr';
+import { VscVmConnect } from 'react-icons/vsc';
 import { TbDeviceMobileStar } from 'react-icons/tb';
 import { AiOutlineApi } from 'react-icons/ai';
 import { AiOutlineCloudSync } from 'react-icons/ai';
@@ -40,7 +40,7 @@ const colors = {
 const navListMenuItems = [
   {
     color: "green",
-    icon: GrSystem,
+    icon: VscVmConnect,
     title: "Software Development",
     path: "/software"
   },
