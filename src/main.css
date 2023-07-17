@@ -129,6 +129,11 @@
 .produce:hover .sent {
   color: #fff;
 }
+.produce:hover .produce-text {
+  color: #fff;
+  background-color: transparent;
+}
+
 .title-typo {
   color: #555;
   font-family: "Exo", sans-serif;
@@ -147,10 +152,6 @@
   line-height: 1.6;
   color: #333;
   font-size: 14px;
-}
-
-.produce:hover .produce-btn {
-  color: #fff;
 }
 
 /* .btn {
@@ -836,6 +837,50 @@
   font-family: "Exo", sans-serif;
   font-size: 38px;
   font-weight: 700;
+  color: #666;
+}
+
+.main-card {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.main-card {
+  transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+.main-card:hover {
+  transform: translateY(-10px); 
+  box-shadow: 0px 6px 8px rgba(7, 124, 7, 0.2);
+}
+
+
+.team-header {
+  font-family: "Exo", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #666;
+}
+
+.team-sub {
+  font-family: "Exo", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #666;
+}
+.team-image {
+  width: 200px;
+  height: 200px;
+}
+.team-name {
+  font-family: "Exo", sans-serif;
+  font-size: 21px;
+  font-weight: 600;
+  color: #666;
+}
+.team-role {
+  font-weight: 500;
+  font-size: 18px;
+  font-family: "Exo", sans-serif;
   color: #666;
 }
 .blog-sub {

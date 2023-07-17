@@ -8,7 +8,7 @@ import Impacts from "./Impacts";
 import Carousel from './Carousel';
 import Footer from '../Footer/Footer';
 import Scroll from '../ScrollToTop/ScrolltoTop';
-// import Team from './Team';
+import Team from './Team';
 const Home = () => {
   const location = useLocation();
 
@@ -23,8 +23,8 @@ const Home = () => {
       <Value />
       <Products />
       <Impacts />
+      <Team />
       <Carousel />
-      {/* <Combine/> */}
       <Footer />
       <Scroll />
     </>

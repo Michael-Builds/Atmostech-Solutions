@@ -4,6 +4,7 @@ import {
   CardHeader,
   CardBody,
   Typography,
+  CardFooter,
   Button
 } from "@material-tailwind/react";
 import management from '../../assets/management.jpeg';
@@ -41,15 +42,16 @@ const ServicesProducts = () => {
               <Typography color="gray" className="font-normal mb-8 sent">
                 Revolutionize school management with our advanced cross-platform solution launching this week, empowering educational institutions with unparalleled convenience and efficiency.
               </Typography>
-              <Link to='/software' className="inline-block produce-btn">
-                <Button variant="text" className="flex items-center gap-2">
-                  Learn More
-                  <ArrowLongRightIcon strokeWidth={2} className="w-3 h-3" />
-                </Button>
-              </Link>
+              <CardFooter className='pt-0'>
+                <Link to='/software' className="inline-block ">
+                  <Button variant="text" className="flex items-center gap-2 produce-text">
+                    Learn More
+                    <ArrowLongRightIcon strokeWidth={2} className="w-3 h-3" />
+                  </Button>
+                </Link>
+              </CardFooter>
             </CardBody>
           </Card>
-
           <Card className="flex-row w-full max-w-[36rem] head zoom-in-2 produce"
           >
             <CardHeader shadow={false} floated={false} className="w-2/5 shrink-0 m-0 rounded-r-none">
@@ -67,8 +69,8 @@ const ServicesProducts = () => {
               <Typography color="gray" className="font-normal mb-8 sent">
                 Our powerful e-commerce app transforms the way businesses sell products online, delivering seamless shopping experiences and driving exponential growth.
               </Typography>
-              <Link to='/mobile' className="inline-block ">
-                <Button variant="text" className="flex items-center gap-2 ">
+              <Link to='/mobile' className="inline-block">
+                <Button variant="text" className="flex items-center gap-2 produce-text ">
                   Learn More
                   <ArrowLongRightIcon strokeWidth={2} className="w-3 h-3" />
                 </Button>
@@ -93,8 +95,8 @@ const ServicesProducts = () => {
               <Typography color="gray" className="font-normal mb-8 sent">
                 Like so many organizations these days, Autodesk is a company in transition. It was until recently a traditional boxed software company selling licenses. Yet its own business model disruption is only part of the story
               </Typography>
-              <Link to='/web' className="inline-block ">
-                <Button variant="text" className="flex items-center gap-2 ">
+              <Link to='/web' className="inline-block">
+                <Button variant="text" className="flex items-center gap-2 produce-text ">
                   Learn More
                   <ArrowLongRightIcon strokeWidth={2} className="w-3 h-3" />
                 </Button>
@@ -119,8 +121,8 @@ const ServicesProducts = () => {
               <Typography color="gray" className="font-normal mb-8 sent">
                 Unlock the full potential of your application with seamless API integration, enabling effortless data exchange, streamlined functionality, and enhanced connectivity with external systems and services.
               </Typography>
-              <Link to='/api' className="inline-block ">
-                <Button variant="text" className="flex items-center gap-2 ">
+              <Link to='/api' className="inline-block">
+                <Button variant="text" className="flex items-center gap-2 produce-text">
                   Learn More
                   <ArrowLongRightIcon strokeWidth={2} className="w-3 h-3" />
                 </Button>
