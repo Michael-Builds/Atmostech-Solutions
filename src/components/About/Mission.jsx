@@ -133,7 +133,7 @@ const MissionVision = () => {
               <span className="text-gray-800 text-center value-head">Integrity</span>
             </div>
 
-            <div className='counter-item w-90 h-90 p-4 value-card zoom-in-5 bg-white shadow-lg mx-4 mb-8 flex flex-col justify-center items-center'>
+            <div className='counter-item w-64 h-64 p-4 value-card zoom-in-5 bg-white shadow-lg mx-4 mb-8 flex flex-col justify-center items-center'>
               <span className="text-4xl font-bold mb-2">
                 <GoTrophy className='value-icon-trophy' />
               </span>

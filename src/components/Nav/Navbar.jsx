@@ -165,14 +165,14 @@ function NavList() {
 
       <Typography
         as={NavLink}
-        to="/about"
+        to="/company"
         variant="small"
         color="blue-gray"
         activeClassName="active"
         className="p-1 font-normal font-exo"
       >
         <ListItem className="flex items-center gap-2 py-2 pr-4 link" style={{ fontSize: "17px" }}>
-          About us
+         Company
         </ListItem>
       </Typography>
       <NavListMenu />
