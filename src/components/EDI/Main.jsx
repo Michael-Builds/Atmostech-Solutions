@@ -2,6 +2,20 @@ import React from "react";
 import background from "./background.png";
 import "../../index.css";
 import "../../main.css";
+import {
+    Timeline,
+    TimelineItem,
+    TimelineConnector,
+    TimelineHeader,
+    TimelineIcon,
+    Typography,
+    TimelineBody,
+} from "@material-tailwind/react";
+import {
+    HomeIcon,
+    BellIcon,
+    CurrencyDollarIcon,
+} from "@heroicons/react/24/solid";
 
 const Main = () => {
     return (
@@ -45,12 +59,61 @@ const Main = () => {
                             With our mobile app development solutions, you can stay connected with your customers and drive engagement on the go.
                         </p>
                     </div>
-                    <div className="flex justify-center">
-                        <img
-                            src={background}
-                            alt="ATMOS-PIC"
-                            className="main-image "
-                        />
+                    <div className="flex justify-center mt-12">
+                        <div className="w-[32rem]">
+                            <Timeline>
+                                <TimelineItem>
+                                    <TimelineConnector />
+                                    <TimelineHeader>
+                                        <TimelineIcon className="p-2">
+                                            <HomeIcon className="h-4 w-4" />
+                                        </TimelineIcon>
+                                        <Typography variant="h5" color="blue-gray">
+                                            Timeline Title Here.
+                                        </Typography>
+                                    </TimelineHeader>
+                                    <TimelineBody>
+                                        <Typography color="gary" className="font-normal text-gray-600">
+                                            The key to more success is to have a lot of pillows.
+                                        </Typography>
+                                    </TimelineBody>
+
+                                </TimelineItem>
+                                <TimelineItem>
+                                    <TimelineConnector />
+                                    <TimelineHeader>
+                                        <TimelineIcon className="p-2">
+                                            <BellIcon className="h-4 w-4" />
+                                        </TimelineIcon>
+                                        <Typography variant="h5" color="blue-gray">
+                                            Timeline Title Here.
+                                        </Typography>
+                                    </TimelineHeader>
+                                    <TimelineBody>
+                                        <Typography color="gary" className="font-normal text-gray-600">
+                                            The key to more success is to have a lot of pillows.
+                                        </Typography>
+                                    </TimelineBody>
+
+                                </TimelineItem>
+                                <TimelineItem>
+                                    <TimelineHeader>
+                                        <TimelineIcon className="p-2">
+                                            <CurrencyDollarIcon className="h-4 w-4" />
+                                        </TimelineIcon>
+                                        <Typography variant="h5" color="blue-gray">
+                                            Timeline Title Here.
+                                        </Typography>
+                                    </TimelineHeader>
+                                    <TimelineBody>
+                                        <Typography color="gary" className="font-normal text-gray-600">
+                                            The key to more success is to have a lot of pillows.
+                                        </Typography>
+                                    </TimelineBody>
+
+                                </TimelineItem>
+                            </Timeline>
+                        </div>
                     </div>
                 </div>
             </div>
