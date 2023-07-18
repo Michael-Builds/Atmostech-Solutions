@@ -1,6 +1,6 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
-import details from '../../assets/details.jpg';
+import web from './web.jpeg';
 
 const Header = () => {
 
@@ -11,7 +11,7 @@ const Header = () => {
     return (
         <section id="contact-section" className="wrapper relative py-8 text-center justify-center contact-section"
             style={{
-                backgroundImage: `url(${details})`,
+                backgroundImage: `url(${web})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',
@@ -28,7 +28,7 @@ const Header = () => {
             <h1 className={`mb-5 contact-header z-10 ${inView1 ? 'fade-in-bottom fade-in-bottom-active' : ''
                 }`}
                 ref={ref1}>Web Development</h1>
-            <h3 className={`mb-4  contact-sub z-10 ${inView1 ? 'fade-in-bottom fade-in-bottom-active' : ''
+            <h3 className={`mb-5  contact-sub z-10 ${inView1 ? 'fade-in-bottom fade-in-bottom-active' : ''
                 }`}>
                 Providing innovative IT solutions for businesses.
             </h3>

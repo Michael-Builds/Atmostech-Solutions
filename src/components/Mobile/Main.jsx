@@ -2,6 +2,8 @@ import React from "react";
 import background from "./background.png";
 import "../../index.css";
 import "../../main.css";
+// import mob from './mob.jpeg';
+
 
 const Main = () => {
     return (

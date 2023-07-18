@@ -3,6 +3,7 @@ import background from "./background.png";
 import "../../index.css";
 import "../../main.css";
 
+
 const Main = () => {
     return (
         <section className="value-proposition mb-0 relative w-full h-full">

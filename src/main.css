@@ -820,17 +820,70 @@
 
 .mision-title {
   font-family: "Exo", sans-serif;
-  font-size: 38px;
+  font-size: 36px;
   font-weight: 700;
   color: #555;
 }
 
 .mision-sub {
   font-family: "Exo", sans-serif;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 500;
   color: #555;
   line-height: 1.6;
+}
+
+.value-card{
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+  transition: transform 0.5s, box-shadow 0.5s; 
+  margin:20px;
+}
+.value-card:hover{
+  transform: translateY(-10px); 
+  box-shadow: 0px 6px 8px rgba(7, 124, 7, 0.2);
+}
+
+.value-icon-team{
+color:purple;
+height:60px;
+width:60px;
+}
+
+.value-icon-surround{
+  color:orange;
+  height:60px;
+  width:60px;
+}
+
+.value-icon-power{
+  color:red;
+  height:60px;
+  width:60px;
+}
+
+.value-icon-unity{
+  color: rgb(251, 121, 143);
+  height:60px;
+  width:60px;
+}
+
+.value-icon-transparent{
+  color:blue;
+  height:60px;
+  width:60px;
+}
+
+.value-icon-trophy{
+  color:green;
+  height:60px;
+  width:60px;
+}
+
+.value-head{
+  font-family:"Exo", sans-serif;
+  font-size:18px;
+  font-weight:600;
+  margin-top:5px;
 }
 
 .blog-title {

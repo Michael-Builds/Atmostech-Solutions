@@ -2,6 +2,13 @@ import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import cutting from "../../assets/tech.png";
 import choose1 from "../../assets/solutions.png";
+import { RiTeamFill } from 'react-icons/ri';
+import { FaStreetView } from 'react-icons/fa';
+import { ImPower } from 'react-icons/im';
+import { SiUnity } from 'react-icons/si';
+import { HiCubeTransparent } from 'react-icons/hi';
+import { GoTrophy } from 'react-icons/go';
+
 
 const MissionVision = () => {
 
@@ -20,16 +27,6 @@ const MissionVision = () => {
   return (
     <section className="mision-vision" >
 
-      <div className={`justify-center align-center text-center mision-head ${inView1 ? 'fade-in-bottom fade-in-bottom-active' : ''
-        }`}
-        ref={ref1}>
-        <h1 className="mision-title">
-          Mission and Vision
-        </h1>
-        <h3 className="mision-sub">
-          We provide you with the best
-        </h3>
-      </div>
 
       <div className={`mx-auto overflow-hidden mt-8 ${inView2 ? 'fade-in-bottom fade-in-bottom-active' : ''
         }`}
@@ -83,6 +80,62 @@ const MissionVision = () => {
           </div>
         </div>
       </div>
+
+
+      <div className={`justify-center align-center text-center mision-head ${inView1 ? 'fade-in-bottom fade-in-bottom-active' : ''
+        }`}
+        ref={ref1}>
+        <h1 className="mision-title">
+          Our Values
+        </h1>
+        <h3 className="mision-sub">
+          Values define, guide, and inspire our organizational journey.
+        </h3>
+      </div>
+
+      <div className="flex justify-center items-center mt-12 value-cards">
+        <div className="grid grid-cols-3 gap-12 mb-8">
+          <div className='counter-item w-64 h-64 p-4 value-card bg-white shadow-lg mx-4 mb-8 flex flex-col justify-center items-center'>
+            <span className="text-4xl font-bold mb-2">
+              <RiTeamFill className='value-icon-team' />
+            </span>
+            <span className="text-gray-800 text-center value-head">Team Work</span>
+         <p></p>
+          </div>
+
+          <div className='counter-item w-64 h-64 p-4 value-card bg-white shadow-lg mx-4 mb-8 flex flex-col justify-center items-center'>
+            <span className="text-4xl font-bold mb-2">
+              <FaStreetView className='value-icon-surround' />
+            </span>
+            <span className="text-gray-800 text-center value-head">Unity</span>
+          </div>
+          <div className='counter-item w-64 h-64 p-4 value-card bg-white shadow-lg mx-4 mb-8 flex flex-col justify-center items-center'>
+            <span className="text-4xl font-bold mb-2">
+              <ImPower className='value-icon-power' />
+            </span>
+            <span className="text-gray-800 text-center value-head">Enthusiam</span>
+          </div>
+          <div className='counter-item w-64 h-64 p-4 value-card bg-white shadow-lg mx-4 mb-8 flex flex-col justify-center items-center'>
+            <span className="text-4xl font-bold mb-2">
+              <SiUnity className='value-icon-unity' />
+            </span>
+            <span className="text-gray-800 text-center value-head">Passion</span>
+          </div>
+          <div className='counter-item w-64 h-64 p-4 value-card bg-white shadow-lg mx-4 mb-8 flex flex-col justify-center items-center'>
+            <span className="text-4xl font-bold mb-2">
+              <HiCubeTransparent className='value-icon-transparent' />
+            </span>
+            <span className="text-gray-800 text-center value-head">Integrity</span>
+          </div>
+          <div className='counter-item w-90 h-90 p-4 value-card bg-white shadow-lg mx-4 mb-8 flex flex-col justify-center items-center'>
+            <span className="text-4xl font-bold mb-2">
+              <GoTrophy className='value-icon-trophy' />
+            </span>
+            <span className="text-gray-800 text-center value-head">Excellence</span>
+          </div>
+        </div>
+      </div>
+
 
     </section>
   );
