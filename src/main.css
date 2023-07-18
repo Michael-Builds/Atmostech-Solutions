@@ -1011,6 +1011,9 @@
   align-items: center;
   justify-content: center;
 }
+.timeline-icon{
+  color:#fff
+}
 
 @media only screen and (max-width: 480px) {
   /* Targets devices with a maximum screen width of 480 pixels, such as smartphones in portrait orientation. */
