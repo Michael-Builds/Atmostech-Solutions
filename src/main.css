@@ -434,7 +434,10 @@
 
 .mission-vision {
   position: relative;
+  background-color: #038305;
+
 }
+
 
 .font-medium {
   font-family: "Exo", sans-serif;
@@ -836,8 +839,9 @@
 .value-card{
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
   transition: transform 0.5s, box-shadow 0.5s; 
-  margin:20px;
+  background-color: #f5f5f5;
 }
+
 .value-card:hover{
   transform: translateY(-10px); 
   box-shadow: 0px 6px 8px rgba(7, 124, 7, 0.2);
