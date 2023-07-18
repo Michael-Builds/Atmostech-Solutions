@@ -95,50 +95,61 @@ const MissionVision = () => {
 
         <div className="flex justify-center items-center mt-12 value-cards">
           <div className="grid grid-cols-3 gap-2 mb-8">
-            <div className='counter-item w-64 h-64 p-4 value-card bg-white shadow-lg mx-4 mb-8 flex flex-col justify-center items-center'>
+            
+            <div className='counter-item w-70 h-75 p-4 value-card bg-white shadow-lg mx-4 mb-8 flex flex-col justify-center items-center'>
               <span className="text-4xl font-bold mb-2">
                 <RiTeamFill className='value-icon-team' />
               </span>
               <span className="text-gray-800 text-center value-head">Team Work</span>
-              <p className='text-center'>
+              <p className='text-center value-sentence'>
                 We cultivate a collaborative culture that values diverse perspectives, encourages open communication, and promotes teamwork.
               </p>
             </div>
-
-            <div className='counter-item w-64 h-64 p-4 value-card zoom-in-1 bg-white shadow-lg mx-4 mb-8 flex flex-col justify-center items-center'>
+            <div className='counter-item w-70 h-75 p-4 value-card zoom-in-1 bg-white shadow-lg mx-4 mb-8 flex flex-col justify-center items-center'>
               <span className="text-4xl font-bold mb-2">
                 <FaStreetView className='value-icon-surround' />
               </span>
               <span className="text-gray-800 text-center value-head">Unity</span>
+              <p className='text-center value-sentence'>
+              We take ownership of our actions, decisions, and outcomes, holding ourselves accountable for delivering results.
+           </p>
             </div>
 
-            <div className='counter-item w-64 h-64 p-4 value-card zoom-in-2 bg-white shadow-lg mx-4 mb-8 flex flex-col justify-center items-center'>
+            <div className='counter-item w-70 h-75 p-4 value-card zoom-in-2 bg-white shadow-lg mx-4 mb-8 flex flex-col justify-center items-center'>
               <span className="text-4xl font-bold mb-2">
                 <ImPower className='value-icon-power' />
               </span>
               <span className="text-gray-800 text-center value-head">Enthusiam</span>
+              <p className='text-center value-sentence'>
+              We are committed to environmental and social sustainability, making responsible choices to protect our planet and contribute to society.
+            </p>
             </div>
 
-            <div className='counter-item w-64 h-64 p-4 value-card zoom-in-3 bg-white shadow-lg mx-4 mb-8 flex flex-col justify-center items-center'>
+            <div className='counter-item w-70 h-75 p-4 value-card zoom-in-3 bg-white shadow-lg mx-4 mb-8 flex flex-col justify-center items-center'>
               <span className="text-4xl font-bold mb-2">
                 <SiUnity className='value-icon-unity' />
               </span>
               <span className="text-gray-800 text-center value-head">Passion</span>
+              <p className='text-center value-sentence'>
+                We are passionate about our work, driven by a shared purpose and enthusiasm to make a difference.</p>
             </div>
 
-            <div className='counter-item w-64 h-64 p-4 value-card zoom-in-4 bg-white shadow-lg mx-4 mb-8 flex flex-col justify-center items-center'>
+            <div className='counter-item w-70 h-75 p-4 value-card zoom-in-4 bg-white shadow-lg mx-4 mb-8 flex flex-col justify-center items-center'>
               <span className="text-4xl font-bold mb-2">
                 <HiCubeTransparent className='value-icon-transparent' />
               </span>
               <span className="text-gray-800 text-center value-head">Integrity</span>
+              <p className='text-center value-sentence'>
+              We uphold the highest ethical standards, acting honestly, responsibly, and transparently in all our endeavors.
+           </p>
             </div>
 
-            <div className='counter-item w-64 h-64 p-4 value-card zoom-in-5 bg-white shadow-lg mx-4 mb-8 flex flex-col justify-center items-center'>
+            <div className='counter-item w-70 h-75 p-4 value-card zoom-in-5 bg-white shadow-lg mx-4 mb-8 flex flex-col justify-center items-center'>
               <span className="text-4xl font-bold mb-2">
                 <GoTrophy className='value-icon-trophy' />
               </span>
               <span className="text-gray-800 text-center value-head">Excellence</span>
-              <p className='text-center'>
+              <p className='text-center value-sentence'>
                 We relentlessly pursue excellence, striving for quality, innovation, and continuous improvement in all our endeavors.</p>
             </div>
           </div>

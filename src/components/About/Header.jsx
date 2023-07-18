@@ -1,6 +1,5 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
-// import productbg from '../../assets/me.jpg';
 import background from './abt.jpeg';
 
 const Header = () => {

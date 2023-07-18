@@ -27,7 +27,31 @@ const Main = () => {
                         Our team of experts can help you integrate EDI into your existing business systems, providing a seamless and efficient way to exchange business documents with your trading partners. With our customized EDI solutions, you can optimize your supply chain management, reduce costs, and improve the accuracy and speed of your business transactions. Let us help you unlock new opportunities for growth and success through the power of EDI and advanced technology.
                         </p>
                     </div>
+                </div>
+                
+                <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
 
+                    <div className="flex flex-col justify-center mb-10">
+                        <div className="row">
+                            <div className="option-title fade-in-left">
+                                <h2 className="option-head text-left ml-10">Your Options</h2>
+                            </div>
+                        </div>
+                        <p className="mb-4 mr-5">
+                            Through our innovative approach and unwavering commitment to quality, we deliver cutting-edge mobile app solutions that are tailored to your unique needs, helping you unlock new opportunities for growth and success. Whether you need a native iOS or Android app, a hybrid app, or a mobile web app, our team of skilled developers has the expertise to deliver exceptional results that exceed your expectations
+                        </p>
+                        <p className="mb-4 mr-5">
+                            Our mobile app development company specializes in crafting customized, state-of-the-art mobile solutions that enable businesses and individuals to thrive in the rapidly-evolving digital landscape.
+                            With our mobile app development solutions, you can stay connected with your customers and drive engagement on the go.
+                        </p>
+                    </div>
+                    <div className="flex justify-center">
+                        <img
+                            src={background}
+                            alt="ATMOS-PIC"
+                            className="main-image "
+                        />
+                    </div>
                 </div>
             </div>
 

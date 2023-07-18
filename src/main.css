@@ -435,9 +435,7 @@
 .mission-vision {
   position: relative;
   background-color: #038305;
-
 }
-
 
 .font-medium {
   font-family: "Exo", sans-serif;
@@ -520,6 +518,42 @@
   margin-bottom: 30px;
   margin-top: 30px;
   font-family: "Exo", sans-serif;
+}
+.option-title {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 35px;
+  margin-top: 35px;
+  font-family: "Exo", sans-serif;
+}
+
+.option-head {
+  text-transform: capitalize;
+  color: #222322;
+  font-size: 28px;
+  font-weight: 600;
+  position: relative;
+}
+
+.option-head::before {
+  content: "";
+  height: 4px;
+  width: 120px;
+  background-color: #04db0e;
+  position: absolute;
+  top: 100%;
+  left: 5px;
+}
+
+.option-head::after {
+  content: "";
+  height: 4px;
+  width: 60px;
+  background-color: #04db0e;
+  position: absolute;
+  top: 100%;
+  left: 5px;
+  margin-top: 8px;
 }
 
 .service-head {
@@ -780,7 +814,7 @@
 /* Define more keyframes for other cards if needed */
 
 .zoom-in-1 {
-  animation: zoom-in-1 0.5s ease-in-out;
+  animation: zoom-in-1 0.8s ease-in-out;
 }
 
 .zoom-in-2 {
@@ -820,14 +854,12 @@
   margin-top: 25px;
   margin-bottom: 15px;
 }
-
 .mision-title {
   font-family: "Exo", sans-serif;
   font-size: 36px;
   font-weight: 700;
   color: #555;
 }
-
 .mision-sub {
   font-family: "Exo", sans-serif;
   font-size: 20px;
@@ -836,58 +868,62 @@
   line-height: 1.6;
 }
 
-.value-card{
+.value-card {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
-  transition: transform 0.5s, box-shadow 0.5s; 
+  transition: transform 0.5s, box-shadow 0.5s;
   background-color: #f5f5f5;
 }
 
-.value-card:hover{
-  transform: translateY(-10px); 
+.value-card:hover {
+  transform: translateY(-10px);
   box-shadow: 0px 6px 8px rgba(7, 124, 7, 0.2);
 }
-
-.value-icon-team{
-color:purple;
-height:60px;
-width:60px;
+.value-sentence {
+  margin-bottom: 8px;
+  margin-top: 8px;
 }
 
-.value-icon-surround{
-  color:orange;
-  height:60px;
-  width:60px;
+.value-icon-team {
+  color: purple;
+  height: 60px;
+  width: 60px;
 }
 
-.value-icon-power{
-  color:red;
-  height:60px;
-  width:60px;
+.value-icon-surround {
+  color: orange;
+  height: 60px;
+  width: 60px;
 }
 
-.value-icon-unity{
+.value-icon-power {
+  color: red;
+  height: 60px;
+  width: 60px;
+}
+
+.value-icon-unity {
   color: rgb(251, 121, 143);
-  height:60px;
-  width:60px;
+  height: 60px;
+  width: 60px;
 }
 
-.value-icon-transparent{
-  color:blue;
-  height:60px;
-  width:60px;
+.value-icon-transparent {
+  color: blue;
+  height: 60px;
+  width: 60px;
 }
 
-.value-icon-trophy{
-  color:green;
-  height:60px;
-  width:60px;
+.value-icon-trophy {
+  color: green;
+  height: 60px;
+  width: 60px;
 }
 
-.value-head{
-  font-family:"Exo", sans-serif;
-  font-size:18px;
-  font-weight:600;
-  margin-top:5px;
+.value-head {
+  font-family: "Exo", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 5px;
 }
 
 .blog-title {
@@ -902,14 +938,13 @@ width:60px;
 }
 
 .main-card {
-  transition: transform 0.3s, box-shadow 0.3s; 
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .main-card:hover {
-  transform: translateY(-10px); 
+  transform: translateY(-10px);
   box-shadow: 0px 6px 8px rgba(7, 124, 7, 0.2);
 }
-
 
 .team-header {
   font-family: "Exo", sans-serif;
