@@ -30,7 +30,7 @@ const Main = () => {
                             className="main-image "
                         />
                     </div>
-                    <div className="flex flex-col justify-center mb-10">
+                    <div className="flex flex-col justify-center mb-10 main-content ">
                         <h2 className="text-3xl mb-4 first-headings">
                             Empowering Your Business with Cutting-Edge API Solutions from ATMOS Technology
                         </h2>
@@ -44,10 +44,9 @@ const Main = () => {
 
                 </div>
 
+                <div className="grid grid-cols-1 gap-8 md:grid-cols-2 mb-10">
 
-                <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-
-                    <div className="flex flex-col justify-center mb-10">
+                    <div className="flex flex-col justify-center mb-10 our-options">
                         <div className="row">
                             <div className="option-title fade-in-left">
                                 <h2 className="option-head text-left ml-10">Your Options</h2>
@@ -62,7 +61,7 @@ const Main = () => {
                         </p>
                     </div>
 
-                    <div className="flex justify-center mt-12">
+                    <div className="flex justify-center mt-12 time-lines">
                         <div className="w-[32rem]">
                             <Timeline>
                                 <TimelineItem>
@@ -71,12 +70,12 @@ const Main = () => {
                                         <TimelineIcon className="p-2">
                                             <HomeIcon className="h-4 w-4" />
                                         </TimelineIcon>
-                                        <Typography variant="h5" color="blue-gray">
+                                        <Typography variant="h5" color="blue-gray" className='time-head'>
                                             Timeline Title Here.
                                         </Typography>
                                     </TimelineHeader>
                                     <TimelineBody>
-                                        <Typography color="gary" className="font-normal text-gray-600">
+                                        <Typography color="gary" className="font-normal text-gray-600 texts">
                                             The key to more success is to have a lot of pillows.
                                         </Typography>
                                     </TimelineBody>
@@ -88,12 +87,12 @@ const Main = () => {
                                         <TimelineIcon className="p-2">
                                             <BellIcon className="h-4 w-4" />
                                         </TimelineIcon>
-                                        <Typography variant="h5" color="blue-gray">
+                                        <Typography variant="h5" color="blue-gray" className='time-head'>
                                             Timeline Title Here.
                                         </Typography>
                                     </TimelineHeader>
                                     <TimelineBody>
-                                        <Typography color="gary" className="font-normal text-gray-600">
+                                        <Typography color="gary" className="font-normal text-gray-600 texts">
                                             The key to more success is to have a lot of pillows.
                                         </Typography>
                                     </TimelineBody>
@@ -104,12 +103,12 @@ const Main = () => {
                                         <TimelineIcon className="p-2">
                                             <CurrencyDollarIcon className="h-4 w-4" />
                                         </TimelineIcon>
-                                        <Typography variant="h5" color="blue-gray">
+                                        <Typography variant="h5" color="blue-gray" className='time-head'>
                                             Timeline Title Here.
                                         </Typography>
                                     </TimelineHeader>
                                     <TimelineBody>
-                                        <Typography color="gary" className="font-normal text-gray-600">
+                                        <Typography color="gary" className="font-normal text-gray-600 texts">
                                             The key to more success is to have a lot of pillows.
                                         </Typography>
                                     </TimelineBody>

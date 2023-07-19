@@ -36,7 +36,7 @@ const Jobs = () => {
     };
 
     return (
-        <section className="counter relative">
+        <section className="counter relative job-section">
             <div
                 className="mx-auto overflow-hidden"
                 style={{
@@ -52,10 +52,10 @@ const Jobs = () => {
                 </div>
                 <div className="container mx-auto py-8 relative z-10">
                     <h2 className="text-3xl font-bold mb-4 heading text-center ">Our Impacts</h2>
-                    <p className="text-white text-center mb-8 justify-center">
+                    <p className="text-white text-center mb-8 justify-center jobs">
                         We are dedicated to making a lasting impact in our community and beyond.
                     </p>
-                    <div className="flex flex-wrap justify-center gap-10">
+                    <div className="flex flex-wrap justify-center gap-10 job-items">
                         <div
                             ref={projectsCompletedRef}
                             className={`counter-item w-48 h-48 p-4 bg-white shadow-lg mx-2 mb-8 flex flex-col justify-center items-center ${hasAnimated && projectsCompletedInView ? 'animate-counter-up' : ''
@@ -77,6 +77,16 @@ const Jobs = () => {
                             <span className="text-gray-800 text-center">Satisfied Clients</span>
                         </div>
 
+                        <div
+                            ref={partnershipsRef}
+                            className={`counter-item w-48 h-48 p-4 bg-white shadow-lg mx-2 mb-8 flex flex-col justify-center items-center ${hasAnimated && partnershipsInView ? 'animate-counter-up' : ''
+                                }`}
+                        >
+                            <span className="text-2xl font-bold mb-2">
+                                <CounterInline end={partnerships} />
+                            </span>
+                            <span className="text-gray-800 text-center">Partnerships</span>
+                        </div>
                         <div
                             ref={partnershipsRef}
                             className={`counter-item w-48 h-48 p-4 bg-white shadow-lg mx-2 mb-8 flex flex-col justify-center items-center ${hasAnimated && partnershipsInView ? 'animate-counter-up' : ''

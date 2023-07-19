@@ -1011,11 +1011,376 @@
   align-items: center;
   justify-content: center;
 }
-.timeline-icon{
-  color:#fff
+.timeline-icon {
+  color: #fff;
 }
 
 @media only screen and (max-width: 480px) {
+  /* About Page */
+  .contact-section,
+  .blog-section,
+  .job-section,
+  .statements {
+    overflow: hidden;
+  }
+
+  /* Header section */
+  .contact-header {
+    font-size: 30px;
+    margin-top: 20px;
+    line-height: 1.6;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contact-sub {
+    max-width: 70%;
+    font-size: 22px;
+    margin-top: -10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Main section */
+  .main-image {
+    display: flex;
+    align-items: center;
+    height: 250px;
+    width: 250px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    justify-content: center;
+  }
+
+  .main-content {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .main-content p {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    max-width: 90%;
+    line-height: 2.1;
+  }
+  .first-headings {
+    font-weight: 700;
+    margin-top: 5px;
+    font-size: 25px;
+    margin-left: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 95%;
+  }
+
+  /* Mision and vision statement */
+  .mission {
+    text-align: center;
+  }
+
+  .mission h2 {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 26px;
+    max-width: 90%;
+  }
+
+  .mission p {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+    line-height: 1.9;
+    max-width: 90%;
+  }
+
+  /* Vision section */
+  .vision {
+    position: relative;
+    overflow: hidden;
+    margin-top: 5px;
+    text-align: center;
+  }
+  .vision-content {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .mision-second {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 26px;
+  }
+  .mission-sent {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+    line-height: 1.9;
+    max-width: 90%;
+  }
+
+  .images {
+    margin-top: -40px;
+  }
+
+  .mision-head {
+    text-align: center;
+  }
+
+  .mision-title {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 28px;
+  }
+
+  .mision-sub {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 17px;
+    line-height: 1.9;
+    max-width: 90%;
+  }
+
+  /* Value section */
+  .value-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: -8px;
+  }
+
+  .value-card {
+    height: 100%;
+    width: 80%;
+  }
+
+  .value-icon {
+    width: 45px;
+    height: 45px;
+  }
+  .value-head {
+    font-size: 17px;
+  }
+  .value-sentence {
+    font-size: 15px;
+  }
+
+  /* Jobs or Impacts */
+  .container {
+    text-align: center;
+  }
+
+  .heading {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 28px;
+  }
+
+  .jobs {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    max-width: 80%;
+  }
+
+  .job-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: -8px;
+    gap: 8px;
+  }
+
+  /* Blog Section */
+  .blog-title {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+  }
+
+  .blog-sub {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+  }
+
+  /* Option section */
+
+  .our-options {
+    text-align: center;
+    margin-top: -20px;
+  }
+  .option-head {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+    font-size: 28px;
+    text-align: center;
+    justify-content: center;
+  }
+  .option-head::before {
+    content: "";
+    height: 4px;
+    width: 120px;
+    background-color: #04db0e;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(
+      -50%,
+      8px
+    ); /* Use transform to center horizontally and add a margin from the top */
+  }
+
+  .option-head::after {
+    content: "";
+    height: 4px;
+    width: 60px;
+    background-color: #04db0e;
+    position: absolute;
+    top: 80%; /* Set the top position to 50% */
+    left: 50%; /* Set the left position to 50% */
+    transform: translate(
+      -50%,
+      8px
+    ); /* Use transform to center horizontally and add a margin from the top */
+  }
+
+  .time-lines {
+    justify-content: center;
+    margin-top: -20px;
+    margin-bottom: 20px;
+  }
+
+  .contact-me {
+    margin-top: 30px;
+  }
+  .email-content {
+    justify-content: center;
+    text-align: center;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+  }
+  .emails {
+    margin-top: -20px;
+  }
+
+  /* Products and Services */
+
+  .underline-green {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    text-align: center;
+  }
+  .type-head {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 19px;
+    text-align: center;
+  }
+
+  .section-title {
+    margin-top: 15px;
+  }
+
+  .service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: -5px;
+  }
+  .product-one {
+    text-align: center;
+  }
+  .product-title {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 26px;
+  }
+
+  .product-one {
+    margin-top: 20px;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .product-one p {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.6;
+    max-width: 90%;
+  }
+  .product-one{
+    margin-left:5px;
+  }
+
+  .product1 {
+    display: flex;
+    align-items: center;
+    height: 250px;
+    width: 250px;
+    margin-left: 65px;
+  }
+  .second-product {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .product-two p {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.6;
+    max-width: 90%;
+  }
+  .product2 {
+    margin-top: -15px;
+    height: 260px;
+    width: 350px;
+  }
+  .third-product {
+    text-align: center;
+  }
+  .product-three{
+    margin-left:5px;
+  }
+
+  .product-three p {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.6;
+    max-width: 90%;
+  }
+  .product3 {
+    height: 260px;
+    width: 260px;
+    margin-left: 65px;
+  }
+
+  /* EDI */
+  .edi{
+    font-size: 26px;
+    margin-top: 20px;
+    line-height: 1.6;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   /* Targets devices with a maximum screen width of 480 pixels, such as smartphones in portrait orientation. */
 }
 

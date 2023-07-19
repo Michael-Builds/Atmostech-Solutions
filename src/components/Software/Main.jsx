@@ -30,7 +30,7 @@ const Main = () => {
                             className="main-image "
                         />
                     </div>
-                    <div className="flex flex-col justify-center mb-10">
+                    <div className="flex flex-col justify-center mb-10 main-content">
                         <h2 className="text-3xl mb-4 first-headings">
                             Revolutionize Your World with ATMOS Technology: Unleashing the Power of Software Development
                         </h2>
@@ -45,7 +45,7 @@ const Main = () => {
                 </div>
 
 
-                <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+                <div className="grid grid-cols-1 gap-8 md:grid-cols-2 mb-10 ">
 
                     <div className="flex flex-col justify-center mb-10">
                         <div className="row">

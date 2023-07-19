@@ -23,13 +23,13 @@ const Email = () => {
                 <h2 className="service-head text-left ml-10">Get in Touch</h2>
               </div>
             </div>
-            <p className="mb-4 ml-10">
+            <p className="mb-4 ml-10 email-content">
               We'd love to hear from you! If you have any questions, inquiries, or
               would like to discuss a potential project, please get in touch with
               us using the contact form or the provided contact information below.
             </p>
           </div>
-          <div className="flex justify-center mb-8">
+          <div className="flex justify-center mb-8 emails">
             <Card color="transparent" shadow={false}>
               <Typography variant="h4" color="blueGray" className="text-center mt-8">
                 Email us

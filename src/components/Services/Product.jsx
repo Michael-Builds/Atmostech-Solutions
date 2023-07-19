@@ -30,9 +30,9 @@ const Product = () => {
           className={`mx-auto overflow-hidden ${inView1 ? 'fade-in-bottom fade-in-bottom-active' : ''}`}
           ref={ref1}
         >
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-            <div className="flex flex-col justify-center ml-12 mt-5">
-              <h2 className="text-3xl mb-4 pr-1">SchoolSync</h2>
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 first-product">
+            <div className="flex flex-col justify-center ml-12 mt-5 product-one">
+              <h2 className="text-3xl mb-4 pr-1 product-title">SchoolSync</h2>
               <p className="mb-4">
                 At Atmos Technology, we understand the transformative potential
                 of technology in today's digital landscape. Our cutting-edge
@@ -51,12 +51,12 @@ const Product = () => {
           className={`mx-auto overflow-hidden mt-5  ${inView2 ? 'fade-in-bottom fade-in-bottom-active' : ''}`}
           ref={ref2}
         >
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 second-product">
             <div className="flex justify-center ml-1">
               <img src={mobile} alt="ATMOS-PIC" className="product2 zoom-in-animation" />
             </div>
-            <div className="flex flex-col justify-center">
-              <h2 className="text-3xl mb-4 pr-1">Uni-Mart</h2>
+            <div className="flex flex-col justify-center product-two">
+              <h2 className="text-3xl mb-4 pr-1 product-title">Uni-Mart</h2>
               <p className="mr-10">
                 At Atmos Technology, we understand the transformative potential
                 of technology in today's digital landscape. Our cutting-edge
@@ -72,9 +72,9 @@ const Product = () => {
           className={`mx-auto overflow-hidden mb-5  ${inView3 ? 'fade-in-bottom fade-in-bottom-active' : ''}`}
           ref={ref3}
         >
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-            <div className="flex flex-col justify-center ml-12 mt-5">
-              <h2 className="text-3xl mb-4 pr-1">SchoolSync</h2>
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 third-product">
+            <div className="flex flex-col justify-center ml-12 mt-5 product-three">
+              <h2 className="text-3xl mb-4 pr-1 product-title">SchoolSync</h2>
               <p className="mb-4 ">
                 At Atmos Technology, we understand the transformative potential
                 of technology in today's digital landscape. Our cutting-edge

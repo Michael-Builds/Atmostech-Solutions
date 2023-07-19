@@ -19,7 +19,7 @@ export default function Blog() {
         triggerOnce: true,
     });
     return (
-        <section className="bg-gray-200 " >
+        <section className="bg-gray-200 blog-section" >
             <div className="mx-auto overflow-hidden">
                 <div className={`justify-center align-center text-center mision-head ${inView1 ? 'fade-in-bottom fade-in-bottom-active' : ''
                     }`}

@@ -25,7 +25,7 @@ const MissionVision = () => {
   });
 
   return (
-    <section className="mision-vision" >
+    <section className="mision-vision statements" >
       <div>
 
         <div className={`mx-auto overflow-hidden  mt-8 ${inView2 ? 'fade-in-bottom fade-in-bottom-active' : ''
@@ -33,7 +33,7 @@ const MissionVision = () => {
           ref={ref2}
         >
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-            <div className="flex flex-col justify-center">
+            <div className="flex flex-col justify-center mission">
               <h2 className="text-3xl mb-4 ml-12 mision-first mt-8">
                 Mission Statement
               </h2>
@@ -55,11 +55,11 @@ const MissionVision = () => {
             </div>
           </div>
         </div>
-        <div className={`mx-auto overflow-hidden mt-5 ${inView3 ? 'fade-in-bottom fade-in-bottom-active' : ''
+        <div className={`mx-auto vision overflow-hidden mt-5 ${inView3 ? 'fade-in-bottom fade-in-bottom-active' : ''
           }`}
           ref={ref3}
         >
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 vision-content ">
             <div className="flex justify-center">
               <img
                 src={choose1}
@@ -71,7 +71,7 @@ const MissionVision = () => {
               <h2 className="text-4xl mb-3 mision-second">
                 Vision Statement
               </h2>
-              <p className="mb-8 mr-10">
+              <p className="mb-8 mr-10 mission-sent">
                 Our differentiating factor lies in our dedication to innovation
                 and quality. Through leveraging cutting-edge advancements in
                 technology, we provide tailored, state-of-the-art solutions to
@@ -80,7 +80,6 @@ const MissionVision = () => {
             </div>
           </div>
         </div>
-
 
         <div className={`justify-center align-center text-center mision-head ${inView1 ? 'fade-in-bottom fade-in-bottom-active' : ''
           }`}
@@ -94,11 +93,11 @@ const MissionVision = () => {
         </div>
 
         <div className="flex justify-center items-center mt-12 value-cards">
-          <div className="grid grid-cols-3 gap-2 mb-8">
-            
+          <div className="grid grid-cols-3 gap-2 mb-8 value-items">
+
             <div className='counter-item w-70 h-75 p-4 value-card bg-white shadow-lg mx-4 mb-8 flex flex-col justify-center items-center'>
               <span className="text-4xl font-bold mb-2">
-                <RiTeamFill className='value-icon-team' />
+                <RiTeamFill className='value-icon-team value-icon' />
               </span>
               <span className="text-gray-800 text-center value-head">Team Work</span>
               <p className='text-center value-sentence'>
@@ -107,27 +106,27 @@ const MissionVision = () => {
             </div>
             <div className='counter-item w-70 h-75 p-4 value-card zoom-in-1 bg-white shadow-lg mx-4 mb-8 flex flex-col justify-center items-center'>
               <span className="text-4xl font-bold mb-2">
-                <FaStreetView className='value-icon-surround' />
+                <FaStreetView className='value-icon-surround value-icon' />
               </span>
               <span className="text-gray-800 text-center value-head">Unity</span>
               <p className='text-center value-sentence'>
-              We take ownership of our actions, decisions, and outcomes, holding ourselves accountable for delivering results.
-           </p>
+                We take ownership of our actions, decisions, and outcomes, holding ourselves accountable for delivering results.
+              </p>
             </div>
 
             <div className='counter-item w-70 h-75 p-4 value-card zoom-in-2 bg-white shadow-lg mx-4 mb-8 flex flex-col justify-center items-center'>
               <span className="text-4xl font-bold mb-2">
-                <ImPower className='value-icon-power' />
+                <ImPower className='value-icon-power value-icon' />
               </span>
               <span className="text-gray-800 text-center value-head">Enthusiam</span>
               <p className='text-center value-sentence'>
-              We are committed to environmental and social sustainability, making responsible choices to protect our planet and contribute to society.
-            </p>
+                We are committed to environmental and social sustainability, making responsible choices to protect our planet and contribute to society.
+              </p>
             </div>
 
             <div className='counter-item w-70 h-75 p-4 value-card zoom-in-3 bg-white shadow-lg mx-4 mb-8 flex flex-col justify-center items-center'>
               <span className="text-4xl font-bold mb-2">
-                <SiUnity className='value-icon-unity' />
+                <SiUnity className='value-icon-unity value-icon' />
               </span>
               <span className="text-gray-800 text-center value-head">Passion</span>
               <p className='text-center value-sentence'>
@@ -136,17 +135,17 @@ const MissionVision = () => {
 
             <div className='counter-item w-70 h-75 p-4 value-card zoom-in-4 bg-white shadow-lg mx-4 mb-8 flex flex-col justify-center items-center'>
               <span className="text-4xl font-bold mb-2">
-                <HiCubeTransparent className='value-icon-transparent' />
+                <HiCubeTransparent className='value-icon-transparent value-icon' />
               </span>
               <span className="text-gray-800 text-center value-head">Integrity</span>
               <p className='text-center value-sentence'>
-              We uphold the highest ethical standards, acting honestly, responsibly, and transparently in all our endeavors.
-           </p>
+                We uphold the highest ethical standards, acting honestly, responsibly, and transparently in all our endeavors.
+              </p>
             </div>
 
             <div className='counter-item w-70 h-75 p-4 value-card zoom-in-5 bg-white shadow-lg mx-4 mb-8 flex flex-col justify-center items-center'>
               <span className="text-4xl font-bold mb-2">
-                <GoTrophy className='value-icon-trophy' />
+                <GoTrophy className='value-icon-trophy value-icon' />
               </span>
               <span className="text-gray-800 text-center value-head">Excellence</span>
               <p className='text-center value-sentence'>
