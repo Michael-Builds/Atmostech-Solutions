@@ -15,7 +15,7 @@ export default function Hero() {
   const handleOpen = () => {
     navigate('/contact');
   };
-  
+
   return (
     <section className="flex items-center justify-center h-screen">
       <Carousel className="rounded-none">
@@ -30,7 +30,7 @@ export default function Hero() {
               <Typography
                 variant="h1"
                 color="white"
-                className="mb-4 text-3xl md:text-4xl lg:text-5xl fade-in-left"
+                className="mb-4 text-3xl md:text-4xl slider-head lg:text-5xl fade-in-left"
                 style={{ "--fade-delay": "0.5s" }}
               >
                 Your Reliable Tech Partner
@@ -45,7 +45,7 @@ export default function Hero() {
               </Typography>
               <div className="flex justify-center gap-2">
                 <div
-                  className="fade-in-left mt-6"
+                  className="fade-in-left mt-6 slider-one-btn"
                   style={{ "--fade-delay": "2.5s" }}
 
                 >
@@ -64,30 +64,30 @@ export default function Hero() {
             alt="Atmos-Tech"
             className="h-full w-full object-cover"
           />
-          <div className="absolute inset-0 grid h-full w-full items-center bg-black/75">
-            <div className="w-3/4 pl-12 md:w-2/4 md:pl-20 lg:pl-32 second-slider"
-              style={{ marginLeft: "70px" }}
+          <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/75">
+            <div className="w-3/4 text-center md:w-2/4"
             >
               <Typography
                 variant="h1"
                 color="white"
-                className="mb-4 text-3xl md:text-4xl lg:text-5xl "
+                className="mb-4 text-3xl md:text-4xl slider-head lg:text-5xl "
               >
                 Innovating with Technology
               </Typography>
               <Typography
                 variant="lead"
                 color="white"
-                className="mb-12 opacity-80 "
-
+                className="mb-12 slider-sentence opacity-80 "
               >
                 Embracing Technological Innovation to Drive Transformation and Success. Unleashing the Power of Technology to Propel Your Business Forward.
               </Typography>
-              <React.Fragment className="flex justify-center gap-2 first-button">
-                <Button onClick={handleOpen} size="lg" color="white">
-                  Innovate
-                </Button>
-              </React.Fragment>
+              <div className=" flex justify-center gap-2 ">
+                <div className='mt-6 slider-one-btn'>
+                  <Button onClick={handleOpen} size="lg" color="white">
+                    Innovate
+                  </Button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -97,29 +97,30 @@ export default function Hero() {
             alt="Atmos-Tech"
             className="h-full w-full object-cover"
           />
-          <div className="absolute inset-0 grid h-full w-full items-center bg-black/75">
-            <div className="w-3/4 pl-12 md:w-2/4 md:pl-20 lg:pl-32 third-slider"
-              style={{ marginLeft: "70px" }}
+          <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/75">
+            <div className="w-3/4 text-center md:w-2/4"
             >
               <Typography
                 variant="h1"
                 color="white"
-                className="mb-4 text-3xl md:text-4xl lg:text-5xl"
+                className="mb-4 text-3xl md:text-4xl slider-head lg:text-5xl"
               >
                 Driving Digital Transformation
               </Typography>
               <Typography
                 variant="lead"
                 color="white"
-                className="mb-12 opacity-80"
+                className="mb-12 slider-sentence opacity-80 "
               >
                 Empowering businesses through digital transformation, revolutionizing processes, and unlocking new opportunities for growth
               </Typography>
-              <React.Fragment className="flex justify-center gap-2 first-button">
-                <Button onClick={handleOpen} size="lg" color="white">
-                  Transform
-                </Button>
-              </React.Fragment>
+              <div className="flex justify-center gap-2 ">
+                <div className='mt-6 slider-one-btn'>
+                  <Button onClick={handleOpen} size="lg" color="white">
+                    Transform
+                  </Button>
+                </div>
+              </div>
             </div>
           </div>
         </div>

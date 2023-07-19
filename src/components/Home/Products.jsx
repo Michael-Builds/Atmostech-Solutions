@@ -21,9 +21,11 @@ const ServicesProducts = () => {
   return (
     <section id="services-products" className="wrapper bg-gray-200 py-8"
     >
-      <h1 className="title text-2xl  text-center mb-6">Our Services and Products</h1>
+      <h1 className="title text-2xl text-center mb-6">Our Services and Products</h1>
+      
       <div className="container mx-auto flex justify-center">
-        <div className="grid grid-cols-1 gap-14 md:grid-cols-2 ">
+
+        <div className="grid grid-cols-1 gap-14 md:grid-cols-2  products-home">
 
           <Card className="flex-row w-full max-w-[36rem] head zoom-in-1 produce"
           >

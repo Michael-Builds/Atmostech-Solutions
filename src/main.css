@@ -1016,6 +1016,133 @@
 }
 
 @media only screen and (max-width: 480px) {
+  /* Home Page */
+  .slider-head {
+    font-size: 30px;
+  }
+
+  .slider-sentence {
+    font-size: 17px;
+    margin-top: 10px;
+  }
+  .slider-one-btn {
+    margin-top: 30px;
+  }
+
+  .heading {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .impact p {
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+  }
+  .heading2 {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .team-header {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 28px;
+  }
+  .team-sub {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 20px;
+    max-width: 90%;
+  }
+
+  .team-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: -8px;
+    gap: 8px;
+  }
+  .trusted-head {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 28px;
+  }
+  .trusted-sub {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 20px;
+    max-width: 80%;
+  }
+  .carousel-pagination {
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Value Proposition section */
+  .value-prop {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .value-content {
+    text-align: center;
+  }
+  .second-heading {
+    max-width: 95%;
+    font-size: 30px;
+    margin-top: 20px;
+    line-height: 1.6;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .value-content ul li {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .products-home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .produce {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    max-width: 25rem;
+  }
+
+  .title-typo {
+    font-size: 22px;
+  }
+  .sub {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .sent {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #777777;
+  }
+
   /* About Page */
   .contact-section,
   .blog-section,
@@ -1321,8 +1448,8 @@
     line-height: 1.6;
     max-width: 90%;
   }
-  .product-one{
-    margin-left:5px;
+  .product-one {
+    margin-left: 5px;
   }
 
   .product1 {
@@ -1354,8 +1481,8 @@
   .third-product {
     text-align: center;
   }
-  .product-three{
-    margin-left:5px;
+  .product-three {
+    margin-left: 5px;
   }
 
   .product-three p {
@@ -1373,7 +1500,7 @@
   }
 
   /* EDI */
-  .edi{
+  .edi {
     font-size: 26px;
     margin-top: 20px;
     line-height: 1.6;
@@ -1385,6 +1512,183 @@
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
+  .slider-head {
+    font-size: 40px;
+    line-height: 1.6;
+  }
+  .slider-sentence {
+    font-size: 24px;
+    margin-top: 10px;
+    line-height: 1.6;
+  }
+  .slider-one-btn {
+    margin-top: 30px;
+    font-size: 18px;
+  }
+
+  .first-value {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .value-main {
+    align-items: center;
+    text-align: center;
+  }
+  .value-head {
+    font-weight: 700;
+    margin-top: 35px;
+    font-size: 36px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+    line-height: 1.2;
+  }
+  .value-main p {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+    font-size: 22px;
+  }
+
+  .value-prop {
+    text-align: center;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    flex-direction: column-reverse;
+  }
+  .second-heading {
+    font-size: 38px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .value-content ul li {
+    font-size: 23px;
+  }
+
+  .value-content ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 85px;
+  }
+  .value-content li {
+    list-style: none;
+    padding-bottom: 0.5rem;
+  }
+  .images {
+    margin-bottom: 40px;
+  }
+
+  #services-products .title{
+    font-size: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+  
+  .products-home {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  .title-typo {
+    font-weight: 700;
+    color: #1f1f18;
+    font-size: 24px;
+  }
+  .sub {
+    font-weight: 500;
+    color: #1f1f18;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .sent {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-top: 20px;
+  }
+  .produce-text {
+    font-size: 19px;
+  }
+
+  .impacted {
+    text-align: center;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .heading {
+    font-size: 42px;
+    margin-bottom: 15px;
+  }
+  .heading2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    margin-top: 55px;
+  }
+  .impact p {
+    text-align: center;
+    font-size: 23px;
+    max-width: 90%;
+    justify-content: center;
+    margin-left: 50px;
+    margin-bottom: 20px;
+  }
+  .impact-items {
+    gap: 1rem;
+  }
+  .team-header {
+    font-size: 48px;
+    line-height: 1.6;
+  }
+  .team-sub {
+    font-size: 24px;
+    line-height: 1.6;
+  }
+
+  .team-items {
+    text-align: center;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .trusted-head {
+    font-size: 40px;
+    line-height: 1.6;
+  }
+  .trusted-sub {
+    font-size: 22px;
+    line-height: 1.6;
+    max-width: 85%;
+    margin-left: 40px;
+  }
+  .footer-main{
+    font-size: 22px;
+  }
+  .footer-lil{
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+  }
+  .footer-text {
+    font-size: 22px;
+  }
+  .footer-icon {
+    width: 30px;
+    height: 30px;
+  }
   /* Targets devices with a screen width between 481 and 768 pixels, such as smartphones in landscape orientation and small tablets. */
 }
 
