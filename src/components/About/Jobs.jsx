@@ -58,44 +58,44 @@ const Jobs = () => {
                     <div className="flex flex-wrap justify-center gap-10 job-items">
                         <div
                             ref={projectsCompletedRef}
-                            className={`counter-item w-48 h-48 p-4 bg-white shadow-lg mx-2 mb-8 flex flex-col justify-center items-center ${hasAnimated && projectsCompletedInView ? 'animate-counter-up' : ''
+                            className={`counter-item w-48 h-48 p-4 bg-white job-container shadow-lg mx-2 mb-8 flex flex-col justify-center items-center ${hasAnimated && projectsCompletedInView ? 'animate-counter-up' : ''
                                 }`}
                         >
-                            <span className="text-2xl font-bold mb-2">
+                            <span className="text-2xl font-bold mb-2 job-number">
                                 <CounterInline end={projectsCompleted} />
                             </span>
-                            <span className="text-gray-800 text-center">Projects Completed</span>
+                            <span className="text-gray-800 text-center job-name">Projects Completed</span>
                         </div>
                         <div
                             ref={satisfiedClientsRef}
-                            className={`counter-item w-48 h-48 p-4 bg-white shadow-lg mx-2 mb-8 flex flex-col justify-center items-center ${hasAnimated && satisfiedClientsInView ? 'animate-counter-up' : ''
+                            className={`counter-item w-48 h-48 p-4 bg-white job-container shadow-lg mx-2 mb-8 flex flex-col justify-center items-center ${hasAnimated && satisfiedClientsInView ? 'animate-counter-up' : ''
                                 }`}
                         >
-                            <span className="text-2xl font-bold mb-2">
+                            <span className="text-2xl font-bold mb-2 job-number">
                                 <CounterInline end={satisfiedClients} />
                             </span>
-                            <span className="text-gray-800 text-center">Satisfied Clients</span>
+                            <span className="text-gray-800 text-center job-name">Satisfied Clients</span>
                         </div>
 
                         <div
                             ref={partnershipsRef}
-                            className={`counter-item w-48 h-48 p-4 bg-white shadow-lg mx-2 mb-8 flex flex-col justify-center items-center ${hasAnimated && partnershipsInView ? 'animate-counter-up' : ''
+                            className={`counter-item w-48 h-48 p-4 bg-white job-container shadow-lg mx-2 mb-8 flex flex-col justify-center items-center ${hasAnimated && partnershipsInView ? 'animate-counter-up' : ''
                                 }`}
                         >
-                            <span className="text-2xl font-bold mb-2">
+                            <span className="text-2xl font-bold mb-2 job-number">
                                 <CounterInline end={partnerships} />
                             </span>
-                            <span className="text-gray-800 text-center">Partnerships</span>
+                            <span className="text-gray-800 text-center job-name">Partnerships</span>
                         </div>
                         <div
                             ref={partnershipsRef}
-                            className={`counter-item w-48 h-48 p-4 bg-white shadow-lg mx-2 mb-8 flex flex-col justify-center items-center ${hasAnimated && partnershipsInView ? 'animate-counter-up' : ''
+                            className={`counter-item w-48 h-48 p-4 bg-white job-container shadow-lg mx-2 mb-8 flex flex-col justify-center items-center ${hasAnimated && partnershipsInView ? 'animate-counter-up' : ''
                                 }`}
                         >
-                            <span className="text-2xl font-bold mb-2">
+                            <span className="text-2xl font-bold mb-2 job-number">
                                 <CounterInline end={partnerships} />
                             </span>
-                            <span className="text-gray-800 text-center">Partnerships</span>
+                            <span className="text-gray-800 text-center job-name">Partnerships</span>
                         </div>
                     </div>
                 </div>

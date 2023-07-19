@@ -6,7 +6,7 @@ const SITEMAP = [
         title: "Quick Links",
         links: [
             { title: "Home", path: "/" },
-            { title: "About Us", path: "/about" },
+            { title: "Company", path: "/company" },
             { title: "Services", path: "/service" },
             { title: "Contact", path: "/contact" }
         ]

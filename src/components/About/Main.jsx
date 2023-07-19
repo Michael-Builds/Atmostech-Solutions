@@ -9,7 +9,7 @@ const Main = () => {
         <section className="value-proposition mb-0 relative w-full h-full">
             <div className="mx-auto overflow-hidden">
 
-                <div className="grid grid-cols-1 gap-8 md:grid-cols-2 ">
+                <div className="grid grid-cols-1 gap-8 md:grid-cols-2 about-content-1">
                     <div className="flex justify-center">
                         <img
                             src={cutting}

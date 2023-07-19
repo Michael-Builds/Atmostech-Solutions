@@ -48,14 +48,14 @@ export default function Blog() {
                                     Blockchain Demystified
                                 </Typography>
                             </div>
-                            <Typography color="gray">
+                            <Typography color="gray" className='blog-content'>
                                 Enter a freshly updated and thoughtfully furnished peaceful home
                                 surrounded by ancient trees, stone walls, and open meadows.
                             </Typography>
                         </CardBody>
                         <CardFooter className="pt-0">
                             <a href="www.blog.html" className="inline-block">
-                                <Button size="sm" variant="text" className="flex items-center gap-2">
+                                <Button size="sm" variant="text" className="flex blog-btn items-center gap-2 blog-btn">
                                     Learn More
                                     <ArrowLongRightIcon strokeWidth={2} className="w-4 h-4" />
                                 </Button>
@@ -77,13 +77,13 @@ export default function Blog() {
                                     Deep Learning
                                 </Typography>
                             </div>
-                            <Typography color="gray">
+                            <Typography color="gray" className='blog-content'>
                                 This blog post could explore the growing importance of AI ethics, which refers to the ethical and social implications of artificial intelligence and machine learning technologies....
                             </Typography>
                         </CardBody>
                         <CardFooter className="pt-0">
                             <a href="www.blog.html" className="inline-block">
-                                <Button size="sm" variant="text" className="flex items-center gap-2">
+                                <Button size="sm" variant="text" className="flex items-center blog-btn gap-2">
                                     Learn More
                                     <ArrowLongRightIcon strokeWidth={2} className="w-4 h-4" />
                                 </Button>
@@ -105,14 +105,14 @@ export default function Blog() {
                                     Cyberwarfare
                                 </Typography>
                             </div>
-                            <Typography color="gray">
+                            <Typography color="gray" className='blog-content'>
                                 This topic focuses on the emerging threat of cyberwarfare, which refers to the use of digital attacks and espionage by nation-states or other actors to achieve political or military objectives...
                             </Typography>
 
                         </CardBody>
                         <CardFooter className="pt-0">
                             <a href="www.blog.html" className="inline-block">
-                                <Button size="sm" variant="text" className="flex items-center gap-2">
+                                <Button size="sm" variant="text" className="flex items-center gap-2 blog-btn">
                                     Learn More
                                     <ArrowLongRightIcon strokeWidth={2} className="w-4 h-4" />
                                 </Button>

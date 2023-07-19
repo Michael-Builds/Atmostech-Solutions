@@ -32,7 +32,7 @@ const MissionVision = () => {
           }`}
           ref={ref2}
         >
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 mision-statement">
             <div className="flex flex-col justify-center mission">
               <h2 className="text-3xl mb-4 ml-12 mision-first mt-8">
                 Mission Statement
@@ -101,7 +101,7 @@ const MissionVision = () => {
               </span>
               <span className="text-gray-800 text-center value-head">Team Work</span>
               <p className='text-center value-sentence'>
-                We cultivate a collaborative culture that values diverse perspectives, encourages open communication, and promotes teamwork.
+                We cultivate a collaborative culture that values diverse perspectives, encourages open communication.
               </p>
             </div>
             <div className='counter-item w-70 h-75 p-4 value-card zoom-in-1 bg-white shadow-lg mx-4 mb-8 flex flex-col justify-center items-center'>
@@ -120,7 +120,7 @@ const MissionVision = () => {
               </span>
               <span className="text-gray-800 text-center value-head">Enthusiam</span>
               <p className='text-center value-sentence'>
-                We are committed to environmental and social sustainability, making responsible choices to protect our planet and contribute to society.
+                We are committed to environmental and social sustainability, making responsible choices to protect our planet.
               </p>
             </div>
 
