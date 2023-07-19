@@ -1512,6 +1512,8 @@
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
+  /* Navbar */
+
   .slider-head {
     font-size: 40px;
     line-height: 1.6;
@@ -1561,6 +1563,9 @@
     justify-content: center;
     gap: 1rem;
     flex-direction: column-reverse;
+  }
+  .value-main h2 {
+    margin-top: 60px;
   }
 
   .second-heading {
@@ -1916,15 +1921,15 @@
     gap: 1rem;
     flex-direction: column-reverse;
   }
-  .product-two h2{
+  .product-two h2 {
     margin-top: 20px;
   }
-  .product-two p{
+  .product-two p {
     font-size: 20px;
     line-height: 1.8;
   }
 
-  .third-product{
+  .third-product {
     text-align: center;
     margin-top: 20px;
     display: flex;
@@ -1932,10 +1937,75 @@
     justify-content: center;
     gap: 1rem;
   }
-  .product-three p{
+  .product-three p {
     font-size: 20px;
     line-height: 1.8;
   }
+  .main-software {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .software-timeline{
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .option-head{
+    font-size: 38px;
+    margin-bottom: 35px;
+  }
+  .software-sentence p{
+    font-size: 24px;
+    line-height: 1.8;
+  }
+  .software-timeline-items{
+    margin-top: -10px;
+    margin-bottom: 15px;
+  }
+
+  .software-timeline-content{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-section{
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .service-head {
+    margin-top: 20px;
+  }
+  .section-title h2{
+    margin-top:100px;
+  }
+  .email-content{
+    font-size: 23px;
+    line-height: 1.8;
+  }
+  .email-section-head{
+    font-size: 36px;
+  }
+  .mail{
+    /* min-width: 92px; */
+    height: 50px;
+  }
+  .mail-content{
+    height:150px;
+    max-width: 100%;
+  }
+
 
   /* Targets devices with a screen width between 481 and 768 pixels, such as smartphones in landscape orientation and small tablets. */
 }

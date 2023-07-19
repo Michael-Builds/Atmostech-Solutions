@@ -226,7 +226,7 @@ export default function Example() {
           <img
             src="./logo.png"
             alt="Material Tailwind Logo"
-            className="mr-4 cursor-pointer py-1.5 lg:ml-2"
+            className="mr-4 cursor-pointer py-1.5 lg:ml-2 logo-image"
             style={{ height: '50px', width: '75px' }}
           />
         </Typography>

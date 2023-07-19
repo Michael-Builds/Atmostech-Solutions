@@ -16,7 +16,7 @@ const Email = () => {
   return (
     <section className="mb-0 relative w-full h-full">
       <div className="mx-auto overflow-hidden">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 contact-section">
           <div className="flex flex-col justify-center">
             <div className="row contact-me">
               <div className="section-title">
@@ -31,28 +31,28 @@ const Email = () => {
           </div>
           <div className="flex justify-center mb-8 emails">
             <Card color="transparent" shadow={false}>
-              <Typography variant="h4" color="blueGray" className="text-center mt-8">
+              <Typography variant="h4" color="blueGray" className="text-center mt-8 email-section-head">
                 Email us
               </Typography>
               <form className="mt-8 mb-1 w-80 max-w-screen-lg sm:w-96">
                 <div className="mb-4 flex flex-col gap-6">
                   <Input
                     label="Email"
-                    containerProps={{ className: "min-w-[72px]" }}
+                    containerProps={{ className: "min-w-[72px] mail"  }}
                     type="email"
                   />
 
                   <div className="my-2 flex items-center gap-3">
-                    <Input label="Name" containerProps={{ className: "min-w-[72px]" }} />
+                    <Input label="Name" containerProps={{ className: "min-w-[72px] mail" }} />
                     <Input
                       label="Phone Number"
                       type="tel"
-                      containerProps={{ className: "min-w-[72px]" }}
+                      containerProps={{ className: "min-w-[72px] mail" }}
                     />
 
                   </div>
                   <div containerProps={{ className: "min-w-[72px]" }}>
-                    <Select label="Service">
+                    <Select label="Service" className=' mail'>
                       <Option>Web Development</Option>
                       <Option>Mobile App Development</Option>
                       <Option>API Integration</Option>
@@ -60,7 +60,7 @@ const Email = () => {
                       <Option>Software Development</Option>
                     </Select>
                   </div>
-                  <Textarea label="Message" containerProps={{ className: "min-w-[72px]" }} />
+                  <Textarea label="Message" containerProps={{ className: "min-w-[72px] mail-content" }} />
                 </div >
                 <div className="">
                   <Button className="mt-6 email-btn" fullWidth>

@@ -22,7 +22,7 @@ const Main = () => {
         <section className="value-proposition mb-0 relative w-full h-full">
             <div className="mx-auto overflow-hidden">
 
-                <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+                <div className="grid grid-cols-1 gap-8 md:grid-cols-2 main-software">
                     <div className="flex justify-center">
                         <img
                             src={background}
@@ -41,13 +41,11 @@ const Main = () => {
                             Our team of skilled developers leverage the latest advancements in technology to create bespoke software applications, enterprise systems, and mobile apps that empower you to stay ahead of the curve in the fast-paced digital world. With our innovative approach and commitment to quality, we ensure that every software development project we undertake is of the highest standard, delivering exceptional results that enable you to unlock new opportunities for growth and success.
                         </p>
                     </div>
-
                 </div>
 
-
-                <div className="grid grid-cols-1 gap-8 md:grid-cols-2 mb-10 ">
-
-                    <div className="flex flex-col justify-center mb-10">
+                <div className="grid grid-cols-1 gap-8  mb-10 software-timeline ">
+                    {/* md:grid-cols-2 */}
+                    <div className="flex flex-col justify-center mb-10 software-sentence">
                         <div className="row">
                             <div className="option-title fade-in-left">
                                 <h2 className="option-head text-left ml-10">Your Options</h2>
@@ -61,7 +59,7 @@ const Main = () => {
                             With our mobile app development solutions, you can stay connected with your customers and drive engagement on the go.
                         </p>
                     </div>
-                    <div className="flex justify-center mt-12">
+                    <div className="flex justify-center mt-12 software-timeline-items">
                         <div className="w-[32rem]">
                             <Timeline>
                                 <TimelineItem>
@@ -75,7 +73,7 @@ const Main = () => {
                                         </Typography>
                                     </TimelineHeader>
                                     <TimelineBody>
-                                        <Typography color="gary" className="font-normal text-gray-600">
+                                        <Typography color="gray" className="font-normal text-gray-600 software-timeline-content">
                                             The key to more success is to have a lot of pillows.
                                         </Typography>
                                     </TimelineBody>
@@ -92,7 +90,7 @@ const Main = () => {
                                         </Typography>
                                     </TimelineHeader>
                                     <TimelineBody>
-                                        <Typography color="gary" className="font-normal text-gray-600">
+                                        <Typography color="gray" className=" text-gray-600 software-timeline-content">
                                             The key to more success is to have a lot of pillows.
                                         </Typography>
                                     </TimelineBody>
@@ -103,12 +101,12 @@ const Main = () => {
                                         <TimelineIcon className="p-2">
                                             <CurrencyDollarIcon className="h-4 w-4" />
                                         </TimelineIcon>
-                                        <Typography variant="h5" color="blue-gray">
+                                        <Typography variant="h5" color="blue-gray ">
                                             Timeline Title Here.
                                         </Typography>
                                     </TimelineHeader>
                                     <TimelineBody>
-                                        <Typography color="gary" className="font-normal text-gray-600">
+                                        <Typography color="gray" className="font-normal text-gray-600 software-timeline-content">
                                             The key to more success is to have a lot of pillows.
                                         </Typography>
                                     </TimelineBody>
