@@ -46,7 +46,7 @@ const Main = () => {
 
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-2 mb-10 api-options">
 
-                    <div className="flex flex-col justify-center mb-10 our-options">
+                    <div id='api-options' className="flex flex-col justify-center mb-10 our-options">
                         <div className="row">
                             <div className="option-title fade-in-left">
                                 <h2 className="option-head text-left ml-10">Your Options</h2>
@@ -61,7 +61,7 @@ const Main = () => {
                         </p>
                     </div>
 
-                    <div id ='timeline'className="flex justify-center mt-12 time-lines">
+                    <div id ='timeline 'className="flex justify-center mt-12 time-lines">
                         <div className="w-[32rem]">
                             <Timeline>
                                 <TimelineItem>

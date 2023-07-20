@@ -40,18 +40,27 @@ const Email = () => {
                     label="Email"
                     containerProps={{ className: "min-w-[72px] mail" }}
                     type="email"
-                    labelProps={{ style: { fontSize: '20px' } }}
+                    labelProps={{
+                      htmlFor: "name-input", 
+                      style: { fontSize: '15px' },
+                    }}
                   />
 
                   <div className="my-2 flex items-center gap-3">
                     <Input label="Name" containerProps={{ className: "min-w-[72px] mail" }}
-                      labelProps={{ style: { fontSize: '20px' } }}
+                      labelProps={{
+                        htmlFor: "name-input", 
+                        style: { fontSize: '15px' },
+                      }}
                     />
                     <Input
                       label="Phone Number"
                       type="tel"
                       containerProps={{ className: "min-w-[72px] mail" }}
-                      labelProps={{ style: { fontSize: '20px' } }}
+                      labelProps={{
+                        htmlFor: "name-input", 
+                        style: { fontSize: '15px' },
+                      }}
                     />
 
                   </div>

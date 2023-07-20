@@ -73,40 +73,40 @@ const Counter = () => {
                 className={`counter-item w-64 h-64 p-4 bg-white shadow-lg mx-4 mb-8 flex flex-col justify-center items-center ${hasAnimated && projectsCompletedInView ? 'animate-counter-up' : ''
                   }`}
               >
-                <span className="text-4xl font-bold mb-2">
+                <span className="text-4xl font-bold mb-2 " id='counter-number'>
                   <CounterInline end={projectsCompleted} />
                 </span>
-                <span className="text-gray-800 text-center">Projects Completed</span>
+                <span className="text-gray-800 text-center" id='counter-element'>Projects Completed</span>
               </div>
               <div
                 ref={satisfiedClientsRef}
                 className={`counter-item w-64 h-64 p-4 bg-white shadow-lg mx-4 mb-8 flex flex-col justify-center items-center ${hasAnimated && satisfiedClientsInView ? 'animate-counter-up' : ''
                   }`}
               >
-                <span className="text-4xl font-bold mb-2">
-                  <CounterInline end={satisfiedClients} />
+                <span className="text-4xl font-bold mb-2"  id='counter-number'>
+                  <CounterInline end={satisfiedClients}/>
                 </span>
-                <span className="text-gray-800 text-center">Satisfied Clients</span>
+                <span className="text-gray-800 text-center" id='counter-element'>Satisfied Clients</span>
               </div>
               <div
                 ref={employeesRef}
                 className={`counter-item w-64 h-64 p-4 bg-white shadow-lg mx-4 mb-8 flex flex-col justify-center items-center ${hasAnimated && employeesInView ? 'animate-counter-up' : ''
                   }`}
               >
-                <span className="text-4xl font-bold mb-2">
+                <span className="text-4xl font-bold mb-2" id='counter-number'>
                   <CounterInline end={employees} />
                 </span>
-                <span className="text-gray-800 text-center">Employees</span>
+                <span className="text-gray-800 text-center" id='counter-element'>Employees</span>
               </div>
               <div
                 ref={partnershipsRef}
                 className={`counter-item w-64 h-64 p-4 bg-white shadow-lg mx-4 mb-8 flex flex-col justify-center items-center ${hasAnimated && partnershipsInView ? 'animate-counter-up' : ''
                   }`}
               >
-                <span className="text-4xl font-bold mb-2">
-                  <CounterInline end={partnerships} />
+                <span className="text-4xl font-bold mb-2" id='counter-number'>
+                  <CounterInline end={partnerships}/>
                 </span>
-                <span className="text-gray-800 text-center">Partnerships</span>
+                <span className="text-gray-800 text-center" id='counter-element'>Partnerships</span>
               </div>
             </div>
           </div>

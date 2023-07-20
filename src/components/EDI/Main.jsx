@@ -59,7 +59,7 @@ const Main = () => {
                             With our mobile app development solutions, you can stay connected with your customers and drive engagement on the go.
                         </p>
                     </div>
-                    <div className="flex justify-center mt-12">
+                    <div id ='edi-options' className="flex justify-center mt-12">
                         <div className="w-[32rem]">
                             <Timeline>
                                 <TimelineItem>

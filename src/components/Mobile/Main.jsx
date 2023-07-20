@@ -43,7 +43,7 @@ const Main = () => {
                 </div>
 
 
-                <div id='mobile-options' className="grid grid-cols-1 gap-8 md:grid-cols-2 mb-10 ">
+                <div id='mobile-options' className="grid grid-cols-1 mobile-options gap-8 md:grid-cols-2 mb-10 ">
 
                     <div  className="flex flex-col justify-center mb-10">
                         <div className="row">
@@ -56,7 +56,7 @@ const Main = () => {
                         </p>
 
                     </div>
-                    <div className="flex justify-center mt-12">
+                    <div id='mobile-timeline' className="flex justify-center mt-12">
                         <div className="w-[32rem]">
                             <Timeline>
                                 <TimelineItem>
