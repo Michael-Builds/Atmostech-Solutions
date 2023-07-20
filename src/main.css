@@ -1037,8 +1037,18 @@
 }
 
 @media only screen and (max-width: 480px) {
+
+
+
+
+
+
+
+
+
+  
   /* Home Page */
-  .slider-head {
+  /* .slider-head {
     font-size: 30px;
   }
 
@@ -1109,10 +1119,10 @@
   .carousel-pagination {
     justify-content: center;
     align-items: center;
-  }
+  } */
 
   /* Value Proposition section */
-  .value-prop {
+  /* .value-prop {
     margin-top: 40px;
     display: flex;
     flex-direction: column-reverse;
@@ -1162,18 +1172,18 @@
     margin-top: 5px;
     font-size: 14px;
     color: #777777;
-  }
+  } */
 
   /* About Page */
-  .contact-section,
+  /* .contact-section,
   .blog-section,
   .job-section,
   .statements {
     overflow: hidden;
-  }
+  } */
 
   /* Header section */
-  .contact-header {
+  /* .contact-header {
     font-size: 30px;
     margin-top: 20px;
     line-height: 1.6;
@@ -1187,10 +1197,10 @@
     margin-top: -10px;
     margin-left: auto;
     margin-right: auto;
-  }
+  } */
 
   /* Main section */
-  .main-image {
+  /* .main-image {
     display: flex;
     align-items: center;
     height: 250px;
@@ -1220,10 +1230,10 @@
     margin-left: auto;
     margin-right: auto;
     max-width: 95%;
-  }
+  } */
 
   /* Mision and vision statement */
-  .mission {
+  /* .mission {
     text-align: center;
   }
 
@@ -1240,10 +1250,10 @@
     font-size: 15px;
     line-height: 1.9;
     max-width: 90%;
-  }
+  } */
 
   /* Vision section */
-  .vision {
+  /* .vision {
     position: relative;
     overflow: hidden;
     margin-top: 5px;
@@ -1288,10 +1298,10 @@
     font-size: 17px;
     line-height: 1.9;
     max-width: 90%;
-  }
+  } */
 
   /* Value section */
-  .value-items {
+  /* .value-items {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -1313,10 +1323,10 @@
   }
   .value-sentence {
     font-size: 15px;
-  }
+  } */
 
   /* Jobs or Impacts */
-  .container {
+  /* .container {
     text-align: center;
   }
 
@@ -1340,10 +1350,10 @@
     align-items: center;
     margin-top: -8px;
     gap: 8px;
-  }
+  } */
 
   /* Blog Section */
-  .blog-title {
+  /* .blog-title {
     margin-left: auto;
     margin-right: auto;
     font-size: 30px;
@@ -1353,10 +1363,10 @@
     margin-left: auto;
     margin-right: auto;
     font-size: 20px;
-  }
+  } */
 
   /* Option section */
-
+/* 
   .our-options {
     text-align: center;
     margin-top: -20px;
@@ -1380,21 +1390,21 @@
     transform: translate(
       -50%,
       8px
-    ); /* Use transform to center horizontally and add a margin from the top */
-  }
+    ); 
+  } */
 
-  .option-head::after {
+  /* .option-head::after {
     content: "";
     height: 4px;
     width: 60px;
     background-color: #04db0e;
     position: absolute;
-    top: 80%; /* Set the top position to 50% */
-    left: 50%; /* Set the left position to 50% */
+    top: 80%; 
+    left: 50%; 
     transform: translate(
       -50%,
       8px
-    ); /* Use transform to center horizontally and add a margin from the top */
+    ); 
   }
 
   .time-lines {
@@ -1416,10 +1426,10 @@
   }
   .emails {
     margin-top: -20px;
-  }
+  } */
 
   /* Products and Services */
-  .underline-green {
+  /* .underline-green {
     margin-left: auto;
     margin-right: auto;
     font-size: 30px;
@@ -1434,9 +1444,9 @@
 
   .section-title {
     margin-top: 15px;
-  }
+  } */
 
-  .service-cards {
+  /* .service-cards {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 2px;
@@ -1512,21 +1522,21 @@
     font-size: 15px;
     line-height: 1.6;
     max-width: 90%;
-  }
-  .product3 {
+  } */
+  /* .product3 {
     height: 260px;
     width: 260px;
     margin-left: 65px;
-  }
+  } */
 
   /* EDI */
-  .edi {
+  /* .edi {
     font-size: 26px;
     margin-top: 20px;
     line-height: 1.6;
     margin-left: auto;
     margin-right: auto;
-  }
+  } */
 
   /* Targets devices with a maximum screen width of 480 pixels, such as smartphones in portrait orientation. */
 }
