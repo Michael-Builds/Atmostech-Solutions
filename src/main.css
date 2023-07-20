@@ -1341,18 +1341,15 @@
     margin-top: 5px;
     margin-left: 40px;
   }
-
   .mision-title {
     text-align: center;
     font-size: 24px;
   }
-
   .mision-sub {
     font-size: 14px;
     line-height: 1.5;
     text-align: center;
   }
-
   .value-items {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -1369,26 +1366,34 @@
     font-size: 14px;
     line-height: 1.5;
   }
+
   .value-icon {
-    width: 50px;
-    height: 40px;
+    width: 40px;
+    height: 30px;
+    margin-top: 10px;
   }
+  
   .jobs {
     font-size: 14px;
+    text-align: center;
     max-width: 90%;
+    align-items: center;
+    justify-content: center;
     margin-left: 30px;
   }
 
   .job-container {
-    width: 300px;
-    height: 250px;
+    width: 250px;
+    height: 200px;
   }
+
   .job-number {
-    font-size: 30px;
+    font-size: 28px;
     margin-bottom: 20px;
+    text-align: center;
   }
   .job-name {
-    font-size: 18px;
+    font-size: 14px;
   }
   #head {
     font-size: 24px;
