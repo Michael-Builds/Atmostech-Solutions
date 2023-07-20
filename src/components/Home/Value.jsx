@@ -20,7 +20,7 @@ const ValueProposition = () => {
                 <div className="grid first-value grid-cols-1 gap-8 md:grid-cols-2">
 
                     <div className="flex flex-col justify-center mb-10 main-content value-main">
-                        <h2 className="text-3xl mb-4 first-headings">
+                        <h2 id='value' className="text-3xl mb-4 first-headings">
                             Unlock the Power of Technology with Our Cutting-Edge Solutions
                         </h2>
                         <p className="mb-4 first-sent">

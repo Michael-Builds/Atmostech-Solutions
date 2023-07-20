@@ -1066,22 +1066,26 @@
     text-align: center;
   }
 
-  .value-main h2 {
-    font-size: 20px;
-    margin-right: 40px;
-    margin-top: 90px;
-    line-height: 1.5;
+  .value-head {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  #value {
+    margin-top: 60px;
     text-align: center;
     justify-content: center;
-    align-items: center;
+    font-size: 18px;
+    margin-right: 42px;
   }
 
   .value-main p {
     line-height: 1.4;
     text-align: justify;
     text-justify: inter-word;
-    font-size: 12px;
-    margin-right: 32px;
+    font-size: 10px;
+    margin-right: 42px;
   }
 
   .value-prop {
@@ -1093,18 +1097,22 @@
     gap: 1rem;
     flex-direction: column-reverse;
   }
+
   .second-heading {
-    font-size: 24px;
+    font-size: 18px;
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-right: 20px;
+    margin-right: 60px;
+    text-align: center;
+    justify-content: center;
   }
 
   .value-content ul li {
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
     list-style: none;
     padding-bottom: 0.5rem;
+    margin-left: 50px;
   }
 
   .value-content ul {
@@ -1114,25 +1122,28 @@
     justify-content: flex-start;
     align-items: flex-start;
   }
+
   #mision-img {
     height: 350px;
-    width: 250px;
-    margin-top: -30px;
+    width: 200px;
+    margin-top: -70px;
+    margin-bottom: -10px;
   }
 
   .images {
-    margin-bottom: 40px;
-    height: 220px;
-    width: 220px;
+    margin-bottom: 50px;
+    height: 250px;
+    width: 250px;
   }
 
   #services-products .title {
-    font-size: 32px;
+    font-size: 26px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 18px;
     line-height: 1.2;
     max-width: 90%;
+    text-align: center;
   }
 
   .products-home {
@@ -1140,55 +1151,63 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
   }
+
   .produce {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    max-width: 25rem;
+    max-width: 23rem;
+    height: 26rem;
   }
+
   .title-typo {
     font-weight: 700;
     color: #1f1f18;
-    font-size: 19px;
+    font-size: 18px;
     text-align: center;
-    margin-top: -5px;
+    margin-top: -25px;
   }
   .sub {
     text-align: center;
     font-weight: 500;
     color: #1f1f18;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.2;
   }
   .sent {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.5;
     margin-top: 20px;
   }
+
   .produce-text {
-    font-size: 14px;
+    font-size: 12px;
+    justify-content: flex-start;
   }
 
   .heading {
-    font-size: 32px;
+    font-size: 26px;
     margin-bottom: 15px;
   }
 
   .impact p {
     text-align: justify;
     text-justify: inter-word;
-    font-size: 16px;
-    line-height: 1.4;
+    font-size: 14px;
+    line-height: 1.5;
     margin-left: 25px;
   }
+
   .heading2 {
-    font-size: 24px;
-    max-width: 80%;
+    font-size: 22px;
     margin-left: 45px;
+    text-align: justify;
+    text-justify: inter-word;
   }
+
   .impact-items {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -1197,80 +1216,103 @@
     align-items: center;
   }
   .counter-item {
-    width: 300px;
-    height: 250px;
+    width: 250px;
+    height: 200px;
   }
   #counter-number {
-    font-size: 40px;
+    font-size: 30px;
     margin-bottom: 20px;
   }
   #counter-element {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .team-header {
-    font-size: 36px;
+    font-size: 26px;
     line-height: 1.5;
   }
   .team-sub {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.5;
-    max-width: 80%;
-    margin-left: 50px;
     margin-top: -5px;
+    text-align: center;
   }
 
   .team-items {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 10px;
+    gap: 20px;
     justify-content: center;
     align-items: center;
   }
-
-  .trusted-head {
-    font-size: 32px;
-    line-height: 1.5;
+  .main-card {
+    width: 320px;
+    height: 400px;
   }
 
-  .trusted-sub {
-    font-size: 16px;
+  .trusted-head {
+    font-size: 26px;
     line-height: 1.5;
-    max-width: 85%;
-    margin-left: 40px;
+    text-align: center;
+  }
+  .trusted-sub {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
     margin-top: -10px;
+  }
+  .carousel-pagination {
+    justify-content: center;
   }
 
   .contact-header {
-    font-size: 24px;
-    list-style: none;
+    font-size: 22px;
     line-height: 1.5;
+    text-align: center;
   }
   .contact-sub {
-    font-size: 18px;
-    max-width: 90%;
+    font-size: 16px;
+    text-align: center;
+    margin-top: -10px;
+  }
+  #email {
+    font-size: 16px;
   }
 
+  #timeline-cent {
+    width: 350px;
+  }
+  #timeline-main {
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px;
+    margin-bottom: -20px;
+  }
   .main-image {
     height: 200px;
     width: 200px;
     margin-left: 45px;
+    margin-top: 20px;
   }
   .main-content h2 {
     font-size: 22px;
     margin-top: -20px;
+    max-width: 80%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: -30px;
   }
   .main-content p {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.5;
   }
-
   .mision-first {
     text-align: center;
-    font-size: 26px;
+    font-size: 24px;
   }
   .mission p {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.5;
     text-align: justify;
     text-justify: inter-word;
@@ -1289,10 +1331,10 @@
   }
   .mision-second {
     text-align: center;
-    font-size: 26px;
+    font-size: 24px;
   }
   .vision-content p {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.5;
     text-align: justify;
     text-justify: inter-word;
@@ -1302,15 +1344,13 @@
 
   .mision-title {
     text-align: center;
-    font-size: 26px;
+    font-size: 24px;
   }
 
   .mision-sub {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.5;
     text-align: center;
-    max-width: 80%;
-    margin-left: 50px;
   }
 
   .value-items {
