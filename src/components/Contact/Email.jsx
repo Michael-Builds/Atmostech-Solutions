@@ -34,33 +34,43 @@ const Email = () => {
               <Typography variant="h4" color="blueGray" className="text-center mt-8 email-section-head">
                 Email us
               </Typography>
-              <form className="mt-8 mb-1 w-80 max-w-screen-lg sm:w-96">
+              <form className="mt-8 mb-1 w-80 max-w-screen-lg email-collect">
                 <div className="mb-4 flex flex-col gap-6">
                   <Input
                     label="Email"
-                    containerProps={{ className: "min-w-[72px] mail"  }}
+                    containerProps={{ className: "min-w-[72px] mail" }}
                     type="email"
+                    labelProps={{ style: { fontSize: '20px' } }}
                   />
 
                   <div className="my-2 flex items-center gap-3">
-                    <Input label="Name" containerProps={{ className: "min-w-[72px] mail" }} />
+                    <Input label="Name" containerProps={{ className: "min-w-[72px] mail" }}
+                      labelProps={{ style: { fontSize: '20px' } }}
+                    />
                     <Input
                       label="Phone Number"
                       type="tel"
                       containerProps={{ className: "min-w-[72px] mail" }}
+                      labelProps={{ style: { fontSize: '20px' } }}
                     />
 
                   </div>
-                  <div containerProps={{ className: "min-w-[72px]" }}>
-                    <Select label="Service" className=' mail'>
-                      <Option>Web Development</Option>
-                      <Option>Mobile App Development</Option>
-                      <Option>API Integration</Option>
-                      <Option>Electronic Data Exchange</Option>
-                      <Option>Software Development</Option>
+                  <div containerProps={{ className: "min-w-[72px] " }}>
+                    <Select label="Service" className='mail selected-service'
+                      labelProps={{ className: "label-large" }}
+                    >
+                      <Option className='select-items'>Web Development</Option>
+                      <Option className='select-items'>Mobile App Development</Option>
+                      <Option className='select-items'>API Integration</Option>
+                      <Option className='select-items'>Electronic Data Exchange</Option>
+                      <Option className='select-items'>Software Development</Option>
                     </Select>
                   </div>
-                  <Textarea label="Message" containerProps={{ className: "min-w-[72px] mail-content" }} />
+                  <Textarea
+                    label="Message"
+                    labelProps={{ className: "custom-label" }}
+                    containerProps={{ className: "min-w-[72px] mail-content" }}
+                  />
                 </div >
                 <div className="">
                   <Button className="mt-6 email-btn" fullWidth>

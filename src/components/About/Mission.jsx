@@ -73,7 +73,7 @@ const MissionVision = () => {
               </h2>
               <p className="mb-8 mr-10 mission-sent">
                 Our differentiating factor lies in our dedication to innovation
-                and quality. Through leveraging cutting-edge advancements in
+                and quality.Through leveraging cutting-edge advancements in
                 technology, we provide tailored, state-of-the-art solutions to
                 meet your specific needs.
               </p>

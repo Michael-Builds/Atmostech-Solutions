@@ -22,7 +22,7 @@ const Main = () => {
         <section className="value-proposition mb-0 relative w-full h-full">
             <div className="mx-auto overflow-hidden">
 
-                <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+                <div className="grid grid-cols-1 gap-8 md:grid-cols-2 web-page">
                     <div className="flex justify-center">
                         <img
                             src={background}
@@ -49,9 +49,9 @@ const Main = () => {
                 </div>
 
 
-                <div className="grid grid-cols-1 gap-8 md:grid-cols-2 mb-10">
+                <div className="grid grid-cols-1 gap-8 md:grid-cols-2 mb-10 web-timeline">
 
-                    <div className="flex flex-col justify-center mb-10">
+                    <div id='web-content' className="flex flex-col justify-center mb-10">
                         <div className="row">
                             <div className="option-title fade-in-left">
                                 <h2 className="option-head text-left ml-10">Your Options</h2>
@@ -65,7 +65,7 @@ const Main = () => {
                             With our mobile app development solutions, you can stay connected with your customers and drive engagement on the go.
                         </p>
                     </div>
-                    <div className="flex justify-center mt-12">
+                    <div className="flex justify-center mt-12 web-timeline-items">
                         <div className="w-[32rem]">
                             <Timeline>
                                 <TimelineItem>

@@ -39,7 +39,7 @@ export default function Details() {
                   <MdAttachEmail className="h-5 w-5" />
                 </TimelineIcon>
                 <div className="flex flex-col gap-1">
-                  <Typography variant="h6" color="blue-gray">
+                  <Typography variant="h6" color="blue-gray" className=" detail-email">
                     $2400, Design changes
                   </Typography>
                   <Typography
@@ -60,7 +60,7 @@ export default function Details() {
                   <FiPhoneCall className="h-5 w-5" />
                 </TimelineIcon>
                 <div className="flex flex-col gap-1">
-                  <Typography variant="h6" color="blue-gray">
+                  <Typography variant="h6" color="blue-gray" className=" detail-email">
                     New order #1832412
                   </Typography>
                   <Typography
@@ -80,8 +80,8 @@ export default function Details() {
                   <IoLocationOutline className="h-5 w-5" />
                 </TimelineIcon>
                 <div className="flex flex-col gap-1  ">
-                  <Typography variant="h6" color="blue-gray">
-                    Payment completed for order #4395133
+                  <Typography variant="h6" color="blue-gray" className=" detail-email">
+                    Payment completed
                   </Typography>
                   <Typography
                     variant="small"

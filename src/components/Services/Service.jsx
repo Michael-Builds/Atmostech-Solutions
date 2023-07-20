@@ -21,7 +21,7 @@ const Service = () => {
       <div className="container mx-auto">
         <div className="row">
           <div className="section-title fade-in-left">
-            <h2 className="service-head text-left ml-10">Services</h2>
+            <h2 id='head' className="service-head text-left ml-10">Services</h2>
           </div>
         </div>
         <div className="grid grid-cols-3 service-cards justify-center mb-10 ml-11">
@@ -45,7 +45,7 @@ const Service = () => {
             </CardFooter>
           </Card>
 
-          <Card className="mt-6 w-96 card zoom-in-2">
+          <Card className="mt-6 w-96 card zoom-in-3">
             <CardBody>
               <CiGlobe className="text-green-500 w-12 h-12 mb-4 mx-auto ike" />
               <Typography variant="h5" color="blue-gray" className="mb-2 text-center service-title">
@@ -54,15 +54,15 @@ const Service = () => {
               <Typography className="text-center service-sentence">
                 Unleash creativity with our web development service, turning aspirations into captivating online experiences that inspires.
               </Typography>
-              <CardFooter className="pt-0">
-                <Link to='/web' className="inline-block service-btn">
-                  <Button size="sm" variant="text" className="flex items-center gap-2 service-card-btn1">
-                    Learn More
-                    <ArrowLongRightIcon strokeWidth={2} className="w-4 h-4" />
-                  </Button>
-                </Link>
-              </CardFooter>
             </CardBody>
+            <CardFooter className="pt-0">
+              <Link to='/web' className="inline-block service-btn">
+                <Button size="sm" variant="text" className="flex items-center gap-2 service-card-btn">
+                  Learn More
+                  <ArrowLongRightIcon strokeWidth={2} className="w-4 h-4" />
+                </Button>
+              </Link>
+            </CardFooter>
           </Card>
 
           <Card className="mt-6 w-96 card zoom-in-3">

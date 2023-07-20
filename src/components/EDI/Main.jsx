@@ -22,7 +22,7 @@ const Main = () => {
         <section className="value-proposition mb-0 relative w-full h-full">
             <div className="mx-auto overflow-hidden">
 
-                <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+                <div id='edi-content' className="grid grid-cols-1 gap-8 md:grid-cols-2">
                     <div className="flex justify-center">
                         <img
                             src={background}
@@ -43,7 +43,7 @@ const Main = () => {
                     </div>
                 </div>
                 
-                <div className="grid grid-cols-1 gap-8 md:grid-cols-2 mb-10">
+                <div id='edi-timeline' className="grid grid-cols-1 gap-8 md:grid-cols-2 mb-10">
 
                     <div className="flex flex-col justify-center mb-10">
                         <div className="row">

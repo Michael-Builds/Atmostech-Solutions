@@ -54,7 +54,8 @@ const Counter = () => {
               <h2 className="text-3xl font-bold mb-4 heading ">Our Impacts</h2>
               <p className="text-white ">
                 We are dedicated to making a lasting impact in our community and beyond. Through our innovative projects
-                and solutions, we strive to address pressing challenges and create positive change.
+                and solutions, we strive to address pressing challenges and create positive change.Through a relentless pursuit of innovation and groundbreaking solutions, we endeavor to tackle pressing challenges head-on and bring about positive transformation.
+                By leveraging our expertise and creativity, we aim to empower businesses and individuals with transformative solutions. Our holistic approach ensures that every aspect of our projects aligns with our core mission: to drive positive change and uplift communities.
               </p>
 
               <h3 className="text-2xl font-bold mt-8 mb-4 heading2">Our Achievements in Making an Impact</h3>

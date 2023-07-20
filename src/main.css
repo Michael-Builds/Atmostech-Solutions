@@ -212,6 +212,22 @@
   color: #1f1f18;
   margin-bottom: 20px;
 }
+.impact {
+  margin-top: 30px;
+}
+.impact p {
+  text-align: center;
+  max-width: 90%;
+  margin-left: 20px;
+  font-size: 17px;
+}
+
+.impact-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+}
 
 .container {
   margin-bottom: 20px;
@@ -421,6 +437,7 @@
   color: #ffffff;
   font-size: 24px;
   cursor: pointer;
+  z-index: 9999;
 }
 .scroll-to-top:hover {
   color: #fff;
@@ -676,6 +693,10 @@
   margin-top: 5px;
 }
 
+.team-items {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
 .detail-third {
   margin-top: 20px;
   font-family: "Exo", sans-serif;
@@ -1398,7 +1419,6 @@
   }
 
   /* Products and Services */
-
   .underline-green {
     margin-left: auto;
     margin-right: auto;
@@ -1417,13 +1437,13 @@
   }
 
   .service-cards {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2px;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
-    margin-left: -5px;
   }
+
   .product-one {
     text-align: center;
   }
@@ -1574,7 +1594,7 @@
     margin-bottom: 10px;
   }
   .value-content ul li {
-    font-size: 23px;
+    font-size: 26px;
   }
 
   .value-content ul {
@@ -1583,7 +1603,8 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-left: 85px;
+    margin-left: 50px;
+    font-size: 24px;
   }
   .value-content li {
     list-style: none;
@@ -1644,11 +1665,13 @@
   }
   .impact p {
     text-align: center;
-    font-size: 23px;
+    font-size: 24px;
     max-width: 90%;
     justify-content: center;
     margin-left: 50px;
     margin-bottom: 20px;
+    text-align: justify;
+    text-justify: inter-word;
   }
   .impact-items {
     gap: 1rem;
@@ -1721,9 +1744,13 @@
     margin-top: 15px;
   }
   .main-content p {
-    font-size: 22px;
+    font-size: 25px;
     margin-top: 20px;
+    line-height: 1.7;
+    text-align: justify;
+    text-justify: inter-word;
   }
+
   .main-image {
     margin-top: -10px;
     align-items: center;
@@ -1743,9 +1770,14 @@
     margin-top: -10px;
   }
   .mission p {
-    font-size: 22px;
-    line-height: 1.8;
+    font-size: 26px;
+    line-height: 1.9;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-right: 25px;
+    margin-top:20px;
   }
+
   .image {
     width: 350px;
     height: 350px;
@@ -1765,10 +1797,12 @@
     margin-top: 20px;
   }
   .mission-sent {
-    text-align: center;
-    font-size: 22px;
-    line-height: 1.8;
-    margin-left: 25px;
+    margin-left: 40px;
+    font-size: 26px;
+    line-height: 1.9;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-top:20px;
   }
   .images {
     width: 400px;
@@ -1777,74 +1811,84 @@
   }
 
   .mision-title {
-    font-size: 42px;
+    font-size: 46px;
     margin-top: 20px;
   }
+
   .mision-sub {
     font-size: 24px;
+    margin-top: 15px;
   }
   .value-items {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 2px;
     justify-content: center;
     align-items: center;
   }
+  .value-card{
+    width: 600px;
+    height: 400px;
+  }
   .value-icon {
-    height: 45px;
-    width: 45px;
+    height: 65px;
+    width: 65px;
   }
   .value-head {
-    font-size: 28px;
+    font-size: 36px;
   }
   .value-sentence {
-    font-size: 20px;
+    margin-top: 15px;
+    font-size: 26px;
+    line-height: 1.8;
   }
-
   .heading {
-    font-size: 46px;
-    margin-top: 20px;
+    font-size: 48px;
+    margin-top: 25px;
   }
   .jobs {
-    font-size: 24px;
+    font-size: 28px;
+    line-height:1.5;
+    margin-top: 25px;
   }
   .job-items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 5px;
     place-content: center;
-    margin-left: 80px;
   }
+
   .job-container {
-    width: 250px;
-    height: 200px;
+    width: 350px;
+    height: 300px;
   }
   .job-number {
-    font-size: 40px;
+    font-size: 70px;
+    margin-bottom: 25px;
   }
   .job-name {
     margin-top: 5px;
-    font-size: 24px;
+    font-size: 28px;
   }
   .blog-title {
-    font-size: 50px;
-    margin-top: 20px;
+    font-size: 55px;
+    margin-top: 25px;
   }
   .blog-sub {
-    font-size: 24px;
-    margin-top: 5px;
+    font-size: 28px;
+    margin-top: -5px;
   }
   .blog-card {
-    height: 550px;
+    height: 750px;
     max-width: 600px;
-    margin: 10px;
+    margin: 15px;
   }
   .blog-text {
-    font-size: 28px;
+    font-size: 32px;
   }
   .blog-content {
     margin-top: 20px;
-    font-size: 24px;
+    font-size: 26px;
   }
   .blog-btn {
     font-size: 20px;
@@ -1857,42 +1901,53 @@
     font-size: 26px;
     margin-bottom: 20px;
   }
-  .service-head {
-    font-size: 40px;
-  }
+
   .service-cards {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
   }
   .card {
-    height: 350px;
-    width: 320px;
-    margin-left: -10px;
+    height: 550px;
+    width: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 45px;
   }
+
   .ike {
-    height: 60px;
-    width: 60px;
+    height: 110px;
+    width: 110px;
+    margin-top: -40px;
   }
+
   .service-title {
-    font-size: 20px;
+    font-size: 33px;
     line-height: 1.4;
   }
-  .service-sentence {
-    font-size: 18px;
+  #head{
+    font-size: 52px;
   }
+
+
+  .service-sentence {
+    font-size: 22px;
+    line-height: 1.8;
+  }
+
   .service-card-btn {
-    margin-top: -10px;
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .service-card-btn1 {
     margin-top: 20px;
     font-size: 18px;
   }
-  .service-head {
-    font-size: 42px;
-  }
+
   .first-product {
     text-align: center;
     margin-top: 20px;
@@ -1902,12 +1957,15 @@
     gap: 1rem;
   }
   .product-title {
-    font-size: 38px;
+    font-size: 42px;
     line-height: 1.3;
   }
   .product-one p {
-    font-size: 20px;
+    font-size: 26px;
     line-height: 1.8;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-left: -5px;
   }
   .product1 {
     margin-left: 90px;
@@ -1925,8 +1983,11 @@
     margin-top: 20px;
   }
   .product-two p {
-    font-size: 20px;
+    font-size: 26px;
     line-height: 1.8;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-left: 25px;
   }
 
   .third-product {
@@ -1938,8 +1999,11 @@
     gap: 1rem;
   }
   .product-three p {
-    font-size: 20px;
+    font-size: 26px;
     line-height: 1.8;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-left: -10px;
   }
   .main-software {
     text-align: center;
@@ -1950,7 +2014,7 @@
     gap: 1rem;
   }
 
-  .software-timeline{
+  .software-timeline {
     text-align: center;
     margin-top: 20px;
     display: flex;
@@ -1958,25 +2022,32 @@
     justify-content: center;
     gap: 1rem;
   }
-  .option-head{
+  .software-timeline p{
+    font-size: 24px;
+    line-height: 1.8;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  .option-head {
     font-size: 38px;
     margin-bottom: 35px;
   }
-  .software-sentence p{
+  .software-sentence p {
     font-size: 24px;
     line-height: 1.8;
   }
-  .software-timeline-items{
+
+  .software-timeline-items {
     margin-top: -10px;
     margin-bottom: 15px;
   }
 
-  .software-timeline-content{
+  .software-timeline-content {
     text-align: center;
     justify-content: center;
     align-items: center;
   }
-  .contact-section{
+  .contact-section {
     text-align: center;
     margin-top: 20px;
     display: flex;
@@ -1984,28 +2055,164 @@
     justify-content: center;
     gap: 1rem;
   }
-  .service-head {
-    margin-top: 20px;
+
+  .section-title h2 {
+    font-size: 40px;
+    margin-top: 120px;
   }
-  .section-title h2{
-    margin-top:100px;
+  .email-content {
+    font-size: 26px;
+    line-height: 1.9;
+    max-width: 90%;
   }
-  .email-content{
-    font-size: 23px;
-    line-height: 1.8;
+  .email-section-head {
+    font-size: 38px;
   }
-  .email-section-head{
-    font-size: 36px;
+  .mail {
+    height: 60px;
   }
-  .mail{
-    /* min-width: 92px; */
-    height: 50px;
-  }
-  .mail-content{
-    height:150px;
+  .mail-content {
+    height: 150px;
     max-width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  .detail-email {
+    font-size: 24px;
+  }
+  .email-collect {
+    width: 500px;
+  }
+  .text-area {
+    font-size: 28px;
   }
 
+  .custom-label {
+    font-size: 20px !important;
+  }
+
+  .label-large {
+    text-align: center;
+    font-size: 20px;
+  }
+  .select-items {
+    font-size: 22px;
+  }
+  .email-btn {
+    font-size: 22px;
+  }
+  .text-area {
+    font-size: 20px;
+  }
+
+  .web-page {
+    text-align: center;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .web-timeline {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .web-timeline p {
+    font-size: 24px;
+    line-height: 1.7;
+  }
+  .web-timeline-items {
+    margin-top: -10px;
+    margin-bottom: 15px;
+  }
+  .api-content{
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .api-content{
+    margin-right: 20px;
+  }
+
+  .api-options{
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+.api-options p{
+  font-size: 24px;
+  line-height: 1.8;
+  text-align: justify;
+  text-justify: inter-word;
+}
+#timeline{
+  margin-top: -30px;
+  margin-bottom: 15px;
+}
+#web-content p{
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.8;
+}
+#mobile{
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+#mobile-options {
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+#mobile-options p{
+  font-size: 26px;
+  line-height: 1.8;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+#edi-content{
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#edi-timeline{
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#edi-timeline p{
+  font-size: 26px;
+  line-height: 1.8;
+  text-align: justify;
+  text-justify: inter-word;
+}
 
   /* Targets devices with a screen width between 481 and 768 pixels, such as smartphones in landscape orientation and small tablets. */
 }

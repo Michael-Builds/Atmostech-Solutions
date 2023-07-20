@@ -22,7 +22,7 @@ const Product = () => {
       <div className="container mx-auto">
         <div className="row">
           <div className="section-title fade-in-left">
-            <h2 className="service-head text-left ml-10">Products</h2>
+            <h2 id='head' className="service-head text-left ml-10">Products</h2>
           </div>
         </div>
 

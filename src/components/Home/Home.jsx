@@ -25,8 +25,8 @@ const Home = () => {
       <Impacts />
       <Team />
       <Carousel />
-      <Footer />
       <Scroll />
+      <Footer />
     </>
   );
 };

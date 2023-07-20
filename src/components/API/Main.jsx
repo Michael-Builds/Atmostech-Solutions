@@ -22,7 +22,7 @@ const Main = () => {
         <section className="value-proposition mb-0 relative w-full h-full">
             <div className="mx-auto overflow-hidden">
 
-                <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+                <div className="grid grid-cols-1 gap-8 md:grid-cols-2 api-content">
                     <div className="flex justify-center">
                         <img
                             src={background}
@@ -44,7 +44,7 @@ const Main = () => {
 
                 </div>
 
-                <div className="grid grid-cols-1 gap-8 md:grid-cols-2 mb-10">
+                <div className="grid grid-cols-1 gap-8 md:grid-cols-2 mb-10 api-options">
 
                     <div className="flex flex-col justify-center mb-10 our-options">
                         <div className="row">
@@ -61,7 +61,7 @@ const Main = () => {
                         </p>
                     </div>
 
-                    <div className="flex justify-center mt-12 time-lines">
+                    <div id ='timeline'className="flex justify-center mt-12 time-lines">
                         <div className="w-[32rem]">
                             <Timeline>
                                 <TimelineItem>
