@@ -1038,20 +1038,21 @@
 
 @media only screen and (max-width: 480px) {
   .slider-head {
-    font-size: 44px;
+    font-size: 32px;
     line-height: 1.2;
   }
 
   .slider-sentence {
-    font-size: 22px;
+    font-size: 20px;
     margin-top: 10px;
-    line-height: 1.6;
+    line-height: 1.4;
     text-align: justify;
     text-justify: inter-word;
   }
+
   .slider-one-btn {
-    margin-top: 30px;
-    font-size: 20px;
+    margin-top: 25px;
+    font-size: 19px;
   }
 
   .first-value {
@@ -1065,10 +1066,11 @@
     align-items: center;
     text-align: center;
   }
+
   .value-head {
     font-weight: 700;
     margin-top: 35px;
-    font-size: 36px;
+    font-size: 32px;
     margin-left: auto;
     margin-right: auto;
     max-width: 95%;
@@ -1076,7 +1078,7 @@
   }
 
   .value-main h2 {
-    font-size: 30px;
+    font-size: 20px;
     margin-right: 40px;
     margin-top: 30px;
     line-height: 1.2;
@@ -1087,8 +1089,8 @@
     line-height: 1.4;
     text-align: justify;
     text-justify: inter-word;
-    font-size: 20px;
-    margin-right: 28px;
+    font-size: 12px;
+    margin-right: 32px;
   }
 
   .value-prop {
@@ -1101,15 +1103,15 @@
     flex-direction: column-reverse;
   }
   .second-heading {
-    font-size: 32px;
+    font-size: 24px;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-right: 20px;
   }
 
   .value-content ul li {
-    font-size: 18px;
-    margin-left: 20px;
+    font-size: 16px;
+    text-align: center;
     list-style: none;
     padding-bottom: 0.5rem;
   }
@@ -1121,13 +1123,20 @@
     justify-content: flex-start;
     align-items: flex-start;
   }
+  #mision-img {
+    height: 350px;
+    width: 250px;
+    margin-top: -30px;
+  }
 
   .images {
     margin-bottom: 40px;
+    height: 220px;
+    width: 220px;
   }
 
   #services-products .title {
-    font-size: 38px;
+    font-size: 32px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 18px;
@@ -1152,7 +1161,7 @@
   .title-typo {
     font-weight: 700;
     color: #1f1f18;
-    font-size: 24px;
+    font-size: 19px;
     text-align: center;
     margin-top: -5px;
   }
@@ -1160,32 +1169,32 @@
     text-align: center;
     font-weight: 500;
     color: #1f1f18;
-    font-size: 19px;
+    font-size: 16px;
     line-height: 1.2;
   }
   .sent {
-    font-size: 17px;
+    font-size: 14px;
     line-height: 1.5;
     margin-top: 20px;
   }
   .produce-text {
-    font-size: 17px;
+    font-size: 14px;
   }
 
   .heading {
-    font-size: 42px;
+    font-size: 32px;
     margin-bottom: 15px;
   }
 
   .impact p {
     text-align: justify;
     text-justify: inter-word;
-    font-size: 19px;
-    line-height: 1.5;
+    font-size: 16px;
+    line-height: 1.4;
     margin-left: 25px;
   }
   .heading2 {
-    font-size: 26px;
+    font-size: 24px;
     max-width: 80%;
     margin-left: 45px;
   }
@@ -1197,24 +1206,24 @@
     align-items: center;
   }
   .counter-item {
-    width: 350px;
-    height: 300px;
+    width: 300px;
+    height: 250px;
   }
   #counter-number {
-    font-size: 60px;
+    font-size: 40px;
     margin-bottom: 20px;
   }
   #counter-element {
-    font-size: 24px;
+    font-size: 16px;
   }
 
   .team-header {
-    font-size: 46px;
-    line-height: 1.6;
+    font-size: 36px;
+    line-height: 1.5;
   }
   .team-sub {
-    font-size: 20px;
-    line-height: 1.6;
+    font-size: 16px;
+    line-height: 1.5;
     max-width: 80%;
     margin-left: 50px;
     margin-top: -5px;
@@ -1229,46 +1238,48 @@
   }
 
   .trusted-head {
-    font-size: 40px;
-    line-height: 1.6;
+    font-size: 32px;
+    line-height: 1.5;
   }
 
   .trusted-sub {
-    font-size: 20px;
-    line-height: 1.6;
+    font-size: 16px;
+    line-height: 1.5;
     max-width: 85%;
     margin-left: 40px;
     margin-top: -10px;
   }
+
   .contact-header {
-    font-size: 32px;
+    font-size: 24px;
     list-style: none;
-    line-height: 1.6;
+    line-height: 1.5;
   }
   .contact-sub {
-    font-size: 26px;
+    font-size: 18px;
     max-width: 90%;
   }
 
   .main-image {
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
     margin-left: 45px;
   }
   .main-content h2 {
-    font-size: 30px;
+    font-size: 22px;
+    margin-top: -20px;
   }
   .main-content p {
-    font-size: 19px;
+    font-size: 16px;
     line-height: 1.5;
   }
 
   .mision-first {
     text-align: center;
-    font-size: 34px;
+    font-size: 26px;
   }
   .mission p {
-    font-size: 19px;
+    font-size: 16px;
     line-height: 1.5;
     text-align: justify;
     text-justify: inter-word;
@@ -1287,10 +1298,10 @@
   }
   .mision-second {
     text-align: center;
-    font-size: 34px;
+    font-size: 26px;
   }
   .vision-content p {
-    font-size: 19px;
+    font-size: 16px;
     line-height: 1.5;
     text-align: justify;
     text-justify: inter-word;
@@ -1300,11 +1311,11 @@
 
   .mision-title {
     text-align: center;
-    font-size: 34px;
+    font-size: 26px;
   }
 
   .mision-sub {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.5;
     text-align: center;
     max-width: 80%;
@@ -1319,34 +1330,60 @@
     align-items: center;
   }
   .value-head {
-    font-size: 26px;
+    font-size: 22px;
     margin-top: 10px;
   }
 
   .value-sentence {
-    font-size: 18px;
+    font-size: 14px;
+    line-height: 1.5;
   }
-
+  .value-icon {
+    width: 50px;
+    height: 40px;
+  }
   .jobs {
-    font-size: 20px;
+    font-size: 14px;
     max-width: 90%;
     margin-left: 30px;
   }
 
   .job-container {
-    width: 350px;
-    height: 300px;
+    width: 300px;
+    height: 250px;
   }
   .job-number {
-    font-size: 50px;
+    font-size: 30px;
     margin-bottom: 20px;
   }
   .job-name {
+    font-size: 18px;
+  }
+  #head {
     font-size: 24px;
   }
+  .blog-title {
+    font-size: 26px;
+  }
+  .blog-sub {
+    font-size: 14px;
+  }
 
-  #head {
-    font-size: 32px;
+  .blog-text {
+    font-size: 16px;
+  }
+  .blog-content {
+    font-size: 14px;
+  }
+
+  .blog-btn {
+    font-size: 10px;
+  }
+  .underline-green {
+    font-size: 24px;
+  }
+  .type-head {
+    font-size: 16px;
   }
   .service-cards {
     display: grid;
@@ -1357,17 +1394,21 @@
   }
   .product-title {
     text-align: center;
-    font-size: 26px;
+    font-size: 22px;
   }
   .product-one p {
-    font-size: 18px;
+    font-size: 14px;
     line-height: 1.5;
     text-align: justify;
     text-justify: inter-word;
     margin-right: 20px;
   }
+
   .product1 {
     margin-left: 90px;
+    height: 200px;
+    width: 200px;
+    margin-top: -20px;
   }
 
   .second-product {
@@ -1379,12 +1420,17 @@
     gap: 1rem;
     flex-direction: column-reverse;
   }
+  .product2 {
+    height: 200px;
+    width: 250px;
+    margin-top: -20px;
+  }
   .product-two h2 {
     margin-top: 20px;
   }
 
   .product-two p {
-    font-size: 18px;
+    font-size: 14px;
     line-height: 1.5;
     text-align: justify;
     text-justify: inter-word;
@@ -1399,9 +1445,14 @@
     justify-content: center;
     gap: 1rem;
   }
+  .product3 {
+    height: 250px;
+    width: 200px;
+    margin-top: -20px;
+  }
 
   .product-three p {
-    font-size: 18px;
+    font-size: 14px;
     line-height: 1.5;
     text-align: justify;
     text-justify: inter-word;
@@ -1409,45 +1460,72 @@
   }
 
   .main-content h2 {
-    font-size: 27px;
+    font-size: 24px;
+  }
+  .ike {
+    height: 40px;
+    width: 40px;
+  }
+  .service-sentence {
+    font-size: 14px;
+  }
+  .service-card-btn {
+    font-size: 11px;
   }
 
+  .card {
+    height: 270px;
+    width: 350px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25px;
+  }
+
+  .service-title {
+    font-size: 14px;
+  }
+  .main-content h2 {
+    font-size: 18px;
+    line-height: 1.4;
+    margin-left: 35px;
+  }
   #soft {
-    font-size: 20px;
-    line-height: 1.7;
+    font-size: 16px;
+    line-height: 1.5;
     text-align: justify;
     text-justify: inter-word;
     margin-right: 50px;
   }
 
   .software-sentence p {
-    font-size: 20px;
-    line-height: 1.7;
+    font-size: 16px;
+    line-height: 1.5;
     text-align: justify;
     text-justify: inter-word;
     margin-right: 50px;
   }
-
+  .option-title h2 {
+    font-size: 20px;
+  }
   .software-timeline-items {
     margin-top: -30px;
     margin-bottom: 15px;
   }
-
   .contact-me h2 {
-    font-size: 30px;
+    font-size: 20px;
     margin-top: 120px;
   }
 
   .email-content {
-    font-size: 19px;
-    line-height: 1.6;
+    font-size: 14px;
+    line-height: 1.5;
     text-align: justify;
     text-justify: inter-word;
     margin-right: 40px;
   }
 
   .email-section-head {
-    font-size: 30px;
+    font-size: 20px;
     margin-top: -10px;
   }
   .mail {
@@ -1458,38 +1536,38 @@
     height: 100px;
     max-width: 100%;
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 18px;
   }
   .detail-email {
-    font-size: 16px;
+    font-size: 14px;
   }
   .custom-label {
-    font-size: 16px !important;
+    font-size: 14px !important;
   }
   .text-area {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   #name-input {
-    font-size: 16px !important;
+    font-size: 14px !important;
   }
 
   .label-large {
     text-align: center;
-    font-size: 16px;
+    font-size: 14px;
   }
   .select-items {
     font-size: 16px;
   }
   .web-page h2 {
-    font-size: 28px;
+    font-size: 20px;
   }
   .web-page p {
-    font-size: 19px;
+    font-size: 16px;
     line-height: 1.5;
   }
   #web-content p {
-    font-size: 19px;
+    font-size: 16px;
     line-height: 1.5;
   }
   .web-timeline-items {
@@ -1498,7 +1576,7 @@
   }
 
   .mobile-options p {
-    font-size: 19px;
+    font-size: 16px;
     line-height: 1.5;
   }
   #mobile-timeline {
@@ -1507,7 +1585,7 @@
   }
 
   #api-options p {
-    font-size: 19px;
+    font-size: 16px;
     line-height: 1.5;
   }
 
@@ -1517,13 +1595,16 @@
   }
 
   #edi-timeline p {
-    font-size: 19px;
+    font-size: 16px;
     line-height: 1.5;
   }
 
   #edi-options {
     margin-top: -20px;
     margin-bottom: 20px;
+  }
+  .detail-email {
+    font-size: 16px;
   }
 
   /* Targets devices with a maximum screen width of 480 pixels, such as smartphones in portrait orientation. */

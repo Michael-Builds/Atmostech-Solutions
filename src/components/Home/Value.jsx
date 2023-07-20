@@ -43,7 +43,7 @@ const ValueProposition = () => {
                             cutting-edge technology in driving growth and success.
                         </p>
                     </div>
-                    <div className="flex justify-center">
+                    <div id = 'mision-img'className="flex justify-center">
                         <img
                             src={cutting}
                             alt="ATMOS-PIC"
