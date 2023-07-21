@@ -9,7 +9,7 @@ const Main = () => {
         <section className="value-proposition mb-0 relative w-full h-full">
             <div className="mx-auto overflow-hidden">
 
-                <div className="grid grid-cols-1 gap-8 md:grid-cols-2 about-content-1">
+                <div id='about-main' className="grid grid-cols-1 gap-8 md:grid-cols-2 about-content-1">
                     <div className="flex justify-center">
                         <img
                             src={cutting}
@@ -25,10 +25,9 @@ const Main = () => {
                             We specialize in providing tailored, state-of-the-art tech solutions to help businesses and individuals thrive in today's digital landscape. Our innovative approach and commitment to quality ensure that our cutting-edge solutions meet your specific needs, empowering you to unlock new opportunities for growth and success
                         </p>
                         <p className="mb-4 mr-5">
-                        Atmos Technology stands out for our commitment to innovation and quality. By harnessing the latest advancements in technology, we deliver customized, state-of-the-art solutions that precisely meet your unique needs
+                            Atmos Technology stands out for our commitment to innovation and quality. By harnessing the latest advancements in technology, we deliver customized, state-of-the-art solutions that precisely meet your unique needs
                         </p>
                     </div>
-
                 </div>
             </div>
 

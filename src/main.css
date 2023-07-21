@@ -1036,684 +1036,94 @@
   color: #fff;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 479px){
-
+@media only screen and (min-width: 320px) and (max-width: 480px) {
   #services-products h1 {
     font-size: 20px;
     margin-top: -10px;
   }
-  .produce{
+  .produce {
     height: 150px;
     width: 250px;
   }
-  .title-typo{
-   font-size: 18px;
-  }
-  .sub{
-    font-size: 16px;
-  }
-  .sent{
-    font-size: 14px;
-    margin-top: 5px;
-  }
-  .produce-text{
-    margin-top: -5px;
-  }
-
-  .underline-green {
-    font-size: 20px;
-  }
-  .service-cards {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 2px;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #service-card {
-    width: 280px; 
-    height: 280px; 
-    justify-content: center;
-    align-items:center;
-    margin-right: 70px;
-  }
-  .ike{
-    width: 40px;
-    height: 40px;
-  }
-
-  .service-title{
-    font-size: 22px;
-  }
-
-  .heading{
-    font-size: 20px;
-    margin-top: -20px;
-  }
-
-  .impact p{
-    font-size: 12px;
-    margin-right: 20px;
-    line-height: 1.4;
-  }
-  .heading2{
-    margin-right: 20px;
-    max-width: 80%;
-    letter-spacing: 1.5;
-  }
-
-  .counter-item{
-    width: 250px;
-    height: 250px;
-  }
-  #counter-number{
-    font-size: 22px;
-  }
-
-}
-
-@media only screen and (max-width: 480px) {
-  .slider-head {
-    font-size: 24px;
-    line-height: 1.6;
-    text-align: center;
-  }
-  .slider-sentence {
-    font-size: 16px;
-    margin-top: 10px;
-    line-height: 1.5;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-  }
-  .slider-one-btn {
-    margin-top: 25px;
-    font-size: 16px;
-  }
-  .first-value {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-  }
-
-  .value-main {
-    align-items: center;
-    text-align: center;
-  }
-
-  .value-head {
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 1.2;
-  }
-
-  #value {
-    margin-top: 60px;
-    text-align: center;
-    justify-content: center;
-    font-size: 18px;
-    margin-right: 42px;
-  }
-
-  .value-main p {
-    line-height: 1.4;
-    text-align: justify;
-    text-justify: inter-word;
-    font-size: 10px;
-    margin-right: 42px;
-  }
-
-  .value-prop {
-    text-align: center;
-    margin-top: 40px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    flex-direction: column-reverse;
-  }
-
-  .second-heading {
-    font-size: 18px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-right: 60px;
-    text-align: center;
-    justify-content: center;
-  }
-
-  .value-content ul li {
-    font-size: 14px;
-    text-align: center;
-    list-style: none;
-    padding-bottom: 0.5rem;
-    margin-left: 50px;
-  }
-
-  .value-content ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-
-  #mision-img {
-    height: 350px;
-    width: 200px;
-    margin-top: -70px;
-    margin-bottom: -10px;
-  }
-  .images {
-    margin-bottom: 50px;
-    height: 250px;
-    width: 250px;
-  }
-
-  #services-products .title {
-    font-size: 26px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 18px;
-    line-height: 1.2;
-    max-width: 90%;
-    text-align: center;
-  }
-
-  .products-home {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-  }
-
-  .produce {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    max-width: 23rem;
-    height: 26rem;
-  }
-
   .title-typo {
-    font-weight: 700;
-    color: #1f1f18;
     font-size: 18px;
-    text-align: center;
-    margin-top: -25px;
   }
   .sub {
-    text-align: center;
-    font-weight: 500;
-    color: #1f1f18;
-    font-size: 14px;
-    line-height: 1.2;
+    font-size: 16px;
   }
   .sent {
-    font-size: 12px;
-    line-height: 1.5;
-    margin-top: 20px;
+    font-size: 14px;
+    margin-top: 5px;
   }
-
   .produce-text {
-    font-size: 12px;
-    justify-content: flex-start;
-  }
-
-  .heading {
-    font-size: 26px;
-    margin-bottom: 15px;
-  }
-
-  .impact p {
-    text-align: justify;
-    text-justify: inter-word;
-    font-size: 14px;
-    line-height: 1.5;
-    margin-left: 25px;
-  }
-
-  .heading2 {
-    font-size: 22px;
-    margin-left: 45px;
-    text-align: justify;
-    text-justify: inter-word;
-  }
-
-  .impact-items {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 2px;
-    justify-content: center;
-    align-items: center;
-  }
-  .counter-item {
-    width: 250px;
-    height: 200px;
-  }
-  #counter-number {
-    font-size: 30px;
-    margin-bottom: 20px;
-  }
-  #counter-element {
-    font-size: 14px;
-  }
-
-  .team-header {
-    font-size: 26px;
-    line-height: 1.5;
-  }
-  .team-sub {
-    font-size: 14px;
-    line-height: 1.5;
     margin-top: -5px;
-    text-align: center;
-  }
-  .team-items {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-  }
-  .main-card {
-    width: 320px;
-    height: 400px;
-  }
-  .trusted-head {
-    font-size: 26px;
-    line-height: 1.5;
-    text-align: center;
-  }
-  .trusted-sub {
-    font-size: 14px;
-    line-height: 1.5;
-    text-align: center;
-    margin-top: -10px;
-  }
-  .carousel-pagination {
-    justify-content: center;
   }
 
-  .contact-header {
-    font-size: 22px;
-    line-height: 1.5;
-    text-align: center;
-  }
-  .contact-sub {
-    font-size: 16px;
-    text-align: center;
-    margin-top: -10px;
-  }
-  #email {
-    font-size: 16px;
-  }
-
-  #timeline-cent {
-    width: 350px;
-  }
-  #timeline-main {
-    justify-content: center;
-    align-items: center;
-    margin-top: -10px;
-    margin-bottom: -20px;
-  }
-  .main-image {
-    height: 200px;
-    width: 200px;
-    margin-left: 45px;
-    margin-top: 20px;
-  }
-  .main-content h2 {
-    font-size: 22px;
-    margin-top: -20px;
-    max-width: 80%;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    margin-top: -30px;
-  }
-  .main-content p {
-    font-size: 15px;
-    line-height: 1.5;
-  }
-  .mision-first {
-    text-align: center;
-    font-size: 24px;
-  }
-  .mission p {
-    font-size: 14px;
-    line-height: 1.5;
-    text-align: justify;
-    text-justify: inter-word;
-    margin-right: 35px;
-    margin-top: 5px;
-  }
-  .vision-content {
-    text-align: center;
-    margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    flex-direction: column-reverse;
-  }
-  .mision-second {
-    text-align: center;
-    font-size: 24px;
-  }
-  .vision-content p {
-    font-size: 14px;
-    line-height: 1.5;
-    text-align: justify;
-    text-justify: inter-word;
-    margin-top: 5px;
-    margin-left: 40px;
-  }
-  .mision-title {
-    text-align: center;
-    font-size: 24px;
-  }
-  .mision-sub {
-    font-size: 14px;
-    line-height: 1.5;
-    text-align: center;
-  }
-
-  .value-items {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 2px;
-    justify-content: center;
-    align-items: center;
-  }
-  .value-head {
-    font-size: 22px;
-    margin-top: 10px;
-  }
-
-  .value-sentence {
-    font-size: 14px;
-    line-height: 1.5;
-  }
-
-  .value-icon {
-    width: 40px;
-    height: 30px;
-    margin-top: 10px;
-  }
-  .jobs {
-    font-size: 14px;
-    text-align: center;
-    max-width: 90%;
-    align-items: center;
-    justify-content: center;
-    margin-left: 30px;
-  }
-  .job-container {
-    width: 250px;
-    height: 200px;
-  }
-  .job-number {
-    font-size: 28px;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  .job-name {
-    font-size: 14px;
+  .underline-green {
+    font-size: 20px;
   }
   #head {
-    font-size: 24px;
+    font-size: 22px;
   }
-  .blog-title {
-    font-size: 26px;
-  }
-  .blog-sub {
-    font-size: 14px;
-  }
-
-  .blog-text {
-    font-size: 16px;
-  }
-  .blog-content {
-    font-size: 14px;
-  }
-
-  .blog-btn {
-    font-size: 10px;
-  }
-  .underline-green {
-    font-size: 24px;
-  }
-
-  .type-head {
-    font-size: 16px;
-  }
-
   .service-cards {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 2px;
+    gap: 1px;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10px;
   }
-  .product-title {
-    text-align: center;
-    font-size: 22px;
-  }
-  .product-one p {
-    font-size: 14px;
-    line-height: 1.5;
-    text-align: justify;
-    text-justify: inter-word;
-    margin-right: 20px;
-  }
-
-  .product1 {
-    margin-left: 90px;
-    height: 200px;
-    width: 200px;
-    margin-top: -20px;
-  }
-
-  .second-product {
-    text-align: center;
-    margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
+  #service-card {
+    width: 310px;
+    height: 280px;
     justify-content: center;
-    gap: 1rem;
-    flex-direction: column-reverse;
-  }
-  .product2 {
-    height: 200px;
-    width: 250px;
-    margin-top: -20px;
-  }
-  .product-two h2 {
-    margin-top: 20px;
-  }
-
-  .product-two p {
-    font-size: 14px;
-    line-height: 1.5;
-    text-align: justify;
-    text-justify: inter-word;
-    margin-left: 30px;
-  }
-
-  .third-product {
-    text-align: center;
-    margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-  }
-  .product3 {
-    height: 250px;
-    width: 200px;
-    margin-top: -20px;
-  }
-
-  .product-three p {
-    font-size: 14px;
-    line-height: 1.5;
-    text-align: justify;
-    text-justify: inter-word;
-    margin-right: 40px;
-  }
-
-  .main-content h2 {
-    font-size: 24px;
+    align-items: center;
+    margin-right: 70px;
   }
   .ike {
-    height: 40px;
     width: 40px;
-  }
-  .service-sentence {
-    font-size: 14px;
-  }
-  .service-card-btn {
-    font-size: 11px;
-  }
-
-  .card {
-    height: 270px;
-    width: 350px;
-    justify-content: center;
-    align-items: center;
-    margin-left: 25px;
-  }
-
-  .service-title {
-    font-size: 14px;
-  }
-  .main-content h2 {
-    font-size: 18px;
-    line-height: 1.4;
-    margin-left: 35px;
-  }
-  #soft {
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: justify;
-    text-justify: inter-word;
-    margin-right: 50px;
-  }
-
-  .software-sentence p {
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: justify;
-    text-justify: inter-word;
-    margin-right: 50px;
-  }
-  .option-title h2 {
-    font-size: 20px;
-  }
-  .software-timeline-items {
-    margin-top: -30px;
-    margin-bottom: 15px;
-  }
-  .contact-me h2 {
-    font-size: 20px;
-    margin-top: 120px;
-  }
-
-  .email-content {
-    font-size: 14px;
-    line-height: 1.5;
-    text-align: justify;
-    text-justify: inter-word;
-    margin-right: 40px;
-  }
-
-  .email-section-head {
-    font-size: 20px;
-    margin-top: -10px;
-  }
-  .mail {
     height: 40px;
   }
-
-  .mail-content {
-    height: 100px;
-    max-width: 100%;
-    margin-top: 20px;
-    font-size: 18px;
+  .service-title {
+    font-size: 22px;
   }
-  .detail-email {
-    font-size: 14px;
+  .product-one h2 {
+    margin-right: 50px;
+    margin-bottom: 5px;
   }
-  .custom-label {
-    font-size: 14px !important;
+  .product-one p {
+    margin-left: -25px;
+    font-size: 12px;
   }
-  .text-area {
-    font-size: 14px;
+  .product1 {
+    margin-right: 30px;
+    margin-top: 10px;
   }
-
-  #name-input {
-    font-size: 14px !important;
+  .product-two h2 {
+    margin-bottom: 5px;
   }
-
-  .label-large {
-    text-align: center;
-    font-size: 14px;
+  .product-three h2 {
+    margin-right: 50px;
+    margin-bottom: 5px;
   }
-  .select-items {
+  .product-three p {
+    margin-left: -20px;
+    font-size: 12px;
+  }
+  .product3 {
+    margin-left: 40px;
+    margin-top: 10px;
+  }
+  #about-header {
+    max-width: 80%;
     font-size: 16px;
   }
-  .web-page h2 {
-    font-size: 20px;
+  #about-main h2 {
+    font-size: 22px;
+    margin-top: -55px;
   }
-  .web-page p {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-  #web-content p {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-  .web-timeline-items {
-    margin-top: -20px;
-    margin-bottom: 20px;
-  }
-
-  .mobile-options p {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-  #mobile-timeline {
-    margin-top: -20px;
-    margin-bottom: 20px;
-  }
-
-  #api-options p {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-
-  .time-lines {
-    margin-top: -20px;
-    margin-bottom: 20px;
-  }
-
-  #edi-timeline p {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-
-  #edi-options {
-    margin-top: -20px;
-    margin-bottom: 20px;
-  }
-  .detail-email {
-    font-size: 16px;
+  #about-main img {
+    margin-right: 40px;
   }
 }
 
@@ -2780,7 +2190,7 @@
     font-size: 28px;
     margin-bottom: 20px;
   }
-  
+
   .service-cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -2855,7 +2265,7 @@
     text-justify: inter-word;
     margin-left: 25px;
   }
-  
+
   .third-product {
     text-align: center;
     margin-top: 20px;
@@ -2880,7 +2290,7 @@
     gap: 1rem;
     margin-right: 30px;
   }
-  
+
   .software-timeline {
     text-align: center;
     margin-top: 20px;
@@ -2904,7 +2314,7 @@
     margin-top: -10px;
     margin-bottom: 15px;
   }
-  
+
   .software-timeline-content {
     text-align: center;
     justify-content: center;
@@ -2918,12 +2328,12 @@
     justify-content: center;
     gap: 1rem;
   }
-  
+
   .section-title h2 {
     font-size: 40px;
     margin-top: 120px;
   }
-  
+
   .email-content {
     font-size: 27px;
     line-height: 1.7;
@@ -2952,7 +2362,7 @@
   .text-area {
     font-size: 28px;
   }
-  
+
   .custom-label {
     font-size: 24px !important;
   }
@@ -3094,7 +2504,7 @@
     line-height: 1.2;
     margin-bottom: 30px;
   }
-  
+
   .slider-sentence {
     font-size: 40px;
     margin-top: 10px;
@@ -3187,7 +2597,7 @@
     line-height: 1.5;
     margin-top: 5px;
   }
-  
+
   .heading {
     font-size: 50px;
     margin-bottom: 20px;
@@ -3241,7 +2651,6 @@
     width: 35px;
     height: 35px;
   }
-
 }
 
 @media only screen and (min-width: 1281px) {

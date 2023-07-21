@@ -6,7 +6,6 @@ import {
   Button,
   CardFooter,
 } from "@material-tailwind/react";
-import { RocketLaunchIcon } from "@heroicons/react/24/solid";
 import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
 import { Link } from 'react-router-dom';
 import { CiGlobe } from 'react-icons/ci';
@@ -123,27 +122,7 @@ const Service = () => {
                 </Button>
               </Link>
             </CardFooter>
-          </Card>
-
-          <Card id ='service-card' className="mt-6 w-96 card zoom-in-6">
-            <CardBody>
-              <RocketLaunchIcon className="text-green-500 w-12 h-12 mb-4 mx-auto ike" />
-              <Typography variant="h5" color="blue-gray" className="mb-2 text-center service-title">
-                UI/UX Review Check
-              </Typography>
-              <Typography className="text-center service-sentence">
-                Because it's about motivating the doers. Because I'm here to follow my dreams and inspire others through digitalization and transformation.
-              </Typography>
-            </CardBody>
-            <CardFooter className="pt-0">
-              <a href="www.blog.html" className="inline-block service-btn">
-                <Button size="sm" variant="text" className="flex items-center gap-2 service-card-btn">
-                  Learn More
-                  <ArrowLongRightIcon strokeWidth={2} className="w-4 h-4" />
-                </Button>
-              </a>
-            </CardFooter>
-          </Card>
+          </Card>    
         </div>
       </div>
     </section>
