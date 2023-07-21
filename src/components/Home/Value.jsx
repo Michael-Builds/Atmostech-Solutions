@@ -43,7 +43,7 @@ const ValueProposition = () => {
                             cutting-edge technology in driving growth and success.
                         </p>
                     </div>
-                    <div id = 'mision-img'className="flex justify-center">
+                    <div id='mision-img' className="flex justify-center">
                         <img
                             src={cutting}
                             alt="ATMOS-PIC"
@@ -66,16 +66,15 @@ const ValueProposition = () => {
                         />
                     </div>
                     <div className="flex flex-col justify-center value-content">
-                        <h2 className="text-4xl font-bold mb-3 second-heading">
+                        <h2 id='value-pop' className="text-4xl font-bold mb-3 second-heading">
                             Why Choose Our Tech Solutions?
                         </h2>
-                        <ul className="pl-6">
-                            <li>Seamless integration with your existing systems</li>
-                            <li>Scalable solutions that grow with your business</li>
-                            <li>Advanced security measures to protect your data</li>
-                            <li>Intuitive user interfaces for easy adoption</li>
-                            <li>Proven track record of successful implementations</li>
-                        </ul>
+                        <p className="mb-4 ">
+                            Embrace the digital revolution and unlock new opportunities with
+                            our comprehensive range of tech solutions. Join the countless
+                            businesses and individuals who have experienced the power of our
+                            cutting-edge technology in driving growth and success.
+                        </p>
                     </div>
 
                 </div>

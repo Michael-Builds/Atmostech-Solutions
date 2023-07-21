@@ -46,11 +46,12 @@ export default function Footer() {
     return (
         <footer className="relative w-full footer">
             <div className="mx-auto w-full max-w-7xl px-8 ">
-                <div className="mx-auto grid w-full grid-cols-1 gap-8 py-12 md:grid-cols-2 lg:grid-cols-4 ">
+                <div id='footer-items-container' className="mx-auto grid w-full grid-cols-1 gap-8 py-12 md:grid-cols-2 lg:grid-cols-4 ">
                     {SITEMAP.map(({ title, links }, key) => (
-                        <div key={key} className="w-full ">
+                        <div key={key} className="w-full " >
                             <Typography
                                 variant="small"
+                                id='footer-main'
                                 className="mb-4 font-bold uppercase footer-main"
                             >
                                 {title}
@@ -71,6 +72,7 @@ export default function Footer() {
                         </div>
                     ))}
                 </div>
+
                 <div className="flex w-full  flex-col items-center justify-center border-t border-blue-gray-200 py-4 border-t-1 md:flex-row md:justify-between">
                     <Typography
                         variant="small"
