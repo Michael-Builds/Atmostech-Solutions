@@ -1038,9 +1038,31 @@
 
 @media only screen and (min-width: 320px) and (max-width: 479px){
 
+  #services-products h1 {
+    font-size: 20px;
+    margin-top: -10px;
+  }
+  .produce{
+    height: 150px;
+    width: 250px;
+  }
+  .title-typo{
+   font-size: 18px;
+  }
+  .sub{
+    font-size: 16px;
+  }
+  .sent{
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  .produce-text{
+    margin-top: -5px;
+  }
 
-
-
+  .underline-green {
+    font-size: 20px;
+  }
   .service-cards {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -1050,14 +1072,43 @@
   }
 
   #service-card {
-    width: 250px; 
-    height: 250px; 
+    width: 280px; 
+    height: 280px; 
     justify-content: center;
     align-items:center;
     margin-right: 70px;
   }
+  .ike{
+    width: 40px;
+    height: 40px;
+  }
+
   .service-title{
-    font-size: 18px;
+    font-size: 22px;
+  }
+
+  .heading{
+    font-size: 20px;
+    margin-top: -20px;
+  }
+
+  .impact p{
+    font-size: 12px;
+    margin-right: 20px;
+    line-height: 1.4;
+  }
+  .heading2{
+    margin-right: 20px;
+    max-width: 80%;
+    letter-spacing: 1.5;
+  }
+
+  .counter-item{
+    width: 250px;
+    height: 250px;
+  }
+  #counter-number{
+    font-size: 22px;
   }
 
 }
@@ -1438,9 +1489,11 @@
   .underline-green {
     font-size: 24px;
   }
+
   .type-head {
     font-size: 16px;
   }
+
   .service-cards {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
