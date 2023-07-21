@@ -1038,6 +1038,28 @@
 
 @media only screen and (min-width: 320px) and (max-width: 479px){
 
+
+
+
+  .service-cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #service-card {
+    width: 250px; 
+    height: 250px; 
+    justify-content: center;
+    align-items:center;
+    margin-right: 70px;
+  }
+  .service-title{
+    font-size: 18px;
+  }
+
 }
 
 @media only screen and (max-width: 480px) {
@@ -3166,8 +3188,6 @@
     width: 35px;
     height: 35px;
   }
-
-
 
 }
 

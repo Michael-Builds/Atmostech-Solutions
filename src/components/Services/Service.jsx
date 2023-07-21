@@ -25,7 +25,7 @@ const Service = () => {
           </div>
         </div>
         <div className="grid grid-cols-3 service-cards justify-center mb-10 ml-11">
-          <Card className="mt-6 w-96 card zoom-in-1">
+          <Card id ='service-card' className="mt-6 w-96 card zoom-in-1">
             <CardBody>
               <VscVmConnect className="text-green-500 w-12 h-12 mb-4 mx-auto ike" />
               <Typography variant="h5" color="blue-gray" className="mb-2 text-center service-title">
@@ -45,7 +45,7 @@ const Service = () => {
             </CardFooter>
           </Card>
 
-          <Card className="mt-6 w-96 card zoom-in-3">
+          <Card id ='service-card' className="mt-6 w-96 card zoom-in-3">
             <CardBody>
               <CiGlobe className="text-green-500 w-12 h-12 mb-4 mx-auto ike" />
               <Typography variant="h5" color="blue-gray" className="mb-2 text-center service-title">
@@ -65,7 +65,7 @@ const Service = () => {
             </CardFooter>
           </Card>
 
-          <Card className="mt-6 w-96 card zoom-in-3">
+          <Card id ='service-card' className="mt-6 w-96 card zoom-in-3">
             <CardBody>
               <TbDeviceMobileStar className="text-green-500 w-12 h-12 mb-4 mx-auto ike" />
               <Typography variant="h5" color="blue-gray" className="mb-2 text-center service-title">
@@ -85,7 +85,7 @@ const Service = () => {
             </CardFooter>
           </Card>
 
-          <Card className="mt-6 w-96 card zoom-in-4">
+          <Card id ='service-card' className="mt-6 w-96 card zoom-in-4">
             <CardBody>
               <AiOutlineApi className="text-green-500  w-12 h-12 mb-4 mx-auto ike" />
               <Typography variant="h5" color="blue-gray" className="mb-2 text-center service-title">
@@ -104,7 +104,7 @@ const Service = () => {
               </Link>
             </CardFooter>
           </Card>
-          <Card className="mt-6 w-96 card zoom-in-5">
+          <Card id ='service-card' className="mt-6 w-96 card zoom-in-5">
             <CardBody>
               <AiOutlineCloudSync className="text-green-500 w-12 h-12 mb-4 mx-auto ike" />
               <Typography variant="h5" color="blue-gray" className="mb-2 text-center service-title">
@@ -125,7 +125,7 @@ const Service = () => {
             </CardFooter>
           </Card>
 
-          <Card className="mt-6 w-96 card zoom-in-6">
+          <Card id ='service-card' className="mt-6 w-96 card zoom-in-6">
             <CardBody>
               <RocketLaunchIcon className="text-green-500 w-12 h-12 mb-4 mx-auto ike" />
               <Typography variant="h5" color="blue-gray" className="mb-2 text-center service-title">
