@@ -32,7 +32,7 @@ export default function Blog() {
                         Find out the latest Blogs
                     </h3>
                 </div>
-                <div className=" flex flex-wrap gap-5 mb-9 justify-center center mt-8" >
+                <div id='blogs' className=" flex flex-wrap gap-5 mb-9 justify-center center mt-8" >
 
                     <Card className="w-full max-w-[26rem] blog-card">
                         <CardHeader floated={false} color="blue-gray">

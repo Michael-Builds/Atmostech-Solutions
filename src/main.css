@@ -1036,6 +1036,432 @@
   color: #fff;
 }
 
+@media only screen and (max-width: 414px) {
+  .slider-head {
+    font-size: 26px;
+    line-height: 1.6;
+    text-align: center;
+  }
+  .slider-sentence {
+    font-size: 18px;
+    margin-top: 10px;
+    line-height: 1.5;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .value-content ul li {
+    font-size: 14px;
+    text-align: center;
+    list-style: none;
+    padding-bottom: 0.5rem;
+    margin-left: 40px;
+  }
+  .value-content ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  #mision-img {
+    height: 30px;
+    width: 200px;
+    margin-top: -70px;
+    margin-bottom: -10px;
+  }
+
+  .title-typo {
+    font-weight: 700;
+    color: #1f1f18;
+    font-size: 16px;
+    text-align: center;
+    margin-top: -25px;
+  }
+  .sub {
+    text-align: center;
+    font-weight: 500;
+    color: #1f1f18;
+    font-size: 12px;
+    line-height: 1.2;
+  }
+  .sent {
+    font-size: 10px;
+    line-height: 1.5;
+    margin-top: 20px;
+  }
+  .produce-text {
+    font-size: 10px;
+    justify-content: flex-start;
+  }
+
+  .heading {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  .impact p {
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-left: 25px;
+  }
+
+  .heading2 {
+    font-size: 20px;
+    margin-left: 45px;
+    text-align: center;
+  }
+
+  .impact-items {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2px;
+    justify-content: center;
+    align-items: center;
+  }
+  .counter-item {
+    width: 250px;
+    height: 200px;
+  }
+  #counter-number {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  #counter-element {
+    font-size: 12px;
+  }
+
+  .team-header {
+    font-size: 22px;
+    line-height: 1.5;
+  }
+  .team-sub {
+    font-size: 12px;
+    line-height: 1.5;
+    margin-top: -5px;
+    text-align: center;
+  }
+  .team-items {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-card {
+    width: 300px;
+    height: 370px;
+  }
+  .trusted-head {
+    font-size: 24px;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .trusted-sub {
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+    margin-top: -10px;
+  }
+  .contact-header {
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .contact-sub {
+    font-size: 13px;
+    text-align: center;
+    margin-top: -10px;
+  }
+  #email {
+    font-size: 14px;
+  }
+
+  #timeline-cent {
+    width: 350px;
+  }
+  #timeline-main {
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px;
+    margin-bottom: -20px;
+  }
+  .main-image {
+    height: 200px;
+    width: 200px;
+    margin-left: 45px;
+    margin-top: 20px;
+  }
+  .main-content h2 {
+    font-size: 20px;
+    margin-top: -20px;
+    max-width: 80%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: -30px;
+  }
+  .main-content p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .mision-first {
+    text-align: center;
+    font-size: 22px;
+  }
+  .mission p {
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-right: 35px;
+    margin-top: 5px;
+  }
+  .vision-content {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    flex-direction: column-reverse;
+  }
+  .mision-second {
+    text-align: center;
+    font-size: 22px;
+  }
+  .vision-content p {
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-top: 5px;
+    margin-left: 40px;
+  }
+  .mision-title {
+    text-align: center;
+    font-size: 22px;
+  }
+  .mision-sub {
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .value-items {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2px;
+    justify-content: center;
+    align-items: center;
+  }
+  .value-head {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  .value-sentence {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  .value-icon {
+    width: 35px;
+    height: 25px;
+    margin-top: 10px;
+  }
+  .jobs {
+    font-size: 12px;
+    text-align: center;
+    max-width: 90%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+  }
+  .job-container {
+    width: 200px;
+    height: 150px;
+  }
+  .job-number {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .job-name {
+    font-size: 12px;
+  }
+  #head {
+    font-size: 22px;
+  }
+  .blog-title {
+    font-size: 24px;
+  }
+  .blog-sub {
+    font-size: 12px;
+  }
+  .blog-text {
+    font-size: 14px;
+  }
+  .blog-content {
+    font-size: 12px;
+  }
+
+  .blog-btn {
+    font-size: 10px;
+  }
+  .underline-green {
+    font-size: 22px;
+  }
+  .type-head {
+    font-size: 12px;
+  }
+  .service-cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2px;
+    justify-content: center;
+    align-items: center;
+  }
+  .product-title {
+    text-align: center;
+    font-size: 20px;
+  }
+  .product-one p {
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-right: 20px;
+  }
+  .product1 {
+    margin-left: 90px;
+    height: 170px;
+    width: 170px;
+    margin-top: -20px;
+  }
+  .second-product {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    flex-direction: column-reverse;
+  }
+  .product2 {
+    height: 170px;
+    width: 220px;
+    margin-top: -20px;
+  }
+  .product-two h2 {
+    margin-top: 20px;
+  }
+
+  .product-two p {
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-left: 30px;
+  }
+  .third-product {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .product3 {
+    height: 220px;
+    width: 170px;
+    margin-top: -20px;
+  }
+  .product-three p {
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-right: 40px;
+  }
+  .main-content h2 {
+    font-size: 22px;
+  }
+  .ike {
+    height: 35px;
+    width: 35px;
+  }
+  .service-sentence {
+    font-size: 12px;
+  }
+  .service-card-btn {
+    font-size: 10px;
+  }
+  .card {
+    height: 240px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .service-title {
+    font-size: 12px;
+  }
+  .main-content h2 {
+    font-size: 16px;
+    line-height: 1;
+    margin-left: 35px;
+  }
+  #soft {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-right: 50px;
+  }
+  .software-sentence p {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-right: 50px;
+  }
+  .option-title h2 {
+    font-size: 18px;
+  }
+  .software-timeline-items {
+    margin-top: -30px;
+    margin-bottom: 15px;
+  }
+  .contact-me h2 {
+    font-size: 18px;
+    margin-top: 120px;
+  }
+  .web-page h2 {
+    font-size: 18px;
+  }
+  .web-page p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  #web-content p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .mobile-options p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  #api-options p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  #edi-timeline p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   .slider-head {
     font-size: 24px;
@@ -1129,7 +1555,6 @@
     margin-top: -70px;
     margin-bottom: -10px;
   }
-
   .images {
     margin-bottom: 50px;
     height: 250px;
@@ -1237,11 +1662,10 @@
     margin-top: -5px;
     text-align: center;
   }
-
   .team-items {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 20px;
+    gap: 10px;
     justify-content: center;
     align-items: center;
   }
@@ -1249,7 +1673,6 @@
     width: 320px;
     height: 400px;
   }
-
   .trusted-head {
     font-size: 26px;
     line-height: 1.5;
@@ -1319,7 +1742,6 @@
     margin-right: 35px;
     margin-top: 5px;
   }
-
   .vision-content {
     text-align: center;
     margin-top: 20px;
@@ -1350,6 +1772,7 @@
     line-height: 1.5;
     text-align: center;
   }
+
   .value-items {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -1372,7 +1795,6 @@
     height: 30px;
     margin-top: 10px;
   }
-  
   .jobs {
     font-size: 14px;
     text-align: center;
@@ -1381,12 +1803,10 @@
     justify-content: center;
     margin-left: 30px;
   }
-
   .job-container {
     width: 250px;
     height: 200px;
   }
-
   .job-number {
     font-size: 28px;
     margin-bottom: 20px;
@@ -1671,11 +2091,6 @@
     gap: 1rem;
   }
 
-  .value-main {
-    align-items: center;
-    text-align: center;
-  }
-
   .value-head {
     font-weight: 700;
     margin-top: 35px;
@@ -1692,7 +2107,6 @@
     max-width: 90%;
     font-size: 22px;
   }
-
   .value-prop {
     text-align: center;
     margin-top: 40px;
@@ -1746,6 +2160,7 @@
     flex-direction: column;
     gap: 2.5rem;
   }
+
   .title-typo {
     font-weight: 700;
     color: #1f1f18;
@@ -1982,7 +2397,6 @@
     gap: 5px;
     place-content: center;
   }
-
   .job-container {
     width: 350px;
     height: 300px;
@@ -2232,7 +2646,6 @@
   .text-area {
     font-size: 20px;
   }
-
   .web-page {
     text-align: center;
     margin-top: 40px;
@@ -2346,11 +2759,843 @@
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-  /* - Targets devices with a screen width between 769 and 1024 pixels, such as larger tablets and small laptops. */
+  .slider-head {
+    font-size: 80px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+  }
+
+  .slider-sentence {
+    font-size: 34px;
+    margin-top: 10px;
+    line-height: 1.5;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .slider-one-btn {
+    margin-top: 40px;
+    font-size: 24px;
+  }
+  .first-value {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  #value {
+    font-size: 48px;
+    line-height: 1.2;
+  }
+  .value-main p {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+    font-size: 32px;
+  }
+  .value-prop {
+    text-align: center;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    flex-direction: column-reverse;
+  }
+
+  .value-main h2 {
+    margin-top: 60px;
+  }
+  .second-heading {
+    font-size: 48px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  .value-content ul li {
+    font-size: 34px;
+    margin-top: 15px;
+  }
+  .value-content ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 80px;
+    margin-top: 20px;
+  }
+
+  .images {
+    margin-bottom: 40px;
+  }
+  #services-products .title {
+    font-size: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+  .products-home {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  .produce {
+    height: 400px;
+    max-width: 750px;
+  }
+
+  .title-typo {
+    font-weight: 700;
+    color: #1f1f18;
+    font-size: 34px;
+  }
+  .sub {
+    font-weight: 500;
+    color: #1f1f18;
+    font-size: 28px;
+    line-height: 1.2;
+    margin-bottom: 5px;
+  }
+  .sent {
+    font-size: 19px;
+    line-height: 1.5;
+    margin-top: 5px;
+  }
+  .produce-text {
+    font-size: 19px;
+  }
+  .impacted {
+    text-align: center;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .heading {
+    font-size: 48px;
+    margin-bottom: 15px;
+  }
+
+  .heading2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 55px;
+  }
+  .impact p {
+    text-align: center;
+    font-size: 26px;
+    max-width: 90%;
+    justify-content: center;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  .impact-items {
+    gap: 1rem;
+  }
+  .team-header {
+    font-size: 54px;
+    line-height: 1.6;
+  }
+
+  .team-sub {
+    font-size: 28px;
+    line-height: 1.6;
+  }
+  .team-items {
+    text-align: center;
+    margin-top: 40px;
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.2rem;
+  }
+  .trusted-head {
+    font-size: 52px;
+    line-height: 1.6;
+  }
+  .trusted-sub {
+    font-size: 26px;
+    line-height: 1.6;
+    max-width: 85%;
+    margin-left: 40px;
+  }
+  .footer-main {
+    font-size: 26px;
+  }
+  .footer-lil {
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+  }
+  .footer-text {
+    font-size: 20px;
+  }
+  .footer-icon {
+    width: 35px;
+    height: 35px;
+  }
+  .contact-header {
+    font-size: 42px;
+    list-style: none;
+    line-height: 1.6;
+  }
+  .contact-sub {
+    font-size: 32px;
+    max-width: 90%;
+  }
+  .about-content-1 {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    flex-direction: column-reverse;
+  }
+
+  .first-headings {
+    font-size: 40px;
+    line-height: 1.3;
+    margin-top: 35px;
+  }
+  .main-content p {
+    font-size: 30px;
+    margin-top: 20px;
+    line-height: 1.6;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  .main-image {
+    margin-top: -10px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+  }
+  .mision-statement {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .mision-first {
+    font-size: 40px;
+    margin-top: -10px;
+  }
+  .mission p {
+    font-size: 30px;
+    line-height: 1.7;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-right: 30px;
+    margin-top: 20px;
+  }
+
+  .image {
+    width: 350px;
+    height: 350px;
+    margin-left: 50px;
+  }
+  .vision-content {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    flex-direction: column-reverse;
+  }
+  .mision-second {
+    font-size: 40px;
+    margin-top: 20px;
+  }
+  .mission-sent {
+    margin-left: 40px;
+    font-size: 30px;
+    line-height: 1.9;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-top: 20px;
+  }
+  .images {
+    width: 400px;
+    height: 400px;
+    margin-top: -10px;
+  }
+  .mision-title {
+    font-size: 46px;
+    margin-top: 20px;
+  }
+
+  .mision-sub {
+    font-size: 30px;
+    margin-top: 15px;
+  }
+  .value-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+  }
+  .value-card {
+    width: 420px;
+    height: 400px;
+  }
+  .value-icon {
+    height: 85px;
+    width: 85px;
+    margin-top: -30px;
+    margin-bottom: 20px;
+  }
+  .value-head {
+    font-size: 38px;
+  }
+  .value-sentence {
+    margin-top: 15px;
+    font-size: 24px;
+    line-height: 1.7;
+  }
+  .heading {
+    font-size: 48px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+  .jobs {
+    font-size: 28px;
+    line-height: 1.5;
+    margin-top: 25px;
+  }
+  .job-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .job-container {
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 300px;
+    margin-left: 60px;
+  }
+  .job-number {
+    font-size: 70px;
+    margin-bottom: 25px;
+  }
+  .job-name {
+    margin-top: 5px;
+    font-size: 28px;
+  }
+  .blog-title {
+    font-size: 55px;
+    margin-top: 45px;
+  }
+  .blog-sub {
+    font-size: 28px;
+    margin-top: -5px;
+  }
+
+  #blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    place-content: center;
+    margin-left: 5px;
+  }
+  .blog-card {
+    height: 550px;
+    max-width: 500px;
+  }
+  .blog-text {
+    font-size: 30px;
+  }
+  .blog-content {
+    font-size: 22px;
+  }
+  .blog-btn {
+    font-size: 22px;
+  }
+  .underline-green {
+    font-size: 42px;
+    margin-bottom: 35px;
+  }
+  .type-head {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .service-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    /* margin-left: 40px; */
+  }
+  .card {
+    height: 450px;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 45px;
+  }
+  .ike {
+    height: 90px;
+    width: 90px;
+    margin-top: -40px;
+  }
+  .service-title {
+    font-size: 30px;
+    line-height: 1.4;
+  }
+  #head {
+    font-size: 52px;
+  }
+  .service-sentence {
+    font-size: 24px;
+    line-height: 1.8;
+  }
+  .service-card-btn {
+    font-size: 24px;
+  }
+  .first-product {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .product-title {
+    font-size: 42px;
+    line-height: 1.3;
+  }
+  .product-one p {
+    font-size: 26px;
+    line-height: 1.4;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-left: -5px;
+  }
+  .product1 {
+    margin-left: 90px;
+  }
+  .second-product {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    flex-direction: column-reverse;
+  }
+  .product-two p {
+    font-size: 26px;
+    line-height: 1.4;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-left: 25px;
+  }
+  
+  .third-product {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .product-three p {
+    font-size: 26px;
+    line-height: 1.4;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-left: -10px;
+  }
+  .main-software {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-right: 30px;
+  }
+  
+  .software-timeline {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .software-timeline p {
+    font-size: 30px;
+    line-height: 1.7;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-right: 50px;
+  }
+  .option-head {
+    font-size: 38px;
+    margin-bottom: 35px;
+  }
+  .software-timeline-items {
+    margin-top: -10px;
+    margin-bottom: 15px;
+  }
+  
+  .software-timeline-content {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-section {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .section-title h2 {
+    font-size: 40px;
+    margin-top: 120px;
+  }
+  
+  .email-content {
+    font-size: 27px;
+    line-height: 1.7;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-right: 20px;
+  }
+  .email-section-head {
+    font-size: 42px;
+  }
+  .mail {
+    height: 70px;
+  }
+  .mail-content {
+    height: 120px;
+    max-width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  .detail-email {
+    font-size: 26px;
+  }
+  .email-collect {
+    width: 500px;
+  }
+  .text-area {
+    font-size: 28px;
+  }
+  
+  .custom-label {
+    font-size: 24px !important;
+  }
+  .label-large {
+    text-align: center;
+    font-size: 24px;
+  }
+  .select-items {
+    font-size: 24px;
+  }
+  .email-btn {
+    font-size: 24px;
+  }
+  .text-area {
+    font-size: 24px;
+  }
+
+  .web-page {
+    text-align: center;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-right: 30px;
+  }
+  .web-timeline {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .web-timeline p {
+    font-size: 30px;
+    line-height: 1.7;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-right: 50px;
+  }
+
+  .web-timeline-items {
+    margin-top: -10px;
+    margin-bottom: 15px;
+  }
+  .api-content {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .api-content {
+    margin-right: 30px;
+  }
+  .api-options {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .api-options p {
+    font-size: 30px;
+    line-height: 1.7;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-right: 50px;
+  }
+
+  #timeline {
+    margin-top: -30px;
+    margin-bottom: 15px;
+  }
+  #web-content p {
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.8;
+  }
+  #mobile {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-right: 30px;
+  }
+  #mobile-options {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  #mobile-options p {
+    font-size: 30px;
+    line-height: 1.7;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-right: 50px;
+  }
+
+  #edi-content {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-right: 50px;
+  }
+
+  #edi-timeline {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  #edi-timeline p {
+    font-size: 30px;
+    line-height: 1.7;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-right: 50px;
+  }
+
+
+
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1280px) {
-  /* - Targets devices with a screen width between 1025 and 1280 pixels, such as larger laptops and desktops with smaller screens. */
+  .slider-head {
+    font-size: 90px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+  }
+  
+  .slider-sentence {
+    font-size: 40px;
+    margin-top: 10px;
+    line-height: 1.5;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .slider-one-btn {
+    margin-top: 40px;
+    font-size: 24px;
+  }
+  .first-value {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  #value {
+    font-size: 52px;
+    line-height: 1.2;
+  }
+  .value-main p {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+    font-size: 42px;
+  }
+  .value-main p {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+    font-size: 38px;
+  }
+  .value-prop {
+    text-align: center;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    flex-direction: column-reverse;
+  }
+  .value-main h2 {
+    margin-top: 60px;
+  }
+  .second-heading {
+    font-size: 52px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  .value-content ul li {
+    font-size: 38px;
+    margin-top: 15px;
+  }
+  .value-content ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 120px;
+    margin-top: 20px;
+  }
+  .images {
+    margin-bottom: 40px;
+  }
+  #services-products .title {
+    font-size: 52px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+  .produce {
+    height: 400px;
+    max-width: 650px;
+  }
+  .title-typo {
+    font-weight: 700;
+    color: #1f1f18;
+    font-size: 34px;
+  }
+  .sub {
+    font-weight: 500;
+    color: #1f1f18;
+    font-size: 22px;
+    line-height: 1.2;
+    margin-bottom: 2px;
+  }
+  .sent {
+    line-height: 1.5;
+    margin-top: 5px;
+  }
+  
+  .heading {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  .heading2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 55px;
+  }
+  .impact p {
+    text-align: center;
+    justify-content: center;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  .impact-items {
+    gap: 1.5rem;
+    margin-left: 2rem;
+  }
+  .team-header {
+    font-size: 54px;
+    line-height: 1.6;
+  }
+  .team-sub {
+    font-size: 32px;
+    line-height: 1.6;
+  }
+  .trusted-head {
+    font-size: 52px;
+    line-height: 1.6;
+  }
+  .trusted-sub {
+    font-size: 28px;
+    line-height: 1.6;
+    max-width: 85%;
+    margin-left: 40px;
+  }
+  .footer-main {
+    font-size: 26px;
+  }
+  .footer-lil {
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+  }
+  .footer-text {
+    font-size: 20px;
+  }
+  .footer-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+
+
 }
 
 @media only screen and (min-width: 1281px) {
