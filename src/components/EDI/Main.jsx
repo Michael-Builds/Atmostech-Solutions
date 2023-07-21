@@ -30,7 +30,7 @@ const Main = () => {
                             className="main-image "
                         />
                     </div>
-                    <div className="flex flex-col justify-center mb-10 main-content">
+                    <div id='edi-main-head' className="flex flex-col justify-center mb-10 main-content">
                         <h2 className="text-3xl mb-4 first-headings">
                             Streamlining Business Communication with Electronic Data Interchange (EDI) and ATMOS Technology
                         </h2>
@@ -73,9 +73,7 @@ const Main = () => {
                                         </Typography>
                                     </TimelineHeader>
                                     <TimelineBody>
-                                        <Typography color="gary" className="font-normal text-gray-600">
-                                            The key to more success is to have a lot of pillows.
-                                        </Typography>
+                                       
                                     </TimelineBody>
 
                                 </TimelineItem>
@@ -90,9 +88,7 @@ const Main = () => {
                                         </Typography>
                                     </TimelineHeader>
                                     <TimelineBody>
-                                        <Typography color="gary" className="font-normal text-gray-600">
-                                            The key to more success is to have a lot of pillows.
-                                        </Typography>
+                                      
                                     </TimelineBody>
 
                                 </TimelineItem>
@@ -106,9 +102,7 @@ const Main = () => {
                                         </Typography>
                                     </TimelineHeader>
                                     <TimelineBody>
-                                        <Typography color="gary" className="font-normal text-gray-600">
-                                            The key to more success is to have a lot of pillows.
-                                        </Typography>
+                                      
                                     </TimelineBody>
 
                                 </TimelineItem>

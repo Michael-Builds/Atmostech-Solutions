@@ -31,16 +31,16 @@ const Main = () => {
                         />
                     </div>
                     <div className="flex flex-col justify-center mb-10 main-content">
-                        <h2 className="text-3xl mb-4 first-headings">
+                        <h2 id='website-header' className="text-3xl mb-4 first-headings">
                             Web Development Wizardry: Unleashing the Magic of the Digital Realm
                         </h2>
-                        <p className="mb-4 mr-5">
+                        <p className="mb-4 mr-5" id='web'>
                             Our expertise in web development allows us to craft customized websites, web applications, and e-commerce platforms that are tailored to your specific needs. With our innovative approach and commitment to quality, we deliver cutting-edge web development solutions that enable you to unlock new opportunities for growth and success online. Whether you need a simple website or a complex web application, we have the skills and knowledge to bring your digital vision to life.
                         </p>
-                        <p className="mb-4 mr-5">
+                        <p className="mb-4 mr-5" id='web'>
                             We leverage the latest advancements in web development technology to deliver bespoke, state-of-the-art websites, web applications, and e-commerce platforms that are tailored to your specific needs.
                         </p >
-                        <p className="mb-4 mr-5">
+                        <p className="mb-4 mr-5" id='web'>
                             Our team of skilled developers are dedicated to crafting cutting-edge solutions that empower you to stay ahead of the curve in the fast-paced digital landscape. With our unwavering commitment to quality, we ensure that every web development project we undertake is of the highest standard, delivering exceptional results that exceed your expectations
                         </p>
 
@@ -66,7 +66,7 @@ const Main = () => {
                         </p>
                     </div>
                     <div className="flex justify-center mt-12 web-timeline-items">
-                        <div className="w-[32rem]">
+                        <div id='web-timeline-content' className="w-[32rem]">
                             <Timeline>
                                 <TimelineItem>
                                     <TimelineConnector />
@@ -79,9 +79,7 @@ const Main = () => {
                                         </Typography>
                                     </TimelineHeader>
                                     <TimelineBody>
-                                        <Typography color="gary" className="font-normal text-gray-600">
-                                            The key to more success is to have a lot of pillows.
-                                        </Typography>
+                                       
                                     </TimelineBody>
 
                                 </TimelineItem>
@@ -96,9 +94,7 @@ const Main = () => {
                                         </Typography>
                                     </TimelineHeader>
                                     <TimelineBody>
-                                        <Typography color="gary" className="font-normal text-gray-600">
-                                            The key to more success is to have a lot of pillows.
-                                        </Typography>
+                                       
                                     </TimelineBody>
 
                                 </TimelineItem>
@@ -112,9 +108,7 @@ const Main = () => {
                                         </Typography>
                                     </TimelineHeader>
                                     <TimelineBody>
-                                        <Typography color="gary" className="font-normal text-gray-600">
-                                            The key to more success is to have a lot of pillows.
-                                        </Typography>
+                                      
                                     </TimelineBody>
 
                                 </TimelineItem>

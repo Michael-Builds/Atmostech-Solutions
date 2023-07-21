@@ -24,11 +24,11 @@ export default function Blog() {
                 <div className={`justify-center align-center text-center mision-head ${inView1 ? 'fade-in-bottom fade-in-bottom-active' : ''
                     }`}
                     ref={ref1}>
-                    <h1 className="blog-title">
+                    <h1 id ='blog-title' className="blog-title">
                         Latest Blogs
                     </h1>
 
-                    <h3 className="blog-sub">
+                    <h3 id='blog-sub' className="blog-sub">
                         Find out the latest Blogs
                     </h3>
                 </div>

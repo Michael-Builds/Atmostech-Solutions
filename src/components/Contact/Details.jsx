@@ -26,7 +26,7 @@ export default function Details() {
             }`}
           ref={ref1}
         >
-          <h1 className="blog-title">For More Info</h1>
+          <h1 id='details-head' className="blog-title">For More Info</h1>
 
           <h3 className="blog-sub">Get in touch with us</h3>
         </div>
@@ -42,13 +42,7 @@ export default function Details() {
                   <Typography variant="h6" color="blue-gray" className=" detail-email" id='email'>
                     $2400, Design changes
                   </Typography>
-                  <Typography
-                    variant="small"
-                    color="gray"
-                    className="font-normal"
-                  >
-                    22 DEC 7:20 PM
-                  </Typography>
+      
                 </div>
               </TimelineHeader>
             </TimelineItem>
@@ -63,13 +57,7 @@ export default function Details() {
                   <Typography variant="h6" color="blue-gray" className=" detail-email" id='email'>
                     New order #1832412
                   </Typography>
-                  <Typography
-                    variant="small"
-                    color="gray"
-                    className="font-normal"
-                  >
-                    21 DEC 11 PM
-                  </Typography>
+                 
                 </div>
               </TimelineHeader>
             </TimelineItem>
@@ -83,13 +71,7 @@ export default function Details() {
                   <Typography variant="h6" color="blue-gray" className=" detail-email" id='email'>
                     Payment completed
                   </Typography>
-                  <Typography
-                    variant="small"
-                    color="gray"
-                    className="font-normal"
-                  >
-                    20 DEC 2:20 AM
-                  </Typography>
+               
                 </div>
               </TimelineHeader>
             </TimelineItem>

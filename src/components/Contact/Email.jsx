@@ -20,7 +20,7 @@ const Email = () => {
           <div className="flex flex-col justify-center">
             <div className="row contact-me">
               <div className="section-title">
-                <h2 className="service-head text-left ml-10">Get in Touch</h2>
+                <h2 id='email-heading' className="service-head text-left ml-10">Get in Touch</h2>
               </div>
             </div>
             <p className="mb-4 ml-10 email-content">

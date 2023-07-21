@@ -29,13 +29,13 @@ const Main = () => {
                         />
                     </div>
                     <div className="flex flex-col justify-center mb-10 main-content">
-                        <h2 className="text-3xl mb-4 first-headings">
+                        <h2 id='mobile-main-head' className="text-3xl mb-4 first-headings">
                             Unlocking the Full Potential of Mobile App Development with ATMOS Technology
                         </h2>
-                        <p className="mb-4 mr-5">
+                        <p className="mb-4 mr-5" id='mob'>
                             Through our innovative approach and unwavering commitment to quality, we deliver cutting-edge mobile app solutions that are tailored to your unique needs, helping you unlock new opportunities for growth and success. Whether you need a native iOS or Android app, a hybrid app, or a mobile web app, our team of skilled developers has the expertise to deliver exceptional results that exceed your expectations
                         </p>
-                        <p className="mb-4 mr-5">
+                        <p className="mb-4 mr-5"  id='mob'>
                             Our mobile app development company specializes in crafting customized, state-of-the-art mobile solutions that enable businesses and individuals to thrive in the rapidly-evolving digital landscape.
                             With our mobile app development solutions, you can stay connected with your customers and drive engagement on the go.
                         </p>
@@ -57,7 +57,7 @@ const Main = () => {
 
                     </div>
                     <div id='mobile-timeline' className="flex justify-center mt-12">
-                        <div className="w-[32rem]">
+                        <div id='mobs' className="w-[32rem]">
                             <Timeline>
                                 <TimelineItem>
                                     <TimelineConnector />
@@ -76,9 +76,7 @@ const Main = () => {
                                         </Typography>
                                     </TimelineHeader>
                                     <TimelineBody>
-                                        <Typography color="gary" className="font-normal text-gray-600">
-                                            The key to more success is to have a lot of pillows.
-                                        </Typography>
+                                       
                                     </TimelineBody>
 
                                 </TimelineItem>
@@ -100,9 +98,7 @@ const Main = () => {
                                         </Typography>
                                     </TimelineHeader>
                                     <TimelineBody>
-                                        <Typography color="gary" className="font-normal text-gray-600">
-                                            The key to more success is to have a lot of pillows.
-                                        </Typography>
+                                       
                                     </TimelineBody>
 
                                 </TimelineItem>
@@ -122,9 +118,7 @@ const Main = () => {
                                         </Typography>
                                     </TimelineHeader>
                                     <TimelineBody>
-                                        <Typography color="gary" className="font-normal text-gray-600">
-                                            The key to more success is to have a lot of pillows.
-                                        </Typography>
+                                      
                                     </TimelineBody>
 
                                 </TimelineItem>

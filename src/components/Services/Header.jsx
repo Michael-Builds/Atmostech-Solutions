@@ -48,7 +48,7 @@ const Header = () => {
       <div
         className="absolute inset-0 bg-black opacity-70 z-10"
       ></div>
-      <h1
+      <h1 
         className={`text-2xl mb-12 underline-green z-10 ${inView1 ? 'fade-in-bottom fade-in-bottom-active' : ''
           }`}
         ref={ref1}

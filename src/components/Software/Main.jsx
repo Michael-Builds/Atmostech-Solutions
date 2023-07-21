@@ -30,8 +30,8 @@ const Main = () => {
                             className="main-image "
                         />
                     </div>
-                    <div  className="flex flex-col justify-center mb-10 main-content">
-                        <h2 className="text-3xl mb-4 first-headings">
+                    <div id='software-main-content'  className="flex flex-col justify-center mb-10 main-content">
+                        <h2 id ='software-main-head'className="text-3xl mb-4 first-headings">
                             Revolutionize Your World with ATMOS Technology: Unleashing the Power of Software Development
                         </h2>
                         <p className="mb-4 mr-5" id='soft'>
@@ -73,9 +73,7 @@ const Main = () => {
                                         </Typography>
                                     </TimelineHeader>
                                     <TimelineBody>
-                                        <Typography color="gray" className="font-normal text-gray-600 software-timeline-content">
-                                            The key to more success is to have a lot of pillows.
-                                        </Typography>
+                                       
                                     </TimelineBody>
 
                                 </TimelineItem>
@@ -90,9 +88,7 @@ const Main = () => {
                                         </Typography>
                                     </TimelineHeader>
                                     <TimelineBody>
-                                        <Typography color="gray" className=" text-gray-600 software-timeline-content">
-                                            The key to more success is to have a lot of pillows.
-                                        </Typography>
+                                       
                                     </TimelineBody>
 
                                 </TimelineItem>
@@ -106,9 +102,7 @@ const Main = () => {
                                         </Typography>
                                     </TimelineHeader>
                                     <TimelineBody>
-                                        <Typography color="gray" className="font-normal text-gray-600 software-timeline-content">
-                                            The key to more success is to have a lot of pillows.
-                                        </Typography>
+                                       
                                     </TimelineBody>
 
                                 </TimelineItem>

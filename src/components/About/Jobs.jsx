@@ -51,12 +51,12 @@ const Jobs = () => {
                 >
                 </div>
                 <div className="container mx-auto py-8 relative z-10">
-                    <h2 className="text-3xl font-bold mb-4 heading text-center ">Our Impacts</h2>
-                    <p className="text-white text-center mb-8 justify-center jobs">
+                    <h2 id='job-heading' className="text-3xl font-bold mb-4 heading text-center ">Our Impacts</h2>
+                    <p id ='job-sub'className="text-white text-center mb-8 justify-center jobs">
                         We are dedicated to making a lasting impact in our community and beyond.
                     </p>
                     <div className="flex flex-wrap justify-center gap-10 job-items">
-                        <div
+                        <div id='job-container'
                             ref={projectsCompletedRef}
                             className={`counter-item w-48 h-48 p-4 bg-white job-container shadow-lg mx-2 mb-8 flex flex-col justify-center items-center ${hasAnimated && projectsCompletedInView ? 'animate-counter-up' : ''
                                 }`}

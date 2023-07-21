@@ -30,7 +30,6 @@ const Main = () => {
                     </div>
                 </div>
             </div>
-
         </section>
     );
 };

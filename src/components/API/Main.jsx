@@ -31,13 +31,13 @@ const Main = () => {
                         />
                     </div>
                     <div className="flex flex-col justify-center mb-10 main-content ">
-                        <h2 className="text-3xl mb-4 first-headings">
+                        <h2 id='api-main-head' className="text-3xl mb-4 first-headings">
                             Empowering Your Business with Cutting-Edge API Solutions from ATMOS Technology
                         </h2>
-                        <p className="mb-4 mr-5">
+                        <p className="mb-4 mr-5" id='aps'>
                             Our API integration solutions include the development of RESTful APIs, SOAP APIs, and custom APIs, as well as the integration of third-party APIs from various providers. We ensure that the APIs we develop are secure, scalable, and robust, with high performance and minimal downtime.
                         </p>
-                        <p className="mb-4 mr-5">
+                        <p className="mb-4 mr-5" id='aps'>
                             Our team also provides ongoing support and maintenance for the APIs we develop, ensuring that they remain up-to-date and continue to meet your evolving business needs. With our API integration solutions, you can streamline your business processes, improve communication and collaboration, and unlock new opportunities for growth and success.
                         </p>
                     </div>
@@ -48,7 +48,7 @@ const Main = () => {
 
                     <div id='api-options' className="flex flex-col justify-center mb-10 our-options">
                         <div className="row">
-                            <div className="option-title fade-in-left">
+                            <div id='api-options' className="option-title fade-in-left">
                                 <h2 className="option-head text-left ml-10">Your Options</h2>
                             </div>
                         </div>
@@ -62,7 +62,7 @@ const Main = () => {
                     </div>
 
                     <div id ='timeline 'className="flex justify-center mt-12 time-lines">
-                        <div className="w-[32rem]">
+                        <div is='api-timeline-cont' className="w-[32rem]">
                             <Timeline>
                                 <TimelineItem>
                                     <TimelineConnector />
@@ -75,9 +75,7 @@ const Main = () => {
                                         </Typography>
                                     </TimelineHeader>
                                     <TimelineBody>
-                                        <Typography color="gary" className="font-normal text-gray-600 texts">
-                                            The key to more success is to have a lot of pillows.
-                                        </Typography>
+                                      
                                     </TimelineBody>
 
                                 </TimelineItem>
@@ -92,9 +90,7 @@ const Main = () => {
                                         </Typography>
                                     </TimelineHeader>
                                     <TimelineBody>
-                                        <Typography color="gary" className="font-normal text-gray-600 texts">
-                                            The key to more success is to have a lot of pillows.
-                                        </Typography>
+                                       
                                     </TimelineBody>
 
                                 </TimelineItem>
@@ -108,9 +104,7 @@ const Main = () => {
                                         </Typography>
                                     </TimelineHeader>
                                     <TimelineBody>
-                                        <Typography color="gary" className="font-normal text-gray-600 texts">
-                                            The key to more success is to have a lot of pillows.
-                                        </Typography>
+
                                     </TimelineBody>
 
                                 </TimelineItem>
