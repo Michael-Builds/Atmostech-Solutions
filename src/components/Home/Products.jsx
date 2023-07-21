@@ -42,11 +42,11 @@ const ServicesProducts = () => {
                 Introducing our Advanced School Management System
               </Typography>
               <Typography color="gray" className="font-normal mb-8 sent">
-                Revolutionize school management with our advanced cross-platform solution launching this week, empowering educational institutions with unparalleled convenience and efficiency.
+                Revolutionize school management with our advanced cross-platform solution launching this week, empowering educational institutions.
               </Typography>
               <CardFooter className='pt-0'>
                 <Link to='/software' className="inline-block ">
-                  <Button variant="text" className="flex items-center gap-2 produce-text">
+                  <Button variant="text" className="flex items-center gap-2 produce-text ">
                     Learn More
                     <ArrowLongRightIcon strokeWidth={2} className="w-3 h-3" />
                   </Button>
