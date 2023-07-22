@@ -50,7 +50,7 @@ const Team = () => {
               <CardBody>
                 <div className="mb-3 flex items-center justify-between">
                   <Typography color="blue-gray" className="team-name">
-                    Kabanda Kpanti Michael
+                    Kabanda  Michael
                   </Typography>
                   <Typography
                     color="blue-gray"

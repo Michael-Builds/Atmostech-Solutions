@@ -33,7 +33,7 @@ const ServicesProducts = () => {
               <img
                 src={management}
                 alt="first-me"
-                className="w-full h-full object-contain"
+                className="w-full h-full object-contain product-tent"
               />
             </CardHeader>
             <CardBody>
@@ -60,7 +60,7 @@ const ServicesProducts = () => {
               <img
                 src={mobile}
                 alt="first-me"
-                className="w-full h-full object-contain"
+                className="w-full h-full object-contain product-tent"
               />
             </CardHeader>
             <CardBody>
@@ -86,7 +86,7 @@ const ServicesProducts = () => {
               <img
                 src={tech}
                 alt="first-me"
-                className="w-full h-full object-contain"
+                className="w-full h-full object-contain product-tent"
               />
             </CardHeader>
             <CardBody>
@@ -95,7 +95,7 @@ const ServicesProducts = () => {
                 Lyft launching cross-platform service this week
               </Typography>
               <Typography color="gray" className="font-normal mb-8 sent">
-                Like so many organizations these days, Autodesk is a company in transition. It was until recently a traditional boxed software company selling licenses. Yet its own business model disruption is only part of the story
+                Like so many organizations these days, Autodesk is a company in transition. It was until recently a traditional boxed software company selling licenses.
               </Typography>
               <Link to='/web' className="inline-block">
                 <Button variant="text" className="flex items-center gap-2 produce-text ">
@@ -112,7 +112,7 @@ const ServicesProducts = () => {
               <img
                 src={api}
                 alt="first-me"
-                className="w-full h-full object-contain"
+                className="w-full h-full object-contain product-tent"
               />
             </CardHeader>
             <CardBody>
@@ -121,7 +121,7 @@ const ServicesProducts = () => {
                 Seamless Integration: Power Your Application with our API
               </Typography>
               <Typography color="gray" className="font-normal mb-8 sent">
-                Unlock the full potential of your application with seamless API integration, enabling effortless data exchange, streamlined functionality, and enhanced connectivity with external systems and services.
+                Unlock the full potential of your application with seamless API integration, enabling effortless data exchange, streamlined functionality.
               </Typography>
               <Link to='/api' className="inline-block">
                 <Button variant="text" className="flex items-center gap-2 produce-text">
