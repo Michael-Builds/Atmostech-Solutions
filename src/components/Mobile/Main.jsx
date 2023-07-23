@@ -42,7 +42,6 @@ const Main = () => {
                     </div>
                 </div>
 
-
                 <div id='mobile-options' className="grid grid-cols-1 mobile-options gap-8 md:grid-cols-2 mb-10 ">
 
                     <div className="flex flex-col justify-center mb-10">

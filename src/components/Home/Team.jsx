@@ -50,7 +50,7 @@ const Team = () => {
               <CardBody>
                 <div className="mb-3 flex items-center justify-between">
                   <Typography color="blue-gray" className="team-name">
-                    Kabanda  Michael
+                    Mr Chris 
                   </Typography>
                   <Typography
                     color="blue-gray"
@@ -60,7 +60,7 @@ const Team = () => {
                   </Typography>
                 </div>
                 <div className="text-center">
-                  <Typography color="gray" className='team-role'>Fullstack Developer</Typography>
+                  <Typography color="gray" className='team-role'>CEO & Founder</Typography>
                 </div>
 
                 <div className="flex justify-center items-center mt-8">
@@ -102,7 +102,7 @@ const Team = () => {
               <CardBody>
                 <div className="mb-3 flex items-center justify-between">
                   <Typography color="blue-gray" className="team-name">
-                    Tay Bernard Selorm
+                    Kabanda Michael
                   </Typography>
                   <Typography
                     color="blue-gray"
@@ -154,7 +154,7 @@ const Team = () => {
               <CardBody>
                 <div className="mb-3 flex items-center justify-between">
                   <Typography color="blue-gray" className="team-name">
-                    Eugene Selormey
+                    Eugene 
                   </Typography>
                   <Typography
                     color="blue-gray"
@@ -205,7 +205,7 @@ const Team = () => {
               <CardBody>
                 <div className="mb-3 flex items-center justify-between">
                   <Typography color="blue-gray" className="team-name">
-                    Eugene Selormey
+                   Kabanda Michael
                   </Typography>
                   <Typography
                     color="blue-gray"
