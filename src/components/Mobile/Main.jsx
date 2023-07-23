@@ -35,7 +35,7 @@ const Main = () => {
                         <p className="mb-4 mr-5" id='mob'>
                             Through our innovative approach and unwavering commitment to quality, we deliver cutting-edge mobile app solutions that are tailored to your unique needs, helping you unlock new opportunities for growth and success. Whether you need a native iOS or Android app, a hybrid app, or a mobile web app, our team of skilled developers has the expertise to deliver exceptional results that exceed your expectations
                         </p>
-                        <p className="mb-4 mr-5"  id='mob'>
+                        <p className="mb-4 mr-5" id='mob'>
                             Our mobile app development company specializes in crafting customized, state-of-the-art mobile solutions that enable businesses and individuals to thrive in the rapidly-evolving digital landscape.
                             With our mobile app development solutions, you can stay connected with your customers and drive engagement on the go.
                         </p>
@@ -45,7 +45,7 @@ const Main = () => {
 
                 <div id='mobile-options' className="grid grid-cols-1 mobile-options gap-8 md:grid-cols-2 mb-10 ">
 
-                    <div  className="flex flex-col justify-center mb-10">
+                    <div className="flex flex-col justify-center mb-10">
                         <div className="row">
                             <div className="option-title fade-in-left">
                                 <h2 className="option-head text-left ml-10">Your Options</h2>
@@ -76,7 +76,7 @@ const Main = () => {
                                         </Typography>
                                     </TimelineHeader>
                                     <TimelineBody>
-                                       
+
                                     </TimelineBody>
 
                                 </TimelineItem>
@@ -98,7 +98,7 @@ const Main = () => {
                                         </Typography>
                                     </TimelineHeader>
                                     <TimelineBody>
-                                       
+
                                     </TimelineBody>
 
                                 </TimelineItem>
@@ -109,7 +109,7 @@ const Main = () => {
                                                 src={hybrid}
                                                 alt='hybrid'
                                                 className="h-4 w-4 timeline-icon"
-                                           
+
                                             />
 
                                         </TimelineIcon>
@@ -118,7 +118,7 @@ const Main = () => {
                                         </Typography>
                                     </TimelineHeader>
                                     <TimelineBody>
-                                      
+
                                     </TimelineBody>
 
                                 </TimelineItem>
