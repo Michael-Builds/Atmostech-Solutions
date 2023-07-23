@@ -1117,6 +1117,7 @@
     width: 250px;
     margin-top: -30px;
   }
+  
   #services-products .title {
     font-size: 26px;
     margin-left: auto;
@@ -1127,6 +1128,7 @@
     text-align: center;
     margin-bottom: 15px;
   }
+
   .products-home {
     display: flex;
     flex-wrap: wrap;
@@ -1134,6 +1136,7 @@
     align-items: center;
     gap: 2rem;
   }
+
   .produce {
     display: flex;
     flex-direction: column;
@@ -1142,6 +1145,7 @@
     width: 19rem;
     height: 24rem;
   }
+
   .product-tent {
     margin-top: 15px;
   }
@@ -1154,6 +1158,7 @@
     margin-top: -20px;
     font-size: 17px;
   }
+
   .sub {
     text-align: center;
     font-weight: 500;
@@ -1162,6 +1167,7 @@
     line-height: 1.2;
     margin-top: -10px;
   }
+
   .sent {
     font-size: 14px;
     line-height: 1.5;
@@ -1172,11 +1178,13 @@
     justify-content: flex-start;
     margin-top: -15px;
   }
+
   .heading {
     font-size: 28px;
     margin-bottom: 10px;
     margin-top: -30px;
   }
+
   .impact p {
     font-size: 16px;
     margin-left: 20px;
@@ -1185,6 +1193,7 @@
     text-justify: inter-word;
     line-height: 1.6;
   }
+
   .heading2 {
     font-size: 24px;
     margin-left: 35px;
