@@ -30,7 +30,7 @@ export default function Hero() {
               <Typography
                 variant="h1"
                 color="white"
-                className="mb-4 text-3xl md:text-4xl slider-head lg:text-5xl fade-in-left"
+                className="text-4xl slider-head lg:text-5xl fade-in-left"
                 style={{ "--fade-delay": "0.5s" }}
               >
                 Your Reliable Tech Partner
@@ -49,7 +49,7 @@ export default function Hero() {
                   style={{ "--fade-delay": "2.5s" }}
 
                 >
-                  <Button onClick={handleOpen} size="lg" color="white">
+                  <Button onClick={handleOpen} size="lg" color="white" className='slider-btn'>
                     Explore
                   </Button>
                 </div>
@@ -70,7 +70,7 @@ export default function Hero() {
               <Typography
                 variant="h1"
                 color="white"
-                className="mb-4 text-3xl md:text-4xl slider-head lg:text-5xl "
+                className=" md:text-4xl slider-head lg:text-5xl "
               >
                 Innovating with Technology
               </Typography>
@@ -83,7 +83,7 @@ export default function Hero() {
               </Typography>
               <div className=" flex justify-center gap-2 ">
                 <div className='mt-6 slider-one-btn'>
-                  <Button onClick={handleOpen} size="lg" color="white">
+                  <Button onClick={handleOpen} size="lg" color="white" className='slider-btn'>
                     Innovate
                   </Button>
                 </div>
@@ -103,7 +103,7 @@ export default function Hero() {
               <Typography
                 variant="h1"
                 color="white"
-                className="mb-4 text-3xl md:text-4xl slider-head lg:text-5xl"
+                className=" md:text-4xl slider-head lg:text-5xl"
               >
                 Driving Digital Transformation
               </Typography>
@@ -116,7 +116,7 @@ export default function Hero() {
               </Typography>
               <div className="flex justify-center gap-2 ">
                 <div className='mt-6 slider-one-btn'>
-                  <Button onClick={handleOpen} size="lg" color="white">
+                  <Button onClick={handleOpen} size="lg" color="white" className='slider-btn'>
                     Transform
                   </Button>
                 </div>

@@ -7,11 +7,11 @@ import { useInView } from "react-intersection-observer";
 
 const ValueProposition = () => {
     const [ref1, inView1] = useInView({
-        triggerOnce: true, // Only trigger the animation once
+        triggerOnce: true,
     });
 
     const [ref2, inView2] = useInView({
-        triggerOnce: true, // Only trigger the animation once
+        triggerOnce: true, 
     });
 
     return (
@@ -69,6 +69,12 @@ const ValueProposition = () => {
                         <h2 id='value-pop' className="text-4xl font-bold mb-3 second-heading">
                             Why Choose Our Tech Solutions?
                         </h2>
+                        <p className="mb-4 ">
+                            Embrace the digital revolution and unlock new opportunities with
+                            our comprehensive range of tech solutions. Join the countless
+                            businesses and individuals who have experienced the power of our
+                            cutting-edge technology in driving growth and success.
+                        </p>
                         <p className="mb-4 ">
                             Embrace the digital revolution and unlock new opportunities with
                             our comprehensive range of tech solutions. Join the countless

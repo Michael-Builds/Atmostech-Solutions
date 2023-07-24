@@ -25,7 +25,7 @@ const ServicesProducts = () => {
       
       <div className="container mx-auto flex justify-center">
 
-        <div className="grid grid-cols-1 gap-14 md:grid-cols-2  products-home">
+        <div className="grid grid-cols-1 gap-14 md:grid-cols-2 products-home">
 
           <Card className="flex-row w-full max-w-[36rem] head zoom-in-1 produce"
           >

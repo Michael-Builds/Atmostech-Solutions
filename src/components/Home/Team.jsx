@@ -38,7 +38,7 @@ const Team = () => {
         <div className="flex justify-center mb-12 mt-5">
           <div className="grid grid-cols-3 md:grid-cols-3 gap-12 team-items">
           
-            <Card className="w-full max-w-[20rem] main-card">
+            <Card className="w-full max-w-[24rem] main-card">
               <CardHeader floated={false} color="blue-gray">
                 <img
                   src={team}
@@ -90,7 +90,7 @@ const Team = () => {
               </CardBody>
             </Card>
 
-            <Card className="w-full max-w-[20rem] main-card">
+            <Card className="w-full max-w-[24rem] main-card">
               <CardHeader floated={false} color="blue-gray">
                 <img
                   src={team}
@@ -142,7 +142,7 @@ const Team = () => {
               </CardBody>
             </Card>
 
-            <Card className="w-full max-w-[20rem] main-card">
+            <Card className="w-full max-w-[24rem] main-card">
               <CardHeader floated={false} color="blue-gray">
                 <img
                   src={team}
@@ -193,7 +193,7 @@ const Team = () => {
                 </div>
               </CardBody>
             </Card>
-            <Card className="w-full max-w-[20rem] main-card">
+            <Card className="w-full max-w-[24rem] main-card">
               <CardHeader floated={false} color="blue-gray">
                 <img
                   src={team}
@@ -244,7 +244,7 @@ const Team = () => {
                 </div>
               </CardBody>
             </Card>
-            <Card className="w-full max-w-[20rem] main-card">
+            <Card className="w-full max-w-[24rem] main-card">
               <CardHeader floated={false} color="blue-gray">
                 <img
                   src={team}
@@ -296,7 +296,7 @@ const Team = () => {
               </CardBody>
             </Card>
 
-            <Card className="w-full max-w-[20rem] main-card">
+            <Card className="w-full max-w-[24rem] main-card">
               <CardHeader floated={false} color="blue-gray">
                 <img
                   src={team}

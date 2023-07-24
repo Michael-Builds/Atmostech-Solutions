@@ -2,20 +2,6 @@ import React from "react";
 import Image from './Software.png';
 import "../../index.css";
 import "../../main.css";
-import {
-    Timeline,
-    TimelineItem,
-    TimelineConnector,
-    TimelineHeader,
-    TimelineIcon,
-    Typography,
-    TimelineBody,
-} from "@material-tailwind/react";
-import {
-    HomeIcon,
-    BellIcon,
-    CurrencyDollarIcon,
-} from "@heroicons/react/24/solid";
 
 const Main = () => {
     return (
@@ -49,61 +35,11 @@ const Main = () => {
                             </div>
                         </div>
                         <p className="mb-4 mr-5">
-                            Through our innovative approach and unwavering commitment to quality, we deliver cutting-edge mobile app solutions that are tailored to your unique needs, helping you unlock new opportunities for growth and success. Whether you need a native iOS or Android app, a hybrid app, or a mobile web app, our team of skilled developers has the expertise to deliver exceptional results that exceed your expectations
+                        Through our innovative approach and unwavering commitment to quality, we offer a diverse range of cutting-edge software solutions, meticulously tailored to address your unique needs and challenges. Our extensive selection of software options opens up a world of possibilities, empowering businesses and individuals alike to embrace new opportunities for growth and success.
                         </p>
                         <p className="mb-4 mr-5">
-                            Our mobile app development company specializes in crafting customized, state-of-the-art mobile solutions that enable businesses and individuals to thrive in the rapidly-evolving digital landscape.
-                            With our mobile app development solutions, you can stay connected with your customers and drive engagement on the go.
+                        Whether you require robust enterprise software to streamline your operations, intuitive web applications to reach a broader audience, or customized desktop applications to enhance productivity, our team of highly skilled developers is equipped with the expertise to deliver exceptional results that surpass your expectations.
                         </p>
-                    </div>
-                    <div className="flex justify-center mt-12 software-timeline-items">
-                        <div className="w-[32rem]">
-                            <Timeline>
-                                <TimelineItem>
-                                    <TimelineConnector />
-                                    <TimelineHeader>
-                                        <TimelineIcon className="p-2">
-                                            <HomeIcon className="h-4 w-4" />
-                                        </TimelineIcon>
-                                        <Typography variant="h5" color="blue-gray">
-                                            Timeline Title Here.
-                                        </Typography>
-                                    </TimelineHeader>
-                                    <TimelineBody>
-                                       
-                                    </TimelineBody>
-                                </TimelineItem>
-                                <TimelineItem>
-                                    <TimelineConnector />
-                                    <TimelineHeader>
-                                        <TimelineIcon className="p-2">
-                                            <BellIcon className="h-4 w-4" />
-                                        </TimelineIcon>
-                                        <Typography variant="h5" color="blue-gray">
-                                            Timeline Title Here.
-                                        </Typography>
-                                    </TimelineHeader>
-                                    <TimelineBody>
-                                       
-                                    </TimelineBody>
-
-                                </TimelineItem>
-                                <TimelineItem>
-                                    <TimelineHeader>
-                                        <TimelineIcon className="p-2">
-                                            <CurrencyDollarIcon className="h-4 w-4" />
-                                        </TimelineIcon>
-                                        <Typography variant="h5" color="blue-gray ">
-                                            Timeline Title Here.
-                                        </Typography>
-                                    </TimelineHeader>
-                                    <TimelineBody>
-                                       
-                                    </TimelineBody>
-
-                                </TimelineItem>
-                            </Timeline>
-                        </div>
                     </div>
                 </div>
             </div>

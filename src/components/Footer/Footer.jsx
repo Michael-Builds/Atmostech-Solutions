@@ -23,19 +23,19 @@ const SITEMAP = [
     {
         title: "Resources",
         links: [
-            { title: "Blog", path: "/blog" },
-            { title: "Newsletter", path: "/newsletter" },
+            { title: "Affiliate Program", path: "/affiliate" },
             { title: "Partnerships", path: "/partnerships" },
-            { title: "Affiliate Program", path: "/affiliate" }
+            { title: "Blog Posts", path: "/blog" },
+            { title: "Newsletters", path: "/newsletter" },
         ]
     },
     {
         title: "Products",
         links: [
             { title: "CRM Systems", path: "/crm" },
-            { title: "Mobile Apps", path: "/apps" },
-            { title: "Websites", path: "/websites" },
-            { title: "EDI's", path: "/edis" }
+            { title: "Mobile Applications", path: "/apps" },
+            { title: "Web Applications", path: "/websites" },
+            { title: "SchoolSync", path: "/service" }
         ]
     }
 ];

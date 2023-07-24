@@ -1,5 +1,5 @@
 import React from "react";
-import background from "./background.png";
+import EDI from './EDI.png';
 import "../../index.css";
 import "../../main.css";
 import {
@@ -25,7 +25,8 @@ const Main = () => {
                 <div id='edi-content' className="grid grid-cols-1 gap-8 md:grid-cols-2">
                     <div className="flex justify-center">
                         <img
-                            src={background}
+                            id='Edi-image'
+                            src={EDI}
                             alt="ATMOS-PIC"
                             className="main-image "
                         />

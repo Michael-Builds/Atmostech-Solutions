@@ -24,12 +24,12 @@ export default function Blog() {
                 <div className={`justify-center align-center text-center mision-head ${inView1 ? 'fade-in-bottom fade-in-bottom-active' : ''
                     }`}
                     ref={ref1}>
-                    <h1 id ='blog-title' className="blog-title">
+                    <h1 id='blog-title' className="blog-title">
                         Latest Blogs
                     </h1>
 
                     <h3 id='blog-sub' className="blog-sub">
-                        Find out the latest Blogs
+                        Discover a treasure trove of insightful and engaging content as you explore our latest blogs. Delve into a world of cutting-edge technology, innovative solutions, and thought-provoking perspectives carefully curated by our team of experts. Stay up-to-date with the latest industry trends, best practices, and emerging technologies, empowering yourself with knowledge that empowers and inspires.
                     </h3>
                 </div>
                 <div id='blogs' className=" flex flex-wrap gap-5 mb-9 justify-center center mt-8" >
@@ -50,7 +50,7 @@ export default function Blog() {
                             </div>
                             <Typography color="gray" className='blog-content'>
                                 Enter a freshly updated and thoughtfully furnished peaceful home
-                                surrounded by ancient trees, stone walls, and open meadows.
+                                surrounded by ancient trees, stone walls, and open meadows in a more peaceful place than usual.
                             </Typography>
                         </CardBody>
                         <CardFooter className="pt-0">

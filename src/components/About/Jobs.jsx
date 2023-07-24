@@ -1,39 +1,12 @@
-import React, { useEffect, useState } from 'react';
-import CountUp from 'react-countup';
-import { useInView } from 'react-intersection-observer';
+import React from 'react';
 import backgroundImage from '../../assets/my.jpg';
 
 const Jobs = () => {
-    const [projectsCompleted, setProjectsCompleted] = useState(0);
-    const [satisfiedClients, setSatisfiedClients] = useState(0);
-    const [partnerships, setPartnerships] = useState(0);
-    const [hasAnimated] = useState(false);
-
-    const [projectsCompletedRef, projectsCompletedInView] = useInView({ triggerOnce: true });
-    const [satisfiedClientsRef, satisfiedClientsInView] = useInView({ triggerOnce: true });
-    const [partnershipsRef, partnershipsInView] = useInView({ triggerOnce: true });
-
-    useEffect(() => {
-        if (projectsCompletedInView) {
-            setProjectsCompleted(20);
-        }
-    }, [projectsCompletedInView]);
-
-    useEffect(() => {
-        if (satisfiedClientsInView) {
-            setSatisfiedClients(10);
-        }
-    }, [satisfiedClientsInView]);
-
-    useEffect(() => {
-        if (partnershipsInView) {
-            setPartnerships(15);
-        }
-    }, [partnershipsInView]);
-
-    const CounterInline = ({ end }) => {
-        return <CountUp start={0} end={end} duration={2.0} separator="," />;
-    };
+    const stats = [
+        { id: 1, name: 'Contracts every Months', value: '10+' },
+        { id: 2, name: 'Assets under holding', value: '$10 thousand' },
+        { id: 3, name: 'New users annually', value: '50+' },
+    ]
 
     return (
         <section className="counter relative job-section">
@@ -51,51 +24,23 @@ const Jobs = () => {
                 >
                 </div>
                 <div className="container mx-auto py-8 relative z-10">
-                    <h2 id='job-heading' className="text-3xl font-bold mb-4 heading text-center ">Our Impacts</h2>
-                    <p id ='job-sub'className="text-white text-center mb-8 justify-center jobs">
+                    <h2 id='job-heading' className="text-3xl font-bold mb-4 text-center ">Our Impacts</h2>
+                    <p id='job-sub' className="text-white text-center mb-3 justify-center jobs">
                         We are dedicated to making a lasting impact in our community and beyond.
+                        Through a combination of innovative solutions, responsible practices, and meaningful collaborations, we strive to leave a lasting and meaningful legacy that enriches the lives of individuals, businesses, and society as a whole.
                     </p>
-                    <div className="flex flex-wrap justify-center gap-10 job-items">
-                        <div id='job-container'
-                            ref={projectsCompletedRef}
-                            className={`counter-item w-48 h-48 p-4 bg-white job-container shadow-lg mx-2 mb-8 flex flex-col justify-center items-center ${hasAnimated && projectsCompletedInView ? 'animate-counter-up' : ''
-                                }`}
-                        >
-                            <span className="text-2xl font-bold mb-2 job-number">
-                                <CounterInline end={projectsCompleted} />
-                            </span>
-                            <span className="text-gray-800 text-center job-name">Projects Completed</span>
-                        </div>
-                        <div
-                            ref={satisfiedClientsRef}
-                            className={`counter-item w-48 h-48 p-4 bg-white job-container shadow-lg mx-2 mb-8 flex flex-col justify-center items-center ${hasAnimated && satisfiedClientsInView ? 'animate-counter-up' : ''
-                                }`}
-                        >
-                            <span className="text-2xl font-bold mb-2 job-number">
-                                <CounterInline end={satisfiedClients} />
-                            </span>
-                            <span className="text-gray-800 text-center job-name">Satisfied Clients</span>
-                        </div>
-
-                        <div
-                            ref={partnershipsRef}
-                            className={`counter-item w-48 h-48 p-4 bg-white job-container shadow-lg mx-2 mb-8 flex flex-col justify-center items-center ${hasAnimated && partnershipsInView ? 'animate-counter-up' : ''
-                                }`}
-                        >
-                            <span className="text-2xl font-bold mb-2 job-number">
-                                <CounterInline end={partnerships} />
-                            </span>
-                            <span className="text-gray-800 text-center job-name">Partnerships</span>
-                        </div>
-                        <div
-                            ref={partnershipsRef}
-                            className={`counter-item w-48 h-48 p-4 bg-white job-container shadow-lg mx-2 mb-8 flex flex-col justify-center items-center ${hasAnimated && partnershipsInView ? 'animate-counter-up' : ''
-                                }`}
-                        >
-                            <span className="text-2xl font-bold mb-2 job-number">
-                                <CounterInline end={partnerships} />
-                            </span>
-                            <span className="text-gray-800 text-center job-name">Partnerships</span>
+                    <div className=" py-24 sm:py-32">
+                        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+                            <dl className="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
+                                {stats.map((stat) => (
+                                    <div key={stat.id} className="mx-auto flex max-w-xs flex-col gap-y-4">
+                                        <dt className="text-base leading-7 text-white">{stat.name}</dt>
+                                        <dd className="order-first text-3xl font-semibold tracking-tight text-white sm:text-5xl">
+                                            {stat.value}
+                                        </dd>
+                                    </div>
+                                ))}
+                            </dl>
                         </div>
                     </div>
                 </div>

@@ -18,7 +18,7 @@ const Main = () => {
                         />
                     </div>
                     <div className="flex flex-col justify-center mb-10 main-content ">
-                        <h2 className="text-3xl mb-4 first-headings">
+                        <h2 className="text-3xl mb-4  first-headings">
                             Unleashing the Power of Technology through ATMOS
                         </h2>
                         <p className="mb-4 mr-5">
