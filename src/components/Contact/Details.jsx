@@ -40,9 +40,9 @@ export default function Details() {
                 </TimelineIcon>
                 <div className="flex flex-col gap-1">
                   <Typography variant="h6" color="blue-gray" className=" detail-email" id='email'>
-                    $2400, Design changes
+                   info@atmostechsolution
                   </Typography>
-      
+  
                 </div>
               </TimelineHeader>
             </TimelineItem>
@@ -55,7 +55,7 @@ export default function Details() {
                 </TimelineIcon>
                 <div className="flex flex-col gap-1">
                   <Typography variant="h6" color="blue-gray" className=" detail-email" id='email'>
-                    New order #1832412
+                    +233 (0) 240556434
                   </Typography>
                  
                 </div>
@@ -69,7 +69,7 @@ export default function Details() {
                 </TimelineIcon>
                 <div className="flex flex-col gap-1  ">
                   <Typography variant="h6" color="blue-gray" className=" detail-email" id='email'>
-                    Payment completed
+                    ECG Volta Credit Union Building
                   </Typography>
                
                 </div>
