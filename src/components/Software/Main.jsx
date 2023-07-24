@@ -21,13 +21,12 @@ const Main = () => {
     return (
         <section className="value-proposition mb-0 relative w-full h-full">
             <div className="mx-auto overflow-hidden">
-
                 <div  className="grid grid-cols-1 gap-8 md:grid-cols-2 main-software">
                     <div className="flex justify-center">
                         <img
+                            id="software-image"
                             src={Image}
                             alt="ATMOS-PIC"
-                            className="main-image "
                         />
                     </div>
                     <div id='software-main-content'  className="flex flex-col justify-center mb-10 main-content">
@@ -42,7 +41,6 @@ const Main = () => {
                         </p>
                     </div>
                 </div>
-
                 <div className="grid grid-cols-1 gap-8  mb-10 software-timeline ">
                     <div className="flex flex-col justify-center mb-10 software-sentence">
                         <div className="row">

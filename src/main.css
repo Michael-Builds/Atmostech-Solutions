@@ -156,19 +156,6 @@
   font-size: 14px;
 }
 
-/* .btn {
-  background-color: #03a30b;
-  border-radius: 5px;
-}
-
-.btn-text {
-  color: #fff;
-  font-family: "Roboto", sans-serif;
-}
-.btn:hover {
-  color: #03a30b;
-  background-color: #555;
-} */
 
 .main-menu {
   background-color: #f5f5f5;
@@ -276,6 +263,14 @@
   margin-bottom: 50px;
 }
 
+/* Software Section */
+#software-image {
+  height: 400px;
+  width: 700px;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
 .second-heading {
   margin-left: 45px;
   font-family: "Exo", sans-serif;
@@ -284,6 +279,7 @@
   font-size: 28px;
   color: #1f1f18;
 }
+
 .mision-first {
   font-family: "Exo", sans-serif;
   font-weight: 700;
@@ -557,7 +553,7 @@
 .option-head::before {
   content: "";
   height: 4px;
-  width: 120px;
+  width: 50px;
   background-color: #04db0e;
   position: absolute;
   top: 100%;
@@ -567,7 +563,7 @@
 .option-head::after {
   content: "";
   height: 4px;
-  width: 60px;
+  width: 25px;
   background-color: #04db0e;
   position: absolute;
   top: 100%;
@@ -602,6 +598,7 @@
   left: 0;
   margin-top: 8px;
 }
+
 
 .card {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
@@ -897,10 +894,12 @@
   background-color: #f5f5f5;
 }
 
+
 .value-card:hover {
   transform: translateY(-10px);
   box-shadow: 0px 6px 8px rgba(7, 124, 7, 0.2);
 }
+
 .value-sentence {
   margin-bottom: 8px;
   margin-top: 8px;
