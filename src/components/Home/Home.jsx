@@ -5,10 +5,11 @@ import Hero from "./Hero";
 import Value from "./Value";
 import Products from './Products';
 import Impacts from "./Impacts";
-import Carousel from './Carousel';
+import Patners from './Partners';
 import Footer from '../Footer/Footer';
 import Scroll from '../ScrollToTop/ScrolltoTop';
 import Team from './Team';
+
 const Home = () => {
   const location = useLocation();
 
@@ -24,7 +25,7 @@ const Home = () => {
       <Products />
       <Impacts />
       <Team />
-      <Carousel />
+      <Patners />
       <Scroll />
       <Footer />
     </>

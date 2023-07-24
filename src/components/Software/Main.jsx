@@ -1,5 +1,5 @@
 import React from "react";
-import background from "./background.png";
+import Image from './Software.png';
 import "../../index.css";
 import "../../main.css";
 import {
@@ -25,7 +25,7 @@ const Main = () => {
                 <div  className="grid grid-cols-1 gap-8 md:grid-cols-2 main-software">
                     <div className="flex justify-center">
                         <img
-                            src={background}
+                            src={Image}
                             alt="ATMOS-PIC"
                             className="main-image "
                         />
@@ -44,7 +44,6 @@ const Main = () => {
                 </div>
 
                 <div className="grid grid-cols-1 gap-8  mb-10 software-timeline ">
-                    {/* md:grid-cols-2 */}
                     <div className="flex flex-col justify-center mb-10 software-sentence">
                         <div className="row">
                             <div className="option-title fade-in-left">
@@ -75,7 +74,6 @@ const Main = () => {
                                     <TimelineBody>
                                        
                                     </TimelineBody>
-
                                 </TimelineItem>
                                 <TimelineItem>
                                     <TimelineConnector />

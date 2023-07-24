@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 import Navbar from '../Nav/Navbar'
 import Header from './Header';
 import Footer from '../Footer/Footer';
+import Company from './About';
 import Main from './Main';
 import Mission from './Mission';
 import Jobs from './Jobs';
@@ -22,6 +23,7 @@ const About = () => {
       <section style={{ marginTop: "80px" }}>
         <Header />
         <Main />
+        <Company />
         <Mission />
         <Jobs />
         <Blog />
