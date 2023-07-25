@@ -1,8 +1,7 @@
 import React from "react";
-import cutting from "../../assets/tech.png";
 import "../../index.css";
 import "../../main.css";
-
+import Image from './About.png';
 
 const Main = () => {
     return (
@@ -12,13 +11,13 @@ const Main = () => {
                 <div id='about-main' className="grid grid-cols-1 gap-8 md:grid-cols-2 about-content-1">
                     <div className="flex justify-center">
                         <img
-                            src={cutting}
+                            id='about-image'
+                            src={Image}
                             alt="ATMOS-PIC"
-                            className="main-image "
                         />
                     </div>
                     <div className="flex flex-col justify-center mb-10 main-content ">
-                        <h2 className="text-3xl mb-4  first-headings">
+                        <h2 id='about-head-main' className="text-3xl mb-4  first-headings">
                             Unleashing the Power of Technology through ATMOS
                         </h2>
                         <p className="mb-4 mr-5">
@@ -33,5 +32,4 @@ const Main = () => {
         </section>
     );
 };
-
 export default Main;
