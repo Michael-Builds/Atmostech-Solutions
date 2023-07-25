@@ -1,5 +1,5 @@
 import React from "react";
-import background from "./background.png";
+import Image from './Mobile.png';
 import "../../index.css";
 import "../../main.css";
 import {
@@ -23,9 +23,9 @@ const Main = () => {
                 <div id='mobile' className="grid grid-cols-1 gap-8 md:grid-cols-2  ">
                     <div className="flex justify-center">
                         <img
-                            src={background}
-                            alt="ATMOS-PIC"
-                            className="main-image "
+                            id='mobile-image'
+                            src={Image}
+                            alt="ATMOS-PIC"                     
                         />
                     </div>
                     <div className="flex flex-col justify-center mb-10 main-content">

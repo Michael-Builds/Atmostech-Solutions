@@ -340,7 +340,21 @@
   margin-bottom: 50px;
 }
 
+/* Mobile Section */
+#mobile-image{
+  height: 450px;
+  width: 700px;
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
 
+#mobile-main-head{
+  margin-top: 70px;
+}
+
+#mob{
+  
+}
 
 /* Software Section */
 #software-image {
@@ -353,6 +367,7 @@
 #software-main-head{
   margin-top: 80px;
 }
+
 #soft{
   font-family: "Open sans", sans-serif;
   line-height: 1.5;
