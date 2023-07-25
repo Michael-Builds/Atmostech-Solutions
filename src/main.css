@@ -1839,6 +1839,10 @@
     font-family: "Open sans", sans-serif;
     font-weight: 400;
   }
+  #main-timeline{
+    display: flex;
+    justify-content: center;
+  }
 
   #timeline-main {
     margin-top: -10px;

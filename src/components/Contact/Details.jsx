@@ -30,7 +30,7 @@ export default function Details() {
 
           <h3 id='details-sub'>Get in touch with us</h3>
         </div>
-        <div className="w-[25rem] mt-10 mb-8">
+        <div id='main-timeline' className="w-[25rem] mt-10 mb-8">
           <Timeline id='timeline-main' >
             <TimelineItem className="h-28 " id='timeline-cent' >
               <TimelineConnector className="!w-[78px]" />
