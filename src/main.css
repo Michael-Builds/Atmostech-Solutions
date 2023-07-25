@@ -407,9 +407,17 @@
 }
 
 #mission-image{
-  width: 400px;
+  width: 390px;
   height: 400px;
 }
+
+#vision-image {
+  width: 400px;
+  height: 450px;
+  transform: scaleX(-1);
+  margin-left: -20px;
+}
+
 
 .main-content p{
   margin-left: -8px;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import Image1 from './Mission.png';
-import choose1 from "../../assets/solutions.png";
+import Image2 from './Vision.png';
 import { RiTeamFill } from 'react-icons/ri';
 import { FaStreetView } from 'react-icons/fa';
 import { ImPower } from 'react-icons/im';
@@ -66,9 +66,10 @@ const MissionVision = () => {
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 vision-content ">
             <div className="flex justify-center">
               <img
-                src={choose1}
+                id='vision-image'
+                src={Image2}
                 alt="ATMOS-PIC"
-                className="w-full md:w-64 images mb-6"
+                className="w-full md:w-64 mb-6"
               />
             </div>
             <div className="flex flex-col justify-center">
