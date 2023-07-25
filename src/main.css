@@ -406,6 +406,11 @@
   margin-left: -20px;
 }
 
+#mission-image{
+  width: 400px;
+  height: 400px;
+}
+
 .main-content p{
   margin-left: -8px;
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
-import cutting from "../../assets/tech.png";
+import Image1 from './Mission.png';
 import choose1 from "../../assets/solutions.png";
 import { RiTeamFill } from 'react-icons/ri';
 import { FaStreetView } from 'react-icons/fa';
@@ -51,9 +51,10 @@ const MissionVision = () => {
             </div>
             <div className="flex justify-center">
               <img
-                src={cutting}
+               id='mission-image'
+                src={Image1}
                 alt="ATMOS-PIC"
-                className="w-64 image "
+                className="w-64"
               />
             </div>
           </div>
