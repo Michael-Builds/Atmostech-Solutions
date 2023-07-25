@@ -88,7 +88,6 @@ const MissionVision = () => {
             </div>
           </div>
         </div>
-
         <div className={`justify-center align-center text-center mision-head ${inView1 ? 'fade-in-bottom fade-in-bottom-active' : ''
           }`}
           ref={ref1}>

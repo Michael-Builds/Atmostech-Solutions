@@ -23,7 +23,7 @@ const Service = () => {
             <h2 id='head' className="service-head text-left ml-10">Services</h2>
           </div>
         </div>
-        <div className="grid grid-cols-3 service-cards justify-center mb-10 ml-11">
+        <div id='service-cart' className="grid grid-cols-3 service-cards justify-center mb-10 ml-11">
           <Card id ='service-card' className="mt-6 w-96 card zoom-in-1">
             <CardBody>
               <VscVmConnect className="text-green-500 w-12 h-12 mb-4 mx-auto ike" />

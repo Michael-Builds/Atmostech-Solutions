@@ -28,7 +28,6 @@ const Main = () => {
                             id='Edi-image'
                             src={EDI}
                             alt="ATMOS-PIC"
-                            className="main-image "
                         />
                     </div>
                     <div id='edi-main-head' className="flex flex-col justify-center mb-10 main-content">

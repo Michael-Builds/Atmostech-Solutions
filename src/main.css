@@ -259,17 +259,16 @@
   background-color: rgba(85, 85, 85, 0);
 }
 
-
 .about {
   margin-top: -10px;
 }
-.product p{
+.product p {
   font-family: "Open sans", sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
 
-.schoolsync img{
+.schoolsync img {
   width: 700px;
   height: 400px;
   margin-top: 50px;
@@ -330,17 +329,17 @@
   margin-bottom: 50px;
 }
 
-#value{
+#value {
   margin-top: 70px;
 }
-#mob-option-head{
+#mob-option-head {
   font-size: 28px;
   font-family: "Exo", sans-serif;
   font-weight: 700;
-  Margin-top: -50px;
+  margin-top: -50px;
 }
 
-#mob-option-sent{
+#mob-option-sent {
   font-size: 16px;
   font-family: "Open sans", sans-serif;
   line-height: 1.7;
@@ -349,14 +348,14 @@
   margin-bottom: -30px;
 }
 
-#feature-desc{
+#feature-desc {
   font-size: 15px;
   font-family: "Open sans", sans-serif;
   font-weight: 400;
   line-height: 1.7;
 }
 
-#feature-head{
+#feature-head {
   font-size: 18px;
   font-weight: 600;
   font-family: "Exo", sans-serif;
@@ -371,12 +370,12 @@
   margin-left: 30px;
 }
 
-#website-header{
+#website-header {
   margin-top: 60px;
 }
 
 /* Mobile Section */
-#mobile-image{
+#mobile-image {
   height: 450px;
   width: 750px;
   margin-top: 60px;
@@ -384,21 +383,21 @@
   margin-left: -20px;
 }
 
-#mobile-main-head{
+#mobile-main-head {
   margin-top: 70px;
 }
-#mobile-timeline{
+#mobile-timeline {
   margin-left: 80px;
   margin-top: 100px;
 }
 
-#mob{
+#mob {
   font-family: "Open sans", sans-serif;
   line-height: 1.5;
 }
 
 /* About Sections */
-#about-image{
+#about-image {
   height: 580px;
   width: 2000px;
   margin-top: -90px;
@@ -406,11 +405,10 @@
   margin-left: -20px;
 }
 
-#mission-image{
+#mission-image {
   width: 390px;
   height: 400px;
 }
-
 
 #vision-image {
   width: 400px;
@@ -419,12 +417,11 @@
   margin-left: -20px;
 }
 
-
-.main-content p{
+.main-content p {
   margin-left: -8px;
 }
 
-#about-main{
+#about-main {
   margin-top: -20px;
 }
 
@@ -436,15 +433,15 @@
   margin-bottom: 50px;
 }
 
-#software-main-head{
+#software-main-head {
   margin-top: 70px;
 }
 
-#soft{
+#soft {
   font-family: "Open sans", sans-serif;
   line-height: 1.5;
 }
-.software-sentence p{
+.software-sentence p {
   font-family: "Open sans", sans-serif;
   line-height: 1.5;
   margin-right: 60px;
@@ -1078,17 +1075,17 @@
 }
 
 .value-icon-team {
-  color: blue ;
+  color: blue;
   height: 60px;
   width: 60px;
 }
 .value-icon-surround {
-  color: purple ;
+  color: purple;
   height: 60px;
   width: 60px;
 }
 .value-icon-power {
-  color: Orange ;
+  color: Orange;
   height: 60px;
   width: 60px;
 }
@@ -1103,7 +1100,7 @@
   width: 60px;
 }
 .value-icon-trophy {
-  color: gold ;
+  color: gold;
   height: 60px;
   width: 60px;
 }
@@ -1613,37 +1610,75 @@
   #about-main h2 {
     font-size: 22px;
     margin-top: -55px;
+    text-align: center;
   }
   #about-main img {
-    margin-right: 40px;
-  }
-
-  #about-main h2 {
-    font-size: 22px;
+    height: 280px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    margin-top: -60px;
+    margin-bottom: 10px;
   }
   #about-main p {
     font-size: 16px;
-    margin-left: 30px;
+    margin-left: 25px;
   }
+  #about-content h2 {
+    text-align: center;
+    margin-top: -50px;
+  }
+  #about-content p {
+    text-justify: inter-word;
+    margin-right: -15px;
+    margin-bottom: -10px;
+  }
+  #about-links {
+    margin-bottom: -10px;
+  }
+
+  #about-lists {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -40px;
+  }
+
   .mission h2 {
     margin-right: 50px;
-    font-size: 26px;
-    margin-top: -5px;
+    font-size: 28px;
+    margin-top: -40px;
     margin-bottom: 5px;
   }
   .mission p {
     margin-left: 30px;
-    font-size: 16px;
-    line-height: 1.6;
+    font-size: 17px;
+    line-height: 1.7;
   }
-  .image {
-    margin-left: 30px;
-    margin-top: -10px;
+  #mission-image {
+    margin-left: 20px;
+    margin-top: -20px;
+    width: 250px;
+    height: 250px;
   }
+
   #visions {
-    font-size: 26px;
-    margin-top: -5px;
-    margin-bottom: -5px;
+    margin-top: 20px;
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  #mission-sent{
+    line-height: 1.7;
+  }
+
+  #vision-image {
+    margin-left: 20px;
+    margin-top: -20px;
+    width: 250px;
+    height: 250px;
+    margin-bottom: 70px;
   }
 
   #values {
@@ -1653,8 +1688,16 @@
 
   #values-sub {
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.7;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-left: 20px;
+    max-width: 90%;
+    margin-bottom: -30px;
   }
+
   .value-items {
     margin-top: -20px;
   }
@@ -1682,12 +1725,18 @@
     font-size: 28px;
     margin-bottom: 5px;
     margin-top: -5px;
+    text-align: center;
   }
-
   #job-sub {
-    font-size: 15px;
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-top: 5px;
     margin-right: 25px;
-    line-height: 1.5;
+    margin-left: 25px;
+    max-width: 90%;
+    margin-bottom: -10px;
   }
 
   .job-items {
@@ -1709,13 +1758,24 @@
 
   #blog-title {
     font-size: 30px;
-    margin-top: -5px;
+    margin-top: 15px;
     margin-bottom: -5px;
+    text-align: center;
   }
+
   #blog-sub {
     font-size: 16px;
-    margin-bottom: -15px;
+    line-height: 1.7;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-left: 20px;
+    max-width: 90%;
+    margin-bottom: 20px;
+
   }
+
   #blogs {
     gap: 15px;
   }
@@ -1739,6 +1799,7 @@
     font-size: 24px;
     margin-bottom: 25px;
   }
+
   #services-products h3 {
     font-size: 16px;
     max-width: 80%;
@@ -1749,6 +1810,7 @@
   .service-cards {
     gap: 2px;
     margin-top: -15px;
+    margin-bottom: 50px;
   }
   .product-one h2 {
     margin-top: -5px;
@@ -1765,10 +1827,19 @@
     font-size: 16px;
     margin-top: -10px;
   }
+
   #details-head {
-    font-size: 24px;
-    margin-top: -5px;
+    font-size: 28px;
+    font-family: "Exo", sans-serif;
+    font-weight: 600;
+    margin-top: 15px;
   }
+  #details-sub{
+    font-size: 16px;
+    font-family: "Open sans", sans-serif;
+    font-weight: 400;
+  }
+
   #timeline-main {
     margin-top: -10px;
     gap: 1px;
@@ -1796,6 +1867,23 @@
     max-width: 95%;
     margin-top: -65px;
   }
+  #Website-image{
+    width: 350px;
+    height: 250px;
+    margin-bottom: 45px;
+    margin-right: 15px;
+    margin-top: 20px;
+  }
+  #mob-option-head{
+    font-size: 22px;
+    margin-left: 20px;
+    max-width: 95%;
+    margin-top: -65px;
+  }
+  #mob-option-sent{
+    margin-left: 20px;
+  }
+
   #web {
     margin-left: 25px;
     margin-right: 15px;
@@ -1817,6 +1905,13 @@
     margin-top: -20px;
     margin-bottom: -30px;
   }
+  #mobile-image{
+    width: 350px;
+    height: 250px;
+    margin-bottom: 55px;
+    margin-top: 30px;
+  }
+
   #mobile-header {
     font-size: 22px;
   }
@@ -1837,6 +1932,12 @@
     font-size: 16px;
     max-width: 80%;
   }
+  #software-image{
+    width: 350px;
+    height: 250px;
+    margin-bottom: -45px;
+  }
+
   #edi-sub-top {
     font-size: 16px;
     max-width: 80%;
@@ -1851,6 +1952,13 @@
     margin-left: 20px;
     max-width: 95%;
   }
+#Edi-image{
+  width: 300px;
+  height: 250px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
   #edi-main-head h2 {
     font-size: 22px;
     margin-left: 25px;
@@ -2050,20 +2158,10 @@
     margin-left: 20px;
   }
 
-  .mision-title {
-    text-align: center;
-    font-size: 28px;
-  }
-  .mision-sub {
-    font-size: 14px;
-    line-height: 1.6;
-    text-align: center;
-  }
-
   .value-items {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 2px;
+    gap: 1px;
     justify-content: center;
     align-items: center;
   }
@@ -2073,12 +2171,13 @@
   }
   .value-sentence {
     font-size: 14px;
-    line-height: 1.5;
+    line-height: 1.7;
+    max-width: 95%;
   }
 
   .value-icon {
-    width: 40px;
-    height: 30px;
+    width: 50px;
+    height: 40px;
     margin-top: 10px;
   }
 
@@ -2088,8 +2187,10 @@
     gap: 20px;
     justify-content: center;
     align-items: center;
-    margin-left: 25px;
+    margin-left: 10px;
+    margin-top: -10px;
   }
+
   #footer-main {
     margin-bottom: -2px;
   }

@@ -32,7 +32,6 @@ const features = [
         icon: BsWindows,
     },
 ]
-
 const Main = () => {
     return (
         <section className="value-proposition mb-0 relative w-full h-full">

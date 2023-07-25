@@ -26,9 +26,9 @@ export default function Details() {
             }`}
           ref={ref1}
         >
-          <h1 id='details-head' className="blog-title">For More Info</h1>
+          <h1 id='details-head'>For More Info</h1>
 
-          <h3 className="blog-sub">Get in touch with us</h3>
+          <h3 id='details-sub'>Get in touch with us</h3>
         </div>
         <div className="w-[25rem] mt-10 mb-8">
           <Timeline id='timeline-main' >
