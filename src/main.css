@@ -411,6 +411,7 @@
   height: 400px;
 }
 
+
 #vision-image {
   width: 400px;
   height: 450px;
@@ -1077,48 +1078,41 @@
 }
 
 .value-icon-team {
-  color: purple;
+  color: blue ;
   height: 60px;
   width: 60px;
 }
-
 .value-icon-surround {
-  color: orange;
+  color: purple ;
   height: 60px;
   width: 60px;
 }
-
 .value-icon-power {
+  color: Orange ;
+  height: 60px;
+  width: 60px;
+}
+.value-icon-unity {
   color: red;
   height: 60px;
   width: 60px;
 }
-
-.value-icon-unity {
-  color: rgb(251, 121, 143);
-  height: 60px;
-  width: 60px;
-}
-
 .value-icon-transparent {
-  color: blue;
-  height: 60px;
-  width: 60px;
-}
-
-.value-icon-trophy {
   color: green;
   height: 60px;
   width: 60px;
 }
-
+.value-icon-trophy {
+  color: gold ;
+  height: 60px;
+  width: 60px;
+}
 .value-head {
   font-family: "Exo", sans-serif;
   font-size: 18px;
   font-weight: 600;
   margin-top: 5px;
 }
-
 .blog-title {
   font-family: "Exo", sans-serif;
   font-size: 32px;
@@ -1126,13 +1120,11 @@
   margin-top: 30px;
   color: #1f1f18;
 }
-
 .main-card {
   width: 320px;
   transition: transform 0.3s, box-shadow 0.3s;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
 }
-
 .main-card:hover {
   transform: translateY(-10px);
   box-shadow: 0px 6px 8px rgba(7, 124, 7, 0.2);

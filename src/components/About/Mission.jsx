@@ -3,10 +3,10 @@ import { useInView } from 'react-intersection-observer';
 import Image1 from './Mission.png';
 import Image2 from './Vision.png';
 import { RiTeamFill } from 'react-icons/ri';
-import { FaStreetView } from 'react-icons/fa';
-import { ImPower } from 'react-icons/im';
-import { SiUnity } from 'react-icons/si';
-import { HiCubeTransparent } from 'react-icons/hi';
+import { FaHandsHelping  } from 'react-icons/fa';
+import { FaSmile } from 'react-icons/fa';
+import { GiHeartInside  } from 'react-icons/gi';
+import { GiShield  } from 'react-icons/gi';
 import { GoTrophy } from 'react-icons/go';
 
 
@@ -114,7 +114,7 @@ const MissionVision = () => {
             </div>
             <div id='value-card' className=' w-65 h-75 p-4 value-card zoom-in-1 bg-white mx-4 mb-8 flex flex-col justify-center items-center'>
               <span className="text-4xl font-bold mb-2">
-                <FaStreetView className='value-icon-surround value-icon' />
+                <FaHandsHelping  className='value-icon-surround value-icon' />
               </span>
               <span className="text-gray-800 text-center value-head">Unity</span>
               <p className='text-center value-sentence'>
@@ -124,7 +124,7 @@ const MissionVision = () => {
 
             <div id='value-card' className=' w-65 h-75 p-4 value-card zoom-in-2 bg-white mx-4 mb-8 flex flex-col justify-center items-center'>
               <span className="text-4xl font-bold mb-2">
-                <ImPower className='value-icon-power value-icon' />
+                <FaSmile className='value-icon-power value-icon' />
               </span>
               <span className="text-gray-800 text-center value-head">Enthusiam</span>
               <p className='text-center value-sentence'>
@@ -134,7 +134,7 @@ const MissionVision = () => {
 
             <div id='value-card' className=' w-65 h-75 p-4 value-card zoom-in-3 bg-white mx-4 mb-8 flex flex-col justify-center items-center'>
               <span className="text-4xl font-bold mb-2">
-                <SiUnity className='value-icon-unity value-icon' />
+                <GiHeartInside  className='value-icon-unity value-icon' />
               </span>
               <span className="text-gray-800 text-center value-head">Passion</span>
               <p className='text-center value-sentence'>
@@ -143,7 +143,7 @@ const MissionVision = () => {
 
             <div id='value-card' className=' w-65 h-75 p-4 value-card zoom-in-4 bg-white mx-4 mb-8 flex flex-col justify-center items-center'>
               <span className="text-4xl font-bold mb-2">
-                <HiCubeTransparent className='value-icon-transparent value-icon' />
+                <GiShield id='shield'  className='value-icon-transparent value-icon' />
               </span>
               <span className="text-gray-800 text-center value-head">Integrity</span>
               <p className='text-center value-sentence'>
