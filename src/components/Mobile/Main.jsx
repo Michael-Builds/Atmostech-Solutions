@@ -2,18 +2,36 @@ import React from "react";
 import Image from './Mobile.png';
 import "../../index.css";
 import "../../main.css";
-import {
-    Timeline,
-    TimelineItem,
-    TimelineConnector,
-    TimelineHeader,
-    TimelineIcon,
-    Typography,
-    TimelineBody,
-} from "@material-tailwind/react";
-import andriod from './android-logo.png';
-import ios from './apple.png';
-import hybrid from './cross-platform.png';
+import { ArrowPathIcon } from '@heroicons/react/24/outline'
+import { BsAndroid, BsApple, BsWindows } from 'react-icons/bs';
+
+
+const features = [
+    {
+        name: 'Android Applications',
+        description:
+            'Our services encompass the entire app development lifecycle, from initial concept and design to coding, testing, and deployment on the Google Play Store.',
+        icon: BsAndroid,
+    },
+    {
+        name: 'IOS Applications',
+        description:
+            'Our iOS app development service covers the entire app development process, starting from ideation and concept design to coding, testing, and deployment on the Apple App Store.',
+        icon: BsApple,
+    },
+    {
+        name: 'Hybrid Apps',
+        description:
+            'We offer expertise in building hybrid apps as part of our mobile app development services. Hybrid app development is a valuable aspect of our offerings, allowing us to provide clients with cross-platform solutions.',
+        icon: ArrowPathIcon,
+    },
+    {
+        name: 'Windows Mobile',
+        description:
+            'We also offer expertise in building Windows Mobile apps. Windows Mobile was an operating system developed by Microsoft for smartphones and other mobile devices.',
+        icon: BsWindows,
+    },
+]
 
 const Main = () => {
     return (
@@ -25,7 +43,7 @@ const Main = () => {
                         <img
                             id='mobile-image'
                             src={Image}
-                            alt="ATMOS-PIC"                     
+                            alt="ATMOS-PIC"
                         />
                     </div>
                     <div className="flex flex-col justify-center mb-10 main-content">
@@ -41,87 +59,31 @@ const Main = () => {
                         </p>
                     </div>
                 </div>
-
-                <div id='mobile-options' className="grid grid-cols-1 mobile-options gap-8 md:grid-cols-2 mb-10 ">
-
-                    <div className="flex flex-col justify-center mb-10">
-                        <div className="row">
-                            <div className="option-title fade-in-left">
-                                <h2 className="option-head text-left ml-10">Your Options</h2>
-                            </div>
+                {/* Options */}
+                <div className="bg-white py-24 sm:py-32">
+                    <div className="mx-auto max-w-7xl px-6 lg:px-8">
+                        <div className="mx-auto max-w-2xl lg:text-center">
+                            <p id='mob-option-head' className="mt-2 text-3xl font-bold  tracking-tight text-gray-900 sm:text-4xl">
+                                Explore Your Mobile App Options: Tailored Solutions for Every Need
+                            </p>
+                            <p id='mob-option-sent' className="mt-6 text-lg leading-8 text-gray-600">
+                                Explore Diverse Mobile App Options: From native apps delivering seamless user experiences to cross-platform versatility with hybrid apps. At Atmos Technology, we provide tailored solutions to empower your digital presence and cater to a wide range of user preferences.
+                            </p>
                         </div>
-                        <p className="mb-4 mr-5">
-                            Through our innovative approach and unwavering commitment to quality, we deliver cutting-edge mobile app solutions that are tailored to your unique needs, helping you unlock new opportunities for growth and success. Whether you need a native iOS or Android app, a hybrid app, or a mobile web app, our team of skilled developers has the expertise to deliver exceptional results that exceed your expectations
-                        </p>
-
-                    </div>
-                    <div id='mobile-timeline' className="flex justify-center mt-12">
-                        <div id='mobs' className="w-[32rem]">
-                            <Timeline>
-                                <TimelineItem>
-                                    <TimelineConnector />
-                                    <TimelineHeader>
-                                        <TimelineIcon className="p-2">
-                                            <img
-                                                src={ios}
-                                                alt="apple"
-                                                className="h-4 w-4 timeline-icon"
-                                                style={{ filter: 'invert(1)', fill: 'white' }}
-                                            />
-
-                                        </TimelineIcon>
-                                        <Typography variant="h5" color="blue-gray">
-                                            IOS Applications
-                                        </Typography>
-                                    </TimelineHeader>
-                                    <TimelineBody>
-
-                                    </TimelineBody>
-
-                                </TimelineItem>
-                                <TimelineItem>
-                                    <TimelineConnector />
-                                    <TimelineHeader>
-                                        <TimelineIcon className="p-2">
-                                            <img
-                                                src={andriod}
-                                                alt='andriod'
-                                                className="h-4 w-4 timeline-icon"
-                                                style={{ filter: 'invert(1)', fill: 'white' }}
-
-                                            />
-
-                                        </TimelineIcon>
-                                        <Typography variant="h5" color="blue-gray">
-                                            Android Applications
-                                        </Typography>
-                                    </TimelineHeader>
-                                    <TimelineBody>
-
-                                    </TimelineBody>
-
-                                </TimelineItem>
-                                <TimelineItem>
-                                    <TimelineHeader>
-                                        <TimelineIcon className="p-2">
-                                            <img
-                                                src={hybrid}
-                                                alt='hybrid'
-                                                className="h-4 w-4 timeline-icon"
-
-                                            />
-
-                                        </TimelineIcon>
-                                        <Typography variant="h5" color="blue-gray">
-                                            HyBrid Applications
-                                        </Typography>
-                                    </TimelineHeader>
-                                    <TimelineBody>
-
-                                    </TimelineBody>
-
-                                </TimelineItem>
-                            </Timeline>
+                        <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+                            <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+                                {features.map((feature) => (
+                                    <div key={feature.name} className="relative pl-16">
+                                        <dt id='feature-head' className="text-base font-semibold leading-7 text-gray-900">
+                                            <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                                                <feature.icon className="h-6 w-6 text-white" aria-hidden="true" />
+                                            </div>
+                                            {feature.name}
+                                        </dt>
+                                        <dd id='feature-desc' className="mt-2 text-base leading-7 text-gray-600">{feature.description}</dd>
+                                    </div>
+                                ))}
+                            </dl>
                         </div>
                     </div>
                 </div>
