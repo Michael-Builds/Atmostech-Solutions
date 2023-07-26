@@ -34,7 +34,7 @@ const MissionVision = () => {
         >
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 mision-statement">
             <div className="flex flex-col justify-center mission">
-              <h2 className="text-3xl mb-2 ml-12 mision-first mt-8">
+              <h2 className="mt-8 mb-2 ml-12 text-3xl mision-first">
                 Mission Statement
               </h2>
               <p className="mb-4 ml-12">
@@ -69,11 +69,11 @@ const MissionVision = () => {
                 id='vision-image'
                 src={Image2}
                 alt="ATMOS-PIC"
-                className="w-full md:w-64 mb-6"
+                className="w-full mb-6 md:w-64"
               />
             </div>
             <div className="flex flex-col justify-center">
-              <h2 id='visions' className="text-3xl mb-2 mision-second">
+              <h2 id='visions' className="mb-2 text-3xl mision-second">
                 Vision Statement
               </h2>
               <p className="mb-3 mr-10 mission-sent">
@@ -88,6 +88,7 @@ const MissionVision = () => {
             </div>
           </div>
         </div>
+        
         <div className={`justify-center align-center text-center mision-head ${inView1 ? 'fade-in-bottom fade-in-bottom-active' : ''
           }`}
           ref={ref1}>
@@ -99,62 +100,62 @@ const MissionVision = () => {
             Our values are not just words on paper; they are the essence of who we are as a company and the driving force behind everything we do.
           </p>
         </div>
-        <div className="flex justify-center items-center mt-12 value-cards">
+        <div className="flex items-center justify-center mt-12 value-cards">
           <div id='value-items' className="grid grid-cols-3 gap-2 mb-8 value-items">
 
-            <div id='value-card' className=' w-65 h-75 p-4 value-card bg-white mx-4 mb-8 flex flex-col justify-center items-center'>
-              <span className="text-4xl font-bold mb-2">
+            <div id='value-card' className='flex flex-col items-center justify-center p-4 mx-4 mb-8 bg-white  w-65 h-75 value-card'>
+              <span className="mb-2 text-4xl font-bold">
                 <RiTeamFill className='value-icon-team value-icon' />
               </span>
-              <span className="text-gray-800 text-center value-head">Team Work</span>
+              <span className="text-center text-gray-800 value-head">Team Work</span>
               <p className='text-center value-sentence'>
                 We cultivate a collaborative culture that values diverse perspectives, encourages open communication.
               </p>
             </div>
-            <div id='value-card' className=' w-65 h-75 p-4 value-card zoom-in-1 bg-white mx-4 mb-8 flex flex-col justify-center items-center'>
-              <span className="text-4xl font-bold mb-2">
+            <div id='value-card' className='flex flex-col items-center justify-center p-4 mx-4 mb-8 bg-white  w-65 h-75 value-card zoom-in-1'>
+              <span className="mb-2 text-4xl font-bold">
                 <FaHandsHelping  className='value-icon-surround value-icon' />
               </span>
-              <span className="text-gray-800 text-center value-head">Unity</span>
+              <span className="text-center text-gray-800 value-head">Unity</span>
               <p className='text-center value-sentence'>
                 We take ownership of our actions, decisions, and outcomes, holding ourselves accountable for delivering results.
               </p>
             </div>
 
-            <div id='value-card' className=' w-65 h-75 p-4 value-card zoom-in-2 bg-white mx-4 mb-8 flex flex-col justify-center items-center'>
-              <span className="text-4xl font-bold mb-2">
+            <div id='value-card' className='flex flex-col items-center justify-center p-4 mx-4 mb-8 bg-white  w-65 h-75 value-card zoom-in-2'>
+              <span className="mb-2 text-4xl font-bold">
                 <FaSmile className='value-icon-power value-icon' />
               </span>
-              <span className="text-gray-800 text-center value-head">Enthusiam</span>
+              <span className="text-center text-gray-800 value-head">Enthusiam</span>
               <p className='text-center value-sentence'>
                 We are committed to environmental and social sustainability, making responsible choices to protect our planet.
               </p>
             </div>
 
-            <div id='value-card' className=' w-65 h-75 p-4 value-card zoom-in-3 bg-white mx-4 mb-8 flex flex-col justify-center items-center'>
-              <span className="text-4xl font-bold mb-2">
+            <div id='value-card' className='flex flex-col items-center justify-center p-4 mx-4 mb-8 bg-white  w-65 h-75 value-card zoom-in-3'>
+              <span className="mb-2 text-4xl font-bold">
                 <GiHeartInside  className='value-icon-unity value-icon' />
               </span>
-              <span className="text-gray-800 text-center value-head">Passion</span>
+              <span className="text-center text-gray-800 value-head">Passion</span>
               <p className='text-center value-sentence'>
                 We are passionate about our work, driven by a shared purpose and enthusiasm to make a difference.</p>
             </div>
 
-            <div id='value-card' className=' w-65 h-75 p-4 value-card zoom-in-4 bg-white mx-4 mb-8 flex flex-col justify-center items-center'>
-              <span className="text-4xl font-bold mb-2">
+            <div id='value-card' className='flex flex-col items-center justify-center p-4 mx-4 mb-8 bg-white  w-65 h-75 value-card zoom-in-4'>
+              <span className="mb-2 text-4xl font-bold">
                 <GiShield id='shield'  className='value-icon-transparent value-icon' />
               </span>
-              <span className="text-gray-800 text-center value-head">Integrity</span>
+              <span className="text-center text-gray-800 value-head">Integrity</span>
               <p className='text-center value-sentence'>
                 We uphold the highest ethical standards, acting honestly, responsibly, and transparently in all our endeavors.
               </p>
             </div>
 
-            <div id='value-card' className=' w-65 h-75 p-4 value-card zoom-in-5 bg-white mx-4 mb-8 flex flex-col justify-center items-center'>
-              <span className="text-4xl font-bold mb-2">
+            <div id='value-card' className='flex flex-col items-center justify-center p-4 mx-4 mb-8 bg-white  w-65 h-75 value-card zoom-in-5'>
+              <span className="mb-2 text-4xl font-bold">
                 <GoTrophy id='value-icon' className='value-icon-trophy value-icon' />
               </span>
-              <span className="text-gray-800 text-center value-head">Excellence</span>
+              <span className="text-center text-gray-800 value-head">Excellence</span>
               <p className='text-center value-sentence'>
                 We relentlessly pursue excellence, striving for quality, innovation, and continuous improvement in all our endeavors.</p>
             </div>
