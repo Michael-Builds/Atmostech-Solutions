@@ -7,6 +7,7 @@ import Company from './About';
 import Main from './Main';
 import Mission from './Mission';
 import Jobs from './Jobs';
+import Testimonial from './Testimonial';
 import Blog from './Blog';
 import Scroll from '../ScrollToTop/ScrolltoTop';
 
@@ -26,6 +27,7 @@ const About = () => {
         <Company />
         <Mission />
         <Jobs />
+        <Testimonial/>
         <Blog />
       </section>
       <Footer />

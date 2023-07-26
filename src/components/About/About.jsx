@@ -16,11 +16,11 @@ const stats = [
 
 export default function About() {
     return (
-        <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
+        <div className="relative py-24 overflow-hidden bg-gray-900 isolate sm:py-32">
             <img
                 src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
                 alt=""
-                className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
+                className="absolute inset-0 object-cover object-right w-full h-full -z-10 md:object-center"
             />
             <div
                 className="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
@@ -46,22 +46,22 @@ export default function About() {
                     }}
                 />
             </div>
-            <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                <div id='about-content' className="mx-auto max-w-2xl lg:mx-0 about" >
+            <div className="px-6 mx-auto max-w-7xl lg:px-8">
+                <div id='about-content' className="max-w-2xl mx-auto lg:mx-0 about" >
                     <h2  id='about-head-main' className="text-4xl font-bold tracking-tight text-white sm:text-6xl">Work with us</h2>
                     <p className="mt-6 text-lg leading-8 text-gray-300 about-us">
                         Welcome to Atmos Technology, a leading tech company dedicated to transforming the digital landscape with innovative solutions and cutting-edge technology. At Atmos Technology, our mission is to empower businesses and individuals alike, helping them thrive in the digital era through our unparalleled expertise and forward-thinking approach.
                     </p>
                 </div>
-                <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
-                    <div id='about-links' className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
+                <div className="max-w-2xl mx-auto mt-10 lg:mx-0 lg:max-w-none">
+                    <div id='about-links' className="grid grid-cols-1 text-base font-semibold leading-7 text-white gap-x-8 gap-y-6 sm:grid-cols-2 md:flex lg:gap-x-10">
                         {links.map((link) => (
                             <Link key={link.name} to={link.to} className="hover:text-green-500 linked">
                                 {link.name} <span aria-hidden="true">&rarr;</span>
                             </Link>
                         ))}
                     </div>
-                    <dl id='about-lists' className="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
+                    <dl id='about-lists' className="grid grid-cols-1 gap-8 mt-16 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
                         {stats.map((stat) => (
                             <div key={stat.name} className="flex flex-col-reverse">
                                 <dt className="text-base leading-7 text-gray-300 valued-text">{stat.name}</dt>
