@@ -10,10 +10,6 @@ const ValueProposition = () => {
         triggerOnce: true,
     });
 
-    const [ref2, inView2] = useInView({
-        triggerOnce: true,
-    });
-
     return (
         <section className="relative w-full h-full mb-0 value-proposition">
             <div className="mx-auto overflow-hidden">
@@ -59,11 +55,10 @@ const ValueProposition = () => {
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-2 value-prop">
                     <div className="flex justify-center">
                         <img
+                            id='value-two'
                             src={choose}
                             alt="ATMOS-PIC"
-                            className={`w-full md:w-64 images zoom-in-animation ${inView2 ? "zoom-in-animation-active" : ""
-                                }`}
-                            ref={ref2}
+                            className="w-full md:w-64"
                         />
                     </div>
                     <div className="flex flex-col justify-center value-content">

@@ -420,6 +420,12 @@
   height: 450px;
   margin-top: -10px;
 }
+#value-two {
+  width: 450px;
+  height: 550px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+}
 
 #vision-statement {
   margin-top: -10px;
@@ -1291,6 +1297,10 @@
     height: 300px;
     margin-top: 10px;
     margin-left: 30px;
+  }
+  
+  #value-two {
+
   }
 
   #first-sent {
