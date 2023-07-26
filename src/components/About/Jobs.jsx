@@ -1,8 +1,8 @@
 import React from 'react';
 import backgroundImage from '../../assets/my.jpg';
 import { RiTeamFill } from 'react-icons/ri';
-import { FaHandsHelping } from 'react-icons/fa';
-import { FaSmile } from 'react-icons/fa';
+import { AiOutlineSafetyCertificate } from 'react-icons/ai';
+import { MdThumbUp } from 'react-icons/md';
 import { GiHeartInside } from 'react-icons/gi';
 import { GiShield } from 'react-icons/gi';
 import { GoTrophy } from 'react-icons/go';
@@ -43,9 +43,9 @@ const Values = () => {
                             </div>
                             <div id='value-card' className='flex flex-col items-center justify-center p-4 mx-4 mb-8 bg-white w-65 h-75 value-card zoom-in-1'>
                                 <span className="mb-2 text-4xl font-bold">
-                                    <FaHandsHelping className='value-icon-surround value-icon' />
+                                    <AiOutlineSafetyCertificate className='value-icon-surround value-icon' />
                                 </span>
-                                <span className="text-center text-gray-800 value-head">Unity</span>
+                                <span className="text-center text-gray-800 value-head">Accountability</span>
                                 <p className='text-center value-sentence'>
                                     We take ownership of our actions, decisions, and outcomes, holding ourselves accountable for delivering results.
                                 </p>
@@ -53,9 +53,9 @@ const Values = () => {
 
                             <div id='value-card' className='flex flex-col items-center justify-center p-4 mx-4 mb-8 bg-white w-65 h-75 value-card zoom-in-2'>
                                 <span className="mb-2 text-4xl font-bold">
-                                    <FaSmile className='value-icon-power value-icon' />
+                                    <MdThumbUp className='value-icon-power value-icon' />
                                 </span>
-                                <span className="text-center text-gray-800 value-head">Enthusiam</span>
+                                <span className="text-center text-gray-800 value-head">Respect</span>
                                 <p className='text-center value-sentence'>
                                     We are committed to environmental and social sustainability, making responsible choices to protect our planet.
                                 </p>

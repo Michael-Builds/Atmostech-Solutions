@@ -69,6 +69,12 @@ const navListMenuItems = [
     title: "EDI",
     path: "/edi"
   },
+  {
+    color: "green",
+    icon: AiOutlineCloudSync,
+    title: "UI/UX Design",
+    path: "/edi"
+  },
 
 ];
 
@@ -149,7 +155,7 @@ function NavListMenu() {
 
 function NavList() {
   return (
-    <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1" style={{ marginRight: '80px' }}>
+    <List className="p-0 mt-4 mb-6 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1" style={{ marginRight: '80px' }}>
       <Typography
         as={NavLink}
         to="/"
@@ -162,7 +168,6 @@ function NavList() {
           Home
         </ListItem>
       </Typography>
-
       <Typography
         as={NavLink}
         to="/company"
@@ -188,7 +193,19 @@ function NavList() {
           Industries
         </ListItem>
       </Typography>
-
+      <Typography
+        as={NavLink}
+        to="/blogs"
+        variant="small"
+        activeClassName="active"
+        color="blue-gray"
+        className="p-1 font-normal font-exo"
+      >
+        <ListItem className="flex items-center gap-2 py-2 pr-4 link" style={{ fontSize: "17px" }}>
+          Blogs
+        </ListItem>
+      </Typography>
+    
       <Typography
         as={NavLink}
         variant="small"
@@ -201,10 +218,10 @@ function NavList() {
           Contact
         </ListItem>
       </Typography>
-
     </List>
   );
 }
+
 export default function Example() {
   const [openNav, setOpenNav] = React.useState(false);
 
@@ -216,12 +233,12 @@ export default function Example() {
   }, []);
 
   return (
-    <Navbar className="fixed top-0 left-0 w-full z-50 mx-auto max-w-full px-6 py-3 rounded-none main-menu">
+    <Navbar className="fixed top-0 left-0 z-50 w-full max-w-full px-6 py-3 mx-auto rounded-none main-menu">
       <div className="flex items-center justify-between text-blue-gray-900">
         <Typography
           as={NavLink}
           to='/'
-          className=" mr-4 ml-3 cursor-pointer"
+          className="ml-3 mr-4 cursor-pointer "
         >
           <img
             src="./logo.png"
@@ -240,9 +257,9 @@ export default function Example() {
           onClick={() => setOpenNav(!openNav)}
         >
           {openNav ? (
-            <XMarkIcon className="h-6 w-6" strokeWidth={2} />
+            <XMarkIcon className="w-6 h-6" strokeWidth={2} />
           ) : (
-            <Bars3Icon className="h-6 w-6" strokeWidth={2} />
+            <Bars3Icon className="w-6 h-6" strokeWidth={2} />
           )}
         </IconButton>
       </div>
