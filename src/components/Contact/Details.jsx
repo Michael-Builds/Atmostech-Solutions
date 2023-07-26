@@ -18,7 +18,7 @@ export default function Details() {
   });
 
   return (
-    <section className=" flex justify-center details"
+    <section className="flex justify-center details"
     >
       <div className="mx-auto overflow-hidden">
         <div
@@ -34,40 +34,38 @@ export default function Details() {
           <Timeline id='timeline-main' >
             <TimelineItem className="h-28 " id='timeline-cent' >
               <TimelineConnector className="!w-[78px]" />
-              <TimelineHeader className="relative rounded-xl border border-blue-gray-50 bg-white py-3 pl-4 pr-8 shadow-lg shadow-blue-gray-900/5">
+              <TimelineHeader className="relative py-3 pl-4 pr-8 bg-white border shadow-lg rounded-xl border-blue-gray-50 shadow-blue-gray-900/5">
                 <TimelineIcon className="p-3" variant="ghost">
-                  <MdAttachEmail className="h-5 w-5" />
+                  <MdAttachEmail className="w-5 h-5" />
                 </TimelineIcon>
                 <div className="flex flex-col gap-1">
                   <Typography variant="h6" color="blue-gray" className=" detail-email" id='email'>
                    info@atmostechsolution
                   </Typography>
-  
                 </div>
               </TimelineHeader>
             </TimelineItem>
 
             <TimelineItem className="h-28 " id='timeline-cent' >
               <TimelineConnector className="!w-[78px]" />
-              <TimelineHeader className="relative rounded-xl border border-blue-gray-50 bg-white py-3 pl-4 pr-8 shadow-lg shadow-blue-gray-900/5">
+              <TimelineHeader className="relative py-3 pl-4 pr-8 bg-white border shadow-lg rounded-xl border-blue-gray-50 shadow-blue-gray-900/5">
                 <TimelineIcon className="p-3" variant="ghost" color="red">
-                  <FiPhoneCall className="h-5 w-5" />
+                  <FiPhoneCall className="w-5 h-5" />
                 </TimelineIcon>
                 <div className="flex flex-col gap-1">
                   <Typography variant="h6" color="blue-gray" className=" detail-email" id='email'>
                     +233 (0) 240556434
-                  </Typography>
-                 
+                  </Typography>               
                 </div>
               </TimelineHeader>
             </TimelineItem>
 
             <TimelineItem className="h-28 " id='timeline-cent' >
-              <TimelineHeader className="relative rounded-xl border border-blue-gray-50 bg-white py-3 pl-4 pr-8 shadow-lg shadow-blue-gray-900/5 ">
+              <TimelineHeader className="relative py-3 pl-4 pr-8 bg-white border shadow-lg rounded-xl border-blue-gray-50 shadow-blue-gray-900/5 ">
                 <TimelineIcon className="p-3" variant="ghost" color="green">
-                  <IoLocationOutline className="h-5 w-5" />
+                  <IoLocationOutline className="w-5 h-5" />
                 </TimelineIcon>
-                <div className="flex flex-col gap-1  ">
+                <div className="flex flex-col gap-1 ">
                   <Typography variant="h6" color="blue-gray" className=" detail-email" id='email'>
                     ECG Volta Credit Union Building
                   </Typography>
