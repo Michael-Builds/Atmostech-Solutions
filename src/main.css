@@ -1298,9 +1298,14 @@
     margin-top: 10px;
     margin-left: 30px;
   }
-  
-  #value-two {
 
+
+
+  #value-two {
+    max-width: 350px;
+    height: 350px;
+    margin-top: -30px;
+    margin-left: 50px;
   }
 
   #first-sent {
@@ -1707,7 +1712,7 @@
   .mission h2 {
     margin-right: 50px;
     font-size: 28px;
-    margin-top: -40px;
+    margin-top: 5px;
     margin-bottom: 5px;
   }
 
@@ -1718,10 +1723,10 @@
   }
 
   #mission-image {
-    margin-left: 20px;
-    margin-top: -20px;
-    width: 250px;
-    height: 250px;
+    margin-left: 10px;
+    margin-top: -25px;
+    width: 300px;
+    height: 200px;
   }
 
   #visions {
@@ -1735,11 +1740,10 @@
   }
 
   #vision-image {
-    margin-left: 20px;
     margin-top: -20px;
-    width: 250px;
+    width: 300px;
     height: 250px;
-    margin-bottom: 70px;
+    margin-bottom: 40px;
   }
 
   #values {
@@ -1773,31 +1777,24 @@
     margin-top: -5px;
   }
 
-  .jobs {
-    font-size: 14px;
-    text-align: center;
-    max-width: 90%;
-    align-items: center;
-    justify-content: center;
-    margin-left: 30px;
-  }
-
+ 
   #job-heading {
     font-size: 28px;
     margin-bottom: 5px;
     margin-top: -5px;
     text-align: center;
   }
+
   #job-sub {
-    font-size: 16px;
-    line-height: 1.7;
     text-align: justify;
     text-justify: inter-word;
-    margin-top: 5px;
-    margin-right: 25px;
-    margin-left: 25px;
+    margin-top:10px;
+    margin-right: 20px;
+    margin-left: 20px;
     max-width: 90%;
     margin-bottom: -10px;
+    font-size: 16px;
+    line-height: 1.6;
   }
 
   .job-items {
@@ -1825,19 +1822,20 @@
   }
 
   #blog-sub {
-    font-size: 16px;
-    line-height: 1.7;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
     text-align: justify;
     text-justify: inter-word;
-    margin-top: 5px;
-    margin-right: 10px;
     margin-left: 20px;
     max-width: 90%;
-    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.6;
   }
 
   #blogs {
     gap: 15px;
+    margin-bottom: 60px;
   }
   .blog-card {
     max-width: 300px;
@@ -2157,6 +2155,7 @@
     text-align: justify;
     text-justify: inter-word;
   }
+  
   .software-timeline-items {
     margin-top: -70px;
     margin-bottom: -20px;
@@ -2164,11 +2163,12 @@
 
   .email-content {
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.6;
     text-align: justify;
     text-justify: inter-word;
     margin-right: 25px;
     margin-left: 20px;
+    max-width: 90%;
   }
 
   #timeline-main {
@@ -2177,6 +2177,7 @@
     margin-top: -10px;
     margin-bottom: -20px;
   }
+
   .main-image {
     height: 200px;
     width: 200px;

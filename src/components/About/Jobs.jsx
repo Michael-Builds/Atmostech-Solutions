@@ -6,7 +6,8 @@ import { FaSmile } from 'react-icons/fa';
 import { GiHeartInside } from 'react-icons/gi';
 import { GiShield } from 'react-icons/gi';
 import { GoTrophy } from 'react-icons/go';
-const Jobs = () => {
+
+const Values = () => {
     return (
         <section className="relative counter job-section">
             <div
@@ -95,4 +96,4 @@ const Jobs = () => {
     );
 };
 
-export default Jobs;
+export default Values;
