@@ -70,10 +70,10 @@ const navListMenuItems = [
     path: "/edi"
   },
   {
-    color: "green",
+    color: "blue",
     icon: AiOutlineCloudSync,
     title: "UI/UX Design",
-    path: "/edi"
+    path: "/ui-ux"
   },
 
 ];

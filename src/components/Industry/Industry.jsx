@@ -1,10 +1,11 @@
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Navbar from "../Nav/Navbar";
-import Main from './Main';
+import Header from './Header';
 import Email from '../Contact/Email';
 import Footer from '../Footer/Footer';
 import Scroll from '../ScrollToTop/ScrolltoTop';
+
 const Industry = () => {
   const location = useLocation();
 
@@ -15,12 +16,13 @@ const Industry = () => {
   return (
     <>
       <Navbar />
-      <section style={{ marginTop: "120px" }}>
-        <Main />
-        <Email/>
-        <Footer/>
-        <Scroll/>
-      </section>
+      <div style={{ marginTop: "80px" }}>
+        <Header />
+        <Email />
+      </div>
+      <Footer />
+      <Scroll />
+
     </>
   );
 };
