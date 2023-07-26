@@ -1,6 +1,6 @@
 import React from "react";
-import cutting from "../../assets/tech.png";
-import choose1 from "../../assets/solutions.png";
+import choose from './choose.png';
+import Prop from './value.png';
 import "../../index.css";
 import "../../main.css";
 import { useInView } from "react-intersection-observer";
@@ -11,7 +11,7 @@ const ValueProposition = () => {
     });
 
     const [ref2, inView2] = useInView({
-        triggerOnce: true, 
+        triggerOnce: true,
     });
 
     return (
@@ -45,9 +45,10 @@ const ValueProposition = () => {
                     </div>
                     <div id='mision-img' className="flex justify-center">
                         <img
-                            src={cutting}
+                            id='value-one'
+                            src={Prop}
                             alt="ATMOS-PIC"
-                            className={`w-64 image rotate-animation ${inView1 ? "rotate-animation-active" : ""
+                            className={`zoom-in-animation ${inView1 ? "zoom-in-animation-active" : ""
                                 }`}
                             ref={ref1}
                         />
@@ -58,7 +59,7 @@ const ValueProposition = () => {
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-2 value-prop">
                     <div className="flex justify-center">
                         <img
-                            src={choose1}
+                            src={choose}
                             alt="ATMOS-PIC"
                             className={`w-full md:w-64 images zoom-in-animation ${inView2 ? "zoom-in-animation-active" : ""
                                 }`}

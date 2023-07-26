@@ -18,7 +18,7 @@ const MissionVision = () => {
     <section className="mision-vision statements" >
       <div>
 
-        <div className={`mx-auto overflow-hidden  mt-8 ${inView2 ? 'fade-in-bottom fade-in-bottom-active' : ''
+        <div id ='mission-statement' className={`mx-auto overflow-hidden  mt-8 ${inView2 ? 'fade-in-bottom fade-in-bottom-active' : ''
           }`}
           ref={ref2}
         >
@@ -49,11 +49,12 @@ const MissionVision = () => {
             </div>
           </div>
         </div>
+        
         <div className={`mx-auto vision overflow-hidden mt-5 ${inView3 ? 'fade-in-bottom fade-in-bottom-active' : ''
           }`}
           ref={ref3}
         >
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 vision-content ">
+          <div id='vision-statement' className="grid grid-cols-1 gap-8 md:grid-cols-2 vision-content ">
             <div className="flex justify-center">
               <img
                 id='vision-image'
