@@ -376,11 +376,11 @@
   margin-left: -10px;
 }
 
-#api-main-head{
+#api-main-head {
   margin-left: -10px;
 }
 
-#edi-main-head h2{
+#edi-main-head h2 {
   margin-left: -10px;
 }
 
@@ -462,7 +462,6 @@
 #about-main {
   margin-top: -20px;
 }
-
 
 /* Software Section */
 #software-image {
@@ -1085,23 +1084,11 @@
   animation: fade-in-bottom 1s ease-in-out;
 }
 
-.mision-title {
-  font-family: "Exo", sans-serif;
-  font-weight: 700;
-  margin-top: 80px;
-  color: #1f1f18;
-  font-size: 28px;
+#entire {
+  margin-top: 25px;
+  margin-bottom: 30px;
 }
 
-.mision-sub {
-  font-family: "Open sans", sans-serif;
-  line-height: 1.5;
-  font-size: 16px;
-  color: #1f1f18;
-  max-width: 80%;
-  margin: 0 auto;
-  text-align: center;
-}
 
 .value-card {
   width: 350px;
@@ -1211,24 +1198,17 @@
   margin-top: -15px;
 }
 
-.blog-sub {
+#our-blogs h2 {
+  margin-top: -85px;
+  font-family: "Exo", sans-serif;
+  font-weight: 700;
+}
+
+#our-blogs p {
   font-family: "Open sans", sans-serif;
-  line-height: 1.5;
   font-size: 16px;
-  color: #1f1f18;
-  text-align: center;
-  max-width: 80%;
-  margin-left: 110px;
-  margin-top: 10px;
-  margin-bottom: 45px;
-}
-
-#blogs {
-  gap: 25px;
-}
-
-.blog-card {
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  margin-bottom: -10px;
+  line-height: 1.5;
 }
 
 .details {
@@ -1311,8 +1291,6 @@
     margin-top: 10px;
     margin-left: 30px;
   }
-
-
 
   #value-two {
     max-width: 350px;
@@ -1735,29 +1713,17 @@
     line-height: 1.6;
   }
 
-  #mission-image {
-    margin-left: 10px;
-    margin-top: -25px;
-    width: 300px;
-    height: 200px;
-  }
-
-  #visions {
-    margin-top: 20px;
-    font-size: 28px;
-    margin-bottom: 10px;
+  #entire {
+    margin-top: 35px;
+    width: 350px;
+    height: 250px;
+    margin-bottom: 20px;
   }
 
   #mission-sent {
     line-height: 1.6;
   }
 
-  #vision-image {
-    margin-top: -20px;
-    width: 300px;
-    height: 250px;
-    margin-bottom: 40px;
-  }
 
   #values {
     font-size: 26px;
@@ -1790,7 +1756,6 @@
     margin-top: -5px;
   }
 
- 
   #job-heading {
     font-size: 28px;
     margin-bottom: 5px;
@@ -1801,7 +1766,7 @@
   #job-sub {
     text-align: justify;
     text-justify: inter-word;
-    margin-top:10px;
+    margin-top: 10px;
     margin-right: 20px;
     margin-left: 20px;
     max-width: 90%;
