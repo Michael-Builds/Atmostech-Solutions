@@ -10,7 +10,6 @@ import NewsLetter from '../NewsLetter/NewsLetter';
 import Email from '../Contact/Email';
 import Jobs from './Jobs';
 import Testimonial from './Testimonial';
-import Blog from './Blog';
 import Scroll from '../ScrollToTop/ScrolltoTop';
 
 const About = () => {
@@ -30,7 +29,6 @@ const About = () => {
         <Mission />
         <Jobs />
         <Testimonial/>
-        <Blog />
         <NewsLetter/>
         <Email/>
       </section>

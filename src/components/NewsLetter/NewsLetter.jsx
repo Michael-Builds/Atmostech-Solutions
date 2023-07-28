@@ -5,7 +5,7 @@ export default function NewsLetter() {
         <div className="relative py-16 overflow-hidden bg-green-700 isolate sm:py-24 lg:py-32">
             <div className="px-6 mx-auto max-w-7xl lg:px-8">
                 <div className="grid max-w-2xl grid-cols-1 mx-auto gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
-                    <div className="max-w-xl lg:max-w-lg">
+                    <div id='newsletter' className="max-w-xl lg:max-w-lg">
                         <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Subscribe to our newsletter.</h2>
                         <p className="mt-4 text-lg leading-8 text-gray-300">
                         Stay updated with our latest news and exclusive offers by subscribing to our newsletter. Join our community today and never miss out on exciting updates!
@@ -31,7 +31,7 @@ export default function NewsLetter() {
                             </button>
                         </div>
                     </div>
-                    <dl className="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2">
+                    <dl id='news-main' className="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2">
                         <div className="flex flex-col items-start">
                             <div className="p-2 rounded-md bg-white/5 ring-1 ring-white/10">
                                 <CalendarDaysIcon className="w-6 h-6 text-white" aria-hidden="true" />
