@@ -42,7 +42,7 @@ const Product = () => {
 
             </div>
             <div className="flex justify-center mr-10 schoolsync">
-              <img src={SchoolSync} alt="ATMOS-PIC" className="product1 rotate-animation" />
+              <img src={SchoolSync} alt="ATMOS-PIC" className=" rotate-animation" />
             </div>
           </div>
         </div>

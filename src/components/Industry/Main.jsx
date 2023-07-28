@@ -57,6 +57,7 @@ export default function Main() {
             <div id="industry-items" className="grid grid-cols-3 gap-12 mt-12 mb-12 md:grid-cols-3">
               {industryItems.map((item, index) => (
                 <Card
+                  id='industries-card'
                   key={index}
                   shadow={false}
                   className="relative grid h-[28rem] w-full max-w-[20rem] items-end justify-center overflow-hidden text-center"
