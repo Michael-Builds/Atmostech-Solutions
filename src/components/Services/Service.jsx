@@ -15,114 +15,82 @@ import { AiOutlineApi } from 'react-icons/ai';
 import { AiOutlineCloudSync } from 'react-icons/ai';
 
 const Service = () => {
+  // Array of service data
+  const services = [
+    {
+      id: 1,
+      icon: <VscVmConnect className="w-12 h-12 mx-auto mb-4 text-green-500 ike" />,
+      title: "Software Development",
+      description: "Our software development service is a catalyst for dreams, inspiring both personal growth and the pursuit of greatness.",
+      link: '/software',
+    },
+    {
+      id: 2,
+      icon: <CiGlobe className="w-12 h-12 mx-auto mb-4 text-green-500 ike" />,
+      title: "Web Development",
+      description: "Unleash creativity with our web development service, turning aspirations into captivating online experiences that inspire.",
+      link: '/web',
+    },
+    {
+      id: 3,
+      icon: <TbDeviceMobileStar className="w-12 h-12 mx-auto mb-4 text-green-500 ike" />,
+      title: "Mobile App Development",
+      description: "Empower innovation with our mobile app development service, creating seamless user-centric experiences that amplify engagement.",
+      link: '/mobile',
+    },
+    {
+      id: 4,
+      icon: <AiOutlineApi className="w-12 h-12 mx-auto mb-4 text-green-500 ike" />,
+      title: "API Integration",
+      description: "Unleash the power of interconnected technologies with our API integration service, streamlining operations and fostering collaboration.",
+      link: '/api',
+    },
+    {
+      id: 5,
+      icon: <AiOutlineCloudSync className="w-12 h-12 mx-auto mb-4 text-green-500 ike" />,
+      title: "Electronic Data Interchange",
+      description: "Transform business communication with our EDI service, streamlining data exchange between trading partners.",
+      link: '/edi',
+    },
+    {
+      id: 6,
+      icon: <AiOutlineCloudSync className="w-12 h-12 mx-auto mb-4 text-green-500 ike" />,
+      title: "Electronic Data Interchange",
+      description: "Transform business communication with our EDI service, streamlining data exchange between trading partners.",
+      link: '/edi',
+    },
+  ];
+
   return (
-    <section className="service section flex justify-center items-center">
+    <section className="flex items-center justify-center service section">
       <div className="container mx-auto">
         <div className="row">
           <div className="section-title fade-in-left">
-            <h2 id='head' className="service-head text-left ml-10">Services</h2>
+            <h2 id='head' className="ml-10 text-left service-head">Services</h2>
           </div>
         </div>
-        <div id='service-cart' className="grid grid-cols-3 service-cards justify-center mb-10 ml-11">
-          <Card id ='service-card' className="mt-6 w-96 card zoom-in-1">
-            <CardBody>
-              <VscVmConnect className="text-green-500 w-12 h-12 mb-4 mx-auto ike" />
-              <Typography variant="h5" color="blue-gray" className="mb-2 text-center service-title">
-                Software Development
-              </Typography>
-              <Typography className="text-center service-sentence">
-                Our software development service is a catalyst for dreams, inspiring both personal growth and the pursuit of greatness.
-              </Typography>
-            </CardBody>
-            <CardFooter className="pt-0">
-              <Link to='/software' className="inline-block service-btn">
-                <Button size="sm" variant="text" className="flex items-center gap-2 service-card-btn">
-                  Learn More
-                  <ArrowLongRightIcon strokeWidth={2} className="w-4 h-4" />
-                </Button>
-              </Link>
-            </CardFooter>
-          </Card>
-
-          <Card id ='service-card' className="mt-6 w-96 card zoom-in-3">
-            <CardBody>
-              <CiGlobe className="text-green-500 w-12 h-12 mb-4 mx-auto ike" />
-              <Typography variant="h5" color="blue-gray" className="mb-2 text-center service-title">
-                Web Development
-              </Typography>
-              <Typography className="text-center service-sentence">
-                Unleash creativity with our web development service, turning aspirations into captivating online experiences that inspires.
-              </Typography>
-            </CardBody>
-            <CardFooter className="pt-0">
-              <Link to='/web' className="inline-block service-btn">
-                <Button size="sm" variant="text" className="flex items-center gap-2 service-card-btn">
-                  Learn More
-                  <ArrowLongRightIcon strokeWidth={2} className="w-4 h-4" />
-                </Button>
-              </Link>
-            </CardFooter>
-          </Card>
-
-          <Card id ='service-card' className="mt-6 w-96 card zoom-in-3">
-            <CardBody>
-              <TbDeviceMobileStar className="text-green-500 w-12 h-12 mb-4 mx-auto ike" />
-              <Typography variant="h5" color="blue-gray" className="mb-2 text-center service-title">
-                Mobile App Development
-              </Typography>
-              <Typography className="text-center service-sentence">
-                Empower innovation with our mobile app development service, creating seamless user-centric experiences that amplify engagement.
-              </Typography>
-            </CardBody>
-            <CardFooter className="pt-0">
-              <Link to='/mobile' className="inline-block service-btn">
-                <Button size="sm" variant="text" className="flex items-center gap-2 service-card-btn">
-                  Learn More
-                  <ArrowLongRightIcon strokeWidth={2} className="w-4 h-4" />
-                </Button>
-              </Link>
-            </CardFooter>
-          </Card>
-
-          <Card id ='service-card' className="mt-6 w-96 card zoom-in-4">
-            <CardBody>
-              <AiOutlineApi className="text-green-500  w-12 h-12 mb-4 mx-auto ike" />
-              <Typography variant="h5" color="blue-gray" className="mb-2 text-center service-title">
-                API Integration
-              </Typography>
-              <Typography className="text-center service-sentence">
-                Unleash the power of interconnected technologies with our API integration service, streamlining operations and fostering collaboration.
-              </Typography>
-            </CardBody>
-            <CardFooter className="pt-0">
-              <Link to='/api' className="inline-block service-btn">
-                <Button size="sm" variant="text" className="flex items-center gap-2 service-card-btn">
-                  Learn More
-                  <ArrowLongRightIcon strokeWidth={2} className="w-4 h-4" />
-                </Button>
-              </Link>
-            </CardFooter>
-          </Card>
-          <Card id ='service-card' className="mt-6 w-96 card zoom-in-5">
-            <CardBody>
-              <AiOutlineCloudSync className="text-green-500 w-12 h-12 mb-4 mx-auto ike" />
-              <Typography variant="h5" color="blue-gray" className="mb-2 text-center service-title">
-                Electronic Data Interchange
-              </Typography>
-              <Typography className="text-center service-sentence">
-
-                Transform business communication with our EDI service, streamlining data exchange between trading partners.
-              </Typography>
-            </CardBody>
-            <CardFooter className="pt-0">
-              <Link to='/edi' className="inline-block service-btn">
-                <Button size="sm" variant="text" className="flex items-center gap-2 service-card-btn">
-                  Learn More
-                  <ArrowLongRightIcon strokeWidth={2} className="w-4 h-4" />
-                </Button>
-              </Link>
-            </CardFooter>
-          </Card>    
+        <div id='service-cart' className="grid justify-center grid-cols-3 mb-10 service-cards ml-11">
+          {services.map((service) => (
+            <Card key={service.id} id="service-card" className={`mt-6 w-96 card zoom-in-${service.id}`}>
+              <CardBody>
+                {service.icon}
+                <Typography variant="h5" color="blue-gray" className="mb-2 text-center service-title">
+                  {service.title}
+                </Typography>
+                <Typography className="text-center service-sentence">
+                  {service.description}
+                </Typography>
+              </CardBody>
+              <CardFooter className="pt-0">
+                <Link to={service.link} className="inline-block service-btn">
+                  <Button size="sm" variant="text" className="flex items-center gap-2 service-card-btn">
+                    Learn More
+                    <ArrowLongRightIcon strokeWidth={2} className="w-4 h-4" />
+                  </Button>
+                </Link>
+              </CardFooter>
+            </Card>
+          ))}
         </div>
       </div>
     </section>

@@ -6,60 +6,36 @@ import fourth from '../../assets/RCD.png';
 import fifth from '../../assets/Engineering.png';
 import sixth from '../../assets/Sanitation.png';
 
-export default function Partners() {
-    return (
-        <section id='partners' className="bg-white py-24 sm:py-32">
-            <h1 className=" team-header fade-in-bottom text-center mb-5">Our Partners</h1>
-            <div className="mx-auto max-w-7xl px-6 lg:px-8">
+const partnerData = [
+  { src: first, alt: 'Transistor' },
+  { src: second, alt: 'Reform' },
+  { src: third, alt: 'Tuple' },
+  { src: fourth, alt: 'SavvyCal' },
+  { src: fifth, alt: 'SavvyCal' },
+  { src: sixth, alt: 'SavvyCal' },
+];
 
-                <h2 className="text-center partner-sub text-lg font-semibold leading-8 text-gray-900">
-                    Trusted by the world’s most innovative teams
-                </h2>
-                <div className="mx-auto mt-12 grid max-w-lg grid-cols-4 items-center gap-x-4 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-                    <img
-                        className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                        src={first}
-                        alt="Transistor"
-                        width={170}
-                        height={80}
-                    />
-                    <img
-                        className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                        src={second}
-                        alt="Reform"
-                        width={170}
-                        height={80}
-                    />
-                    <img
-                        className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                        src={third}
-                        alt="Tuple"
-                        width={170}
-                        height={80}
-                    />
-                    <img
-                        className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
-                        src={fourth}
-                        alt="SavvyCal"
-                        width={170}
-                        height={80}
-                    />
-                      <img
-                        className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
-                        src={fifth}
-                        alt="SavvyCal"
-                        width={170}
-                        height={80}
-                    />
-                      <img
-                        className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
-                        src={sixth}
-                        alt="SavvyCal"
-                        width={170}
-                        height={80}
-                    />       
-                </div>
-            </div>
-        </section>
-    )
+export default function Partners() {
+  return (
+    <section id='partners' className="py-24 bg-white sm:py-32">
+      <h1 className="mb-5 text-center  team-header fade-in-bottom">Our Partners</h1>
+      <div className="px-6 mx-auto max-w-7xl lg:px-8">
+        <h2 className="text-lg font-semibold leading-8 text-center text-gray-900 partner-sub">
+          Trusted by the world’s most innovative teams
+        </h2>
+        <div className="grid items-center max-w-lg grid-cols-4 mx-auto mt-12 gap-x-4 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+          {partnerData.map((partner, index) => (
+            <img
+              key={index}
+              className="object-contain w-full col-span-2 max-h-12 lg:col-span-1"
+              src={partner.src}
+              alt={partner.alt}
+              width={170}
+              height={80}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 }
