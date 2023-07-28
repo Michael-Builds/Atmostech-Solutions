@@ -25,7 +25,7 @@ import { VscVmConnect } from 'react-icons/vsc';
 import { TbDeviceMobileStar } from 'react-icons/tb';
 import { AiOutlineApi } from 'react-icons/ai';
 import { AiOutlineCloudSync } from 'react-icons/ai';
-import { BsBarChartFill } from 'react-icons.bs'
+import { BsBarChartFill } from 'react-icons/bs'
 
 const colors = {
   blue: "bg-blue-50 text-blue-500",
@@ -71,7 +71,7 @@ const navListMenuItems = [
     path: "/edi"
   },
   {
-    color: "blue",
+    color: "orange",
     icon: BsBarChartFill,
     title: "Data Analytics and Visualization",
     path: "/analytics"
