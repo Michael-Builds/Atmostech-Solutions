@@ -6,6 +6,8 @@ import Footer from '../Footer/Footer';
 import Company from './About';
 import Main from './Main';
 import Mission from './Mission';
+import NewsLetter from '../NewsLetter/NewsLetter';
+import Email from '../Contact/Email';
 import Jobs from './Jobs';
 import Testimonial from './Testimonial';
 import Blog from './Blog';
@@ -29,6 +31,8 @@ const About = () => {
         <Jobs />
         <Testimonial/>
         <Blog />
+        <NewsLetter/>
+        <Email/>
       </section>
       <Footer />
       <Scroll />

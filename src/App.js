@@ -5,7 +5,7 @@ import Company from "./components/About/Company";
 import Services from "./components/Services/Services";
 import Contact from "./components/Contact/Contact";
 import Industry from "./components/Industry/Industry";
-import UIUX from './components/UI-UX/Interface';
+import Analytics from './components/Analytics/Analytics';
 import Blogs from './components/Blogs/Blogs';
 import Web from "./components/Web/Web";
 import Software from "./components/Software/Software";
@@ -23,7 +23,7 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/industry" element={<Industry />} />
         <Route path='/blogs' element={<Blogs />} />
-        <Route path='ui-ux' element ={<UIUX />} />
+        <Route path='/analytics' element ={<Analytics />} />
         <Route path="/web" element={<Web />} />
         <Route path="/mobile" element={<Mobile />} />
         <Route path="/software" element={<Software />} />

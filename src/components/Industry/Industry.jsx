@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 import Navbar from "../Nav/Navbar";
 import Header from './Header';
 import Main from './Main';
+import NewsLetter from '../NewsLetter/NewsLetter';
 import Email from '../Contact/Email';
 import Footer from '../Footer/Footer';
 import Scroll from '../ScrollToTop/ScrolltoTop';
@@ -19,7 +20,8 @@ const Industry = () => {
       <Navbar />
       <div style={{ marginTop: "80px" }}>
         <Header />
-        <Main/>
+        <Main />
+        <NewsLetter/>
         <Email />
       </div>
       <Footer />

@@ -25,6 +25,7 @@ import { VscVmConnect } from 'react-icons/vsc';
 import { TbDeviceMobileStar } from 'react-icons/tb';
 import { AiOutlineApi } from 'react-icons/ai';
 import { AiOutlineCloudSync } from 'react-icons/ai';
+import { BsBarChartFill } from 'react-icons.bs'
 
 const colors = {
   blue: "bg-blue-50 text-blue-500",
@@ -71,9 +72,9 @@ const navListMenuItems = [
   },
   {
     color: "blue",
-    icon: AiOutlineCloudSync,
-    title: "UI/UX Design",
-    path: "/ui-ux"
+    icon: BsBarChartFill,
+    title: "Data Analytics and Visualization",
+    path: "/analytics"
   },
 
 ];
@@ -177,7 +178,7 @@ function NavList() {
         className="p-1 font-normal font-exo"
       >
         <ListItem className="flex items-center gap-2 py-2 pr-4 link" style={{ fontSize: "17px" }}>
-         Company
+          Company
         </ListItem>
       </Typography>
       <NavListMenu />
@@ -205,7 +206,7 @@ function NavList() {
           Blogs
         </ListItem>
       </Typography>
-    
+
       <Typography
         as={NavLink}
         variant="small"

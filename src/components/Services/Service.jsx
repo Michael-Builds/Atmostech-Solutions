@@ -13,8 +13,10 @@ import { VscVmConnect } from 'react-icons/vsc';
 import { TbDeviceMobileStar } from 'react-icons/tb';
 import { AiOutlineApi } from 'react-icons/ai';
 import { AiOutlineCloudSync } from 'react-icons/ai';
+import { BsBarChartFill } from 'react-icons/bs';
 
 const Service = () => {
+  
   // Array of service data
   const services = [
     {
@@ -54,10 +56,10 @@ const Service = () => {
     },
     {
       id: 6,
-      icon: <AiOutlineCloudSync className="w-12 h-12 mx-auto mb-4 text-green-500 ike" />,
-      title: "Electronic Data Interchange",
-      description: "Transform business communication with our EDI service, streamlining data exchange between trading partners.",
-      link: '/edi',
+      icon: <BsBarChartFill className="w-12 h-12 mx-auto mb-4 text-green-500 ike" />,
+      title: "Data Analytics and Visualization",
+      description: "Unlock actionable insights and data-driven decisions with our IT company's Data Analytics and Visualization services.",
+      link: '/analytics',
     },
   ];
 
