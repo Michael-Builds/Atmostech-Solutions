@@ -74,8 +74,8 @@ const Service = () => {
         <div id='service-cart' className="grid justify-center grid-cols-3 mb-10 service-cards ml-11">
           {services.map((service) => (
             <Card key={service.id} id="service-card" className={`mt-6 w-96 card zoom-in-${service.id}`}>
-              <CardBody>
-                {service.icon}
+              <CardBody >
+              {service.icon}
                 <Typography variant="h5" color="blue-gray" className="mb-2 text-center service-title">
                   {service.title}
                 </Typography>

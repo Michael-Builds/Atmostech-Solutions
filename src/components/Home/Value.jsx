@@ -13,7 +13,7 @@ const ValueProposition = () => {
     return (
         <section className="relative w-full h-full mb-0 value-proposition">
             <div className="mx-auto overflow-hidden">
-                <div className="grid grid-cols-1 gap-8 first-value md:grid-cols-2">
+                <div id='value-main-content' className="grid grid-cols-1 gap-8 first-value md:grid-cols-2">
 
                     <div className="flex flex-col justify-center mb-10 main-content value-main">
                         <h2 id='value' className="mb-4 text-3xl first-headings">
