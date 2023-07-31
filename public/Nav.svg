@@ -7,10 +7,11 @@
 	.st1{display:inline;fill:#070707;}
 	.st2{fill:#45CE20;}
 	.st3{fill:#FFFFFF;}
-	.st4{font-family:'PirulenRg-Regular';}
-	.st5{font-size:38px;}
-	.st6{font-family:'BunkenTechSansSCWideW01-Bd';}
-	.st7{font-size:35px;}
+	.st4{display:inline;fill:#FFFFFF;}
+	.st5{font-family:'PirulenRg-Regular';}
+	.st6{font-size:38px;}
+	.st7{font-family:'BunkenTechSansSCWideW01-Bd';}
+	.st8{font-size:35px;}
 </style>
 <g id="BACKGROUND" class="st0">
 	<rect x="-0.04" class="st1" width="500" height="500"/>
@@ -39,6 +40,6 @@
 				c1.53,2.79,1.58,2.08-2.14,3.89l0,0c-3.83,2.02-2.92,2.12-3.86,0.34L245.3,234.79z"/>
 		</g>
 	</g>
-	<text transform="matrix(0.8128 0 0 1 139.8906 315.873)"><tspan x="0" y="0" class="st3 st4 st5">A</tspan><tspan x="39.14" y="0" class="st3 st6 st7">TMOSTECH</tspan></text>
+	<text transform="matrix(0.8128 0 0 1 139.8906 315.873)" class="st0"><tspan x="0" y="0" class="st4 st5 st6">A</tspan><tspan x="39.14" y="0" class="st4 st7 st8">TMOSTECH</tspan></text>
 </g>
 </svg>
