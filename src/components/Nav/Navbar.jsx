@@ -14,6 +14,9 @@ import {
   MenuList,
   MenuItem,
 } from "@material-tailwind/react";
+import Logo1 from './Nav.png';
+import Logo2 from './Navs.png';
+
 import {
   ChevronDownIcon,
   Bars3Icon,
@@ -242,10 +245,10 @@ export default function Example() {
           className="ml-3 mr-4 cursor-pointer "
         >
           <img
-            src="./logo.png"
+            src={Logo1}
             alt="Material Tailwind Logo"
             className="mr-4 cursor-pointer py-1.5 lg:ml-2 logo-image"
-            style={{ height: '50px', width: '75px' }}
+            style={{ height: '65px', width: '100px' }}
           />
         </Typography>
         <div className="hidden lg:block">

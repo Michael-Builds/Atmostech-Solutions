@@ -8,6 +8,7 @@ const SITEMAP = [
             { title: "Home", path: "/" },
             { title: "Company", path: "/company" },
             { title: "Services", path: "/service" },
+            { title: "Blogs", path: "/blogs" },
             { title: "Contact", path: "/contact" }
         ]
     },
