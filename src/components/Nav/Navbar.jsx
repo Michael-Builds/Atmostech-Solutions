@@ -16,7 +16,6 @@ import {
 } from "@material-tailwind/react";
 import Logo1 from './Nav.png';
 import Logo2 from './Navs.png';
-import Logo3 from './Navs.svg';
 
 import {
   ChevronDownIcon,
@@ -246,7 +245,7 @@ export default function Example() {
           className="ml-3 mr-4 cursor-pointer "
         >
           <img
-            src={Logo1}
+            src={Logo2}
             alt="Material Tailwind Logo"
             className="mr-4 cursor-pointer py-1.5 lg:ml-2 logo-image"
             style={{ height: '65px', width: '100px' }}
