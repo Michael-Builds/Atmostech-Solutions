@@ -14,7 +14,7 @@ import {
   MenuList,
   MenuItem,
 } from "@material-tailwind/react";
-import Logo1 from './Nav.png';
+// import Logo1 from './Nav.png';
 import Logo2 from './Navs.png';
 
 import {
