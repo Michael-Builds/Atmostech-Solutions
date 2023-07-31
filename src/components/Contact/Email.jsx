@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "../../index.css";
 import "../../main.css";
 import {
@@ -12,7 +12,37 @@ import {
 import { Select, Option } from "@material-tailwind/react";
 
 const Email = () => {
+  
+  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
+  const [isFormError, setIsFormError] = useState(false);
 
+  const handleFormSubmit = (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const formData = new FormData(form);
+
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby_b_wAt9Z4IkDjxNoV_G_DV_vM3bQWLEhZQ4k7FI0N/dev';
+
+    fetch(scriptURL, {
+      method: 'POST',
+      body: formData,
+    })
+      .then((response) => {
+        if (response.ok) {
+          setIsFormSubmitted(true);
+          setIsFormError(false);
+          form.reset();
+        } else {
+          setIsFormSubmitted(false);
+          setIsFormError(true);
+        }
+      })
+      .catch((error) => {
+        setIsFormSubmitted(false);
+        setIsFormError(true);
+      });
+  };
+  
   return (
     <section className="mb-0 relative w-full h-full">
       <div className="mx-auto overflow-hidden">
@@ -34,14 +64,26 @@ const Email = () => {
               <Typography variant="h4" color="blueGray" className="text-center mt-8 email-section-head">
                 Email us
               </Typography>
-              <form className="mt-8 mb-1 w-80 max-w-screen-lg email-collect">
+              <form className="mt-8 mb-1 w-80 max-w-screen-lg email-collect"
+                onSubmit={(e) => handleFormSubmit(e)}
+              >
+                {isFormSubmitted && !isFormError && (
+                  <div className="text-green-600 text-center mb-4">
+                    Form submitted successfully!
+                  </div>
+                )}
+                {isFormError && (
+                  <div className="text-red-600 text-center mb-4">
+                    An error occurred. Please try again later.
+                  </div>
+                )}
                 <div className="mb-4 flex flex-col gap-6">
                   <Input
                     label="Email"
                     containerProps={{ className: "min-w-[72px] mail" }}
                     type="email"
                     labelProps={{
-                      htmlFor: "name-input", 
+                      htmlFor: "name-input",
                       style: { fontSize: '15px' },
                     }}
                   />
@@ -49,7 +91,7 @@ const Email = () => {
                   <div className="my-2 flex items-center gap-3">
                     <Input label="Name" containerProps={{ className: "min-w-[72px] mail" }}
                       labelProps={{
-                        htmlFor: "name-input", 
+                        htmlFor: "name-input",
                         style: { fontSize: '15px' },
                       }}
                     />
@@ -58,11 +100,10 @@ const Email = () => {
                       type="tel"
                       containerProps={{ className: "min-w-[72px] mail" }}
                       labelProps={{
-                        htmlFor: "name-input", 
+                        htmlFor: "name-input",
                         style: { fontSize: '15px' },
                       }}
                     />
-
                   </div>
                   <div containerProps={{ className: "min-w-[72px] " }}>
                     <Select label="Service" className='mail selected-service'
