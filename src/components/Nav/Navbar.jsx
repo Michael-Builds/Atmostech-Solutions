@@ -16,6 +16,7 @@ import {
 } from "@material-tailwind/react";
 import Logo1 from './Nav.png';
 import Logo2 from './Navs.png';
+import Logo3 from './Navs.svg';
 
 import {
   ChevronDownIcon,
