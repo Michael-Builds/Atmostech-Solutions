@@ -225,7 +225,6 @@ function NavList() {
     </List>
   );
 }
-
 export default function Example() {
   const [openNav, setOpenNav] = React.useState(false);
 
