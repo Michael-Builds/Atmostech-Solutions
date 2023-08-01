@@ -14,9 +14,11 @@ const Email = () => {
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [isFormError, setIsFormError] = useState(false);
 
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzZuQ1eST7k5CAv07npbExdXDEIpKfnPPgDNDKFTwU/dev';
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-  
+
     try {
       const jsonData = {
         email: e.target.email.value,
@@ -25,18 +27,15 @@ const Email = () => {
         service: e.target.service.value,
         message: e.target.message.value,
       };
-  
-      const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbzZuQ1eST7k5CAv07npbExdXDEIpKfnPPgDNDKFTwU/dev",
-        {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(jsonData),
-        }
-      );
-  
+
+      const response = await fetch(scriptURL, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(jsonData),
+      });
+
       if (response.ok) {
         setIsFormSubmitted(true);
         setIsFormError(false);
