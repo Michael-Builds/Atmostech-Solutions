@@ -11,49 +11,27 @@ import {
 import { Select, Option } from "@material-tailwind/react";
 
 const Email = () => {
-  const [data, setData] = useState({
-    email: '',
-    name: '',
-    phone_number: '',
-    service: '',
-    message: '',
-  });
-
-  const { email, name, phone_number, service, message } = data;
-
-  const handleChange = (name, value) => {
-    setData({ ...data, [name]: value });
-  };
-
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [isFormError, setIsFormError] = useState(false);
 
-  const handleFormSubmit = async (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
+      const form = e.target;
+      const formData = new FormData(form);
       const response = await fetch(
-        "https://v1.nocodeapi.com/kpanti/google_sheets/nLGYwDVsbzlbNbLR?tabId=Atmos-Service",
+        "https://script.google.com/macros/s/AKfycbzZuQ1eST7k5CAv07npbExdXDEIpKfnPPgDNDKFTwU/dev",
         {
           method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify([[email, name, phone_number, service, message]])
+          body: formData,
         }
       );
 
-      // Check if the form submission was successful based on the response status
       if (response.ok) {
         setIsFormSubmitted(true);
         setIsFormError(false);
-        setData({
-          email: '',
-          name: '',
-          phone_number: '',
-          service: '',
-          message: '',
-        }); // Reset the form data after successful submission
+        form.reset(); // Reset the form after successful submission
       } else {
         setIsFormSubmitted(false);
         setIsFormError(true);
@@ -61,7 +39,7 @@ const Email = () => {
     } catch (err) {
       setIsFormSubmitted(false);
       setIsFormError(true);
-      console.log(err);
+      console.log("Error:", err);
     }
   };
 
@@ -86,7 +64,7 @@ const Email = () => {
               <Typography variant="h4" color="blueGray" className="text-center mt-8 email-section-head">
                 Email us
               </Typography>
-              <form className="mt-8 mb-1 w-80 max-w-screen-lg email-collect" onSubmit={handleFormSubmit}>
+              <form onSubmit={handleSubmit} className="mt-8 mb-1 w-80 max-w-screen-lg email-collect" >
                 {isFormSubmitted && !isFormError && (
                   <div className="text-green-600 text-center mb-4">
                     Form submitted successfully!
@@ -105,8 +83,6 @@ const Email = () => {
                     name="email"
                     autoComplete="email"
                     required
-                    value={email}
-                    onChange={(e) => handleChange(e.target.name, e.target.value)}
                     labelProps={{
                       htmlFor: "name-input",
                       style: { fontSize: '15px' },
@@ -119,8 +95,7 @@ const Email = () => {
                       containerProps={{ className: "min-w-[72px] mail" }}
                       name="name"
                       required
-                      value={name}
-                      onChange={(e) => handleChange(e.target.name, e.target.value)}
+
                       labelProps={{
                         htmlFor: "name-input",
                         style: { fontSize: '15px' },
@@ -130,8 +105,7 @@ const Email = () => {
                       required
                       name="phone_number"
                       label="Phone Number"
-                      value={phone_number}
-                      onChange={(e) => handleChange(e.target.name, e.target.value)}
+
                       type="tel"
                       containerProps={{ className: "min-w-[72px] mail" }}
                       labelProps={{
@@ -146,8 +120,7 @@ const Email = () => {
                       className="mail selected-service"
                       name="service"
                       required
-                      value={service}
-                      onChange={(value) => handleChange("service", value)}
+
                       labelProps={{ className: "label-large" }}
                     >
                       <Option className="select-items">Web Development</Option>
@@ -161,14 +134,13 @@ const Email = () => {
                     name="message"
                     label="Message"
                     required
-                    value={data.message}
-                    onChange={(e) => handleChange(e.target.name, e.target.value)}
+
                     labelProps={{ className: "custom-label" }}
                     containerProps={{ className: "min-w-[72px] mail-content" }}
                   />
                 </div >
                 <div className="">
-                  <Button className="mt-6 email-btn" fullWidth>
+                  <Button type='submit' className="mt-6 email-btn" fullWidth>
                     Submit
                   </Button>
                 </div>
