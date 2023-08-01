@@ -161,7 +161,7 @@ const Email = () => {
                     name="message"
                     label="Message"
                     required
-                    value={message}
+                    value={data.message}
                     onChange={(e) => handleChange(e.target.name, e.target.value)}
                     labelProps={{ className: "custom-label" }}
                     containerProps={{ className: "min-w-[72px] mail-content" }}
