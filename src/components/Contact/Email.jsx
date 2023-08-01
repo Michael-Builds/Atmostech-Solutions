@@ -14,43 +14,32 @@ const Email = () => {
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [isFormError, setIsFormError] = useState(false);
 
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbzZuQ1eST7k5CAv07npbExdXDEIpKfnPPgDNDKFTwU/dev';
-
-  const handleSubmit = async (e) => {
+  async function handleSubmit(e) {
     e.preventDefault();
-
+    const form = e.currentTarget;
+    console.log('Submitted Successfully');
+    const formData = new FormData(form);
     try {
-      const jsonData = {
-        email: e.target.email.value,
-        name: e.target.name.value,
-        phone_number: e.target.phone_number.value,
-        service: e.target.service.value,
-        message: e.target.message.value,
-      };
-
-      const response = await fetch(scriptURL, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(jsonData),
+      const response = await fetch("https://script.google.com/macros/s/AKfycbxf7oGJk6PeTfU3RXZHYM68at3ImMdm-fIampaznCj8MwGoTSOPXVX1Mw_NRb8ePIhSgg/exec", {
+        method: "POST",
+        body: formData,
       });
 
       if (response.ok) {
         setIsFormSubmitted(true);
         setIsFormError(false);
-        e.target.reset(); // Reset the form after successful submission
+        form.reset();
       } else {
         setIsFormSubmitted(false);
         setIsFormError(true);
       }
-    } catch (err) {
+    } catch (error) {
       setIsFormSubmitted(false);
       setIsFormError(true);
-      console.log(err);
+      console.log('An error occurred. Please try again later.', error);
     }
-  };
-  
+  }
+
   return (
     <section className="mb-0 relative w-full h-full">
       <div className="mx-auto overflow-hidden">
@@ -72,7 +61,7 @@ const Email = () => {
               <Typography variant="h4" color="blueGray" className="text-center mt-8 email-section-head">
                 Email us
               </Typography>
-              <form onSubmit={handleSubmit} className="mt-8 mb-1 w-80 max-w-screen-lg email-collect" >
+              <form className="mt-8 mb-1 w-80 max-w-screen-lg email-collect" onSubmit={handleSubmit}>
                 {isFormSubmitted && !isFormError && (
                   <div className="text-green-600 text-center mb-4">
                     Form submitted successfully!
@@ -88,11 +77,11 @@ const Email = () => {
                     label="Email"
                     containerProps={{ className: "min-w-[72px] mail" }}
                     type="email"
-                    name="email"
+                    name="Email"
                     autoComplete="email"
                     required
                     labelProps={{
-                      htmlFor: "name-input",
+                      htmlFor: "email-input",
                       style: { fontSize: '15px' },
                     }}
                   />
@@ -101,9 +90,9 @@ const Email = () => {
                     <Input
                       label="Name"
                       containerProps={{ className: "min-w-[72px] mail" }}
-                      name="name"
+                      name="Name"
+                      type='text'
                       required
-
                       labelProps={{
                         htmlFor: "name-input",
                         style: { fontSize: '15px' },
@@ -111,42 +100,44 @@ const Email = () => {
                     />
                     <Input
                       required
-                      name="phone_number"
+                      name="Phone_Number"
                       label="Phone Number"
-
                       type="tel"
                       containerProps={{ className: "min-w-[72px] mail" }}
                       labelProps={{
-                        htmlFor: "name-input",
+                        htmlFor: "phone-number-input",
                         style: { fontSize: '15px' },
                       }}
                     />
+
                   </div>
                   <div containerProps={{ className: "min-w-[72px] " }}>
                     <Select
                       label="Service"
                       className="mail selected-service"
-                      name="service"
+                      name="Service"
                       required
-
+                      value=""
                       labelProps={{ className: "label-large" }}
                     >
-                      <Option className="select-items">Web Development</Option>
-                      <Option className="select-items">Mobile App Development</Option>
-                      <Option className="select-items">API Integration</Option>
-                      <Option className="select-items">Electronic Data Exchange</Option>
-                      <Option className="select-items">Software Development</Option>
+                      <Option value="" disabled>
+                        Select a service
+                      </Option>
+                      <Option value="Web Development">Web Development</Option>
+                      <Option value="Mobile App Development">Mobile App Development</Option>
+                      <Option value="API Integration">API Integration</Option>
+                      <Option value="Electronic Data Exchange">Electronic Data Exchange</Option>
+                      <Option value="Software Development">Software Development</Option>
                     </Select>
                   </div>
                   <Textarea
-                    name="message"
+                    name="Message"
                     label="Message"
                     required
-
                     labelProps={{ className: "custom-label" }}
                     containerProps={{ className: "min-w-[72px] mail-content" }}
                   />
-                </div >
+                </div>
                 <div className="">
                   <Button type='submit' className="mt-6 email-btn" fullWidth>
                     Submit
