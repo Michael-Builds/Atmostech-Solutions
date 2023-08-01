@@ -706,6 +706,10 @@
   background-color: #666;
 }
 
+.logo-image{
+  margin-left: 70px;
+}
+
 .team-carousel {
   display: flex;
   justify-content: center;
