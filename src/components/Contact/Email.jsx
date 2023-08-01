@@ -103,6 +103,8 @@ const Email = () => {
                     containerProps={{ className: "min-w-[72px] mail" }}
                     type="email"
                     name="email"
+                    autoComplete="email"
+                    required
                     value={email}
                     onChange={(e) => handleChange(e.target.name, e.target.value)}
                     labelProps={{
@@ -116,6 +118,7 @@ const Email = () => {
                       label="Name"
                       containerProps={{ className: "min-w-[72px] mail" }}
                       name="name"
+                      required
                       value={name}
                       onChange={(e) => handleChange(e.target.name, e.target.value)}
                       labelProps={{
@@ -124,6 +127,7 @@ const Email = () => {
                       }}
                     />
                     <Input
+                      required
                       name="phone_number"
                       label="Phone Number"
                       value={phone_number}
@@ -141,6 +145,7 @@ const Email = () => {
                       label="Service"
                       className="mail selected-service"
                       name="service"
+                      required
                       value={service}
                       onChange={(value) => handleChange("service", value)}
                       labelProps={{ className: "label-large" }}
@@ -155,6 +160,7 @@ const Email = () => {
                   <Textarea
                     name="message"
                     label="Message"
+                    required
                     value={message}
                     onChange={(e) => handleChange(e.target.name, e.target.value)}
                     labelProps={{ className: "custom-label" }}
