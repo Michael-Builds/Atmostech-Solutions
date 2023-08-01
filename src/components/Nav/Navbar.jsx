@@ -248,7 +248,7 @@ export default function Example() {
             src={Logo2}
             alt="Material Tailwind Logo"
             className="mr-4 cursor-pointer py-1.5 lg:ml-2 logo-image"
-            style={{ height: '65px', width: '100px' }}
+            style={{ height: '90px', width: '150px' }}
           />
         </Typography>
         <div className="hidden lg:block">
