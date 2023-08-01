@@ -40,6 +40,17 @@ const Email = () => {
     }
   }
 
+  // Modal component
+  const SuccessModal = () => (
+    <div className="modal">
+      <div className="modal-content">
+        <h2>Request sent successfully!</h2>
+        <p>Your form submission was successful.</p>
+        <button onClick={() => setIsFormSubmitted(false)}>Close</button>
+      </div>
+    </div>
+  );
+
   return (
     <section className="mb-0 relative w-full h-full">
       <div className="mx-auto overflow-hidden">
@@ -148,6 +159,9 @@ const Email = () => {
           </div>
         </div>
       </div>
+
+      {/* Conditionally render the SuccessModal when isFormSubmitted is true */}
+      {isFormSubmitted && <SuccessModal />}
     </section>
   );
 };
