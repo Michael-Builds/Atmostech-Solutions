@@ -16,22 +16,31 @@ const Email = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+  
     try {
-      const form = e.target;
-      const formData = new FormData(form);
+      const jsonData = {
+        email: e.target.email.value,
+        name: e.target.name.value,
+        phone_number: e.target.phone_number.value,
+        service: e.target.service.value,
+        message: e.target.message.value,
+      };
+  
       const response = await fetch(
         "https://script.google.com/macros/s/AKfycbzZuQ1eST7k5CAv07npbExdXDEIpKfnPPgDNDKFTwU/dev",
         {
           method: 'POST',
-          body: formData,
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(jsonData),
         }
       );
-
+  
       if (response.ok) {
         setIsFormSubmitted(true);
         setIsFormError(false);
-        form.reset(); // Reset the form after successful submission
+        e.target.reset(); // Reset the form after successful submission
       } else {
         setIsFormSubmitted(false);
         setIsFormError(true);
@@ -39,10 +48,10 @@ const Email = () => {
     } catch (err) {
       setIsFormSubmitted(false);
       setIsFormError(true);
-      console.log("Error:", err);
+      console.log(err);
     }
   };
-
+  
   return (
     <section className="mb-0 relative w-full h-full">
       <div className="mx-auto overflow-hidden">
