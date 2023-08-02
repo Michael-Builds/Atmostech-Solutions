@@ -1,33 +1,50 @@
 import React from "react";
-import background from "./background.png";
+import background from "./background1.png";
 import "../../index.css";
 import "../../main.css";
-import {
-    Timeline,
-    TimelineItem,
-    TimelineConnector,
-    TimelineHeader,
-    TimelineIcon,
-    Typography,
-    TimelineBody,
-} from "@material-tailwind/react";
-import {
-    HomeIcon,
-    BellIcon,
-    CurrencyDollarIcon,
-} from "@heroicons/react/24/solid";
+import { BiLinkAlt } from 'react-icons/bi';
+import { MdSwapHorizontalCircle } from 'react-icons/md';
+import { FaCloudDownloadAlt } from 'react-icons/fa';
+import { BiAperture } from 'react-icons/bi';
+
+const features = [
+    {
+        name: 'Point-to-Point Integration',
+        description:
+            'We enable seamless communication between two specific applications, allowing data to flow directly between them without any intermediaries.',
+        icon: BiLinkAlt,
+    },
+    {
+        name: 'Middleware Integration',
+        description:
+            'Our middleware solutions act as a bridge between multiple applications, facilitating data exchange and communication among them.',
+        icon: MdSwapHorizontalCircle,
+    },
+    {
+        name: 'Cloud-based Integration',
+        description:
+            'Description: We leverage cloud platforms to connect and integrate various applications and services, ensuring scalability and flexibility.',
+        icon: FaCloudDownloadAlt,
+    },
+    {
+        name: 'Hub Integration (API Hub)',
+        description:
+            'Our API hub serves as a centralized platform that connects multiple applications, enabling efficient data sharing and management.',
+        icon: BiAperture,
+    },
+]
+
 
 const Main = () => {
     return (
         <section className="value-proposition mb-0 relative w-full h-full">
             <div className="mx-auto overflow-hidden">
-
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-2 api-content">
                     <div className="flex justify-center">
                         <img
+                            id='API-image'
                             src={background}
                             alt="ATMOS-PIC"
-                            className="main-image "
                         />
                     </div>
                     <div className="flex flex-col justify-center mb-10 main-content ">
@@ -44,75 +61,36 @@ const Main = () => {
 
                 </div>
 
-                <div className="grid grid-cols-1 gap-8 md:grid-cols-2 mb-10 api-options">
-
-                    <div id='api-options' className="flex flex-col justify-center mb-10 our-options">
-                        <div className="row">
-                            <div id='api-options' className="option-title fade-in-left">
-                                <h2 className="option-head text-left ml-10">Your Options</h2>
-                            </div>
+                {/* Options */}
+                <div className="py-24 bg-white sm:py-32">
+                    <div className="px-6 mx-auto max-w-7xl lg:px-8">
+                        <div className="max-w-2xl mx-auto lg:text-center">
+                            <p id='mob-option-head' className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                            Seamless API Integration Solutions: Empowering Your Digital Ecosystem
+                            </p>
+                            <p id='mob-option-sent' className="mt-6 text-lg leading-8 text-gray-600">
+                            Our API integration services facilitate smooth and efficient connections between various applications and systems, enabling seamless data exchange and enhancing the functionality of your digital ecosystem. Harness the power of automation and streamline processes with our expert API integration solutions.
+                            </p>
                         </div>
-                        <p className="mb-4 mr-5">
-                            Through our innovative approach and unwavering commitment to quality, we deliver cutting-edge mobile app solutions that are tailored to your unique needs, helping you unlock new opportunities for growth and success. Whether you need a native iOS or Android app, a hybrid app, or a mobile web app, our team of skilled developers has the expertise to deliver exceptional results that exceed your expectations
-                        </p>
-                        <p className="mb-4 mr-5">
-                            Our mobile app development company specializes in crafting customized, state-of-the-art mobile solutions that enable businesses and individuals to thrive in the rapidly-evolving digital landscape.
-                            With our mobile app development solutions, you can stay connected with your customers and drive engagement on the go.
-                        </p>
-                    </div>
-
-                    <div id ='timeline 'className="flex justify-center mt-12 time-lines">
-                        <div is='api-timeline-cont' className="w-[32rem]">
-                            <Timeline>
-                                <TimelineItem>
-                                    <TimelineConnector />
-                                    <TimelineHeader>
-                                        <TimelineIcon className="p-2">
-                                            <HomeIcon className="h-4 w-4" />
-                                        </TimelineIcon>
-                                        <Typography variant="h5" color="blue-gray" className='time-head'>
-                                            Timeline Title Here.
-                                        </Typography>
-                                    </TimelineHeader>
-                                    <TimelineBody>
-                                      
-                                    </TimelineBody>
-
-                                </TimelineItem>
-                                <TimelineItem>
-                                    <TimelineConnector />
-                                    <TimelineHeader>
-                                        <TimelineIcon className="p-2">
-                                            <BellIcon className="h-4 w-4" />
-                                        </TimelineIcon>
-                                        <Typography variant="h5" color="blue-gray" className='time-head'>
-                                            Timeline Title Here.
-                                        </Typography>
-                                    </TimelineHeader>
-                                    <TimelineBody>
-                                       
-                                    </TimelineBody>
-
-                                </TimelineItem>
-                                <TimelineItem>
-                                    <TimelineHeader>
-                                        <TimelineIcon className="p-2">
-                                            <CurrencyDollarIcon className="h-4 w-4" />
-                                        </TimelineIcon>
-                                        <Typography variant="h5" color="blue-gray" className='time-head'>
-                                            Timeline Title Here.
-                                        </Typography>
-                                    </TimelineHeader>
-                                    <TimelineBody>
-
-                                    </TimelineBody>
-
-                                </TimelineItem>
-                            </Timeline>
+                        <div className="max-w-2xl mx-auto mt-16 sm:mt-20 lg:mt-24 lg:max-w-4xl">
+                            <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+                                {features.map((feature) => (
+                                    <div key={feature.name} className="relative pl-16">
+                                        <dt id='feature-head' className="text-base font-semibold leading-7 text-gray-900">
+                                            <div className="absolute top-0 left-0 flex items-center justify-center w-10 h-10 bg-indigo-600 rounded-lg">
+                                                <feature.icon className="w-6 h-6 text-white" aria-hidden="true" />
+                                            </div>
+                                            {feature.name}
+                                        </dt>
+                                        <dd id='feature-desc' className="mt-2 text-base leading-7 text-gray-600">{feature.description}</dd>
+                                    </div>
+                                ))}
+                            </dl>
                         </div>
                     </div>
-
                 </div>
+
+
             </div>
 
         </section>

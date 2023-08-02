@@ -1,34 +1,35 @@
 import React from "react";
-import Image from './Website.png';
+import Image from './Main.png';
 import "../../index.css";
 import "../../main.css";
-
-import { FaShoppingCart, FaGraduationCap, FaUser, FaGamepad } from 'react-icons/fa';
+import { BsFillBarChartFill } from 'react-icons/bs';
+import { FaFlask, FaMedal } from 'react-icons/fa';
+import { RiLineChartFill } from 'react-icons/ri';
 
 const features = [
     {
-        name: 'E-commerce Websites',
+        name: 'Descriptive Analytics',
         description:
-            'Our services cover the entire development process of educational websites, starting from the initial concept and design to coding, testing, and deployment for seamless user access and engagement.',
-        icon: FaShoppingCart,
+            'Our software company offers descriptive analytics to provide clients with clear and visually engaging data summaries, enabling them to understand historical trends and make data-driven decisions.',
+        icon: BsFillBarChartFill,
     },
     {
-        name: 'Educational Websites',
+        name: 'Diagnostic Analytics',
         description:
-            'Our approach to educational website development encompasses the entire process, beginning with ideation and concept design, and continuing through coding, testing, and deployment for a successful launch.',
-        icon: FaGraduationCap,
+            'Through diagnostic analytics, we help clients identify the root causes and factors behind past events, offering deeper insights into their data and supporting problem-solving efforts.',
+        icon: FaFlask,
     },
     {
-        name: 'Entertainment Websites',
+        name: 'Predictive Analytics',
         description:
-            'Our teams expertise in developing entertainment websites spans the entire process, starting from conceptualization and design, followed by coding, testing, and deployment, ensuring an engaging and captivating user experience',
-        icon: FaGamepad,
+            'Using predictive analytics, we empower clients to forecast future outcomes, enabling them to anticipate trends, make proactive decisions, and gain a competitive edge in their industry.',
+        icon: RiLineChartFill,
     },
     {
-        name: 'Personal Websites',
+        name: 'Prescriptive Analytics',
         description:
-            'Our team specializes in crafting personal websites, guiding you through the entire process, from concept and design to coding, testing, and deployment, ensuring an impactful and personalized user experience.',
-        icon: FaUser,
+            'Our prescriptive analytics service recommends optimal actions based on data analysis, guiding clients in making informed choices to achieve specific goals and maximize desired results.',
+        icon: FaMedal,
     },
 ]
 
@@ -40,37 +41,36 @@ const Main = () => {
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-2 web-page">
                     <div className="flex justify-center">
                         <img
-                            id='Website-image'
+                            id='Analytics-image'
                             src={Image}
                             alt="ATMOS-PIC"
                         />
                     </div>
                     <div className="flex flex-col justify-center mb-10 main-content">
                         <h2 id='website-header' className="mb-4 text-3xl first-headings">
-                            Web Development Wizardry: Unleashing the Magic of the Digital Realm
+                            Unleashing the Magic of Data Analytics and Visualization
                         </h2>
                         <p className="mb-4 mr-5" id='web'>
-                            Our expertise in web development allows us to craft customized websites, web applications, and e-commerce platforms that are tailored to your specific needs. With our innovative approach and commitment to quality, we deliver cutting-edge web development solutions that enable you to unlock new opportunities for growth and success online. Whether you need a simple website or a complex web application, we have the skills and knowledge to bring your digital vision to life.
+                            At Atmos Technology, we are masters of Data Analytics Wizardry, harnessing the magic of the digital realm. With expertise in four fundamental types of data analytics – Descriptive, Diagnostic, Predictive, and Prescriptive – we conjure actionable insights from raw data. Our seasoned experts illuminate your data landscape, providing detailed Descriptive analytics to visualize and summarize historical information.
                         </p>
                         <p className="mb-4 mr-5" id='web'>
-                            We leverage the latest advancements in web development technology to deliver bespoke, state-of-the-art websites, web applications, and e-commerce platforms that are tailored to your specific needs.
+                            Through Diagnostic analytics, we dive deep into data patterns and correlations, uncovering hidden secrets and root causes behind trends and events. Our Predictive analytics unveils the future as we forecast outcomes based on meticulous historical data analysis. Taking it a step further, our Prescriptive analytics offers enchanted recommendations, optimizing processes and guiding you towards your desired outcomes.
                         </p >
                         <p className="mb-4 mr-5" id='web'>
-                            Our team of skilled developers are dedicated to crafting cutting-edge solutions that empower you to stay ahead of the curve in the fast-paced digital landscape. With our unwavering commitment to quality, we ensure that every web development project we undertake is of the highest standard, delivering exceptional results that exceed your expectations
+                            With our unrivaled skills and a touch of magic, we weave together bespoke solutions and versatile approaches that elevate your online presence and empower you in today's data-driven world.
                         </p>
-
                     </div>
-
                 </div>
+                
                 {/* Options */}
                 <div className="py-24 bg-white sm:py-32">
                     <div className="px-6 mx-auto max-w-7xl lg:px-8">
                         <div className="max-w-2xl mx-auto lg:text-center">
                             <p id='mob-option-head' className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                                Discover Your Web Development Possibilities: Custom Solutions to Suit Every Requirement
+                                Data Analytics & Visualization: Unleashing Insights - Tailored Solutions for You.
                             </p>
                             <p id='mob-option-sent' className="mt-6 text-lg leading-8 text-gray-600">
-                                Explore Web Development Choices: Responsive custom web apps, versatile hybrid solutions. At Atmos Technology, we enhance your online presence with personalized services.
+                                Unleash Data Insights with Analytics & Visualization: Descriptive, Diagnostic, Predictive, and Prescriptive Services for an Enhanced Online Presence.
                             </p>
                         </div>
                         <div className="max-w-2xl mx-auto mt-16 sm:mt-20 lg:mt-24 lg:max-w-4xl">

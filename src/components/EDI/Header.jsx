@@ -1,6 +1,6 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
-import details from '../../assets/details.jpg';
+import background from './background.jpg';
 
 const Header = () => {
 
@@ -10,7 +10,7 @@ const Header = () => {
     return (
         <section id="contact-section" className="relative justify-center py-8 text-center edi-section-contact wrapper contact-section"
             style={{
-                backgroundImage: `url(${details})`,
+                backgroundImage: `url(${background})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',
@@ -22,7 +22,7 @@ const Header = () => {
             }}
         >
             <div
-                className="absolute inset-0 z-10 bg-black opacity-70"
+                className="absolute inset-0 z-10 bg-black opacity-90"
             ></div>
             <h1 id='edi-heading-top' className={`mb-5 contact-header edi z-10 ${inView1 ? 'fade-in-bottom fade-in-bottom-active' : ''
                 }`}
