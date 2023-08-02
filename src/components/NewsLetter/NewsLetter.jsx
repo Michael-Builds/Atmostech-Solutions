@@ -4,67 +4,8 @@ import {
     Alert,
 } from "@material-tailwind/react";
 
-function Icon() {
-    return (
-        <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            className="h-6 w-6"
-        >
-            <path
-                fillRule="evenodd"
-                d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
-                clipRule="evenodd"
-            />
-        </svg>
-    );
-}
-
 export default function NewsLetter() {
-    const [isFormSubmitted, setIsFormSubmitted] = useState(false);
-    const [isFormError, setIsFormError] = useState(false);
 
-    async function handleNewsSubmite(e) {
-        e.preventDefault();
-        const form = e.currentTarget;
-        console.log('Submitted Successfully');
-        const formData = new FormData(form);
-        try {
-            const response = await fetch("https://script.google.com/macros/s/AKfycbxf7oGJk6PeTfU3RXZHYM68at3ImMdm-fIampaznCj8MwGoTSOPXVX1Mw_NRb8ePIhSgg/exec", {
-                method: "POST",
-                body: formData,
-            });
-
-            if (response.ok) {
-                setIsFormSubmitted(true);
-                setIsFormError(false);
-                form.reset();
-            } else {
-                setIsFormSubmitted(false);
-                setIsFormError(true);
-            }
-        } catch (error) {
-            setIsFormSubmitted(false);
-            setIsFormError(true);
-            console.log('An error occurred. Please try again later.', error);
-        }
-    }
-
-    // Modal component
-    const SuccessModal = () => (
-        <div className="modal">
-            <div className="modal-content">
-                <Alert
-                    icon={<Icon />}
-                    className="rounded-none mb-8 border-l-4 border-[#2ec946] bg-[#2ec946]/10 font-medium text-[#2ec946]"
-                >
-                    Request Sent Successfully!
-                </Alert>
-                <button onClick={() => setIsFormSubmitted(false)}>Close</button>
-            </div>
-        </div>
-    );
 
     return (
         <div className="relative py-16 overflow-hidden bg-gray-900 isolate sm:py-24 lg:py-32">
@@ -80,7 +21,7 @@ export default function NewsLetter() {
                         <p className="mt-4 text-lg leading-8 text-gray-300">
                             Stay updated with our latest news and exclusive offers by subscribing to our newsletter. Join our community today and never miss out on exciting updates!
                         </p>
-                        <form className="flex max-w-md mt-6 gap-x-4" onSubmit={handleNewsSubmite}>
+                        <div className="flex max-w-md mt-6 gap-x-4" >
                             <label htmlFor="email-address" className="sr-only">
                                 Email address
                             </label>
@@ -101,7 +42,7 @@ export default function NewsLetter() {
                             >
                                 Subscribe
                             </button>
-                        </form>
+                        </div>
                     </div>
                     <dl id='news-main' className="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2">
                         <div className="flex flex-col items-start">
@@ -134,9 +75,7 @@ export default function NewsLetter() {
                             'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
                     }}
                 />
-            </div>
-            {/* Conditionally render the SuccessModal when isFormSubmitted is true */}
-            {isFormSubmitted && <SuccessModal />}
+            </div>          
         </div>
     );
 };

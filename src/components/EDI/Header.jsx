@@ -8,7 +8,7 @@ const Header = () => {
         triggerOnce: true,
     });
     return (
-        <section id="contact-section" className="relative justify-center py-8 text-center wrapper contact-section"
+        <section id="contact-section" className="relative justify-center py-8 text-center edi-section-contact wrapper contact-section"
             style={{
                 backgroundImage: `url(${details})`,
                 backgroundSize: 'cover',
@@ -27,9 +27,9 @@ const Header = () => {
             <h1 id='edi-heading-top' className={`mb-5 contact-header edi z-10 ${inView1 ? 'fade-in-bottom fade-in-bottom-active' : ''
                 }`}
                 ref={ref1}>ELectronic Data Interchange</h1>
-             <h1 id='edi-heading-top' className={`mb-5 contact-header edi z-10 ${inView1 ? 'fade-in-bottom fade-in-bottom-active' : ''
+             <h2 id='edi-heading-top' className={`mb-5 contact-header edi z-10 ${inView1 ? 'fade-in-bottom fade-in-bottom-active' : ''
                 }`}
-                ref={ref1}>(EDI)</h1>
+                ref={ref1}>(EDI)</h2>
           
             <h3 id='edi-sub-top' className={`mb-4  contact-sub z-10 ${inView1 ? 'fade-in-bottom fade-in-bottom-active' : ''
                 }`}>

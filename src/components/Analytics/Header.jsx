@@ -1,9 +1,8 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
-import Mobile from './Mobile.png';
+import Data from './Data.jpeg';
 
 const Header = () => {
-
 
     const [ref1, inView1] = useInView({
         triggerOnce: true,
@@ -11,7 +10,7 @@ const Header = () => {
     return (
         <section id="contact-section" className="relative justify-center py-8 text-center wrapper contact-section"
             style={{
-                backgroundImage: `url(${Mobile})`,
+                backgroundImage: `url(${Data})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',
