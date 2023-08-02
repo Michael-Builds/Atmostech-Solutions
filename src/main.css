@@ -1326,26 +1326,19 @@
   max-width: 400px;
   text-align: center;
 }
-.modal-content h2 {
-  margin-bottom: 10px;
-}
-
-.modal-content p {
-  margin-bottom: 20px;
-}
 
 .modal-content button {
   padding: 8px 20px;
-  background-color: #333;
+  background-color: #2ec946;
   color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
 }
 
 /* Close button on hover */
 .modal-content button:hover {
-  background-color: #555;
+  background-color: #03a30b;
 }
 
 

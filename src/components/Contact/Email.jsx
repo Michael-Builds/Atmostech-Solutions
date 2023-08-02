@@ -7,8 +7,46 @@ import {
   Button,
   Typography,
   Textarea,
+  Select,
+  Option,
+  Alert,
 } from "@material-tailwind/react";
-import { Select, Option } from "@material-tailwind/react";
+
+
+function Icon() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      className="h-6 w-6"
+    >
+      <path
+        fillRule="evenodd"
+        d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+        clipRule="evenodd"
+      />
+    </svg>
+  );
+}
+
+function ErrorIcon() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      className="h-6 w-6 text-red-500"
+    >
+      <path
+        fillRule="evenodd"
+        d="M12 2c6.627 0 12 5.373 12 12s-5.373 12-12 12S0 20.627 0 14 5.373 2 12 2zm0 1c-5.523 0-10 4.477-10 10s4.477 10 10 10 10-4.477 10-10S17.523 3 12 3zm1 13h-2v-2h2v2zm0-4h-2V7h2v5z"
+        clipRule="evenodd"
+      />
+    </svg>
+  );
+}
+
 
 const Email = () => {
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
@@ -44,8 +82,12 @@ const Email = () => {
   const SuccessModal = () => (
     <div className="modal">
       <div className="modal-content">
-        <h2>Request sent successfully!</h2>
-        <p>Your form submission was successful.</p>
+        <Alert
+          icon={<Icon />}
+          className="rounded-none mb-8 border-l-4 border-[#2ec946] bg-[#2ec946]/10 font-medium text-[#2ec946]"
+        >
+          Request Sent Successfully!
+        </Alert>
         <button onClick={() => setIsFormSubmitted(false)}>Close</button>
       </div>
     </div>
@@ -74,14 +116,21 @@ const Email = () => {
               </Typography>
               <form className="mt-8 mb-1 w-80 max-w-screen-lg email-collect" onSubmit={handleSubmit}>
                 {isFormSubmitted && !isFormError && (
-                  <div className="text-green-600 text-center mb-4">
-                    Form submitted successfully!
-                  </div>
+                  <Alert
+                    icon={<Icon />}
+                    className="rounded-none mb-4 border-l-4 border-[#2ec946] bg-[#2ec946]/10 font-medium text-[#2ec946]"
+                  >
+                    Request Sent Successfully!
+                  </Alert>
                 )}
                 {isFormError && (
-                  <div className="text-red-600 text-center mb-4">
+                  <Alert
+                    icon={<ErrorIcon />}
+                    className="rounded-none mb-4 border-l-4 border-red-500 bg-red-50 font-medium text-red-500"
+                  >
                     An error occurred. Please try again later.
-                  </div>
+                  </Alert>
+
                 )}
                 <div className="mb-4 flex flex-col gap-6">
                   <Input
