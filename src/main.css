@@ -3,7 +3,17 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@100;200;300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
 .logo-image {
-  margin-left: 70px;
+  margin-left: 50px;
+}
+
+.main-menu {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+#navbar-image {
+  height: 80px;
+  width: 150px;
 }
 
 .link {
@@ -52,6 +62,7 @@
 .slider-head {
   font-size: 48px;
   margin-bottom: 5px;
+  margin-top: 80px;
 }
 
 .slider-sentence {
@@ -188,12 +199,6 @@
   line-height: 1.5;
   color: #333;
   font-size: 15px;
-}
-
-.main-menu {
-  background-color: #2d2d2d;
-  color: #fff;
-  /* box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.4); */
 }
 
 .sub-vision {
@@ -333,13 +338,22 @@
   margin-bottom: 50px;
 }
 
+/* Contact Section */
+#contact-head {
+  margin-top: 80px;
+}
+
+#contact-sub {
+  margin-bottom: 70px;
+}
+
 /* API Section */
 #api-head-top {
-  margin-top: 100px;
+  margin-top: 90px;
 }
 
 #api-sub-top {
-  margin-bottom: 90px;
+  margin-bottom: 80px;
 }
 
 /* EDI section */
@@ -359,7 +373,7 @@
 }
 
 /* Analytics Section */
-#Analytics-image{
+#Analytics-image {
   height: 410px;
   width: 670px;
   margin-top: 70px;
@@ -369,6 +383,7 @@
 #value {
   margin-top: 70px;
 }
+
 #mob-option-head {
   font-size: 28px;
   font-family: "Exo", sans-serif;
@@ -404,7 +419,7 @@
 }
 
 #web-sub {
-  margin-bottom: 90px;
+  margin-bottom: 80px;
 }
 
 #Website-image {
@@ -430,11 +445,11 @@
 
 /* Mobile Section */
 #mobile-header {
-  margin-top: 100px;
+  margin-top: 90px;
 }
 
 #mobile-sub {
-  margin-bottom: 90px;
+  margin-bottom: 80px;
 }
 
 #mobile-image {
@@ -494,6 +509,14 @@
 }
 
 /* About Sections */
+#about-header-main {
+  margin-top: 80px;
+}
+
+#about-header {
+  margin-bottom: 70px;
+}
+
 #about-image {
   height: 580px;
   width: 2000px;
@@ -550,11 +573,11 @@
 
 /* Software Section */
 #software-head {
-  margin-top: 100px;
+  margin-top: 90px;
 }
 
 #software-sub {
-  margin-bottom: 90px;
+  margin-bottom: 70px;
 }
 
 #software-image {
@@ -798,7 +821,9 @@
   font-weight: 600;
   color: #fff;
   font-size: 28px;
+  margin-bottom: 70px;
 }
+
 .underline-green {
   position: relative;
   display: inline-block;
@@ -806,7 +831,7 @@
   font-family: "Exo", sans-serif;
   font-weight: 600;
   color: #fff;
-  margin-top: 60px;
+  margin-top: 100px;
 }
 
 .underline-green::before {
@@ -1044,6 +1069,7 @@
 .contact-me {
   margin-top: -90px;
 }
+
 .email-btn {
   font-family: "Exo", sans-serif;
   background-color: #0ced17;
@@ -1254,6 +1280,10 @@
   box-shadow: 0px 6px 8px rgba(7, 124, 7, 0.2);
 }
 
+.team-section {
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
 .team-header {
   font-family: "Exo", sans-serif;
   font-size: 36px;
@@ -1349,17 +1379,17 @@
 }
 
 #details-head {
-  font-size: 32px;
+  font-size: 34px;
   font-family: "Exo", sans-serif;
   font-weight: 700;
   color: #666;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 #details-sub {
   font-size: 16px;
   font-family: "Open sans", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
 }
 /* Modal for Request Sending */
 .modal {
@@ -1399,12 +1429,14 @@
 }
 
 @media only screen and (min-width: 320px) and (max-width: 479px) {
-  /* .logo-image{
-    margin-left: -10px;
-    width: 90px;
-    height: 70px;
-  } */
+  #main-navbar img {
+    margin-left: -20px;
+  }
 
+  #navbar-image {
+    width: 95px;
+    height: 60px;
+  }
   .slider-head {
     font-size: 30px;
     line-height: 1.2;
@@ -1797,6 +1829,15 @@
     width: 200px;
     margin-top: -20px;
   }
+
+  #about-header-main {
+    margin-top: 10px;
+  }
+
+  #about-header{
+    margin-bottom: 10px;
+  }
+
   #about-header {
     max-width: 80%;
     font-size: 16px;

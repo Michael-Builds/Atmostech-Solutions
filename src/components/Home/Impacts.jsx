@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer';
-import impact from '../../assets/Impact.mp4';
 
 const Counter = () => {
   const [projectsCompleted, setProjectsCompleted] = useState(0);
@@ -46,7 +45,14 @@ const Counter = () => {
   return (
     <section className="counter relative">
       <div className="mx-auto overflow-hidden">
-        <video className="absolute inset-0 w-full h-full object-cover z-0" src={impact} autoPlay loop muted />
+        <div
+          className="absolute inset-0 w-full h-full object-cover z-0"
+          style={{
+            backgroundImage: `url(${'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply'})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
+        />
         <div className="container mx-auto py-8 relative z-10">
           <div className="flex flex-col md:flex-row justify-center impacted items-center">
 
@@ -83,8 +89,8 @@ const Counter = () => {
                 className={`counter-item w-64 h-64 p-4 bg-white shadow-lg mx-4 mb-8 flex flex-col justify-center items-center ${hasAnimated && satisfiedClientsInView ? 'animate-counter-up' : ''
                   }`}
               >
-                <span className="text-4xl font-bold mb-2"  id='counter-number'>
-                  <CounterInline end={satisfiedClients}/>
+                <span className="text-4xl font-bold mb-2" id='counter-number'>
+                  <CounterInline end={satisfiedClients} />
                 </span>
                 <span className="text-gray-800 text-center" id='counter-element'>Satisfied Clients</span>
               </div>
@@ -104,7 +110,7 @@ const Counter = () => {
                   }`}
               >
                 <span className="text-4xl font-bold mb-2" id='counter-number'>
-                  <CounterInline end={partnerships}/>
+                  <CounterInline end={partnerships} />
                 </span>
                 <span className="text-gray-800 text-center" id='counter-element'>Partnerships</span>
               </div>

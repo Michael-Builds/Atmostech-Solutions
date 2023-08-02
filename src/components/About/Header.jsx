@@ -25,7 +25,7 @@ const Header = () => {
             <div 
                 className="absolute inset-0 bg-black opacity-70 z-10"
             ></div>
-            <h1 className={`mb-5 contact-header z-10 ${inView1 ? 'fade-in-bottom fade-in-bottom-active' : ''
+            <h1 id='about-header-main' className={`mb-5 contact-header z-10 ${inView1 ? 'fade-in-bottom fade-in-bottom-active' : ''
                 }`}
                 ref={ref1}>About Us</h1>
             <h3 id='about-header' className={`mb-4  contact-sub z-10 ${inView1 ? 'fade-in-bottom fade-in-bottom-active' : ''

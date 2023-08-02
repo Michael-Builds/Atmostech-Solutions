@@ -14,7 +14,6 @@ import {
   MenuList,
   MenuItem,
 } from "@material-tailwind/react";
-// import Logo1 from './Nav.png';
 import Logo2 from './Navs.png';
 
 import {
@@ -165,7 +164,7 @@ function NavList() {
         to="/"
         variant="small"
         activeClassName="active"
-        color="blue-gray"
+        color="white"
         className="p-1 font-normal font-exo"
       >
         <ListItem className="flex items-center gap-2 py-2 pr-4 link " style={{ fontSize: "17px" }}>
@@ -176,7 +175,7 @@ function NavList() {
         as={NavLink}
         to="/company"
         variant="small"
-        color="blue-gray"
+        color="white"
         activeClassName="active"
         className="p-1 font-normal font-exo"
       >
@@ -190,7 +189,7 @@ function NavList() {
         to="/industry"
         variant="small"
         activeClassName="active"
-        color="blue-gray"
+        color="white"
         className="p-1 font-normal font-exo"
       >
         <ListItem className="flex items-center gap-2 py-2 pr-4 link" style={{ fontSize: "17px" }}>
@@ -202,7 +201,7 @@ function NavList() {
         to="/blogs"
         variant="small"
         activeClassName="active"
-        color="blue-gray"
+        color="white"
         className="p-1 font-normal font-exo"
       >
         <ListItem className="flex items-center gap-2 py-2 pr-4 link" style={{ fontSize: "17px" }}>
@@ -214,7 +213,7 @@ function NavList() {
         as={NavLink}
         variant="small"
         to="/contact"
-        color="blue-gray"
+        color="white"
         activeClassName="active"
         className="p-1 font-normal font-exo"
       >
@@ -237,17 +236,17 @@ export default function Example() {
 
   return (
     <Navbar className="fixed top-0 left-0 z-50 w-full max-w-full px-6 py-3 mx-auto rounded-none main-menu">
-      <div className="flex items-center justify-between text-blue-gray-900">
+      <div id='main-navbar' className="flex items-center justify-between text-blue-gray-900">
         <Typography
           as={NavLink}
           to='/'
           className="ml-3 mr-4 cursor-pointer "
         >
           <img
+            id='navbar-image'
             src={Logo2}
-            alt="Material Tailwind Logo"
+            alt="Atmos Tech Logo"
             className="mr-4 cursor-pointer py-1.5 lg:ml-2 logo-image"
-            style={{ height: '90px', width: '170px' }}
           />
         </Typography>
         <div className="hidden lg:block">
@@ -255,7 +254,7 @@ export default function Example() {
         </div>
         <IconButton
           variant="text"
-          color="blue-gray"
+          color="white"
           className="lg:hidden"
           onClick={() => setOpenNav(!openNav)}
         >

@@ -4,7 +4,6 @@ import second from '../../assets/Sanitation.png';
 import third from '../../assets/Tamani.png';
 import fourth from '../../assets/RCD.png';
 import fifth from '../../assets/Engineering.png';
-import sixth from '../../assets/Sanitation.png';
 
 const partnerData = [
   { src: first, alt: 'Transistor' },
@@ -12,7 +11,6 @@ const partnerData = [
   { src: third, alt: 'Tuple' },
   { src: fourth, alt: 'SavvyCal' },
   { src: fifth, alt: 'SavvyCal' },
-  { src: sixth, alt: 'SavvyCal' },
 ];
 
 export default function Partners() {

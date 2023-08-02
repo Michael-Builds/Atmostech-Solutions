@@ -6,7 +6,7 @@ import {
 } from "@material-tailwind/react";
 import "../../main.css";
 import 'animate.css';
-import backgroundImage from '../../assets/my.jpg';
+// import backgroundImage from '../../assets/my.jpg';
 import { useNavigate } from 'react-router-dom';
 
 export default function Hero() {
@@ -21,11 +21,11 @@ export default function Hero() {
       <Carousel className="rounded-none">
         <div className="relative h-full w-full">
           <img
-            src={backgroundImage}
+            src='https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply'
             alt="Atmos-Tech"
             className="h-full w-full object-cover"
           />
-          <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/75">
+          <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/45">
             <div className="w-3/4 text-center md:w-2/4">
               <Typography
                 variant="h1"
@@ -60,7 +60,7 @@ export default function Hero() {
 
         <div className="relative h-full w-full">
           <img
-            src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
+            src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fElubm92YXRpb24lMjBpbiUyMFRlY2h8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
             alt="Atmos-Tech"
             className="h-full w-full object-cover"
           />
@@ -93,7 +93,7 @@ export default function Hero() {
         </div>
         <div className="relative h-full w-full">
           <img
-            src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
+            src="https://images.unsplash.com/photo-1500741236341-1b7a0f91f1f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fFNwZWVkaW5nJTIwY2Fyc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
             alt="Atmos-Tech"
             className="h-full w-full object-cover"
           />
