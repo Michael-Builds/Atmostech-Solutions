@@ -1,11 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { CalendarDaysIcon, HandRaisedIcon } from '@heroicons/react/24/outline'
-import {
-    Alert,
-} from "@material-tailwind/react";
-
 export default function NewsLetter() {
-
 
     return (
         <div className="relative py-16 overflow-hidden bg-gray-900 isolate sm:py-24 lg:py-32">

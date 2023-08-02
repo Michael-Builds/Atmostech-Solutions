@@ -11,7 +11,7 @@ import {
   Option,
   Alert,
 } from "@material-tailwind/react";
-
+import axios from 'axios';
 
 function Icon() {
   return (
@@ -29,7 +29,6 @@ function Icon() {
     </svg>
   );
 }
-
 function ErrorIcon() {
   return (
     <svg
@@ -47,35 +46,55 @@ function ErrorIcon() {
   );
 }
 
-
 const Email = () => {
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [isFormError, setIsFormError] = useState(false);
 
-  async function handleSubmit(e) {
-    e.preventDefault();
-    const form = e.currentTarget;
-    console.log('Submitted Successfully');
-    const formData = new FormData(form);
-    try {
-      const response = await fetch("https://script.google.com/macros/s/AKfycbxf7oGJk6PeTfU3RXZHYM68at3ImMdm-fIampaznCj8MwGoTSOPXVX1Mw_NRb8ePIhSgg/exec", {
-        method: "POST",
-        body: formData,
-      });
+  // Form input States
+  const [email, setEmail] = useState('');
+  const [name, setName] = useState('');
+  const [telephone, setTelephone] = useState('');
+  const [service, setService] = useState('');
+  const [message, setMessage] = useState('');
 
-      if (response.ok) {
-        setIsFormSubmitted(true);
-        setIsFormError(false);
-        form.reset();
-      } else {
-        setIsFormSubmitted(false);
-        setIsFormError(true);
-      }
-    } catch (error) {
-      setIsFormSubmitted(false);
-      setIsFormError(true);
-      console.log('An error occurred. Please try again later.', error);
+
+  // Handle change for Service
+  const handleSelect = (event) => {
+    const selectedValue = event?.target?.value || '';
+    setService(selectedValue === '' ? '' : selectedValue);
+  };
+
+  // Handle Submit function
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const data = {
+      Email: email,
+      Name: name,
+      Telephone: telephone,
+      Service: service,
+      Message: message
     }
+    console.log('Data to be sent:', data);
+
+    axios.post('https://sheet.best/api/sheets/7d9fb06d-53a0-4cc2-8e9d-cb7c0286ab2a',
+      data).then((response) => {
+        console.log('API response:', response);
+
+        //Reseting form fields
+        setEmail('');
+        setName('');
+        setTelephone('');
+        setService('');
+        setMessage('');
+
+        // Mark the form as submitted
+        setIsFormSubmitted(true);
+      })
+      .catch((error) => {
+        console.error('API error:', error);
+        setIsFormError(true);
+      });
   }
 
   // Modal component
@@ -137,8 +156,8 @@ const Email = () => {
                     label="Email"
                     containerProps={{ className: "min-w-[72px] mail" }}
                     type="email"
-                    name="Email"
                     autoComplete="email"
+                    onChange={(e) => setEmail(e.target.value)} value={email}
                     required
                     labelProps={{
                       htmlFor: "email-input",
@@ -150,8 +169,8 @@ const Email = () => {
                     <Input
                       label="Name"
                       containerProps={{ className: "min-w-[72px] mail" }}
-                      name="Name"
                       type='text'
+                      onChange={(e) => setName(e.target.value)} value={name}
                       required
                       labelProps={{
                         htmlFor: "name-input",
@@ -160,9 +179,9 @@ const Email = () => {
                     />
                     <Input
                       required
-                      name="Phone_Number"
                       label="Phone Number"
                       type="tel"
+                      onChange={(e) => setTelephone(e.target.value)} value={telephone}
                       containerProps={{ className: "min-w-[72px] mail" }}
                       labelProps={{
                         htmlFor: "phone-number-input",
@@ -175,14 +194,11 @@ const Email = () => {
                     <Select
                       label="Service"
                       className="mail selected-service"
-                      name="Service"
+                      onChange={handleSelect}
+                      value={service}
                       required
-                      value=""
                       labelProps={{ className: "label-large" }}
                     >
-                      <Option value="" disabled>
-                        Select a service
-                      </Option>
                       <Option value="Web Development">Web Development</Option>
                       <Option value="Mobile App Development">Mobile App Development</Option>
                       <Option value="API Integration">API Integration</Option>
@@ -191,8 +207,8 @@ const Email = () => {
                     </Select>
                   </div>
                   <Textarea
-                    name="Message"
                     label="Message"
+                    onChange={(e) => setMessage(e.target.value)} value={message}
                     required
                     labelProps={{ className: "custom-label" }}
                     containerProps={{ className: "min-w-[72px] mail-content" }}
