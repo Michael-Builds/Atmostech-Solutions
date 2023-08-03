@@ -77,11 +77,11 @@ export default function Blogs() {
                                 boxShadow: '0 2px 4px 0 rgba(0, 0, 0, 0.4)',
                             }}
                         >
-                            <div className="flex items-center justify-center mt-3 text-xs gap-x-4">
-                                <time dateTime={post.datetime} className="text-gray-500">
+                            <div id ='date-time' className="flex items-center justify-center mt-3 text-xs gap-x-4">
+                                <time id='date' dateTime={post.datetime} className="text-gray-500">
                                     {post.date}
                                 </time>
-                                <a
+                                <a id='category'
                                     href={post.category}
                                     className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600"
                                 >
@@ -89,13 +89,13 @@ export default function Blogs() {
                                 </a>
                             </div>
                             <div className="relative items-center justify-center text-center group">
-                                <h3 className="mt-5 text-lg font-semibold leading-6 text-gray-900">
-                                    <a href={post.href}>
+                                <h3 id='tit' className="mt-5 text-lg font-semibold leading-6 text-gray-900">
+                                    <a  href={post.href}>
                                         <span className="absolute inset-0 " />
                                         {post.title}
                                     </a>
                                 </h3>
-                                <p className="mt-5 mb-6 text-sm leading-6 text-gray-600 line-clamp-3">{post.description}</p>
+                                <p id='post' className="mt-5 mb-6 text-sm leading-6 text-gray-600 line-clamp-3">{post.description}</p>
                             </div>
 
                             <div className="relative flex items-center justify-center mt-8 mb-6 gap-x-4">

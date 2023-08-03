@@ -61,7 +61,7 @@ const ValueProposition = () => {
                             className="w-full md:w-64"
                         />
                     </div>
-                    <div className="flex flex-col justify-center value-content">
+                    <div id='value-second-container' className="flex flex-col justify-center value-content">
                         <h2 id='value-pop' className="mb-3 text-4xl font-bold second-heading">
                             Why Choose Our Tech Solutions?
                         </h2>
