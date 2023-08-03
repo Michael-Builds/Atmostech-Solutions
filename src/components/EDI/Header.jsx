@@ -1,6 +1,6 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
-import background from './background.jpg';
+import background from './background.jpeg';
 
 const Header = () => {
 
@@ -22,7 +22,7 @@ const Header = () => {
             }}
         >
             <div
-                className="absolute inset-0 z-10 bg-black opacity-90"
+                className="absolute inset-0 z-10 bg-black opacity-70"
             ></div>
             <h1 id='edi-heading-top' className={`mb-5 contact-header edi z-10 ${inView1 ? 'fade-in-bottom fade-in-bottom-active' : ''
                 }`}

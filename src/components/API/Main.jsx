@@ -1,5 +1,5 @@
 import React from "react";
-import background from "./background1.png";
+import background from "./Image.png";
 import "../../index.css";
 import "../../main.css";
 import { BiLinkAlt } from 'react-icons/bi';

@@ -9,7 +9,7 @@ import {
 } from "@material-tailwind/react";
 import management from '../../assets/management.jpeg';
 import mobile from '../../assets/mobile.png';
-import tech from '../../assets/tech.png'
+import Website from './Website.png'
 import api from '../../assets/api.png';
 import { Link } from 'react-router-dom';
 
@@ -25,7 +25,7 @@ const ServicesProducts = () => {
       
       <div className="container flex justify-center mx-auto">
 
-        <div className="grid grid-cols-1 gap-14 md:grid-cols-2 products-home">
+        <div className="grid grid-cols-1 gap-14 mb-12 md:grid-cols-2 products-home">
 
           <Card className="flex-row w-full max-w-[36rem] head zoom-in-1 produce"
           >
@@ -84,7 +84,7 @@ const ServicesProducts = () => {
           >
             <CardHeader shadow={false} floated={false} className="w-2/5 m-0 rounded-r-none shrink-0">
               <img
-                src={tech}
+                src={Website}
                 alt="first-me"
                 className="object-contain w-full h-full product-tent"
               />
