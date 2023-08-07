@@ -1661,7 +1661,7 @@
     line-height: 1.5;
   }
 
-  .team-name{
+  .team-name {
     font-size: 20px;
     margin-left: 40px;
   }
@@ -1731,12 +1731,15 @@
 
   #service-card {
     width: 300px;
-    height: 280px;
+    height: 290px;
     justify-content: center;
     align-items: center;
     margin-right: 70px;
   }
-
+  #newsletter p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
   .contact-header {
     font-size: 22px;
     line-height: 1.5;
@@ -2132,16 +2135,20 @@
     max-width: 95%;
     margin-top: -65px;
   }
+
   #mob-option-sent {
     margin-left: 20px;
+    font-size: 14px;
+    line-height: 1.5;
   }
 
   #web {
     margin-left: 25px;
     margin-right: 15px;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.5;
   }
+
   #web-content p {
     margin-left: 25px;
     margin-right: 15px;
@@ -2264,7 +2271,10 @@
   #edi-main-head p {
     margin-left: 25px;
     margin-right: 20px;
+    font-size: 14px;
+    line-height: 1.5;
   }
+
   #edi-timeline p {
     margin-left: 25px;
     margin-right: 20px;
@@ -2279,8 +2289,8 @@
   }
   #soft {
     margin-left: 20px;
-    font-size: 16px;
-    line-height: 1.6;
+    font-size: 14px;
+    line-height: 1.5;
     text-align: justify;
     text-justify: inter-word;
     margin-right: 25px;
@@ -2288,12 +2298,14 @@
   #aps {
     margin-left: 25px;
     margin-right: 20px;
-    line-height: 1.6;
+    font-size: 14px;
+    line-height: 1.5;
   }
+
   #mob {
     margin-left: 25px;
     margin-right: 15px;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.5;
   }
   #mobile-options {
