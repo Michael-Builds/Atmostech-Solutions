@@ -53,7 +53,7 @@ const ValueProposition = () => {
             </div>
             <div className="mx-auto overflow-hidden">
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-2 value-prop">
-                    <div className="flex justify-center">
+                    <div id='mission-two' className="flex justify-center">
                         <img
                             id='value-two'
                             src={choose}

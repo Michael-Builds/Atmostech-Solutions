@@ -20,7 +20,7 @@ import {
 const teamData = [
   {
     image: team,
-    name: "Mr Chris",
+    name: "Chris Seshie",
     role: "CEO & Founder",
     social: {
       facebook: true,
@@ -32,6 +32,28 @@ const teamData = [
   {
     image: team,
     name: "Kabanda Michael",
+    role: "Frontend Developer",
+    social: {
+      facebook: true,
+      github: true,
+      pinterest: true,
+      instagram: true,
+    },
+  },
+  {
+    image: team,
+    name: "Eugene Sew",
+    role: "Frontend Developer",
+    social: {
+      facebook: true,
+      github: true,
+      pinterest: true,
+      instagram: true,
+    },
+  },
+  {
+    image: team,
+    name: "Bernard Tay",
     role: "Backend Developer",
     social: {
       facebook: true,
@@ -42,8 +64,8 @@ const teamData = [
   },
   {
     image: team,
-    name: "Eugene",
-    role: "Fullstack Developer",
+    name: "Lorem Ipsum",
+    role: "Content Creator",
     social: {
       facebook: true,
       github: true,
@@ -53,30 +75,8 @@ const teamData = [
   },
   {
     image: team,
-    name: "Kabanda Michael",
-    role: "Fullstack Developer",
-    social: {
-      facebook: true,
-      github: true,
-      pinterest: true,
-      instagram: true,
-    },
-  },
-  {
-    image: team,
-    name: "Eugene Selormey",
-    role: "Fullstack Developer",
-    social: {
-      facebook: true,
-      github: true,
-      pinterest: true,
-      instagram: true,
-    },
-  },
-  {
-    image: team,
-    name: "Eugene Selormey",
-    role: "Fullstack Developer",
+    name: "Lorem Ipsum",
+    role: "UI/UX Designer",
     social: {
       facebook: true,
       github: true,

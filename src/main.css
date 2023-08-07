@@ -11,6 +11,19 @@
   color: #fff;
 }
 
+#mision-img img {
+  margin-top: 65px;
+  max-width: 700px;
+  height: 390px;
+}
+
+#mission-two img {
+  max-width: 650px;
+  height: 350px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
 #navbar-image {
   height: 80px;
   width: 150px;
@@ -1474,20 +1487,6 @@
     line-height: 1.2;
   }
 
-  #value-one {
-    max-width: 350px;
-    height: 300px;
-    margin-top: 10px;
-    margin-left: 30px;
-  }
-
-  #value-two {
-    max-width: 350px;
-    height: 350px;
-    margin-top: -30px;
-    margin-left: 50px;
-  }
-
   #first-sent {
     font-size: 14px;
     text-align: justify;
@@ -1496,12 +1495,27 @@
     line-height: 1.6;
   }
 
-  #mision-img {
-    height: 320px;
-    width: 230px;
-    margin-top: -100px;
-    margin-bottom: 10px;
-    margin-left: -35px;
+  #mision-img img {
+    height: 250px;
+    width: 350px;
+    justify-content: center;
+    align-items: center;
+    margin-top: -40px;
+    margin-left: -10px;
+    margin-bottom: 30px;
+  }
+  .api-image {
+    margin-bottom: 30px;
+  }
+
+  #mission-two img {
+    height: 280px;
+    width: 350px;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30px;
+    margin-left: -10px;
+    margin-bottom: 50px;
   }
 
   .value-prop {
@@ -1646,6 +1660,12 @@
     margin-top: -10px;
     line-height: 1.5;
   }
+
+  .team-name{
+    font-size: 20px;
+    margin-left: 40px;
+  }
+
   .team-sub {
     font-size: 16px;
     line-height: 1.5;
@@ -1847,6 +1867,8 @@
     font-size: 21px;
     margin-top: -55px;
     text-align: center;
+    max-width: 90%;
+    margin-left: 20px;
   }
 
   #about-main img {
@@ -2063,6 +2085,7 @@
   #main-timeline {
     display: flex;
     justify-content: center;
+    margin-left: 10px;
   }
 
   #timeline-main {
@@ -3828,7 +3851,6 @@
     gap: 1rem;
     margin-right: 50px;
   }
-
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1280px) {

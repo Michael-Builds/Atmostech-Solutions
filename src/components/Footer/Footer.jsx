@@ -29,15 +29,17 @@ const SITEMAP = [
             { title: "Partnerships", path: "/partnerships" },
             { title: "Blog Posts", path: "/blog" },
             { title: "Newsletters", path: "/newsletter" },
+            { title: "Newsletters", path: "/newsletter" },
         ]
     },
     {
         title: "Products",
         links: [
             { title: "CRM Systems", path: "/crm" },
-            { title: "Mobile Applications", path: "/apps" },
-            { title: "Web Applications", path: "/websites" },
-            { title: "SchoolSync", path: "/service" }
+            { title: "Mobile Apps", path: "/apps" },
+            { title: "Web Apps", path: "/websites" },
+            { title: "Software Apps", path: "/schoolsync" },
+            { title: "SchoolSync", path: "/schoolsync" }
         ]
     }
 ];
