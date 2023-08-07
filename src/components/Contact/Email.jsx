@@ -11,7 +11,6 @@ import {
   Option,
   Alert,
 } from "@material-tailwind/react";
-import axios from 'axios';
 
 function Icon() {
   return (
@@ -49,53 +48,61 @@ function ErrorIcon() {
 const Email = () => {
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [isFormError, setIsFormError] = useState(false);
+    const[service, setService]=useState('')
 
-  // Form input States
-  const [email, setEmail] = useState('');
-  const [name, setName] = useState('');
-  const [telephone, setTelephone] = useState('');
-  const [service, setService] = useState('');
-  const [message, setMessage] = useState('');
+  const [data,  setData] = useState({
+    email: '',
+    name: '',
+    telephone: '',
+    message: '',
+  });
 
+  const { email, name, telephone,  message } = data;
 
+  const handleChange = (e) => {
+    setData((prevData) => ({
+      ...prevData,
+      [e.target.name]: e.target.value,
+    }));
+  };
+  
   // Handle change for Service
   const handleSelect = (event) => {
     const selectedValue = event?.target?.value || '';
     setService(selectedValue === '' ? '' : selectedValue);
   };
 
-  // Handle Submit function
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    const data = {
-      Email: email,
-      Name: name,
-      Telephone: telephone,
-      Service: service,
-      Message: message
-    }
-    console.log('Data to be sent:', data);
-
-    axios.post('https://sheet.best/api/sheets/7d9fb06d-53a0-4cc2-8e9d-cb7c0286ab2a',
-      data).then((response) => {
-        console.log('API response:', response);
-
-        //Reseting form fields
-        setEmail('');
-        setName('');
-        setTelephone('');
-        setService('');
-        setMessage('');
-
-        // Mark the form as submitted
-        setIsFormSubmitted(true);
-      })
-      .catch((error) => {
-        console.error('API error:', error);
+    // Handle Submit function
+    const handleSubmit = async (e) => {
+      e.preventDefault();
+  
+      try {
+        const response = await fetch('https://v1.nocodeapi.com/kpanti/google_sheets/hJoVtXWJDNiMyWHN?tabId=Service-Request', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify([[email, name, telephone, service, message, new Date().toLocaleString()]]),
+        });
+  
+        if (response.ok) {
+          await response.json();
+          setIsFormSubmitted(true);
+          setData({
+            email: '',
+            name: '',
+            telephone: '',
+            message: '',
+          });
+        } else {
+          setIsFormError(true);
+        }
+      } catch (err) {
+        console.log(err);
         setIsFormError(true);
-      });
-  }
+      }
+    };
+
 
   // Modal component
   const SuccessModal = () => (
@@ -156,8 +163,10 @@ const Email = () => {
                     label="Email"
                     containerProps={{ className: "min-w-[72px] mail" }}
                     type="email"
+                    name='email'
                     autoComplete="email"
-                    onChange={(e) => setEmail(e.target.value)} value={email}
+                    onChange={handleChange}
+                    value={email}
                     required
                     labelProps={{
                       htmlFor: "email-input",
@@ -170,7 +179,9 @@ const Email = () => {
                       label="Name"
                       containerProps={{ className: "min-w-[72px] mail" }}
                       type='text'
-                      onChange={(e) => setName(e.target.value)} value={name}
+                      name='name'
+                      onChange={handleChange}
+                      value={name}
                       required
                       labelProps={{
                         htmlFor: "name-input",
@@ -181,7 +192,9 @@ const Email = () => {
                       required
                       label="Phone Number"
                       type="tel"
-                      onChange={(e) => setTelephone(e.target.value)} value={telephone}
+                      name='telephone'
+                      onChange={handleChange}
+                      value={telephone}
                       containerProps={{ className: "min-w-[72px] mail" }}
                       labelProps={{
                         htmlFor: "phone-number-input",
@@ -193,6 +206,7 @@ const Email = () => {
                   <div containerProps={{ className: "min-w-[72px] " }}>
                     <Select
                       label="Service"
+                      name='service'
                       className="mail selected-service"
                       onChange={handleSelect}
                       value={service}
@@ -208,7 +222,9 @@ const Email = () => {
                   </div>
                   <Textarea
                     label="Message"
-                    onChange={(e) => setMessage(e.target.value)} value={message}
+                    name='message'
+                    onChange={handleChange}
+                    value={message}
                     required
                     labelProps={{ className: "custom-label" }}
                     containerProps={{ className: "min-w-[72px] mail-content" }}
