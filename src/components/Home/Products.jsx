@@ -10,7 +10,7 @@ import {
 import management from '../../assets/management.jpeg';
 import mobile from '../../assets/mobile.png';
 import Website from './Website.png'
-import API from '../API/Image.png';
+// import API from '../API/Image.png';
 import { Link } from 'react-router-dom';
 
 import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
@@ -39,7 +39,7 @@ const servicesProductsData = [
     path: "/web"
   },
   {
-    image: API,
+    image: Website,
     title: "API Integration",
     subtitle: "Seamless Integration: Power Your Application with our API",
     description: "Unlock the full potential of your application with seamless API integration, enabling effortless data exchange, streamlined functionality.",
@@ -58,16 +58,11 @@ const ServicesProducts = () => {
               key={index}
               className="flex-row w-full max-w-[36rem] head zoom-in-1 produce"
             >
-              <CardHeader
-                shadow={false}
-                floated={false}
-                className={`w-2/5 m-0 rounded-r-none shrink-0 ${item.title === "API Integration" ? "api-card" : ""}`}
-                style={item.title === "API Integration" ? { marginBottom: "30px" } : {}}
-              >
+              <CardHeader shadow={false} floated={false} className="w-2/5 m-0 rounded-r-none shrink-0">
                 <img
                   src={item.image}
                   alt={item.title}
-                  className={`object-contain w-full h-full product-tent ${item.title === "API Integration" ? "api-image" : ""}`}
+                  className="object-contain w-full h-full product-tent"
                 />
               </CardHeader>
               <CardBody>
