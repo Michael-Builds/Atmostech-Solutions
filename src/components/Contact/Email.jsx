@@ -48,16 +48,17 @@ function ErrorIcon() {
 const Email = () => {
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [isFormError, setIsFormError] = useState(false);
-    const[service, setService]=useState('')
+  const [service, setService] = useState('')
 
-  const [data,  setData] = useState({
+  const [data, setData] = useState({
     email: '',
     name: '',
+    service: '',
     telephone: '',
     message: '',
   });
 
-  const { email, name, telephone,  message } = data;
+  const { email, name, telephone, message } = data;
 
   const handleChange = (e) => {
     setData((prevData) => ({
@@ -65,44 +66,64 @@ const Email = () => {
       [e.target.name]: e.target.value,
     }));
   };
-  
+
   // Handle change for Service
   const handleSelect = (event) => {
-    const selectedValue = event?.target?.value || '';
-    setService(selectedValue === '' ? '' : selectedValue);
+    console.log('Event:', event);
+    const selectedValue = event?.target?.value || event;
+    setService(selectedValue === event ? event : selectedValue);
   };
 
-    // Handle Submit function
-    const handleSubmit = async (e) => {
-      e.preventDefault();
+  // Handle Submit function
+  const handleSubmit = async (e) => {
+    e.preventDefault();
   
-      try {
-        const response = await fetch('https://v1.nocodeapi.com/kpanti/google_sheets/hJoVtXWJDNiMyWHN?tabId=Service-Request', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify([[email, name, telephone, service, message, new Date().toLocaleString()]]),
+     // Validate telephone number
+     const isValidPhoneNumber = /^[0-9]{1,10}$/.test(telephone);
+     if (!isValidPhoneNumber) {
+       console.log("Invalid phone number");
+       return;
+     }
+  
+    try {
+      const response = await fetch('https://v1.nocodeapi.com/kpanti/google_sheets/hJoVtXWJDNiMyWHN?tabId=Service-Request', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify([
+          [
+            email,
+            name,
+            telephone,
+            service,
+            message,
+            new Date().toLocaleString(),
+          ],
+        ]),
+      });
+  
+      if (response.ok) {
+        console.log(data);
+  
+        await response.json();
+        setIsFormSubmitted(true);
+        setData({
+          email: '',
+          name: '',
+          service: '',
+          telephone: '',
+          message: '',
         });
-  
-        if (response.ok) {
-          await response.json();
-          setIsFormSubmitted(true);
-          setData({
-            email: '',
-            name: '',
-            telephone: '',
-            message: '',
-          });
-        } else {
-          setIsFormError(true);
-        }
-      } catch (err) {
-        console.log(err);
+      } else {
         setIsFormError(true);
       }
-    };
-
+    } catch (err) {
+      console.log(err);
+      setIsFormError(true);
+    }
+  };
+  
 
   // Modal component
   const SuccessModal = () => (
@@ -165,7 +186,7 @@ const Email = () => {
                     type="email"
                     name='email'
                     autoComplete="email"
-                    onChange={handleChange}
+                    onChange={(event) => handleChange(event)}
                     value={email}
                     required
                     labelProps={{

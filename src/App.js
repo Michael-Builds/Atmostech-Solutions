@@ -12,6 +12,7 @@ import Software from "./components/Software/Software";
 import Mobile from "./components/Mobile/Mobile";
 import API from "./components/API/API";
 import EDI from "./components/EDI/EDI";
+import Unsubscribe from './components/Unsubscription/unsubscribe';
 
 const App = () => {
   return (
@@ -29,6 +30,7 @@ const App = () => {
         <Route path="/software" element={<Software />} />
         <Route path="/edi" element={<EDI />} />
         <Route path="/api" element={<API />} />
+        <Route path='/unsubscribe' element={<Unsubscribe />} />
       </Routes>
     </Router>
   );

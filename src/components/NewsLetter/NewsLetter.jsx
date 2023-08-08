@@ -41,6 +41,8 @@ export default function NewsLetter() {
     const [isFormSubmitted, setIsFormSubmitted] = useState(false);
     const [isFormError, setIsFormError] = useState(false);
     const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+    const [subscriptionStatus, setSubscriptionStatus] = useState('Unsubscribed');
 
     const handleChange = (e) => {
       setEmail(e.target.value);
@@ -55,13 +57,15 @@ export default function NewsLetter() {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify([[email, new Date().toLocaleString()]]),
+        body: JSON.stringify([[email, subscriptionStatus, message, new Date().toLocaleString()]]),
       });
 
       if (response.ok) {
         setIsFormSubmitted(true);
-        setEmail('');
+          setEmail('');
+          setMessage('');
         setIsFormError(false); // Reset form error state on successful submission
+        setSubscriptionStatus('Subscribed'); 
       } else {
         setIsFormError(true);
       }

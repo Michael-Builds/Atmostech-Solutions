@@ -1,0 +1,243 @@
+import React, { useState } from "react";
+import {
+    Card,
+    CardHeader,
+    CardBody,
+    Input,
+    Alert,
+    Button,
+    Typography,
+    Tabs,
+    TabsBody,
+    Textarea,
+    TabPanel,
+} from "@material-tailwind/react";
+import Image from './sad.png';
+
+function Icon() {
+    return (
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            className="h-6 w-6"
+        >
+            <path
+                fillRule="evenodd"
+                d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                clipRule="evenodd"
+            />
+        </svg>
+    );
+}
+
+
+function ErrorIcon() {
+    return (
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            className="h-6 w-6 text-red-500"
+        >
+            <path
+                fillRule="evenodd"
+                d="M12 2c6.627 0 12 5.373 12 12s-5.373 12-12 12S0 20.627 0 14 5.373 2 12 2zm0 1c-5.523 0-10 4.477-10 10s4.477 10 10 10 10-4.477 10-10S17.523 3 12 3zm1 13h-2v-2h2v2zm0-4h-2V7h2v5z"
+                clipRule="evenodd"
+            />
+        </svg>
+    );
+}
+
+export default function CheckoutForm() {
+    const [type] = React.useState("card");
+    const [isFormSubmitted, setIsFormSubmitted] = useState(false);
+    const [isFormError, setIsFormError] = useState(false);
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+    const [subscriptionStatus, setSubscriptionStatus] = useState('Unsubscribed');
+
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+
+        if (name === 'email') {
+            setEmail(value);
+        } else if (name === 'message') {
+            setMessage(value);
+        }
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        try {
+            // Fetch the existing data from the database
+            const fetchResponse = await fetch('https://v1.nocodeapi.com/kpanti/google_sheets/hJoVtXWJDNiMyWHN?tabId=NewsLetter');
+            const responseData = await fetchResponse.json();
+
+            console.log('Response Data:', responseData);
+
+            // Extract the data property from the response
+            const existingData = responseData.data;
+
+            // Check if the fetched data is an array
+            if (Array.isArray(existingData)) {
+                // Find the index of the email in the existing data
+                const emailIndex = existingData.findIndex((entry) => entry.Email === email);
+
+                if (emailIndex !== -1) {
+                    // Email matches, update the subscription status and add the message
+                    existingData[emailIndex].States = 'Unsubscribed'; // Update subscription status
+                    existingData[emailIndex].Message = message; // Add message
+
+                    // Update the data in the database
+
+                    const requestBody = {
+                        data: existingData, // Replace existingData with your actual data array
+                    };
+                    const updateResponse = await fetch('https://v1.nocodeapi.com/kpanti/google_sheets/hJoVtXWJDNiMyWHN?tabId=NewsLetter', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify(requestBody),
+                    });
+
+                    console.log('Update Response:', updateResponse);
+
+                    if (updateResponse.ok) {
+                        setIsFormSubmitted(true);
+                        setEmail('');
+                        setMessage('');
+                        setIsFormError(false);
+                        setSubscriptionStatus('Unsubscribed');
+                    } else {
+                        setIsFormError(true);
+                    }
+                } else {
+                    // Email does not match
+                    console.log('Email not found in existing data.');
+                    setIsFormError(true);
+                }
+            } else {
+                // Fetched data is not an array
+                console.log('Fetched data is not an array.');
+                setIsFormError(true);
+            }
+        } catch (err) {
+            console.error('An error occurred:', err);
+            setIsFormError(true);
+        }
+    };
+
+
+
+    // Modal component
+    const SuccessModal = () => (
+        <div className="modal">
+            <div className="modal-content">
+                <Alert
+                    icon={<Icon />}
+                    className="rounded-none mb-8 border-l-4 border-[#2ec946] bg-[#2ec946]/10 font-medium text-[#2ec946]"
+                >
+                    You've successfully Unsubscribed to our Newsletter
+                </Alert>
+                <button onClick={() => setIsFormSubmitted(false)}>Close</button>
+            </div>
+        </div>
+    );
+
+    return (
+
+        <div className="relative py-24 overflow-hidden bg-gray-900 isolate sm:py-32">
+            <img
+                src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
+                alt=""
+                className="absolute inset-0 object-cover object-right w-full h-full -z-10 md:object-center"
+            />
+            <div
+                className="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
+                aria-hidden="true"
+            ></div>
+
+            <div id='unsubscription-form' className="flex items-center justify-center h-screen">
+                <Card id='subscription-card' className="w-full max-w-[24rem]">
+
+                    <CardHeader
+                        id='card-header'
+                        floated={false}
+                        shadow={false}
+                        className="m-0  grid place-items-center rounded-b-none py-8 px-4 text-center"
+                    >
+                        <div className="mb-4 rounded-full border border-white/10 bg-white/10 p-6 text-white">
+                            <img
+                                src={Image}
+                                alt=''
+                                className="header-logo" />
+                        </div>
+                        <Typography id="unsubscription-header" className='header-unsubscription' variant="h4" color="white">
+                            Newsletter Unsubscription
+                        </Typography>
+                    </CardHeader>
+                    <CardBody>
+                        <Tabs value={type} className="overflow-visible">
+                            <TabsBody className="!overflow-x-hidden !overflow-y-visible">
+                                <TabPanel value="card" className="p-0">
+                                    <form id='form-unsubscription' onSubmit={handleSubmit} className="mt-4 flex flex-col gap-4">
+                                        {isFormSubmitted && !isFormError && (
+                                            <Alert
+                                                icon={<Icon />}
+                                                className="rounded-none mb-4 border-l-4 border-[#2ec946] bg-[#2ec946]/10 font-medium text-[#2ec946]"
+                                            >
+                                                You've successfully Unsubscribed to our Newsletter
+                                            </Alert>
+                                        )}
+                                        {isFormError && (
+                                            <Alert
+                                                icon={<ErrorIcon />}
+                                                className="rounded-none mb-4 border-l-4 border-red-500 bg-red-50 font-medium text-red-500"
+                                            >
+                                                An error occurred. Please try again later.
+                                            </Alert>
+                                        )}
+                                        <div className=" unsubscribe-inputs">
+                                            <Input
+                                                type="email"
+                                                label="Email Address"
+                                                name='email'
+                                                required
+                                                value={email}
+                                                labelProps={{ className: "unsubcribe-label" }}
+                                                onChange={handleChange}
+                                            />
+                                        </div>
+
+                                        <div className="my-6 unsubscribe-input">
+                                            <Textarea
+                                                label="Message"
+                                                name="message"
+                                                value={message}
+                                                onChange={handleChange}
+                                                required
+                                                labelProps={{ className: "unsubcribe-label" }}
+                                                containerProps={{ className: "min-w-[72px] unsubcribe-content" }}
+                                            />
+                                        </div>
+                                        <div className="unsubscription-btn">
+                                            <Button type='submit' className="bg-transparent unsubscription-text text-white">
+                                                Unsubscribe
+                                            </Button>
+                                        </div>
+                                    </form>
+                                </TabPanel>
+                            </TabsBody>
+                        </Tabs>
+                    </CardBody>
+                </Card>
+            </div>
+            {/* Conditionally render the SuccessModal when isFormSubmitted is true */}
+            {isFormSubmitted && <SuccessModal />}
+        </div>
+    );
+}
