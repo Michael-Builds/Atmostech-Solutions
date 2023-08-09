@@ -7,14 +7,11 @@ import {
   CardFooter,
   Button
 } from "@material-tailwind/react";
-
 import management from './software.png';
 import mobile from '../../assets/mobile.png';
-import Website from './website.png';
+import website from './website.png';
 import API from './api.png';
-
 import { Link } from 'react-router-dom';
-
 import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
 
 const servicesProductsData = [
@@ -34,7 +31,7 @@ const servicesProductsData = [
     path: "/mobile"
   },
   {
-    image: Website,
+    image: website,
     title: "Web Development",
     subtitle: "Crafting Innovative Web Solutions Tailored to Your Business Needs",
     description: "Our expert team delivers customized web development services that leverage cutting-edge technologies to meet your unique business requirements and enhance your online presence.",
