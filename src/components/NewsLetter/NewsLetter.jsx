@@ -12,9 +12,9 @@ function Icon() {
             className="h-6 w-6"
         >
             <path
-                fillRule="evenodd"
+                fillrule="evenodd"
                 d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
-                clipRule="evenodd"
+                cliprule="evenodd"
             />
         </svg>
     );
@@ -29,9 +29,9 @@ function ErrorIcon() {
             className="h-6 w-6 text-red-500"
         >
             <path
-                fillRule="evenodd"
+                fillrule="evenodd"
                 d="M12 2c6.627 0 12 5.373 12 12s-5.373 12-12 12S0 20.627 0 14 5.373 2 12 2zm0 1c-5.523 0-10 4.477-10 10s4.477 10 10 10 10-4.477 10-10S17.523 3 12 3zm1 13h-2v-2h2v2zm0-4h-2V7h2v5z"
-                clipRule="evenodd"
+                cliprule="evenodd"
             />
         </svg>
     );
@@ -41,39 +41,37 @@ export default function NewsLetter() {
     const [isFormSubmitted, setIsFormSubmitted] = useState(false);
     const [isFormError, setIsFormError] = useState(false);
     const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
     const [subscriptionStatus, setSubscriptionStatus] = useState('Unsubscribed');
 
     const handleChange = (e) => {
-      setEmail(e.target.value);
+        setEmail(e.target.value);
     };
-  
-  const handleSubmit = async (e) => {
-    e.preventDefault();
 
-    try {
-      const response = await fetch('https://v1.nocodeapi.com/kpanti/google_sheets/hJoVtXWJDNiMyWHN?tabId=NewsLetter', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify([[email, subscriptionStatus, message, new Date().toLocaleString()]]),
-      });
+    const handleSubmit = async (e) => {
+        e.preventDefault();
 
-      if (response.ok) {
-        setIsFormSubmitted(true);
-          setEmail('');
-          setMessage('');
-        setIsFormError(false); // Reset form error state on successful submission
-        setSubscriptionStatus('Subscribed'); 
-      } else {
-        setIsFormError(true);
-      }
-    } catch (err) {
-      console.log(err);
-      setIsFormError(true);
-    }
-  };
+        try {
+            const response = await fetch('https://v1.nocodeapi.com/kpanti/google_sheets/hJoVtXWJDNiMyWHN?tabId=NewsLetter-Sub', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify([[email, subscriptionStatus, new Date().toLocaleString()]]),
+            });
+
+            if (response.ok) {
+                setIsFormSubmitted(true);
+                setEmail('');
+                setIsFormError(false);
+                setSubscriptionStatus('Subscribed');
+            } else {
+                setIsFormError(true);
+            }
+        } catch (err) {
+            console.log(err);
+            setIsFormError(true);
+        }
+    };
 
     // Modal component
     const SuccessModal = () => (

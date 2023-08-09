@@ -54,7 +54,7 @@ export default function Main() {
 
         <div className="mx-auto overflow-hidden">
           <div className="flex items-center justify-center">
-            <div id="industry-items" className="grid grid-cols-3 gap-12 mt-12 mb-12 md:grid-cols-3">
+            <div id="industry-items" className="grid grid-cols-3 gap-12 mt-12 mb-20 md:grid-cols-3">
               {industryItems.map((item, index) => (
                 <Card
                   id='industries-card'

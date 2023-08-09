@@ -29,7 +29,7 @@ const SITEMAP = [
             { title: "Partnerships", path: "/partnerships" },
             { title: "Blog Posts", path: "/blog" },
             { title: "Newsletters", path: "/newsletter" },
-            { title: "Unsubscribe", path: "/Unsubscribe" },
+            { title: "Unsubscribe", path: "/unsubscribe" },
         ]
     },
     {

@@ -85,30 +85,23 @@ function NavListMenu() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
 
-  const renderItems = navListMenuItems.map(
-    ({ icon, title, color, path }, key) => (
-      <Link to={path} key={key}>
-        <MenuItem className="flex items-center gap-2 rounded-lg">
-          <div className={`rounded-lg p-5 ${colors[color]} `}>
-            {React.createElement(icon, {
-              strokeWidth: 1,
-              className: "h-6 w-6",
-            })}
-          </div>
-          <div>
-            <Typography
-              variant="h6"
-              color="blue-gray"
-              className="flex items-center text-sm"
-            >
-              {title}
-            </Typography>
-          </div>
-        </MenuItem>
-      </Link>
-    )
-  );
-
+  const renderItems = navListMenuItems.map(({ icon, title, color, path }, key) => (
+    <Link to={path} key={key}>
+      <MenuItem className="flex items-center gap-2 rounded-lg">
+        <div className={`rounded-lg p-5 ${colors[color]}`}>
+          {React.createElement(icon, {
+            strokeWidth: 1,
+            className: "h-6 w-6",
+          })}
+        </div>
+        <div>
+          <Typography variant="h6" color="blue-gray" className="flex items-center text-sm">
+            {title}
+          </Typography>
+        </div>
+      </MenuItem>
+    </Link>
+  ));
   return (
     <React.Fragment>
       <Menu
@@ -118,17 +111,22 @@ function NavListMenu() {
         placement="bottom"
         allowHover={true}
       >
+
         <MenuHandler>
-          <Typography
-            as={NavLink}
-            to='/service'
-            variant="small" className="p-1 font-normal font-exo hover:none">
+          <NavLink
+            to="/service"
+            variant="small"
+            className="p-1 font-normal font-exo hover:none"
+            activeClassName="active"
+          >
+
             <ListItem
               className="flex items-center gap-2 py-2 pr-4 link"
-              style={{ fontSize: "17px", border: 'none' }}
+              style={{ fontSize: "17px", border: "none" }}
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
+
               Services
               <ChevronDownIcon
                 strokeWidth={2.5}
@@ -141,7 +139,7 @@ function NavListMenu() {
                   }`}
               />
             </ListItem>
-          </Typography>
+          </NavLink>
         </MenuHandler>
 
         {/* Dropdown menu list for the Services NavLink */}
@@ -159,110 +157,59 @@ function NavListMenu() {
 function NavList() {
   return (
     <List className="p-0 mt-4 mb-6 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1" style={{ marginRight: '80px' }}>
-      <Typography
-        as={NavLink}
-        to="/"
-        variant="small"
-        activeClassName="active"
-        color="white"
-        className="p-1 font-normal font-exo"
-      >
-        <ListItem className="flex items-center gap-2 py-2 pr-4 link " style={{ fontSize: "17px" }}>
+      <NavLink to="/" variant="small" activeClassName="active" color="white" className="p-1 font-normal font-exo">
+        <ListItem className="flex items-center gap-2 py-2 pr-4 link" style={{ fontSize: "17px" }}>
           Home
         </ListItem>
-      </Typography>
-      <Typography
-        as={NavLink}
-        to="/company"
-        variant="small"
-        color="white"
-        activeClassName="active"
-        className="p-1 font-normal font-exo"
-      >
+      </NavLink>
+
+      <NavLink to="/company" variant="small" color="white" activeClassName="active" className="p-1 font-normal font-exo">
         <ListItem className="flex items-center gap-2 py-2 pr-4 link" style={{ fontSize: "17px" }}>
           Company
         </ListItem>
-      </Typography>
+      </NavLink>
+
       <NavListMenu />
-      <Typography
-        as={NavLink}
-        to="/industry"
-        variant="small"
-        activeClassName="active"
-        color="white"
-        className="p-1 font-normal font-exo"
-      >
+
+      <NavLink to="/industry" variant="small" color="white" activeClassName="active" className="p-1 font-normal font-exo">
         <ListItem className="flex items-center gap-2 py-2 pr-4 link" style={{ fontSize: "17px" }}>
           Industries
         </ListItem>
-      </Typography>
-      <Typography
-        as={NavLink}
-        to="/blogs"
-        variant="small"
-        activeClassName="active"
-        color="white"
-        className="p-1 font-normal font-exo"
-      >
+      </NavLink>
+
+      <NavLink to="/blogs" variant="small" color="white" activeClassName="active" className="p-1 font-normal font-exo">
         <ListItem className="flex items-center gap-2 py-2 pr-4 link" style={{ fontSize: "17px" }}>
           Blogs
         </ListItem>
-      </Typography>
+      </NavLink>
 
-      <Typography
-        as={NavLink}
-        variant="small"
-        to="/contact"
-        color="white"
-        activeClassName="active"
-        className="p-1 font-normal font-exo"
-      >
+      <NavLink to="/contact" variant="small" color="white" activeClassName="active" className="p-1 font-normal font-exo">
         <ListItem className="flex items-center gap-2 py-2 pr-4 link" style={{ fontSize: "17px" }}>
           Contact
         </ListItem>
-      </Typography>
+      </NavLink>
+
     </List>
   );
 }
-export default function Example() {
+export default function Navigation() {
   const [openNav, setOpenNav] = React.useState(false);
 
   React.useEffect(() => {
-    window.addEventListener(
-      "resize",
-      () => window.innerWidth >= 960 && setOpenNav(false)
-    );
+    window.addEventListener("resize", () => window.innerWidth >= 960 && setOpenNav(false));
   }, []);
 
   return (
     <Navbar className="fixed top-0 left-0 z-50 w-full max-w-full px-6 py-3 mx-auto rounded-none main-menu">
-      <div id='main-navbar' className="flex items-center justify-between text-blue-gray-900">
-        <Typography
-          as={NavLink}
-          to='/'
-          className="ml-3 mr-4 cursor-pointer "
-        >
-          <img
-            id='navbar-image'
-            src={Logo2}
-            alt="Atmos Tech Logo"
-            className="mr-4 cursor-pointer py-1.5 lg:ml-2 logo-image"
-          />
-        </Typography>
+      <div id='main-navbar' className="flex items-center justify-between">
+        <NavLink to='/' className="ml-3 mr-4 cursor-pointer">
+          <img id='navbar-image' src={Logo2} alt="Atmos Tech Logo" className="mr-4 cursor-pointer py-1.5 lg:ml-2 logo-image" />
+        </NavLink>
         <div className="hidden lg:block">
           <NavList />
         </div>
-        <IconButton
-          variant="text"
-          color="white"
-          className="lg:hidden"
-          onClick={() => setOpenNav(!openNav)}
-        >
-          {openNav ? (
-            <XMarkIcon className="w-6 h-6" strokeWidth={2} />
-          ) : (
-            <Bars3Icon className="w-6 h-6" strokeWidth={2} />
-          )}
+        <IconButton variant="text" color="white" className="lg:hidden" onClick={() => setOpenNav(!openNav)}>
+          {openNav ? <XMarkIcon className="w-6 h-6" strokeWidth={2} /> : <Bars3Icon className="w-6 h-6" strokeWidth={2} />}
         </IconButton>
       </div>
       <Collapse open={openNav}>

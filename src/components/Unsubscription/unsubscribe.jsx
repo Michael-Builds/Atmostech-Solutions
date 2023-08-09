@@ -23,14 +23,13 @@ function Icon() {
             className="h-6 w-6"
         >
             <path
-                fillRule="evenodd"
+                fillrule="evenodd"
                 d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
-                clipRule="evenodd"
+                cliprule="evenodd"
             />
         </svg>
     );
 }
-
 
 function ErrorIcon() {
     return (
@@ -41,9 +40,9 @@ function ErrorIcon() {
             className="h-6 w-6 text-red-500"
         >
             <path
-                fillRule="evenodd"
+                fillrule="evenodd"
                 d="M12 2c6.627 0 12 5.373 12 12s-5.373 12-12 12S0 20.627 0 14 5.373 2 12 2zm0 1c-5.523 0-10 4.477-10 10s4.477 10 10 10 10-4.477 10-10S17.523 3 12 3zm1 13h-2v-2h2v2zm0-4h-2V7h2v5z"
-                clipRule="evenodd"
+                cliprule="evenodd"
             />
         </svg>
     );
@@ -72,68 +71,29 @@ export default function CheckoutForm() {
         e.preventDefault();
 
         try {
-            // Fetch the existing data from the database
-            const fetchResponse = await fetch('https://v1.nocodeapi.com/kpanti/google_sheets/hJoVtXWJDNiMyWHN?tabId=NewsLetter');
-            const responseData = await fetchResponse.json();
-
-            console.log('Response Data:', responseData);
-
-            // Extract the data property from the response
-            const existingData = responseData.data;
-
-            // Check if the fetched data is an array
-            if (Array.isArray(existingData)) {
-                // Find the index of the email in the existing data
-                const emailIndex = existingData.findIndex((entry) => entry.Email === email);
-
-                if (emailIndex !== -1) {
-                    // Email matches, update the subscription status and add the message
-                    existingData[emailIndex].States = 'Unsubscribed'; // Update subscription status
-                    existingData[emailIndex].Message = message; // Add message
-
-                    // Update the data in the database
-
-                    const requestBody = {
-                        data: existingData, // Replace existingData with your actual data array
-                    };
-                    const updateResponse = await fetch('https://v1.nocodeapi.com/kpanti/google_sheets/hJoVtXWJDNiMyWHN?tabId=NewsLetter', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json',
-                        },
-                        body: JSON.stringify(requestBody),
-                    });
-
-                    console.log('Update Response:', updateResponse);
-
-                    if (updateResponse.ok) {
-                        setIsFormSubmitted(true);
-                        setEmail('');
-                        setMessage('');
-                        setIsFormError(false);
-                        setSubscriptionStatus('Unsubscribed');
-                    } else {
-                        setIsFormError(true);
-                    }
-                } else {
-                    // Email does not match
-                    console.log('Email not found in existing data.');
-                    setIsFormError(true);
-                }
+            const response = await fetch('https://v1.nocodeapi.com/kpanti/google_sheets/hJoVtXWJDNiMyWHN?tabId=NewsLetter-Unsub', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify([[email, subscriptionStatus, message, new Date().toLocaleString()]]),
+            });
+            if (response.ok) {
+                setIsFormSubmitted(true);
+                setEmail('');
+                setMessage('');
+                setIsFormError(false);
+                setSubscriptionStatus('Unsubscribed');
             } else {
-                // Fetched data is not an array
-                console.log('Fetched data is not an array.');
                 setIsFormError(true);
             }
         } catch (err) {
-            console.error('An error occurred:', err);
+            console.log(err);
             setIsFormError(true);
         }
     };
 
-
-
-    // Modal component
+    // Success Modal component
     const SuccessModal = () => (
         <div className="modal">
             <div className="modal-content">
@@ -144,6 +104,21 @@ export default function CheckoutForm() {
                     You've successfully Unsubscribed to our Newsletter
                 </Alert>
                 <button onClick={() => setIsFormSubmitted(false)}>Close</button>
+            </div>
+        </div>
+    );
+
+    // Error Modal component
+    const ErrorModal = () => (
+        <div className="modal">
+            <div className="modal-content">
+                <Alert
+                    icon={<ErrorIcon />}
+                    className="rounded-none mb-8 border-l-4 border-red-500 bg-red-50 font-medium text-red-500"
+                >
+                    An error occurred. Please try again later.
+                </Alert>
+                <button onClick={() => setIsFormError(false)}>Close</button>
             </div>
         </div>
     );
@@ -185,22 +160,7 @@ export default function CheckoutForm() {
                             <TabsBody className="!overflow-x-hidden !overflow-y-visible">
                                 <TabPanel value="card" className="p-0">
                                     <form id='form-unsubscription' onSubmit={handleSubmit} className="mt-4 flex flex-col gap-4">
-                                        {isFormSubmitted && !isFormError && (
-                                            <Alert
-                                                icon={<Icon />}
-                                                className="rounded-none mb-4 border-l-4 border-[#2ec946] bg-[#2ec946]/10 font-medium text-[#2ec946]"
-                                            >
-                                                You've successfully Unsubscribed to our Newsletter
-                                            </Alert>
-                                        )}
-                                        {isFormError && (
-                                            <Alert
-                                                icon={<ErrorIcon />}
-                                                className="rounded-none mb-4 border-l-4 border-red-500 bg-red-50 font-medium text-red-500"
-                                            >
-                                                An error occurred. Please try again later.
-                                            </Alert>
-                                        )}
+
                                         <div className=" unsubscribe-inputs">
                                             <Input
                                                 type="email"
@@ -236,8 +196,10 @@ export default function CheckoutForm() {
                     </CardBody>
                 </Card>
             </div>
-            {/* Conditionally render the SuccessModal when isFormSubmitted is true */}
+
+            {/* Conditionally render the SuccessModal / Error Modal when isFormSubmitted is true */}
             {isFormSubmitted && <SuccessModal />}
+            {isFormError && <ErrorModal />}
         </div>
     );
 }
