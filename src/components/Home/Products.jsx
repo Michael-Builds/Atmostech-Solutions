@@ -10,7 +10,7 @@ import {
 
 import management from './software.png';
 import mobile from '../../assets/mobile.png';
-import Website from './website.png'
+import Website from './website.png';
 import API from './api.png';
 
 import { Link } from 'react-router-dom';
