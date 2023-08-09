@@ -6,7 +6,6 @@ import {
 } from "@material-tailwind/react";
 import "../../main.css";
 import 'animate.css';
-// import backgroundImage from '../../assets/my.jpg';
 import { useNavigate } from 'react-router-dom';
 
 export default function Hero() {
