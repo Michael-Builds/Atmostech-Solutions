@@ -10,7 +10,7 @@ import {
 import management from './software.png';
 import mobile from '../../assets/mobile.png';
 import website from './website.png';
-import API from './api.png';
+import api from './api.png';
 import { Link } from 'react-router-dom';
 import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
 
@@ -38,7 +38,7 @@ const servicesProductsData = [
     path: "/web"
   },
   {
-    image: API,
+    image: api,
     title: "API Integration",
     subtitle: "Seamless Integration: Power Your Application with our API",
     description: "Unlock the full potential of your application with seamless API integration, enabling effortless data exchange, streamlined functionality.",
