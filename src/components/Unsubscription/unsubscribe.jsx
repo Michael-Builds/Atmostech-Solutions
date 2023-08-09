@@ -149,6 +149,7 @@ export default function Unsubscription() {
         </div>
     );
 
+
     // Error Modal component
     const ErrorModal = () => (
         <div className="modal">
