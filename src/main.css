@@ -6,6 +6,37 @@
   margin-left: 50px;
 }
 
+.checkbox-main-label{
+  font-size: 18px;
+  font-family: "Exo", sans-serif;
+  text-align: center;
+  margin-top: -10px;
+  margin-bottom: 5px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+
+.checklist{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.2rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#checkbox-reason{
+  color: #333;
+  font-size: 12px;
+  font-family: "Robot", sans-serif;
+}
+
+#error-modal{
+  background-color: red;
+  color: #fff;
+}
+
 .main-menu {
   background-color: #1e1e1e;
 }
@@ -1428,6 +1459,7 @@
 .modal-content button:hover {
   background-color: #03a30b;
 }
+
 /* NewsLetter unsubscription section */
 #unsubscription-header {
   font-family: "Exo", sans-serif;
@@ -1699,6 +1731,7 @@
     justify-content: center;
     align-items: center;
   }
+
   .counter-item {
     width: 250px;
     height: 200px;
@@ -2609,6 +2642,11 @@
     margin-bottom: -10px;
     height: 70px;
   }
+
+  .modal-content {
+   max-width: 300px;
+  }
+
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {

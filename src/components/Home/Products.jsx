@@ -7,10 +7,12 @@ import {
   CardFooter,
   Button
 } from "@material-tailwind/react";
-import management from '../../assets/management.jpeg';
+
+import management from './software.png';
 import mobile from '../../assets/mobile.png';
-import Website from './Website.png'
-// import API from '../API/Image.png';
+import Website from './website.png'
+import API from './api.png';
+
 import { Link } from 'react-router-dom';
 
 import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
@@ -18,28 +20,28 @@ import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
 const servicesProductsData = [
   {
     image: management,
-    title: "SchoolSync",
-    subtitle: "Introducing our Advanced School Management System",
-    description: "Revolutionize school management with our advanced cross-platform solution launching this week, empowering educational institutions.",
+    title: "Software Development",
+    subtitle: "Innovative Solutions, Efficient Results",
+    description: "Our software development crafts tailored solutions that streamline processes with innovation and precision.",
     path: "/software"
   },
 
   {
     image: mobile,
-    title: "Uni-Mart",
-    subtitle: "Elevate Your Ride Experience with our Cross-Platform App",
-    description: "Our powerful e-commerce app transforms the way businesses sell products online, delivering seamless shopping experiences and driving exponential growth.",
+    title: "Mobile App Development",
+    subtitle: "Crafting Seamless Mobile Experiences",
+    description: "Empower your business with our comprehensive mobile app development solutions, combining intuitive design and robust functionality.",
     path: "/mobile"
   },
   {
     image: Website,
     title: "Web Development",
-    subtitle: "Lyft launching cross-platform service this week",
-    description: "Like so many organizations these days, Autodesk is a company in transition. It was until recently a traditional boxed software company selling licenses.",
+    subtitle: "Crafting Innovative Web Solutions Tailored to Your Business Needs",
+    description: "Our expert team delivers customized web development services that leverage cutting-edge technologies to meet your unique business requirements and enhance your online presence.",
     path: "/web"
   },
   {
-    image: Website,
+    image: API,
     title: "API Integration",
     subtitle: "Seamless Integration: Power Your Application with our API",
     description: "Unlock the full potential of your application with seamless API integration, enabling effortless data exchange, streamlined functionality.",

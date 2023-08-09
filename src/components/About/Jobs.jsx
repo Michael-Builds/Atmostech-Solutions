@@ -56,7 +56,7 @@ const Values = () => {
                                 </span>
                                 <span className="text-center text-gray-800 value-head">Respect</span>
                                 <p className='text-center value-sentence'>
-                                    We are committed to environmental and social sustainability, making responsible choices to protect our planet.
+                                We steadfastly make responsible choices that stand as a shield for our planet's future. 
                                 </p>
                             </div>
 

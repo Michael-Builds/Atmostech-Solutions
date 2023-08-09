@@ -33,13 +33,13 @@ const SITEMAP = [
         ]
     },
     {
-        title: "Products",
+        title: "Our Services",
         links: [
-            { title: "CRM Systems", path: "/crm" },
-            { title: "Mobile Apps", path: "/apps" },
-            { title: "Web Apps", path: "/websites" },
-            { title: "Software Apps", path: "/schoolsync" },
-            { title: "SchoolSync", path: "/schoolsync" }
+            { title: "Web Development", path: "/web" },
+            { title: "Data Analytics", path: "/analytics" },
+            { title: "API Integration", path: "/api" },
+            { title: "Mobile App Dev.", path: "/mobile" },
+            { title: "Software Dev.", path: "/soft" }
         ]
     }
 ];

@@ -14,7 +14,7 @@ function Icon() {
             <path
                 fillrule="evenodd"
                 d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
-                cliprule="evenodd"
+                clipRule="evenodd"
             />
         </svg>
     );
@@ -31,7 +31,7 @@ function ErrorIcon() {
             <path
                 fillrule="evenodd"
                 d="M12 2c6.627 0 12 5.373 12 12s-5.373 12-12 12S0 20.627 0 14 5.373 2 12 2zm0 1c-5.523 0-10 4.477-10 10s4.477 10 10 10 10-4.477 10-10S17.523 3 12 3zm1 13h-2v-2h2v2zm0-4h-2V7h2v5z"
-                cliprule="evenodd"
+                clipRule="evenodd"
             />
         </svg>
     );
@@ -41,7 +41,7 @@ export default function NewsLetter() {
     const [isFormSubmitted, setIsFormSubmitted] = useState(false);
     const [isFormError, setIsFormError] = useState(false);
     const [email, setEmail] = useState('');
-    const [subscriptionStatus, setSubscriptionStatus] = useState('Unsubscribed');
+    const [subscriptionStatus, setSubscriptionStatus] = useState('Subscribed');
 
     const handleChange = (e) => {
         setEmail(e.target.value);
@@ -87,6 +87,20 @@ export default function NewsLetter() {
             </div>
         </div>
     );
+        // Error Modal component
+        const ErrorModal = () => (
+            <div className="modal">
+                <div className="modal-content">
+                    <Alert
+                        icon={<ErrorIcon />}
+                        className="rounded-none mb-8 border-l-4 border-red-500 bg-red-50 font-medium text-red-500"
+                    >
+                        An error occurred. Please try again later.
+                    </Alert>
+                    <button id='error-modal' onClick={() => setIsFormError(false)}>Close</button>
+                </div>
+            </div>
+        );
 
     return (
         <div className="relative py-16 overflow-hidden bg-gray-900 isolate sm:py-24 lg:py-32">
@@ -103,22 +117,7 @@ export default function NewsLetter() {
                             Stay updated with our latest news and exclusive offers by subscribing to our newsletter. Join our community today and never miss out on exciting updates!
                         </p>
                         <form className="flex flex-col max-w-md mt-6 gap-y-4" onSubmit={handleSubmit} >
-                            {isFormSubmitted && !isFormError && (
-                                <Alert
-                                    icon={<Icon />}
-                                    className="rounded-none mb-4 border-l-4 border-[#2ec946] bg-[#2ec946]/10 font-medium text-[#2ec946]"
-                                >
-                                    Newsletter subscription successful!
-                                </Alert>
-                            )}
-                            {isFormError && (
-                                <Alert
-                                    icon={<ErrorIcon />}
-                                    className="rounded-none mb-4 border-l-4 border-red-500 bg-red-50 font-medium text-red-500"
-                                >
-                                    An error occurred. Please try again later.
-                                </Alert>
-                            )}
+                          
                             <label htmlFor="email-address" className="sr-only">
                                 Email address
                             </label>
@@ -176,6 +175,7 @@ export default function NewsLetter() {
             </div>
             {/* Conditionally render the SuccessModal when isFormSubmitted is true */}
             {isFormSubmitted && <SuccessModal />}
+            {isFormError && <ErrorModal />}
         </div>
 
     );
