@@ -9,7 +9,7 @@ import {
 } from "@material-tailwind/react";
 import management from './software.png';
 import mobile from '../../assets/mobile.png';
-import website from './website.png';
+import website from '../../assets/website.png';
 import api from './api.png';
 import { Link } from 'react-router-dom';
 import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
