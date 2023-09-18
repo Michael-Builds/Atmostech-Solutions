@@ -15,11 +15,11 @@ const SITEMAP = [
     {
         title: "Help Center",
         links: [
-            { title: "Facebook", path: "https://web.facebook.com/search/top?q=atmos%20technology%20ltd" },
+            { title: "Facebook", path: "https://www.facebook.com/profile.php?id=61551564980273" },
             { title: "Twitter", path: "https://twitter.com/AtmosTech" },
             { title: "GitHub", path: "https://www.github.com" },
-            { title: "TikTok", path: "https://www.tiktok.com" },
-            { title: "Instagram", path: "https://www.instagram.com" }
+            { title: "TikTok", path: "https://www.tiktok.com/@atmostechsolutions" },
+            { title: "Instagram", path: "https://www.instagram.com/atmostechsolutions/" }
         ]
     },
     {

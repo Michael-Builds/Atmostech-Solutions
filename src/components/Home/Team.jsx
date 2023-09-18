@@ -1,5 +1,6 @@
 import React from "react";
 import team from "../../assets/team1.png";
+import CEO from './chris.png';
 import { useInView } from "react-intersection-observer";
 import {
   Card,
@@ -19,7 +20,7 @@ import {
 
 const teamData = [
   {
-    image: team,
+    image: CEO,
     name: "Chris Seshie",
     role: "CEO & Founder",
     social: {
@@ -95,9 +96,8 @@ const Team = () => {
     <section className="team-section relative mb-0 w-full h-full">
       <div className="mx-auto overflow-hidden">
         <div
-          className={`justify-center mt-8 align-center relative text-center ${
-            inView1 ? "fade-in-bottom fade-in-bottom-active" : ""
-          }`}
+          className={`justify-center mt-8 align-center relative text-center ${inView1 ? "fade-in-bottom fade-in-bottom-active" : ""
+            }`}
           ref={ref1}
         >
           <h1 id="team-header" className="mb-2 team-header fade-in-bottom">
