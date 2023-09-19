@@ -10,7 +10,6 @@ import {
   Tooltip,
 } from "@material-tailwind/react";
 import { HiBadgeCheck } from "react-icons/hi";
-
 import {
   BiLogoFacebook,
   BiLogoGithub,

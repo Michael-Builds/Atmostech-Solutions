@@ -1,5 +1,5 @@
 import React from "react";
-import Image from './website.png';
+import Web_Image from './website.png';
 import "../../index.css";
 import "../../main.css";
 
@@ -41,7 +41,7 @@ const Main = () => {
                     <div className="flex justify-center">
                         <img
                             id='Website-image'
-                            src={Image}
+                            src={Web_Image}
                             alt="ATMOS-PIC"
                         />
                     </div>
