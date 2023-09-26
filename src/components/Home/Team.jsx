@@ -1,6 +1,8 @@
 import React from "react";
-import team from "../../assets/team1.png";
 import CEO from './chris.png';
+import Ben from './ben.png';
+import Mike from './mike.png';
+import Eugene from './eugene.png';
 import { useInView } from "react-intersection-observer";
 import {
   Card,
@@ -22,6 +24,7 @@ const teamData = [
     image: CEO,
     name: "Chris Seshie",
     role: "CEO & Founder",
+    bio: "Chris Seshie, an accomplished IT Software Project Manager with several years of experience in the UK, specializes in delivering innovative software solutions for the Automotive manufacturing sector.His expertise lies in streamlining business processes and harnessing technology to enhance operational efficiency, making him a valued asset in the industry.",
     social: {
       facebook: true,
       github: true,
@@ -30,9 +33,10 @@ const teamData = [
     },
   },
   {
-    image: team,
+    image: Mike,
     name: "Kabanda Michael",
-    role: "Frontend Developer",
+    role: "Marketing Lead & Junior Frontend Developer",
+    bio: "I am Michael Kpanti Kabanda, the Marketing Lead at AtmosTech.As a passionate graphic designer with a flair for creativity in design and UI, I'm dedicated to crafting visually stunning and user-centric experiences. With a background in junior frontend development, I'm on a mission to ensure our designs seamlessly meet the needs of our users.Let's create something amazing together!",
     social: {
       facebook: true,
       github: true,
@@ -41,9 +45,10 @@ const teamData = [
     },
   },
   {
-    image: team,
+    image: Eugene,
     name: "Eugene Sew",
     role: "Frontend Developer",
+    bio: "Meet Eugene Sewor, our seasoned React frontend developer with a remarkable two-year journey. Armed with an innate flair for UI/UX design, Eugene crafts captivating user interfaces with precision. With a passion for pixel-perfection, they bring elegance and functionality to our projects, elevating the user experience.",
     social: {
       facebook: true,
       github: true,
@@ -52,31 +57,10 @@ const teamData = [
     },
   },
   {
-    image: team,
+    image: Ben,
     name: "Bernard Tay",
-    role: "Backend Developer",
-    social: {
-      facebook: true,
-      github: true,
-      pinterest: true,
-      instagram: true,
-    },
-  },
-  {
-    image: team,
-    name: "Lorem Ipsum",
-    role: "Content Creator",
-    social: {
-      facebook: true,
-      github: true,
-      pinterest: true,
-      instagram: true,
-    },
-  },
-  {
-    image: team,
-    name: "Lorem Ipsum",
-    role: "UI/UX Designer",
+    role: "Lead Developer",
+    bio: "Bernard Tay, the Lead Developer at AtmosTech, is a versatile Fullstack Software Developer. With extensive experience across various industries, including Ecommerce, Logistics, and Real Estate, he combines technical prowess with a keen eye for detail. Bernard's client-centric approach ensures timely delivery and customer satisfaction.",
     social: {
       facebook: true,
       github: true,
@@ -110,13 +94,13 @@ const Team = () => {
           <div className="grid grid-cols-3 md:grid-cols-3 gap-12 team-items">
             {teamData.map((teamMember, index) => (
               <Card id='team-cards' key={index} className="w-full max-w-[24rem] main-card">
-                <CardHeader floated={false} color="blue-gray">
+                <CardHeader className="h-42 bg-gray-200" floated={false} color="blue-gray">
                   <img
                     src={teamMember.image}
                     alt={teamMember.name}
                     className="team-image"
                   />
-                  <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " />
+                  {/* <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-tr from-transparent via-transparent to-black/60 " /> */}
                 </CardHeader>
                 <CardBody>
                   <div className="mb-3 flex items-center justify-between">
