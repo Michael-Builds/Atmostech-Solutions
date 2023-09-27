@@ -23,11 +23,11 @@ export default function Testimonial() {
                             alt=""
                         />
                         <div className="flex items-center justify-center mt-4 space-x-3 text-base">
-                            <div className="font-semibold text-gray-900">Victoria Sehsie</div>
+                            <div className="font-semibold text-gray-900">Mrs. Victoria</div>
                             <svg viewBox="0 0 2 2" width={3} height={3} aria-hidden="true" className="fill-gray-900">
                                 <circle cx={1} cy={1} r={1} />
                             </svg>
-                            <div className="text-gray-600">CEO & Founder of Smart Kidz Palace.</div>
+                            <div className="text-gray-600">CEO of Smart kidz</div>
                         </div>
                     </figcaption>
                 </figure>
