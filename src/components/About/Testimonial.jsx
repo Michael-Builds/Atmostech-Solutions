@@ -20,7 +20,7 @@ export default function Testimonial() {
                         <img
                             className="w-34 mx-auto h-32 bg-gray-500 rounded-lg"
                             src={Vic}
-                            alt=""
+                            alt="Mrs. Victoria"
                         />
                         <div className="flex items-center justify-center mt-4 space-x-3 text-base">
                             <div className="font-semibold text-gray-900">Mrs. Victoria</div>
