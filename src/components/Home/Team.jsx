@@ -27,14 +27,14 @@ const teamData = [
   },
   {
     image: Eugene,
-    name: "Eugene Sew",
+    name: "Eugene E. Sewor",
     role: "Frontend Developer",
     bio: "Meet Eugene Sewor, our seasoned React frontend developer with a remarkable two-year journey. Armed with an innate flair for UI/UX design, Eugene crafts captivating user interfaces with precision. With a passion for pixel-perfection, they bring elegance and functionality to our projects, elevating the user experience.",
 
   },
   {
     image: Ben,
-    name: "Bernard Tay",
+    name: "Bernard K. Tay",
     role: "Lead Developer",
     bio: "Bernard Tay, the Lead Developer at AtmosTech, is a versatile Fullstack Software Developer. With extensive experience across various industries, including Ecommerce, Logistics, and Real Estate, he combines technical prowess with a keen eye for detail. Bernard's client-centric approach ensures timely delivery and customer satisfaction.",
   },
@@ -68,7 +68,7 @@ const Team = () => {
                   <img
                     src={teamMember.image}
                     alt={teamMember.name}
-                    className="team-image"
+                    className="team-image object-center object-cover"
                   />
                 </CardHeader>
                 <CardBody className="mt-4">
