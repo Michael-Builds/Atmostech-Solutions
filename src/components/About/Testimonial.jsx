@@ -13,7 +13,7 @@ export default function Testimonial() {
                     <blockquote className="mt-2 text-lg font-medium leading-8 text-center text-gray-900 sm:text-1xl sm:leading-9">
                         <p >
                             “Thanks to ATMOSTECH @atmostechsolutions, my energy to execute tasks has skyrocketed! Mr. SESHIE and his team provided me with an incredible IT system that's been a game-changer for my entrepreneurial journey.
-                            Their customized system is a must-have for SMEs. Reach out to Chris directly @ranzymore to experience the difference. Afeto, AKPEEEEEE!”
+                            Their customized system is a must-have for SMEs. Reach out to atmostechnologysolutions to experience the difference.”
                         </p>
                     </blockquote>
                     <figcaption className="mt-10">
